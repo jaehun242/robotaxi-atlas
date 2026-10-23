@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { aggregate,latest,history,comparableDelta,ingest,validateObservation,citiesFor,nextUpdate } from '../src/domain.mjs';
+import { aggregate,latest,history,comparableDelta,ingest,validateObservation,citiesFor,nextUpdate,findConflicts } from '../src/domain.mjs';
 import { collectDataset,extractServices } from '../scripts/collector-lib.mjs';
 import {parseCSV} from '../scripts/import-csv.mjs';
 const base=JSON.parse(await readFile('public/data/atlas.json','utf8'));
@@ -26,6 +26,9 @@ test('basis, model, region and service filters share the same rows',()=>{
 test('conflicting same-time counts/definitions excluded; locked override survives',()=>{
  const a=make(),b=make({id:'second',count:12,sourceId:'tesla-support'});
  assert.equal(latest(withRows([a,b]),f).length,0);
+ assert.equal(latest(withRows([a,{...b,verification:'unofficial'}]),f).length,0);
+ assert.deepEqual(findConflicts([a,b])[0].ids,['test','second']);
+ assert.equal(findConflicts([{...a,locked:true},b])[0].resolvedBy,'test');
  assert.equal(latest(withRows([a,{...b,count:10,scope:'seen last week'}]),f).length,0);
  assert.equal(latest(withRows([{...a,locked:true},b]),f)[0].count,10);
 });

@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { ingest, nextUpdate, kstDay } from '../src/domain.mjs';
+import { ingest, nextUpdate, kstDay,findConflicts } from '../src/domain.mjs';
 export const textFromHtml=html=>html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&#39;|&apos;/gi,"'").replace(/&quot;/gi,'"').replace(/\s+/g,' ').trim();
 export const hash=body=>createHash('sha256').update(body).digest('hex');
 export function extractServices(sourceId,html,cities,now){
@@ -32,7 +32,7 @@ export async function collectDataset(data,{fetcher=fetch,now=new Date().toISOStr
     }
     let run={sourceId:source.id,state:'failed',checkedAt:now,lastSuccessAt:prior?.lastSuccessAt??null,message:error?.message??''};
     if(!error){try{
-      const digest=hash(body);const priorHash=prior?.contentHash;
+      const digest=hash(source.id==='tesla-ir-q3'?body:textFromHtml(body));const priorHash=prior?.contentHash;
       if(source.id==='tesla-support'||source.id==='tesla-cybercab'){
         const facts=extractServices(source.id,body,next.cities,now);
         for(const fact of facts){fact.sourceUrl=source.url;const i=next.services.findIndex(s=>s.id===fact.id);const old=next.services[i];
@@ -46,12 +46,14 @@ export async function collectDataset(data,{fetcher=fetch,now=new Date().toISOStr
         run={...run,state:missing.length?'changed':'ok',message:missing.length?'기존 서비스가 새 문장에 없음. 운영 중단으로 단정하지 않고 이전 상태 보존.':`${facts.length}개 서비스 상태 확인. 도시별 대수 미공개.`};
       }else{
         if(source.id==='ca-dmv'&&!/TESLA\s+ROBOTAXI\s+LLC/i.test(textFromHtml(body)))throw new Error('Tesla 명단 패턴 변경. 허가 상태 수동 검토 필요.');
-        run={...run,state:priorHash&&priorHash!==digest?'changed':'ok',message:source.id==='ca-dmv'?'허가 명단 접근 성공. 도시별 대수·서비스로 변환하지 않음.':'공식 PDF 접근 성공. 변경 감지 대상; 수치 추출은 미연결.'};
+        const changed=priorHash&&priorHash!==digest;
+        run={...run,state:changed?'changed':'ok',message:source.id==='ca-dmv'?changed?'허가 명단 내용 변경 감지 · 원문 검토 필요. 도시별 수치로 변환하지 않음.':'허가 명단 접근 성공. 도시별 대수·서비스로 변환하지 않음.':'공식 PDF 접근 성공. 변경 감지 대상; 수치 추출은 미연결.'};
       }
       run={...run,lastSuccessAt:now,contentHash:digest};successes++;
     }catch(e){run={...run,state:'changed',message:e.message};}}
     const i=next.sourceRuns.findIndex(r=>r.sourceId===source.id);if(i>=0)next.sourceRuns[i]=run;else next.sourceRuns.push(run);
   }
+  next.conflicts=findConflicts(next.observations);
   next.lastAttemptAt=now;if(successes)next.lastSuccessAt=now;next.updatedAt=now;next.nextUpdateAt=nextUpdate(now);
   const day=kstDay(now),run={id:`daily-${day}`,startedAt:now,completedAt:now,state:successes===automatic.size?'success':successes?'partial':'failed'};
   const i=next.runs.findIndex(r=>r.id===run.id);if(i>=0)next.runs[i]=run;else next.runs.push(run);

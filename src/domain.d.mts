@@ -8,6 +8,7 @@ export function citiesFor(data:Dataset,f:Filters):City[];
 export function latest(data:Dataset,f:Filters,at?:string):Observation[];
 export interface Aggregate {total:number|null;cybercab:number|null;model_y:number|null;coverage:number;asOf:string|null}
 export function aggregate(rows:Observation[]):Aggregate;
+export function findConflicts(observations:Observation[]):{key:string;ids:string[];city:string;model:string;basis:string;asOf:string;resolvedBy:string|null;reason:string}[];
 export function comparableDelta(current:Observation[],previous:Observation[]):number|null;
 export function history(data:Dataset,f:Filters,days:string,now?:Date): (Aggregate & {day:string;delta:number|null;records:Observation[];scopeChanged:boolean;carried:Aggregate})[];
 export function ingest(data:Dataset,incoming:Observation[],now:string):Dataset;

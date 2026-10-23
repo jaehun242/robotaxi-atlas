@@ -33,25 +33,32 @@ export function citiesFor(data, f) {
 export function latest(data, f, at = '9999-12-31T23:59:59Z') {
   const cities = new Set(citiesFor(data,f).map(c=>c.id));
   const groups=new Map();
-  data.observations.filter(o=>cities.has(o.city)&&o.basis===f.basis&&(!f.model||o.model===f.model)&&o.asOf&&Date.parse(o.asOf)<=Date.parse(at)&&(f.verification==='all'||VERIFIED.has(o.verification))).forEach(o=>{
+  data.observations.filter(o=>cities.has(o.city)&&o.basis===f.basis&&(!f.model||o.model===f.model)&&o.asOf&&Date.parse(o.asOf)<=Date.parse(at)).forEach(o=>{
     const key=`${o.city}|${o.model}`, list=groups.get(key)??[];list.push(o);groups.set(key,list);
   });
   const rows=[];
   for(const list of groups.values()) {
     list.sort((a,b)=>Date.parse(b.asOf)-Date.parse(a.asOf));
-    const date=Date.parse(list[0].asOf);
+    const eligible=list.filter(o=>f.verification==='all'||VERIFIED.has(o.verification));
+    if(!eligible.length)continue;
+    const date=Date.parse(eligible[0].asOf);
     const candidates=list.filter(o=>Date.parse(o.asOf)===date);
-    const locked=candidates.find(o=>o.locked);
+    const locked=candidates.find(o=>o.locked&&eligible.includes(o));
     if(locked) { rows.push(locked);continue; }
     // Different definitions or conflicting counts are never resolved with max/average.
     const conflict=new Set(candidates.map(o=>`${o.scope}|${o.count}`)).size>1 || candidates.some(o=>o.verification==='conflict');
-    if(!conflict) rows.push(candidates[0]);
+    if(!conflict) rows.push(eligible[0]);
   }
   return rows;
 }
 export function aggregate(rows) {
   const sum=(model)=> {const r=rows.filter(o=>!model||o.model===model);return r.length?r.reduce((s,o)=>s+o.count,0):null;};
   return {total:sum(),cybercab:sum('cybercab'),model_y:sum('model_y'),coverage:rows.length,asOf:rows.length?rows.map(o=>o.asOf).sort().at(-1):null};
+}
+export function findConflicts(observations) {
+  const groups=new Map();
+  for(const o of observations.filter(o=>o.asOf)) {const key=`${o.city}|${o.model}|${o.basis}|${Date.parse(o.asOf)}`;const list=groups.get(key)??[];list.push(o);groups.set(key,list);}
+  return [...groups.entries()].filter(([,list])=>list.length>1&&new Set(list.map(o=>`${o.scope}|${o.count}`)).size>1).map(([key,list])=>({key,ids:list.map(o=>o.id),city:list[0].city,model:list[0].model,basis:list[0].basis,asOf:list[0].asOf,resolvedBy:list.find(o=>o.locked)?.id??null,reason:'같은 기준 시각의 출처별 대수 또는 집계 범위가 다름'}));
 }
 export function comparableDelta(current, previous) {
   const key=o=>`${o.city}|${o.model}|${o.basis}|${o.scope}`;
