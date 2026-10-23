@@ -84,5 +84,6 @@ test('ISO timestamps with different offsets compare by actual time',()=>{
  const data=withRows([make({asOf:'2026-10-23T08:00:00+09:00',count:8}),make({id:'newer',asOf:'2026-10-23T01:00:00Z',count:9})]);
  assert.equal(latest(data,f)[0].count,9);
  assert.equal(latest(data,f,'2026-10-23T00:00:00Z')[0].count,8);
+ assert.equal(aggregate(data.observations).asOf,'2026-10-23T01:00:00Z');
  assert.ok(validateObservation(make({asOf:'2026-10-23'}),base.cities,base.sources).length);
 });

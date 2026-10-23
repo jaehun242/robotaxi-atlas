@@ -53,7 +53,7 @@ export function latest(data, f, at = '9999-12-31T23:59:59Z') {
 }
 export function aggregate(rows) {
   const sum=(model)=> {const r=rows.filter(o=>!model||o.model===model);return r.length?r.reduce((s,o)=>s+o.count,0):null;};
-  return {total:sum(),cybercab:sum('cybercab'),model_y:sum('model_y'),coverage:rows.length,asOf:rows.length?rows.map(o=>o.asOf).sort().at(-1):null};
+  return {total:sum(),cybercab:sum('cybercab'),model_y:sum('model_y'),coverage:rows.length,asOf:rows.length?rows.map(o=>o.asOf).sort((a,b)=>Date.parse(a)-Date.parse(b)).at(-1):null};
 }
 export function findConflicts(observations) {
   const groups=new Map();
