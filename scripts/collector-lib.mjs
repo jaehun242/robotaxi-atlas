@@ -23,12 +23,12 @@ export async function collectDataset(data,{fetcher=fetch,now=new Date().toISOStr
       try{
         if(forceFailure)throw new Error('실패 보존 검증용 강제 실패');
         response=await fetcher(source.url,{headers:{'User-Agent':'RobotaxiAtlas/1.0 (+https://github.com/jaehun242/robotaxi-atlas)','Accept-Language':'en-US,en;q=0.9'},signal:AbortSignal.timeout(25000)});
-        if(!response.ok)throw new Error(`HTTP ${response.status}`);
+        if(!response.ok)throw Object.assign(new Error(`HTTP ${response.status}`),{noRetry:[401,403,404].includes(response.status)});
         const isPdf=source.id==='tesla-ir-q3';
         if(isPdf){const bytes=Buffer.from(await response.arrayBuffer());if(bytes.subarray(0,4).toString()!=='%PDF')throw new Error('PDF가 아닌 응답');body=bytes;}
         else {body=await response.text();if(body.length<300||/Access Denied|verify you are human|Just a moment/i.test(body))throw new Error('접근 차단 또는 불완전한 문서');}
         error=null;break;
-      }catch(e){error=e;if(attempt+1<retries&&!forceFailure)await new Promise(r=>setTimeout(r,1000*(attempt+1)));}
+      }catch(e){error=e;if(e.noRetry)break;if(attempt+1<retries&&!forceFailure)await new Promise(r=>setTimeout(r,1000*(attempt+1)));}
     }
     let run={sourceId:source.id,state:'failed',checkedAt:now,lastSuccessAt:prior?.lastSuccessAt??null,message:error?.message??''};
     if(!error){try{
@@ -36,7 +36,7 @@ export async function collectDataset(data,{fetcher=fetch,now=new Date().toISOStr
       if(source.id==='tesla-support'||source.id==='tesla-cybercab'){
         const facts=extractServices(source.id,body,next.cities,now);
         for(const fact of facts){fact.sourceUrl=source.url;const i=next.services.findIndex(s=>s.id===fact.id);const old=next.services[i];
-          if(i>=0){next.services[i]={...old,...fact};}
+          if(i>=0){next.services[i]=old.status===fact.status?{...old,lastCheckedAt:now}:{...old,...fact,lastCheckedAt:now};}
           else next.services.push(fact);
           const unchanged=old&&old.status===fact.status;
           const newsId=`${fact.id}-${hash(`${fact.status}|${fact.model}`).slice(0,10)}`;

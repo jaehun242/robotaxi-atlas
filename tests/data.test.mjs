@@ -74,6 +74,7 @@ test('collector same-day rerun does not duplicate news, daily runs or numeric re
  const b=await collectDataset(a,{fetcher,now:'2026-10-24T02:00:00Z',retries:1});
  assert.equal(b.news.length,a.news.length);assert.equal(b.runs.length,a.runs.length);assert.deepEqual(b.observations,base.observations);
  assert.equal(b.runs.at(-1).state,'success');
+ assert.equal(b.services.find(s=>s.id==='tesla-cybercab-austin').observedAt,base.services.find(s=>s.id==='tesla-cybercab-austin').observedAt);
 });
 test('CSV quoted fields and missing count; KST next update',()=>{
  const records=parseCSV('id,count,note\n1,0,"zero, verified"\n2,,unknown');

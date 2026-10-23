@@ -17,6 +17,9 @@ pnpm build
 pnpm preview
 pnpm collect
 node scripts/collect.mjs --simulate-failure --dry-run
+pnpm collect:statistics
+node scripts/collect-statistics.mjs --force
+node scripts/collect-statistics.mjs --simulate-failure --force --dry-run
 ```
 
 지도 파일은 이미 포함되어 있습니다. 지도 경계를 재생성하려면 `pnpm geo`. Natural Earth 국가와 U.S. Census 주 경계를 world-atlas/us-atlas 패키지에서 GeoJSON으로 변환했습니다. 외부 지도 타일·키가 필요 없습니다. Google Fonts가 차단되면 시스템 한국어 글꼴로 표시합니다.
@@ -29,7 +32,9 @@ node scripts/collect.mjs --simulate-failure --dry-run
 
 GitHub는 정각 시작·완료를 보장하지 않습니다. 특히 매시 정각은 지연되거나 큐 작업이 누락될 수 있습니다. 공개 저장소는 60일간 활동이 없으면 예약이 비활성화될 수 있습니다. 이 작업은 매일 스냅샷 커밋을 남기지만 플랫폼의 예약 제한과 장애는 통제하지 못합니다.
 
-Actions → Collect data and deploy Pages → Run workflow → main → Run workflow로 수동 실행합니다. 실패한 실행의 우측 상단 Re-run jobs로 재시도합니다. 출처 요청은 최대 3회 자동 재시도합니다. 같은 한국 날짜의 실행·스냅샷은 중복 추가하지 않습니다. 새 소식은 고유 ID로 중복을 막습니다.
+Actions → Collect data and deploy Pages → Run workflow → main → Run workflow로 수동 실행합니다. 인구 통계를 즉시 재확인하려면 `refresh_statistics`를 체크합니다. 실패한 실행의 우측 상단 Re-run jobs로 재시도합니다. 차량 출처는 최대 3회, 통계 출처는 최대 2회이며 401·403·404는 재시도하지 않습니다. 같은 한국 날짜의 실행·스냅샷은 중복 추가하지 않습니다. 새 소식은 고유 ID로 중복을 막습니다.
+
+Census는 최근 확인 후 7일이 지났을 때 새 공식 CSV를 확인합니다. 런던·서울 인구와 TfL·서울 교통은 수동 검토 자료이며 자동 수치 추출은 미연결입니다. 통계·모델·사용자 가정은 차량 배치 이력과 별도 관리합니다. 자세한 기준과 수동 수정 파일은 [시장 계산 근거](MARKET.md)에 있습니다.
 
 수집 일부/전체 실패도 마지막 정상 자료를 배포하고 출처별 실패를 표시합니다. 따라서 GitHub 실행이 녹색이어도 모든 출처가 성공했다는 뜻은 아닙니다. 실행 Summary와 사이트 ‘출처 · 방법론’의 각 출처 상태를 함께 봅니다. 스키마·검증 오류는 배포 전에 실패하게 되어 있습니다.
 

@@ -27,6 +27,8 @@ id,city,model,basis,count,asOf,sourceId,sourceUrl,scope,verification,locked,note
 | locked | true 권장. 자동 수집으로 해당 ID를 덮어쓰지 않음 |
 | note | 원문의 의미·제한·안전요원 정보 등 |
 
+시장 추정과 비교하려면 추가 열 `scopeId`, `vehicleDefinition`, `coverageComplete`가 필요합니다. 예: Census 오스틴 시 범위 `us:place:4805000`, Tesla 전체 보유 차량 `tesla_owned_fleet`, 두 차종 각각 전체 범위 확인 `true`. 일반 텍스트 `scope`만으로 지역 일치를 추론하지 않습니다. 범위·기준일·정의·완전성이 검증되지 않으면 현재 배치 대수는 표시해도 시나리오 대비 비율은 계산하지 않습니다.
+
 독립 복수 검증은 JSON의 `independentGroups` 배열 또는 CSV의 `independentGroups` 열에서 `tesla|regulator`처럼 서로 다른 원출처 그룹 2개 이상이 필요합니다. 언론의 같은 게시물 재인용 2건은 같은 그룹입니다. 검증 수준은 사람이 원문을 검토한 분류이며 AI가 자동으로 공식 검증을 부여하지 않습니다.
 
 미검증이며 기준일이 없는 사용자 예시 343·312·108은 모든 합계에서 제외됩니다. 기준일과 집계 기준을 추측해 채우지 않습니다. 원문 기준이 모호하면 입력을 보류하거나 unverified로 유지하세요.

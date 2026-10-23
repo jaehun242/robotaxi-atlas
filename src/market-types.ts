@@ -1,0 +1,12 @@
+import type {Observation} from './types';
+export interface Population {id:string;scopeId:string;kind:'city'|'metro'|'service';name:string;value:number;asOf:string;publishedAt:string|null;vintage:string;sourceUrl:string;publisher:string;firstCollectedAt:string;changedAt:string;note:string}
+export interface CityStatistics {city:string;cityScopeId:string;metroScopeId:string|null;note:string;latestNotice?:string;trafficNote:string}
+export interface Demand {id:string;city:string;scopeId:string;scopeName:string;dailyTrips:number;unit:'person_trips'|'vehicle_trips';asOf:string;publishedAt:string;sourceUrl:string;publisher:string;firstCollectedAt:string;note:string;approximate:boolean;includesExternal:boolean;referenceOnly:boolean}
+export interface Statistics {version:number;updatedAt:string;lastAttemptAt:string|null;populations:Population[];profiles:CityStatistics[];demands:Demand[];checks:{sourceId:string;checkedAt:string;state:string;message:string;url:string}[];revisions:{changedAt:string;kind:string;previous:unknown;replacement:unknown}[]}
+export interface ScenarioInput {conversion:string;teslaShare:string;marketProductivity:string;teslaProductivity:string}
+export interface MarketInput {city:string;scopeId:string;customScope:string;market:'replacement'|'expanded';horizon:'current'|'2030';referenceDate:string;unit:'person_trips'|'vehicle_trips';occupancy:string;replacement:string;additional:string;additionalDistinct:boolean;externalEnabled:boolean;external:string;externalDistinct:boolean;growth:string;mix:string;sourceDemandId:string|null;sourceIncludesExternal:boolean;scenarios:ScenarioInput[]}
+export interface MarketResult {name:string;paidTrips:number|null;teslaPaidTrips:number|null;marketFleet:number|null;teslaFleet:number|null;cybercab:number|null;modelY:number|null;errors:string[]}
+export interface MarketCalculation {results:MarketResult[];errors:string[];warnings:string[];coherent:boolean;targetVehicleTrips:number|null;growthFactor:number|null}
+export interface TimeBudget {hours:string;paidMinutes:string;pickupMinutes:string;emptyMinutes:string;chargeMinutes:string;cleanMinutes:string;maintenanceMinutes:string;otherDowntimeMinutes:string}
+export interface Comparison {allowed:boolean;count:number|null;reason:string;ratios:(number|null)[];additional:(number|null)[]}
+export type ComparableObservation = Observation & {scopeId?:string;vehicleDefinition?:string;coverageComplete?:boolean};

@@ -1,0 +1,10 @@
+import type {MarketInput,MarketCalculation,Comparison,ComparableObservation,Population,TimeBudget} from './market-types';
+export const MODEL_VERSION:string;
+export const SCENARIO_NAMES:string[];
+export function numeric(v:unknown):number|null;
+export function blankMarket(city:string,scopeId:string):MarketInput;
+export function illustration(input:MarketInput):MarketInput;
+export function productivityFromTime(t:TimeBudget):{value:number|null;availableMinutes:number|null;cycleMinutes:number|null;errors:string[]};
+export function calculateMarket(input:MarketInput):MarketCalculation;
+export function compareFleet(rows:ComparableObservation[],input:MarketInput,calculation:MarketCalculation):Comparison;
+export function uniquePopulation(records:Population[]):number;

@@ -1,0 +1,64 @@
+{
+  "populations": [
+    {
+      "id": "uk:region:E12000007",
+      "scopeId": "uk:region:E12000007",
+      "kind": "city",
+      "name": "Greater London (London region)",
+      "value": 9122909,
+      "asOf": "2025-06-30",
+      "publishedAt": "2026-07-29",
+      "vintage": "ONS mid-2025",
+      "sourceUrl": "https://www.nomisweb.co.uk/reports/lmp/gor/2013265927/report.aspx",
+      "publisher": "ONS / Nomis",
+      "note": "Greater London 행정지역. 별도의 City of London 자치구와 다름. 일관된 별도 광역권 인구 미확보."
+    },
+    {
+      "id": "kr:admin:11",
+      "scopeId": "kr:admin:11",
+      "kind": "city",
+      "name": "서울특별시 등록인구 (등록외국인 포함)",
+      "value": 9560471,
+      "asOf": "2026-06-30",
+      "publishedAt": null,
+      "vintage": "서울시 2026년 2분기",
+      "sourceUrl": "https://english.seoul.go.kr/seoul-views/meaning-of-seoul/4-population/",
+      "publisher": "서울특별시",
+      "note": "최신 검증 수치: 2026년 2분기. 2026년 8월 통계 발표는 확인했으나 동적 표의 숫자 추출 대기. 발표일 미공개."
+    }
+  ],
+  "demands": [
+    {
+      "id": "tfl-2024-taxi-phv",
+      "city": "london",
+      "scopeId": "uk:transport:tfl-london-touching-trips",
+      "scopeName": "Greater London: 출발·도착 또는 양쪽이 London인 이동",
+      "dailyTrips": 400000,
+      "unit": "person_trips",
+      "asOf": "2024-12-31",
+      "publishedAt": "2025-12",
+      "sourceUrl": "https://content.tfl.gov.uk/travel-in-london-2025-consolidated-estimates-of-total-travel-and-mode-shares-acc.pdf",
+      "publisher": "Transport for London · Travel in London 2025, Table 1 / PDF 7쪽",
+      "note": "2024년 택시·PHV 사람 이동, 7일 평균. 0.1백만 단위로 반올림(약 40만). 주민·통근자·관광객 포함. 운행 경계는 거주 인구 경계와 다름. 동승 인원 가정 필요. 2026년 현재 수요로 자동 확정하지 않음.",
+      "approximate": true,
+      "includesExternal": true,
+      "referenceOnly": true
+    },
+    {
+      "id": "seoul-taxi-2026-01",
+      "city": "seoul",
+      "scopeId": "kr:registered-taxi:seoul",
+      "scopeName": "서울 등록 택시의 이용 실적 (운행 지리 경계 불명)",
+      "dailyTrips": 781765,
+      "unit": "vehicle_trips",
+      "asOf": "2026-01-31",
+      "publishedAt": "2026-04-09",
+      "sourceUrl": "https://news.seoul.go.kr/traffic/archives/307",
+      "publisher": "서울특별시 · 택시 현황",
+      "note": "일평균 이용 건수 781,765, 평균 탑승 18.9분. 서울 등록 차량 기준이며 모든 운행이 행정시 안에 있는지 미확인. 행정시 전체 수요로 자동 사용하지 않음. 공급 실적이며 잠재 수요·호출차 전체 수요가 아님.",
+      "approximate": false,
+      "includesExternal": true,
+      "referenceOnly": true
+    }
+  ]
+}

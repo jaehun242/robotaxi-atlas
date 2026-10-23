@@ -6,6 +6,12 @@ on:
     # 23:00 UTC = next day 08:00 Asia/Seoul (no daylight saving).
     - cron: '0 23 * * *'
   workflow_dispatch:
+    inputs:
+      refresh_statistics:
+        description: '7일 제한과 관계없이 공식 인구 통계 확인'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -36,11 +42,15 @@ jobs:
         run: pnpm test
       - name: Collect public sources and apply protected manual records
         run: pnpm collect
+      - name: Check official statistics weekly and preserve reference dates
+        run: node scripts/collect-statistics.mjs
+        env:
+          FORCE_STATISTICS: ${{ inputs.refresh_statistics || 'false' }}
       - name: Save daily data and correction history
         run: |
           git config user.name 'robotaxi-atlas[bot]'
           git config user.email 'robotaxi-atlas[bot]@users.noreply.github.com'
-          git add public/data/atlas.json data/snapshots
+          git add public/data/atlas.json public/data/statistics.json data/snapshots
           if ! git diff --cached --quiet; then
             git commit -m 'data: refresh source checks and daily snapshot [skip ci]'
             git push origin HEAD:main
@@ -53,6 +63,7 @@ jobs:
       - name: Collection summary
         run: |
           node -e 'const d=require("./public/data/atlas.json"); console.log("Run:", d.runs.at(-1).state); for(const r of d.sourceRuns) console.log(r.sourceId+": "+r.state+" — "+r.message)' >> "$GITHUB_STEP_SUMMARY"
+          node -e 'const d=require("./public/data/statistics.json"); console.log("Statistics checked:", d.lastAttemptAt); for(const r of d.checks) console.log(r.sourceId+": "+r.state+" — "+r.message)' >> "$GITHUB_STEP_SUMMARY"
   deploy:
     needs: collect-build
     runs-on: ubuntu-latest
