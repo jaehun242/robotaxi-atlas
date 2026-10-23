@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T05:26:01.766Z",
-  "lastAttemptAt": "2026-10-23T05:25:59.496Z",
-  "lastSuccessAt": "2026-10-23T05:25:59.496Z",
+  "updatedAt": "2026-10-23T05:27:25.012Z",
+  "lastAttemptAt": "2026-10-23T05:27:23.153Z",
+  "lastSuccessAt": "2026-10-23T05:27:23.153Z",
   "nextUpdateAt": "2026-10-23T23:00:00.000Z",
   "cities": [
     {
@@ -906,29 +906,29 @@
     {
       "sourceId": "tesla-support",
       "state": "failed",
-      "checkedAt": "2026-10-23T05:25:59.496Z",
+      "checkedAt": "2026-10-23T05:27:23.153Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-cybercab",
       "state": "failed",
-      "checkedAt": "2026-10-23T05:25:59.496Z",
+      "checkedAt": "2026-10-23T05:27:23.153Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-ir-q3",
       "state": "failed",
-      "checkedAt": "2026-10-23T05:25:59.496Z",
+      "checkedAt": "2026-10-23T05:27:23.153Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "ca-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-23T05:25:59.496Z",
-      "lastSuccessAt": "2026-10-23T05:25:59.496Z",
+      "checkedAt": "2026-10-23T05:27:23.153Z",
+      "lastSuccessAt": "2026-10-23T05:27:23.153Z",
       "message": "허가 명단 접근 성공. 도시별 대수·서비스로 변환하지 않음.",
       "contentHash": "9e3a3cf87f2ed3d050e1a941b015c196c131be2f06d9ffefcc67955604705ea2"
     },
@@ -956,24 +956,24 @@
     {
       "sourceId": "tesla-safety",
       "state": "failed",
-      "checkedAt": "2026-10-23T05:25:59.496Z",
+      "checkedAt": "2026-10-23T05:27:23.153Z",
       "lastSuccessAt": "2026-10-23T04:55:09.000Z",
       "message": "HTTP 403 · 기존 계획·지도·최초 확인일 보존"
     },
     {
       "sourceId": "pioneer-tracker",
       "state": "ok",
-      "checkedAt": "2026-10-23T05:25:59.496Z",
-      "lastSuccessAt": "2026-10-23T05:25:59.496Z",
+      "checkedAt": "2026-10-23T05:27:23.153Z",
+      "lastSuccessAt": "2026-10-23T05:27:23.153Z",
       "message": "공개 지역 집계 성공 · 0개 수치 신규/변경. 원자료 미러 시각 2026-10-23T05:07:03.006Z. 배치·영업 대수 아님.",
       "sourceSnapshotAt": "2026-10-23T05:07:03.006Z"
     },
     {
       "sourceId": "tx-dmv",
-      "state": "ok",
-      "checkedAt": "2026-10-23T05:26:01.858Z",
+      "state": "failed",
+      "checkedAt": "2026-10-23T05:27:26.771Z",
       "lastSuccessAt": "2026-10-23T05:26:01.858Z",
-      "message": "공식 텍사스 등록부 858개 고유 VIN. Cybercab 351 / Model Y 507. 도시 합계와 별도."
+      "message": "fetch failed · 마지막 정상값 보존"
     }
   ],
   "revisions": [
@@ -1051,8 +1051,8 @@
   "runs": [
     {
       "id": "daily-2026-10-23",
-      "startedAt": "2026-10-23T05:25:59.496Z",
-      "completedAt": "2026-10-23T05:26:13.270Z",
+      "startedAt": "2026-10-23T05:27:23.153Z",
+      "completedAt": "2026-10-23T05:28:15.840Z",
       "state": "partial"
     }
   ],

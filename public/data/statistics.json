@@ -1,7 +1,7 @@
 {
   "version": 1,
   "updatedAt": "2026-10-23T04:58:54.442Z",
-  "lastAttemptAt": "2026-10-23T04:58:54.442Z",
+  "lastAttemptAt": "2026-10-23T05:27:25.078Z",
   "populations": [
     {
       "id": "us:place:4805000",
@@ -497,14 +497,14 @@
   "checks": [
     {
       "sourceId": "census-city",
-      "checkedAt": "2026-10-23T04:58:54.442Z",
+      "checkedAt": "2026-10-23T05:27:25.078Z",
       "state": "ok",
       "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
       "message": "11개 도시 통계 확인. 값·빈티지가 같으면 통계 날짜를 갱신하지 않음."
     },
     {
       "sourceId": "census-metro",
-      "checkedAt": "2026-10-23T04:58:54.442Z",
+      "checkedAt": "2026-10-23T05:27:25.078Z",
       "state": "ok",
       "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
       "message": "11개 MSA 통계 확인. 값·빈티지가 같으면 통계 날짜를 갱신하지 않음."
