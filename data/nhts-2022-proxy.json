@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "dataset": "2022 National Household Travel Survey public-use CSV V2.1",
+  "release": "April 2025",
+  "statisticalYear": 2022,
+  "collectedTravelPeriod": "January 2022 through January 2023",
+  "retrievedAt": "2026-10-23T04:21:48.522Z",
+  "sourceUrl": "https://nhts.ornl.gov/media/2022/download/csv.zip",
+  "downloadPage": "https://nhts.ornl.gov/downloads",
+  "codebookUrl": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+  "codebookPages": { "householdMsaSize": 6, "tripModeAndTime": 58, "tripWeights": 62 },
+  "userGuideUrl": "https://nhts.ornl.gov/documentation",
+  "archiveBytes": 4533528,
+  "archiveSha256": "64530c396d5f164d2259a22f7042f27bee5147babcd367568ddbfafe6c8bf34c",
+  "householdSampleCount": 7893,
+  "tripSampleCount": 31074,
+  "units": {
+    "annualPersonTrips": "weighted person trips/year, not paid vehicle rides",
+    "weightedHouseholds": "households, WTHHFIN 7-day national household weight",
+    "dailyRate": "person trips per household per calendar day",
+    "tripTime": "WTTRDFIN-weighted mean TRVLCMIN, minutes per person trip; negative/missing times excluded"
+  },
+  "derivation": [
+    "Group household and trip files using the same MSASIZE category.",
+    "Sum WTTRDFIN for TRPTRANS 15 (taxicab/limo) and 16 (other ride-sharing). These are annual person-trip weights.",
+    "Divide annual person trips by sum(WTHHFIN) for all households in that category and by 365.",
+    "Private-car expansion pool uses only TRPTRANS 1 car, 2 van, 3 SUV/crossover, 4 pickup; it excludes taxi/TNC, walking, cycling and transit.",
+    "A city proxy can multiply its separately sourced ACS household count by this national MSA-category rate. This is a derived proxy, not a local observation.",
+    "Converting person trips to paid vehicle rides requires an explicit occupancy assumption, not supplied by this file."
+  ],
+  "caveats": [
+    "National MSA-size proxy based on household home geography, not trips entirely within a city or geofenced Tesla service area.",
+    "2022 pandemic-recovery behavior; not a measurement of current 2026 taxi/TNC demand.",
+    "Taxi/TNC trip records are few (33 in 1M–<3M and 61 in 3M+); the point estimates have sampling uncertainty. No confidence bounds are claimed.",
+    "NHTS person travel covers household members age 5 and older; a household-count denominator avoids silently multiplying a 5+ person rate by all-age Census population.",
+    "Travel by household residents can occur outside the home city; tourists, nonresident commuters and airport traffic are not independently measured. Do not add them without proving non-overlap.",
+    "Rates for private vehicles and taxi/TNC come from mutually exclusive primary mode codes. Do not interpret private-vehicle passenger trips as separate vehicle rides.",
+    "Average trip duration is a demand proxy, not autonomous vehicle productivity. Pickup, empty travel, charging, cleaning, maintenance and downtime need separate analytic assumptions.",
+    "MSASIZE is a survey-era category. Applying its rate to a present city is an analytic substitution, not a reclassification of NHTS respondents."
+  ],
+  "bands": [
+    {
+      "name": "National all households",
+      "msaSizeCodes": null,
+      "householdSampleCount": 7893,
+      "weightedHouseholds": 127544706.99999984,
+      "taxiAndRidehail": {
+        "modeCodes": [
+          15,
+          16
+        ],
+        "unweightedTripRecords": 118,
+        "annualPersonTrips": 1158204495.8899455,
+        "personTripsPerHouseholdPerDay": 0.024878829369518338,
+        "averageTripMinutes": 23.598950133170145,
+        "timedTripRecords": 117,
+        "missingTimeTripRecords": 1
+      },
+      "privateCarVanSuvPickup": {
+        "modeCodes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "unweightedTripRecords": 27344,
+        "annualPersonTrips": 219992103443.58203,
+        "personTripsPerHouseholdPerDay": 4.725543739155345,
+        "averageTripMinutes": 24.331921638359763,
+        "timedTripRecords": 27330,
+        "missingTimeTripRecords": 14
+      }
+    },
+    {
+      "name": "National MSA/CMSA population 1,000,000–2,999,999",
+      "msaSizeCodes": [
+        4
+      ],
+      "householdSampleCount": 1805,
+      "weightedHouseholds": 28603471.54923644,
+      "taxiAndRidehail": {
+        "modeCodes": [
+          15,
+          16
+        ],
+        "unweightedTripRecords": 33,
+        "annualPersonTrips": 253335304.34884667,
+        "personTripsPerHouseholdPerDay": 0.024265212905657585,
+        "averageTripMinutes": 21.58163574032361,
+        "timedTripRecords": 32,
+        "missingTimeTripRecords": 1
+      },
+      "privateCarVanSuvPickup": {
+        "modeCodes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "unweightedTripRecords": 6481,
+        "annualPersonTrips": 50992853240.12014,
+        "personTripsPerHouseholdPerDay": 4.884247948460483,
+        "averageTripMinutes": 22.910958880420957,
+        "timedTripRecords": 6480,
+        "missingTimeTripRecords": 1
+      }
+    },
+    {
+      "name": "National MSA/CMSA population 3,000,000 or more",
+      "msaSizeCodes": [
+        5
+      ],
+      "householdSampleCount": 2441,
+      "weightedHouseholds": 40722704.058964945,
+      "taxiAndRidehail": {
+        "modeCodes": [
+          15,
+          16
+        ],
+        "unweightedTripRecords": 61,
+        "annualPersonTrips": 543192029.8589449,
+        "personTripsPerHouseholdPerDay": 0.03654465921330881,
+        "averageTripMinutes": 29.584278302585112,
+        "timedTripRecords": 61,
+        "missingTimeTripRecords": 0
+      },
+      "privateCarVanSuvPickup": {
+        "modeCodes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "unweightedTripRecords": 7886,
+        "annualPersonTrips": 64631861886.04188,
+        "personTripsPerHouseholdPerDay": 4.348276920705905,
+        "averageTripMinutes": 25.884231507904,
+        "timedTripRecords": 7880,
+        "missingTimeTripRecords": 6
+      }
+    }
+  ]
+}

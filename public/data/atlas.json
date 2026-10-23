@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T03:09:18.104Z",
-  "lastAttemptAt": "2026-10-23T03:09:17.448Z",
-  "lastSuccessAt": "2026-10-23T03:09:17.448Z",
+  "updatedAt": "2026-10-23T05:22:29.589Z",
+  "lastAttemptAt": "2026-10-23T05:22:26.172Z",
+  "lastSuccessAt": "2026-10-23T05:22:26.172Z",
   "nextUpdateAt": "2026-10-23T23:00:00.000Z",
   "cities": [
     {
@@ -121,13 +121,65 @@
         126.978,
         37.5665
       ]
+    },
+    {
+      "id": "phoenix",
+      "name": "피닉스",
+      "english": "Phoenix",
+      "country": "US",
+      "countryName": "미국",
+      "region": "AZ",
+      "regionName": "애리조나",
+      "coordinates": [
+        -112.090132,
+        33.572154
+      ]
+    },
+    {
+      "id": "las-vegas",
+      "name": "라스베이거스",
+      "english": "Las Vegas",
+      "country": "US",
+      "countryName": "미국",
+      "region": "NV",
+      "regionName": "네바다",
+      "coordinates": [
+        -115.264037,
+        36.233499
+      ]
+    },
+    {
+      "id": "jacksonville",
+      "name": "잭슨빌",
+      "english": "Jacksonville",
+      "country": "US",
+      "countryName": "미국",
+      "region": "FL",
+      "regionName": "플로리다",
+      "coordinates": [
+        -81.661603,
+        30.336864
+      ]
+    },
+    {
+      "id": "san-antonio",
+      "name": "샌안토니오",
+      "english": "San Antonio",
+      "country": "US",
+      "countryName": "미국",
+      "region": "TX",
+      "regionName": "텍사스",
+      "coordinates": [
+        -98.524635,
+        29.462809
+      ]
     }
   ],
   "observations": [
     {
       "id": "user-example-austin-cybercab",
       "city": "austin",
-      "model": "cybercab",
+      "model": "unspecified",
       "count": 343,
       "basis": "unknown",
       "asOf": null,
@@ -137,12 +189,12 @@
       "scope": "불명 · 사용자 제공 미검증 예시",
       "verification": "unverified",
       "locked": true,
-      "note": "배정·현지 배치·운행 중 어느 기준인지 원문 확인 불가. 기준일 불명. 모든 수치 집계에서 제외."
+      "note": "사용자 제공 미검증 참고값. 대화에서 차종 혼재, 원문403·기준일·배정/배치/영업 구분 미확인. 어느 차종으로도 확정하지 않으며 합계·그래프 제외."
     },
     {
       "id": "user-example-austin-model_y",
       "city": "austin",
-      "model": "model_y",
+      "model": "unspecified",
       "count": 312,
       "basis": "unknown",
       "asOf": null,
@@ -152,7 +204,7 @@
       "scope": "불명 · 사용자 제공 미검증 예시",
       "verification": "unverified",
       "locked": true,
-      "note": "배정·현지 배치·운행 중 어느 기준인지 원문 확인 불가. 기준일 불명. 모든 수치 집계에서 제외."
+      "note": "사용자 제공 미검증 참고값. 대화에서 차종 혼재, 원문403·기준일·배정/배치/영업 구분 미확인. 어느 차종으로도 확정하지 않으며 합계·그래프 제외."
     },
     {
       "id": "user-example-dallas-model_y",
@@ -168,6 +220,222 @@
       "verification": "unverified",
       "locked": true,
       "note": "배정·현지 배치·운행 중 어느 기준인지 원문 확인 불가. 기준일 불명. 모든 수치 집계에서 제외."
+    },
+    {
+      "id": "pioneer-dallas-cybercab-2026-10-23",
+      "city": "dallas",
+      "model": "cybercab",
+      "basis": "observed",
+      "count": 1,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Dallas의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:dallas",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-17T21:24:04+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-17T21:24:04+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-dallas-model_y-2026-10-23",
+      "city": "dallas",
+      "model": "model_y",
+      "basis": "observed",
+      "count": 72,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Dallas의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:dallas",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-17T21:24:04+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-17T21:24:04+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-austin-cybercab-2026-10-23",
+      "city": "austin",
+      "model": "cybercab",
+      "basis": "observed",
+      "count": 195,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Austin의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:austin",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-23T01:33:51+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-23T01:33:51+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-austin-model_y-2026-10-23",
+      "city": "austin",
+      "model": "model_y",
+      "basis": "observed",
+      "count": 226,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Austin의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:austin",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-23T01:33:51+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-23T01:33:51+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-orlando-cybercab-2026-10-23",
+      "city": "orlando",
+      "model": "cybercab",
+      "basis": "observed",
+      "count": 0,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Orlando의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:orlando",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-11T18:20:11+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-11T18:20:11+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-orlando-model_y-2026-10-23",
+      "city": "orlando",
+      "model": "model_y",
+      "basis": "observed",
+      "count": 8,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Orlando의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:orlando",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-11T18:20:11+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-11T18:20:11+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-houston-cybercab-2026-10-23",
+      "city": "houston",
+      "model": "cybercab",
+      "basis": "observed",
+      "count": 0,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Houston의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:houston",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-12T22:15:09+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-12T22:15:09+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-houston-model_y-2026-10-23",
+      "city": "houston",
+      "model": "model_y",
+      "basis": "observed",
+      "count": 33,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Houston의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:houston",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-12T22:15:09+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-12T22:15:09+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-tampa-cybercab-2026-10-23",
+      "city": "tampa",
+      "model": "cybercab",
+      "basis": "observed",
+      "count": 0,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Tampa의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:tampa",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-22T14:41:17+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-22T14:41:17+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-tampa-model_y-2026-10-23",
+      "city": "tampa",
+      "model": "model_y",
+      "basis": "observed",
+      "count": 25,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Tampa의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:tampa",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-22T14:41:17+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-22T14:41:17+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-miami-cybercab-2026-10-23",
+      "city": "miami",
+      "model": "cybercab",
+      "basis": "observed",
+      "count": 0,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Miami의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:miami",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-09-18T12:00:00+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-09-18T12:00:00+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-miami-model_y-2026-10-23",
+      "city": "miami",
+      "model": "model_y",
+      "basis": "observed",
+      "count": 5,
+      "asOf": "2026-10-23T04:07:05.471Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Miami의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:miami",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-09-18T12:00:00+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-09-18T12:00:00+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
     }
   ],
   "services": [
@@ -338,6 +606,62 @@
       "sourceUrl": "https://www.tesla.com/support/robotaxi/cybercab",
       "verification": "official_single",
       "note": "Austin 일부 지역 Cybercab 서비스 명시. 해당 문장만으로 모든 차량의 운행·안전요원 상태를 단정하지 않음."
+    },
+    {
+      "id": "tesla-safety-plan-phoenix",
+      "city": "phoenix",
+      "model": "unspecified",
+      "status": "planned",
+      "safety": "unknown",
+      "paid": false,
+      "asOf": null,
+      "observedAt": "2026-10-23T04:55:09.000Z",
+      "sourceId": "tesla-safety",
+      "sourceUrl": "https://www.tesla.com/robotaxi/safety",
+      "verification": "official_single",
+      "note": "Tesla 공식 Coming Soon에 명시. 차종·차량 수·개시일·서비스 경계 미공개. 지도는 Census 도시 대표점이며 계획의 광역권 경계가 아님."
+    },
+    {
+      "id": "tesla-safety-plan-las-vegas",
+      "city": "las-vegas",
+      "model": "unspecified",
+      "status": "planned",
+      "safety": "unknown",
+      "paid": false,
+      "asOf": null,
+      "observedAt": "2026-10-23T04:55:09.000Z",
+      "sourceId": "tesla-safety",
+      "sourceUrl": "https://www.tesla.com/robotaxi/safety",
+      "verification": "official_single",
+      "note": "Tesla 공식 Coming Soon에 명시. 차종·차량 수·개시일·서비스 경계 미공개. 지도는 Census 도시 대표점이며 계획의 광역권 경계가 아님."
+    },
+    {
+      "id": "tesla-safety-plan-jacksonville",
+      "city": "jacksonville",
+      "model": "unspecified",
+      "status": "planned",
+      "safety": "unknown",
+      "paid": false,
+      "asOf": null,
+      "observedAt": "2026-10-23T04:55:09.000Z",
+      "sourceId": "tesla-safety",
+      "sourceUrl": "https://www.tesla.com/robotaxi/safety",
+      "verification": "official_single",
+      "note": "Tesla 공식 Coming Soon에 명시. 차종·차량 수·개시일·서비스 경계 미공개. 지도는 Census 도시 대표점이며 계획의 광역권 경계가 아님."
+    },
+    {
+      "id": "tesla-safety-plan-san-antonio",
+      "city": "san-antonio",
+      "model": "unspecified",
+      "status": "planned",
+      "safety": "unknown",
+      "paid": false,
+      "asOf": null,
+      "observedAt": "2026-10-23T04:55:09.000Z",
+      "sourceId": "tesla-safety",
+      "sourceUrl": "https://www.tesla.com/robotaxi/safety",
+      "verification": "official_single",
+      "note": "Tesla 공식 Coming Soon에 명시. 차종·차량 수·개시일·서비스 경계 미공개. 지도는 Census 도시 대표점이며 계획의 광역권 경계가 아님."
     }
   ],
   "news": [
@@ -424,6 +748,66 @@
       "firstCollectedAt": "2026-10-23T01:52:55.946Z",
       "sourceId": "tesla-support",
       "sourceUrl": "https://www.tesla.com/support/robotaxi"
+    },
+    {
+      "id": "tesla-safety-plan-phoenix",
+      "city": "phoenix",
+      "model": "unspecified",
+      "title": "피닉스 · Tesla 공식 진출 계획 목록 확인",
+      "summary": "공식 Coming Soon 목록. 실제 영업 개시·배치 차량 수는 미확인입니다. 게시일·사건 날짜는 공개되지 않았습니다.",
+      "eventDate": null,
+      "publishedAt": null,
+      "firstCollectedAt": "2026-10-23T04:55:09.000Z",
+      "sourceId": "tesla-safety",
+      "sourceUrl": "https://www.tesla.com/robotaxi/safety"
+    },
+    {
+      "id": "tesla-safety-plan-las-vegas",
+      "city": "las-vegas",
+      "model": "unspecified",
+      "title": "라스베이거스 · Tesla 공식 진출 계획 목록 확인",
+      "summary": "공식 Coming Soon 목록. 실제 영업 개시·배치 차량 수는 미확인입니다. 게시일·사건 날짜는 공개되지 않았습니다.",
+      "eventDate": null,
+      "publishedAt": null,
+      "firstCollectedAt": "2026-10-23T04:55:09.000Z",
+      "sourceId": "tesla-safety",
+      "sourceUrl": "https://www.tesla.com/robotaxi/safety"
+    },
+    {
+      "id": "tesla-safety-plan-las-vegas-permit_approval",
+      "city": "las-vegas",
+      "model": "unspecified",
+      "title": "라스베이거스 · 관할 기관 발표",
+      "summary": "승인 후 첫 12개월 최대 5,000대는 허가 상한이며 등록·배치·관측·운행 대수가 아님. 운행 개시 전 별도 조건 충족 필요. 공항은 Clark County Department of Aviation 허가 별도 필요.",
+      "eventDate": "2026-08-20",
+      "publishedAt": "2026-08-21",
+      "firstCollectedAt": "2026-10-23T04:55:09.000Z",
+      "sourceId": "tesla-safety",
+      "sourceUrl": "https://www.business.nv.gov/news-media/press-releases/2026/ntata/nevada-transportation-authority-approves-autonomous-vehicle-network-applications-for-tesla-waymo-and-aviari/"
+    },
+    {
+      "id": "tesla-safety-plan-jacksonville",
+      "city": "jacksonville",
+      "model": "unspecified",
+      "title": "잭슨빌 · Tesla 공식 진출 계획 목록 확인",
+      "summary": "공식 Coming Soon 목록. 실제 영업 개시·배치 차량 수는 미확인입니다. 게시일·사건 날짜는 공개되지 않았습니다.",
+      "eventDate": null,
+      "publishedAt": null,
+      "firstCollectedAt": "2026-10-23T04:55:09.000Z",
+      "sourceId": "tesla-safety",
+      "sourceUrl": "https://www.tesla.com/robotaxi/safety"
+    },
+    {
+      "id": "tesla-safety-plan-san-antonio",
+      "city": "san-antonio",
+      "model": "unspecified",
+      "title": "샌안토니오 · Tesla 공식 진출 계획 목록 확인",
+      "summary": "공식 Coming Soon 목록. 실제 영업 개시·배치 차량 수는 미확인입니다. 게시일·사건 날짜는 공개되지 않았습니다.",
+      "eventDate": null,
+      "publishedAt": null,
+      "firstCollectedAt": "2026-10-23T04:55:09.000Z",
+      "sourceId": "tesla-safety",
+      "sourceUrl": "https://www.tesla.com/robotaxi/safety"
     }
   ],
   "sources": [
@@ -466,11 +850,11 @@
     {
       "id": "tx-dmv",
       "name": "TxDMV · Tesla 운영자 등록부",
-      "url": "https://txmccs.txdmv.gov/automated-vehicles/operators/AV8313426653583",
+      "url": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
       "priority": 2,
       "access": "자동 추출 미연결",
-      "definition": "텍사스 주 등록 차량. 도시 배정·상업운행 대수와 다른 기준.",
-      "automation": "브라우저 렌더링 및 API 조사 필요"
+      "definition": "주 전체 등록 차량. 도시 배정·동시 운행 대수와 구분.",
+      "automation": "텍사스 공식 주 전체 등록부 · 공개 JSON 페이지 수집·VIN 중복 제거"
     },
     {
       "id": "tracker",
@@ -498,44 +882,55 @@
       "access": "관리자 CSV / JSON",
       "definition": "각 행의 원문 URL·기준일·집계 범위를 별도로 기록. 잠금 수치 보존.",
       "automation": "data/manual.csv 및 data/manual.json"
+    },
+    {
+      "id": "pioneer-tracker",
+      "name": "Pioneerlands / Robotaxi Tracker 공개 명부",
+      "url": "https://pioneerlands.org/cybercabtracker",
+      "priority": 3,
+      "access": "public aggregate",
+      "definition": "커뮤니티 명부 기록. 배정·현지 배치·시험·상업운행 대수와 구분. Model Y=전체−Cybercab.",
+      "automation": "공개 지역별 집계 수집 · 실패 시 마지막 확인값 유지"
+    },
+    {
+      "id": "tesla-safety",
+      "name": "Tesla 공식 안전 보고·진출 계획",
+      "url": "https://www.tesla.com/robotaxi/safety",
+      "priority": 1,
+      "access": "public embedded JSON",
+      "definition": "Coming Soon은 계획 발표. 주행거리를 차량 대수로 변환하지 않음.",
+      "automation": "공개 JSON 계획 목록 수집 · 검증한 지리 사전과 일치할 때 지도 추가"
     }
   ],
   "sourceRuns": [
     {
       "sourceId": "tesla-support",
       "state": "failed",
-      "checkedAt": "2026-10-23T03:09:17.448Z",
+      "checkedAt": "2026-10-23T05:22:26.172Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-cybercab",
       "state": "failed",
-      "checkedAt": "2026-10-23T03:09:17.448Z",
+      "checkedAt": "2026-10-23T05:22:26.172Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-ir-q3",
       "state": "failed",
-      "checkedAt": "2026-10-23T03:09:17.448Z",
+      "checkedAt": "2026-10-23T05:22:26.172Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "ca-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-23T03:09:17.448Z",
-      "lastSuccessAt": "2026-10-23T03:09:17.448Z",
+      "checkedAt": "2026-10-23T05:22:26.172Z",
+      "lastSuccessAt": "2026-10-23T05:22:26.172Z",
       "message": "허가 명단 접근 성공. 도시별 대수·서비스로 변환하지 않음.",
       "contentHash": "9e3a3cf87f2ed3d050e1a941b015c196c131be2f06d9ffefcc67955604705ea2"
-    },
-    {
-      "sourceId": "tx-dmv",
-      "state": "unconnected",
-      "checkedAt": "2026-10-23T01:52:55.946Z",
-      "lastSuccessAt": null,
-      "message": "자동 추출 미연결"
     },
     {
       "sourceId": "tracker",
@@ -557,16 +952,391 @@
       "checkedAt": "2026-10-23T01:52:55.946Z",
       "lastSuccessAt": null,
       "message": "관리자 CSV / JSON"
+    },
+    {
+      "sourceId": "tesla-safety",
+      "state": "failed",
+      "checkedAt": "2026-10-23T05:22:26.172Z",
+      "lastSuccessAt": "2026-10-23T04:55:09.000Z",
+      "message": "HTTP 403 · 기존 계획·지도·최초 확인일 보존"
+    },
+    {
+      "sourceId": "pioneer-tracker",
+      "state": "ok",
+      "checkedAt": "2026-10-23T05:22:26.172Z",
+      "lastSuccessAt": "2026-10-23T05:22:26.172Z",
+      "message": "공개 지역 집계 성공 · 0개 수치 신규/변경. 원자료 미러 시각 2026-10-23T05:07:03.006Z. 배치·영업 대수 아님.",
+      "sourceSnapshotAt": "2026-10-23T05:07:03.006Z"
+    },
+    {
+      "sourceId": "tx-dmv",
+      "state": "ok",
+      "checkedAt": "2026-10-23T05:22:44.629Z",
+      "lastSuccessAt": "2026-10-23T05:22:44.629Z",
+      "message": "공식 텍사스 등록부 858개 고유 VIN. Cybercab 351 / Model Y 507. 도시 합계와 별도."
     }
   ],
-  "revisions": [],
+  "revisions": [
+    {
+      "id": "user-example-austin-cybercab",
+      "changedAt": "2026-10-23T04:56:23.780Z",
+      "reason": "사용자 최종 요구: 원문 미확인 343/312 차종 혼재. 어느 차종으로도 확정하지 않음.",
+      "previous": {
+        "id": "user-example-austin-cybercab",
+        "city": "austin",
+        "model": "cybercab",
+        "count": 343,
+        "basis": "unknown",
+        "asOf": null,
+        "collectedAt": "2026-10-23T01:52:55.946Z",
+        "sourceId": "user-x",
+        "sourceUrl": "https://x.com/ethanmckanna/status/2113068103659819405",
+        "scope": "불명 · 사용자 제공 미검증 예시",
+        "verification": "unverified",
+        "locked": true,
+        "note": "배정·현지 배치·운행 중 어느 기준인지 원문 확인 불가. 기준일 불명. 모든 수치 집계에서 제외."
+      },
+      "replacement": {
+        "id": "user-example-austin-cybercab",
+        "city": "austin",
+        "model": "unspecified",
+        "count": 343,
+        "basis": "unknown",
+        "asOf": null,
+        "collectedAt": "2026-10-23T01:52:55.946Z",
+        "sourceId": "user-x",
+        "sourceUrl": "https://x.com/ethanmckanna/status/2113068103659819405",
+        "scope": "불명 · 사용자 제공 미검증 예시",
+        "verification": "unverified",
+        "locked": true,
+        "note": "배정·현지 배치·운행 중 어느 기준인지 원문 확인 불가. 기준일 불명. 모든 수치 집계에서 제외."
+      }
+    },
+    {
+      "id": "user-example-austin-model_y",
+      "changedAt": "2026-10-23T04:56:23.782Z",
+      "reason": "사용자 최종 요구: 원문 미확인 343/312 차종 혼재. 어느 차종으로도 확정하지 않음.",
+      "previous": {
+        "id": "user-example-austin-model_y",
+        "city": "austin",
+        "model": "model_y",
+        "count": 312,
+        "basis": "unknown",
+        "asOf": null,
+        "collectedAt": "2026-10-23T01:52:55.946Z",
+        "sourceId": "user-x",
+        "sourceUrl": "https://x.com/ethanmckanna/status/2113068103659819405",
+        "scope": "불명 · 사용자 제공 미검증 예시",
+        "verification": "unverified",
+        "locked": true,
+        "note": "배정·현지 배치·운행 중 어느 기준인지 원문 확인 불가. 기준일 불명. 모든 수치 집계에서 제외."
+      },
+      "replacement": {
+        "id": "user-example-austin-model_y",
+        "city": "austin",
+        "model": "unspecified",
+        "count": 312,
+        "basis": "unknown",
+        "asOf": null,
+        "collectedAt": "2026-10-23T01:52:55.946Z",
+        "sourceId": "user-x",
+        "sourceUrl": "https://x.com/ethanmckanna/status/2113068103659819405",
+        "scope": "불명 · 사용자 제공 미검증 예시",
+        "verification": "unverified",
+        "locked": true,
+        "note": "배정·현지 배치·운행 중 어느 기준인지 원문 확인 불가. 기준일 불명. 모든 수치 집계에서 제외."
+      }
+    }
+  ],
   "runs": [
     {
       "id": "daily-2026-10-23",
-      "startedAt": "2026-10-23T03:09:17.448Z",
-      "completedAt": "2026-10-23T03:09:18.104Z",
+      "startedAt": "2026-10-23T05:22:26.172Z",
+      "completedAt": "2026-10-23T05:23:37.991Z",
       "state": "partial"
     }
   ],
-  "conflicts": []
+  "conflicts": [],
+  "fleetReferences": [
+    {
+      "id": "pioneer-bay-area",
+      "city": "san-francisco",
+      "scope": "Bay Area 전체 커뮤니티 명부 · 샌프란시스코시와 다름",
+      "cybercab": 0,
+      "model_y": 754,
+      "asOf": "2026-10-23T05:07:03.006Z",
+      "collectedAt": "2026-10-23T04:26:30.784Z",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "note": "광역권 참고값. 샌프란시스코 도시 합계·비율·증감에서 제외. 0은 명부 기록 0건."
+    }
+  ],
+  "fleetResearch": [
+    {
+      "city": "austin",
+      "reason": "공식 FAQ는 서비스만 확인하며 도시별 차종 대수 미공개. Pioneerlands의 공개 커뮤니티 명부 집계를 확보. 원문 미열람 사용자 예시와 별도.",
+      "checkedAt": "2026-10-23T04:25:00Z",
+      "sources": [
+        {
+          "name": "Tesla Robotaxi 지원",
+          "url": "https://www.tesla.com/support/robotaxi",
+          "result": "도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."
+        },
+        {
+          "name": "Pioneerlands 공개 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."
+        },
+        {
+          "name": "Robotaxi Tracker 집계 방법",
+          "url": "https://robotaxitracker.com/methodology",
+          "result": "커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."
+        }
+      ]
+    },
+    {
+      "city": "dallas",
+      "reason": "공개 명부 집계 확보. Cybercab 기록은 시험·상업운행 구분 미확인. 공식 서비스 FAQ로 영업 대수를 추론하지 않음.",
+      "checkedAt": "2026-10-23T04:25:00Z",
+      "sources": [
+        {
+          "name": "Tesla Robotaxi 지원",
+          "url": "https://www.tesla.com/support/robotaxi",
+          "result": "도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."
+        },
+        {
+          "name": "Pioneerlands 공개 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."
+        },
+        {
+          "name": "Robotaxi Tracker 집계 방법",
+          "url": "https://robotaxitracker.com/methodology",
+          "result": "커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."
+        }
+      ]
+    },
+    {
+      "city": "houston",
+      "reason": "공개 명부 Model Y 집계 확보. Cybercab 0은 명부 기록 0건이며 실제 무배치 확인이 아님.",
+      "checkedAt": "2026-10-23T04:25:00Z",
+      "sources": [
+        {
+          "name": "Tesla Robotaxi 지원",
+          "url": "https://www.tesla.com/support/robotaxi",
+          "result": "도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."
+        },
+        {
+          "name": "Pioneerlands 공개 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."
+        },
+        {
+          "name": "Robotaxi Tracker 집계 방법",
+          "url": "https://robotaxitracker.com/methodology",
+          "result": "커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."
+        }
+      ]
+    },
+    {
+      "city": "miami",
+      "reason": "공개 명부 집계 확보. 신규 차량 발견 시각이 오래됐으며 전체 실제 차량이나 최신 영업 대수는 미확인.",
+      "checkedAt": "2026-10-23T04:25:00Z",
+      "sources": [
+        {
+          "name": "Tesla Robotaxi 지원",
+          "url": "https://www.tesla.com/support/robotaxi",
+          "result": "도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."
+        },
+        {
+          "name": "Pioneerlands 공개 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."
+        },
+        {
+          "name": "Robotaxi Tracker 집계 방법",
+          "url": "https://robotaxitracker.com/methodology",
+          "result": "커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."
+        }
+      ]
+    },
+    {
+      "city": "orlando",
+      "reason": "공개 명부 집계 확보. Cybercab 0은 명부 기록 0건이며 실제 차량 0대로 확정하지 않음.",
+      "checkedAt": "2026-10-23T04:25:00Z",
+      "sources": [
+        {
+          "name": "Tesla Robotaxi 지원",
+          "url": "https://www.tesla.com/support/robotaxi",
+          "result": "도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."
+        },
+        {
+          "name": "Pioneerlands 공개 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."
+        },
+        {
+          "name": "Robotaxi Tracker 집계 방법",
+          "url": "https://robotaxitracker.com/methodology",
+          "result": "커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."
+        }
+      ]
+    },
+    {
+      "city": "tampa",
+      "reason": "공개 명부 집계 확보. 공식 서비스 안내와 명부 대수의 모집단은 다름.",
+      "checkedAt": "2026-10-23T04:25:00Z",
+      "sources": [
+        {
+          "name": "Tesla Robotaxi 지원",
+          "url": "https://www.tesla.com/support/robotaxi",
+          "result": "도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."
+        },
+        {
+          "name": "Pioneerlands 공개 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."
+        },
+        {
+          "name": "Robotaxi Tracker 집계 방법",
+          "url": "https://robotaxitracker.com/methodology",
+          "result": "커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."
+        }
+      ]
+    },
+    {
+      "city": "san-francisco",
+      "reason": "샌프란시스코시만의 차량 대수 분리 불가. Bay Area 전체 명부를 광역 참고값으로 제공하고 도시·전체 합계에서 제외.",
+      "checkedAt": "2026-10-23T04:25:00Z",
+      "sources": [
+        {
+          "name": "Tesla Robotaxi 지원",
+          "url": "https://www.tesla.com/support/robotaxi",
+          "result": "도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."
+        },
+        {
+          "name": "Pioneerlands 공개 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."
+        },
+        {
+          "name": "Robotaxi Tracker 집계 방법",
+          "url": "https://robotaxitracker.com/methodology",
+          "result": "커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."
+        }
+      ]
+    },
+    {
+      "city": "london",
+      "reason": "Pioneerlands 공개 명부에 London 행이 없고 Tesla 공식 서비스 안내에서 도시별 차종 대수를 확인하지 못함. 0으로 표시하지 않음.",
+      "checkedAt": "2026-10-23T04:25:00Z",
+      "sources": [
+        {
+          "name": "Tesla Robotaxi 지원",
+          "url": "https://www.tesla.com/support/robotaxi",
+          "result": "도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."
+        },
+        {
+          "name": "Pioneerlands 공개 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."
+        },
+        {
+          "name": "Robotaxi Tracker 집계 방법",
+          "url": "https://robotaxitracker.com/methodology",
+          "result": "커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."
+        }
+      ]
+    },
+    {
+      "city": "seoul",
+      "reason": "Pioneerlands 공개 명부에 Seoul 행이 없고 Tesla 공식 서비스 안내에서 도시별 차종 대수를 확인하지 못함. 0으로 표시하지 않음.",
+      "checkedAt": "2026-10-23T04:25:00Z",
+      "sources": [
+        {
+          "name": "Tesla Robotaxi 지원",
+          "url": "https://www.tesla.com/support/robotaxi",
+          "result": "도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."
+        },
+        {
+          "name": "Pioneerlands 공개 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."
+        },
+        {
+          "name": "Robotaxi Tracker 집계 방법",
+          "url": "https://robotaxitracker.com/methodology",
+          "result": "커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."
+        }
+      ]
+    },
+    {
+      "city": "phoenix",
+      "checkedAt": "2026-10-23T04:55:09.000Z",
+      "reason": "공식 Coming Soon 계획을 확인했으나 차종·차량 수·개시일은 미공개. 연결한 도시 명부의 대수도 미확보. 실제 무배치·0대를 뜻하지 않음.",
+      "sources": [
+        {
+          "name": "Tesla 공식 진출 계획",
+          "url": "https://www.tesla.com/robotaxi/safety",
+          "result": "Tesla 공식 Coming Soon 목록 직접 확인. 개시일·차종·차량 수·영업 여부는 공개하지 않음."
+        },
+        {
+          "name": "Pioneerlands 공개 도시 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "연결한 공개 집계에서 이 지역의 차종별 대수 미확보."
+        }
+      ]
+    },
+    {
+      "city": "las-vegas",
+      "checkedAt": "2026-10-23T04:55:09.000Z",
+      "reason": "공식 Coming Soon 계획을 확인했으나 차종·차량 수·개시일은 미공개. 연결한 도시 명부의 대수도 미확보. 실제 무배치·0대를 뜻하지 않음.",
+      "sources": [
+        {
+          "name": "Tesla 공식 진출 계획",
+          "url": "https://www.tesla.com/robotaxi/safety",
+          "result": "Tesla 공식 Coming Soon 목록. Nevada AVNC의 Clark County 허가 승인과 실제 운행 개시는 구분해야 함."
+        },
+        {
+          "name": "Pioneerlands 공개 도시 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "연결한 공개 집계에서 이 지역의 차종별 대수 미확보."
+        }
+      ]
+    },
+    {
+      "city": "jacksonville",
+      "checkedAt": "2026-10-23T04:55:09.000Z",
+      "reason": "공식 Coming Soon 계획을 확인했으나 차종·차량 수·개시일은 미공개. 연결한 도시 명부의 대수도 미확보. 실제 무배치·0대를 뜻하지 않음.",
+      "sources": [
+        {
+          "name": "Tesla 공식 진출 계획",
+          "url": "https://www.tesla.com/robotaxi/safety",
+          "result": "Tesla 공식 Coming Soon 목록 직접 확인. 개시일·차종·차량 수·영업 여부는 공개하지 않음."
+        },
+        {
+          "name": "Pioneerlands 공개 도시 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "연결한 공개 집계에서 이 지역의 차종별 대수 미확보."
+        }
+      ]
+    },
+    {
+      "city": "san-antonio",
+      "checkedAt": "2026-10-23T04:55:09.000Z",
+      "reason": "공식 Coming Soon 계획을 확인했으나 차종·차량 수·개시일은 미공개. 연결한 도시 명부의 대수도 미확보. 실제 무배치·0대를 뜻하지 않음.",
+      "sources": [
+        {
+          "name": "Tesla 공식 진출 계획",
+          "url": "https://www.tesla.com/robotaxi/safety",
+          "result": "Tesla 공식 Coming Soon 목록 직접 확인. FSD Supervised 소비자 체험·차량 조작원 채용을 무인 상업운행으로 해석하지 않음."
+        },
+        {
+          "name": "Pioneerlands 공개 도시 명부",
+          "url": "https://pioneerlands.org/cybercabtracker",
+          "result": "연결한 공개 집계에서 이 지역의 차종별 대수 미확보."
+        }
+      ]
+    }
+  ],
+  "regionCandidates": []
 }

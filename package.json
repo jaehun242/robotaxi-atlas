@@ -11,7 +11,9 @@
     "collect": "node scripts/collect.mjs",
     "import:csv": "node scripts/import-csv.mjs",
     "geo": "node scripts/prepare-geo.mjs",
-    "collect:statistics": "node scripts/collect-statistics.mjs"
+    "collect:statistics": "node scripts/collect-statistics.mjs",
+    "scenarios": "node scripts/build-scenarios.mjs",
+    "collect:monitoring": "node scripts/collect-monitoring.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

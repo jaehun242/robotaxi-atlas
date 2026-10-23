@@ -36,7 +36,7 @@ test('2030 uses explicit demand growth, not a population multiplier',()=>{
  assert.ok(calculateMarket({...d,growth:'1e100'}).errors.length);
 });
 test('scenario assumptions and results must be ordered consistently',()=>{
- const d=base();d.scenarios[2].marketProductivity='99999';const r=calculateMarket(d);assert.ok(!r.coherent);assert.ok(r.warnings.length);
+ const d=base();d.scenarios[2].marketProductivity='250';d.scenarios[2].teslaProductivity='300';const r=calculateMarket(d);assert.ok(r.coherent);assert.ok(r.results[2].teslaFleet<r.results[1].teslaFleet);assert.ok(r.results[2].paidTrips>r.results[1].paidTrips);
  const reversed=base();reversed.scenarios[1].teslaShare='1';assert.ok(!calculateMarket(reversed).coherent);
  const impossible=base();impossible.scenarios[0].teslaProductivity='.01';assert.ok(calculateMarket(impossible).results[0].errors.some(e=>e.includes('전체 시장')));
  const allTesla=base();allTesla.scenarios=allTesla.scenarios.map(s=>({...s,teslaShare:'100'}));assert.ok(calculateMarket(allTesla).results[0].errors.some(e=>e.includes('100%')));
@@ -73,7 +73,7 @@ test('unchanged statistics preserve source dates; revisions are separate from fl
 });
 test('Census reader selects incorporated place totals, not county fragments',()=>{
  const csv='SUMLEV,STATE,PLACE,NAME,STNAME,POPESTIMATE2025\n'+US_GEOGRAPHIES.flatMap((g,i)=>[`157,${g.state},${g.place},City,State,99999`,`162,${g.state},${g.place},City,State,${1000+i}`]).join('\n');
- const records=censusRecords(csv,'city','https://www2.census.gov/test','2026-10-23');assert.equal(records.length,7);assert.equal(records[0].value,1000);assert.equal(records[0].scopeId,'us:place:4805000');
+ const records=censusRecords(csv,'city','https://www2.census.gov/test','2026-10-23');assert.equal(records.length,US_GEOGRAPHIES.length);assert.equal(records[0].value,1000);assert.equal(records[0].scopeId,'us:place:4805000');
  assert.throws(()=>censusRecords('HTML403','city','url','now'));
 });
 test('403 is not retried; transient failures have a two-attempt limit',async()=>{

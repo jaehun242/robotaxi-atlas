@@ -1,0 +1,5 @@
+[
+ {"code":"GB-DfT","name":"영국·런던 일반 규제 동향","agency":"UK Department for Transport","url":"https://www.gov.uk/government/news/passengers-one-step-closer-to-booking-taxi-and-bus-style-self-driving-vehicles","information":"자율주행 여객 시범서비스 신청 안내. 전체 사업자 제도이며 Tesla 영업 승인 자료가 아님.","parser":"document","researchStatus":"reviewed","countDisclosure":"not_extracted","reason":"London Tesla 차량 수·운행 여부 미확인. 일반 제도 문서를 Tesla 진출 근거로 승격하지 않음.","checkedOn":"2026-10-23"},
+ {"code":"GB-London","name":"런던 자율주행 교통 논의","agency":"London Assembly","url":"https://www.london.gov.uk/rise-robotaxis-london","information":"런던의 로보택시 제도·교통 영향 논의.","parser":"document","researchStatus":"reviewed","countDisclosure":"not_extracted","reason":"Tesla 차종별 차량 수·실제 서비스 증거가 아님.","checkedOn":"2026-10-23"},
+ {"code":"KR-Seoul","name":"서울 자율주행 일반 정책","agency":"서울특별시","url":"https://www.seoul.go.kr/policy/view.do?id=117&lan=","information":"서울시 자율주행 정책·시범사업. 전체 사업자 자료.","parser":"document","researchStatus":"reviewed","countDisclosure":"not_extracted","reason":"전체 사업자의 자율주행 차량을 Tesla 차량으로 간주하지 않음. Tesla 서울 차량 수 미확인.","checkedOn":"2026-10-23"}
+]

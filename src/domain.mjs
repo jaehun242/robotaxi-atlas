@@ -11,8 +11,8 @@ export function validateObservation(o, cities, sources) {
   const errors=[];
   if(typeof o.id!=='string'||!o.id.trim()) errors.push('고유 ID');
   if(!cities.some(c=>c.id===o.city)) errors.push('알 수 없는 도시');
-  if(!MODELS.includes(o.model)) errors.push('차종');
-  if(!['allocated','deployed','testing','commercial'].includes(o.basis)&&!(o.basis==='unknown'&&o.verification==='unverified')) errors.push('집계 기준');
+  if(!MODELS.includes(o.model)&&!(o.model==='unspecified'&&o.verification==='unverified'&&o.basis==='unknown')) errors.push('차종');
+  if(!['allocated','deployed','testing','commercial','observed'].includes(o.basis)&&!(o.basis==='unknown'&&o.verification==='unverified')) errors.push('집계 기준');
   if(!Number.isSafeInteger(o.count)||o.count<0) errors.push('대수는 0 이상의 정수');
   if(!o.scope?.trim()) errors.push('집계 범위');
   if(!sources.some(s=>s.id===o.sourceId)) errors.push('출처 ID');
@@ -39,7 +39,7 @@ export function latest(data, f, at = '9999-12-31T23:59:59Z') {
   const rows=[];
   for(const list of groups.values()) {
     list.sort((a,b)=>Date.parse(b.asOf)-Date.parse(a.asOf));
-    const eligible=list.filter(o=>f.verification==='all'||VERIFIED.has(o.verification));
+    const eligible=list.filter(o=>!['unverified','conflict'].includes(o.verification)&&(f.verification==='all'||VERIFIED.has(o.verification)||(f.verification==='credible'&&o.verification==='unofficial')));
     if(!eligible.length)continue;
     const date=Date.parse(eligible[0].asOf);
     const candidates=list.filter(o=>Date.parse(o.asOf)===date);

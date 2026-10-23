@@ -1,0 +1,81 @@
+{
+  "reviewedOn": "2026-10-23",
+  "householdsPeriod": "2020–2024 ACS 5-year",
+  "households": [
+    {
+      "city": "austin",
+      "value": 456113,
+      "slug": "austincitytexas"
+    },
+    {
+      "city": "dallas",
+      "value": 533915,
+      "slug": "dallascitytexas"
+    },
+    {
+      "city": "houston",
+      "value": 930404,
+      "slug": "houstoncitytexas"
+    },
+    {
+      "city": "miami",
+      "value": 194821,
+      "slug": "miamicityflorida"
+    },
+    {
+      "city": "orlando",
+      "value": 131179,
+      "slug": "orlandocityflorida"
+    },
+    {
+      "city": "tampa",
+      "value": 166278,
+      "slug": "tampacityflorida"
+    },
+    {
+      "city": "san-francisco",
+      "value": 363970,
+      "slug": "sanfranciscocitycalifornia"
+    },
+    {
+      "city": "phoenix",
+      "value": 610442,
+      "slug": "phoenixcityarizona"
+    },
+    {
+      "city": "las-vegas",
+      "value": 247741,
+      "slug": "lasvegascitynevada"
+    },
+    {
+      "city": "jacksonville",
+      "value": 394370,
+      "slug": "jacksonvillecityflorida"
+    },
+    {
+      "city": "san-antonio",
+      "value": 554581,
+      "slug": "sanantoniocitytexas"
+    }
+  ],
+  "london": {
+    "taxiPersonTripsPerDay": 400000,
+    "privatePersonTripsPerDay": 9100000,
+    "asOf": "2024-12-31",
+    "sourceUrl": "https://content.tfl.gov.uk/travel-in-london-2025-consolidated-estimates-of-total-travel-and-mode-shares-acc.pdf",
+    "scope": "Greater London에서 출발·도착 중 하나 이상인 이동, 2024년 7일 평균",
+    "note": "Table 1. 택시/PHV 0.4m, 개인차 운전자 5.7m+승객 3.4m. 0.1m 단위 반올림. 방문·통근 포함."
+  },
+  "seoul": {
+    "allMotorisedPersonTripsPerDay": 31945000,
+    "taxiSharePercent": 2.8,
+    "privateSharePercent": 27.8,
+    "asOf": "2023-12-31",
+    "sourceUrl": "https://news.seoul.go.kr/traffic/archives/289",
+    "scope": "서울시 교통통계 2023년 평일 O/D 수단분담 자료 (등록 택시 실적과 별도)",
+    "note": "동일 자료의 택시와 승용차 수요를 별도 산출. 보행·자전거·대중교통은 로보택시 대상에 넣지 않음. 2023년 평일을 전 요일 수요의 대체자료로 사용하므로 주말 차이 미반영.",
+    "paidMinutesProxy": 18.9,
+    "paidMinutesSourceUrl": "https://news.seoul.go.kr/traffic/archives/307",
+    "paidMinutesAsOf": "2026-01-31"
+  }
+}

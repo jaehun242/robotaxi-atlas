@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-23T04:55:09.000Z",
+  "purpose": "Trusted geographic identities for matching newly announced Tesla Robotaxi regions. Inclusion alone does not establish deployment, public service or a vehicle count.",
+  "discoverySource": "https://www.tesla.com/robotaxi/safety",
+  "discoveryParser": "application/json script[data-info=react-data-tesla_robotaxi_graph_1], data.comingSoonCities[].t_name",
+  "coordinateDefinition": "U.S. Census 2025 Gazetteer INTPTLONG/INTPTLAT representative internal point of legal city, not Tesla service boundary or vehicle GPS.",
+  "coordinateSource": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_Gaz_place_national.zip",
+  "regions": [
+    {
+      "id": "phoenix",
+      "name": "피닉스",
+      "english": "Phoenix",
+      "country": "US",
+      "countryName": "미국",
+      "region": "AZ",
+      "regionName": "애리조나",
+      "coordinates": [-112.090132, 33.572154],
+      "census": {"state": "04", "place": "55000", "cbsa": "38060"},
+      "officialName": "Phoenix city, Arizona",
+      "discoveryNames": ["Phoenix, Arizona", "Phoenix, Arizona."],
+      "evidence": {
+        "type": "planned",
+        "scope": "Phoenix metro; future service geography unspecified",
+        "model": "unspecified",
+        "asOf": null,
+        "publishedAt": null,
+        "checkedAt": "2026-10-23T04:55:09.000Z",
+        "verification": "official_single",
+        "sourceUrl": "https://www.tesla.com/robotaxi/safety",
+        "note": "Tesla 공식 Coming Soon 목록 직접 확인. 개시일·차종·차량 수·영업 여부는 공개하지 않음."
+      },
+      "households": {"value": 610442, "period": "2020-2024", "unit": "households", "sourceUrl": "https://www.census.gov/quickfacts/phoenixcityarizona", "checkedAt": "2026-10-23T04:55:09.000Z"}
+    },
+    {
+      "id": "las-vegas",
+      "name": "라스베이거스",
+      "english": "Las Vegas",
+      "country": "US",
+      "countryName": "미국",
+      "region": "NV",
+      "regionName": "네바다",
+      "coordinates": [-115.264037, 36.233499],
+      "census": {"state": "32", "place": "40000", "cbsa": "29820"},
+      "officialName": "Las Vegas city, Nevada",
+      "discoveryNames": ["Las Vegas, Nevada", "Las Vegas, Nevada."],
+      "evidence": {
+        "type": "planned",
+        "scope": "Las Vegas metro; city-center marker is not the Clark County permit boundary",
+        "model": "unspecified",
+        "asOf": null,
+        "publishedAt": null,
+        "checkedAt": "2026-10-23T04:55:09.000Z",
+        "verification": "official_single",
+        "sourceUrl": "https://www.tesla.com/robotaxi/safety",
+        "note": "Tesla 공식 Coming Soon 목록. Nevada AVNC의 Clark County 허가 승인과 실제 운행 개시는 구분해야 함."
+      },
+      "additionalEvidence": [{
+        "type": "permit_approval",
+        "asOf": "2026-08-20",
+        "publishedAt": "2026-08-21",
+        "scope": "Clark County, Nevada",
+        "sourceUrl": "https://www.business.nv.gov/news-media/press-releases/2026/ntata/nevada-transportation-authority-approves-autonomous-vehicle-network-applications-for-tesla-waymo-and-aviari/",
+        "note": "승인 후 첫 12개월 최대 5,000대는 허가 상한이며 등록·배치·관측·운행 대수가 아님. 운행 개시 전 별도 조건 충족 필요. 공항은 Clark County Department of Aviation 허가 별도 필요."
+      }],
+      "households": {"value": 247741, "period": "2020-2024", "unit": "households", "sourceUrl": "https://www.census.gov/quickfacts/lasvegascitynevada", "checkedAt": "2026-10-23T04:55:09.000Z"}
+    },
+    {
+      "id": "jacksonville",
+      "name": "잭슨빌",
+      "english": "Jacksonville",
+      "country": "US",
+      "countryName": "미국",
+      "region": "FL",
+      "regionName": "플로리다",
+      "coordinates": [-81.661603, 30.336864],
+      "census": {"state": "12", "place": "35000", "cbsa": "27260"},
+      "officialName": "Jacksonville city, Florida",
+      "discoveryNames": ["Jacksonville, Florida", "Jacksonville, Florida."],
+      "evidence": {
+        "type": "planned",
+        "scope": "Jacksonville metro; future service geography unspecified",
+        "model": "unspecified",
+        "asOf": null,
+        "publishedAt": null,
+        "checkedAt": "2026-10-23T04:55:09.000Z",
+        "verification": "official_single",
+        "sourceUrl": "https://www.tesla.com/robotaxi/safety",
+        "note": "Tesla 공식 Coming Soon 목록 직접 확인. 개시일·차종·차량 수·영업 여부는 공개하지 않음."
+      },
+      "households": {"value": 394370, "period": "2020-2024", "unit": "households", "sourceUrl": "https://www.census.gov/quickfacts/jacksonvillecityflorida", "checkedAt": "2026-10-23T04:55:09.000Z"}
+    },
+    {
+      "id": "san-antonio",
+      "name": "샌안토니오",
+      "english": "San Antonio",
+      "country": "US",
+      "countryName": "미국",
+      "region": "TX",
+      "regionName": "텍사스",
+      "coordinates": [-98.524635, 29.462809],
+      "census": {"state": "48", "place": "65000", "cbsa": "41700"},
+      "officialName": "San Antonio city, Texas",
+      "discoveryNames": ["San Antonio, Texas", "San Antonio, Texas."],
+      "evidence": {
+        "type": "planned",
+        "scope": "San Antonio metro; future service geography unspecified",
+        "model": "unspecified",
+        "asOf": null,
+        "publishedAt": null,
+        "checkedAt": "2026-10-23T04:55:09.000Z",
+        "verification": "official_single",
+        "sourceUrl": "https://www.tesla.com/robotaxi/safety",
+        "note": "Tesla 공식 Coming Soon 목록 직접 확인. FSD Supervised 소비자 체험·차량 조작원 채용을 무인 상업운행으로 해석하지 않음."
+      },
+      "households": {"value": 554581, "period": "2020-2024", "unit": "households", "sourceUrl": "https://www.census.gov/quickfacts/sanantoniocitytexas", "checkedAt": "2026-10-23T04:55:09.000Z"}
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "reviewedAt":"2026-10-23T04:25:00Z",
+  "cities":[
+    {"city":"austin","reason":"공식 FAQ는 서비스만 확인하며 도시별 차종 대수 미공개. Pioneerlands의 공개 커뮤니티 명부 집계를 확보. 원문 미열람 사용자 예시와 별도."},
+    {"city":"dallas","reason":"공개 명부 집계 확보. Cybercab 기록은 시험·상업운행 구분 미확인. 공식 서비스 FAQ로 영업 대수를 추론하지 않음."},
+    {"city":"houston","reason":"공개 명부 Model Y 집계 확보. Cybercab 0은 명부 기록 0건이며 실제 무배치 확인이 아님."},
+    {"city":"miami","reason":"공개 명부 집계 확보. 신규 차량 발견 시각이 오래됐으며 전체 실제 차량이나 최신 영업 대수는 미확인."},
+    {"city":"orlando","reason":"공개 명부 집계 확보. Cybercab 0은 명부 기록 0건이며 실제 차량 0대로 확정하지 않음."},
+    {"city":"tampa","reason":"공개 명부 집계 확보. 공식 서비스 안내와 명부 대수의 모집단은 다름."},
+    {"city":"san-francisco","reason":"샌프란시스코시만의 차량 대수 분리 불가. Bay Area 전체 명부를 광역 참고값으로 제공하고 도시·전체 합계에서 제외."},
+    {"city":"london","reason":"Pioneerlands 공개 명부에 London 행이 없고 Tesla 공식 서비스 안내에서 도시별 차종 대수를 확인하지 못함. 0으로 표시하지 않음."},
+    {"city":"seoul","reason":"Pioneerlands 공개 명부에 Seoul 행이 없고 Tesla 공식 서비스 안내에서 도시별 차종 대수를 확인하지 못함. 0으로 표시하지 않음."}
+  ],
+  "sources":[
+    {"name":"Tesla Robotaxi 지원","url":"https://www.tesla.com/support/robotaxi","result":"도시별 정확한 차량 대수 미공개. 예약 작업 요청은 403 가능."},
+    {"name":"Pioneerlands 공개 명부","url":"https://pioneerlands.org/cybercabtracker","result":"공개 지역별 집계 수집 성공. 원자료 Robotaxi Tracker와 동일 계열이므로 두 독립 출처로 세지 않음."},
+    {"name":"Robotaxi Tracker 집계 방법","url":"https://robotaxitracker.com/methodology","result":"커뮤니티 번호판 명부와 목격 기록. 실제 배치·당일 영업의 완전한 전수조사 아님."}
+  ],
+  "userExampleSource":{"url":"https://x.com/ethanmckanna/status/2113068103659819405","state":"HTTP 403 · 원문 읽기 실패","result":"343/312/108은 사용자 제공 미검증 참고값으로만 보존. 기준일·배정/배치/영업 정의 미확인."}
+}

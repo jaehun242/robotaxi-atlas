@@ -5,7 +5,11 @@ export const US_GEOGRAPHIES=[
   {city:'miami',state:'12',place:'45000',cbsa:'33100'},
   {city:'orlando',state:'12',place:'53000',cbsa:'36740'},
   {city:'tampa',state:'12',place:'71000',cbsa:'45300'},
-  {city:'san-francisco',state:'06',place:'67000',cbsa:'41860'}
+  {city:'san-francisco',state:'06',place:'67000',cbsa:'41860'},
+  {city:'phoenix',state:'04',place:'55000',cbsa:'38060'},
+  {city:'las-vegas',state:'32',place:'40000',cbsa:'29820'},
+  {city:'jacksonville',state:'12',place:'35000',cbsa:'27260'},
+  {city:'san-antonio',state:'48',place:'65000',cbsa:'41700'}
 ];
 export function parseTable(text){
   const rows=[];let row=[],cell='',quoted=false;text=text.replace(/^\ufeff/,'');

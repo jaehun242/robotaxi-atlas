@@ -46,11 +46,14 @@ jobs:
         run: node scripts/collect-statistics.mjs
         env:
           FORCE_STATISTICS: ${{ inputs.refresh_statistics || 'false' }}
+      - name: Monitor 50 states and DC, overseas documents, and global discovery feeds
+        run: node scripts/collect-monitoring.mjs
       - name: Save daily data and correction history
         run: |
           git config user.name 'robotaxi-atlas[bot]'
           git config user.email 'robotaxi-atlas[bot]@users.noreply.github.com'
-          git add public/data/atlas.json public/data/statistics.json data/snapshots
+          node scripts/build-scenarios.mjs
+          git add public/data/atlas.json public/data/statistics.json public/data/scenarios.json public/data/monitoring.json data/snapshots
           if ! git diff --cached --quiet; then
             git commit -m 'data: refresh source checks and daily snapshot [skip ci]'
             git push origin HEAD:main
@@ -64,6 +67,7 @@ jobs:
         run: |
           node -e 'const d=require("./public/data/atlas.json"); console.log("Run:", d.runs.at(-1).state); for(const r of d.sourceRuns) console.log(r.sourceId+": "+r.state+" — "+r.message)' >> "$GITHUB_STEP_SUMMARY"
           node -e 'const d=require("./public/data/statistics.json"); console.log("Statistics checked:", d.lastAttemptAt); for(const r of d.checks) console.log(r.sourceId+": "+r.state+" — "+r.message)' >> "$GITHUB_STEP_SUMMARY"
+          node -e 'const d=require("./public/data/monitoring.json"); console.log("US documents:", JSON.stringify(d.summary)); console.log("Global discovery:",JSON.stringify(d.discovery.lastRun)); for(const r of d.registries)console.log(r.id+": "+r.checkState+" total="+r.total)' >> "$GITHUB_STEP_SUMMARY"
   deploy:
     needs: collect-build
     runs-on: ubuntu-latest

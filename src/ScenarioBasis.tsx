@@ -1,0 +1,13 @@
+import type {CityScenarioDefaults,ScenarioDataset,MarketInput,MarketCalculation} from './market-types';
+import {approx} from './estimates';
+const fmt=(n:number)=>n.toLocaleString('ko-KR',{maximumFractionDigits:1});
+export function ScenarioBasis({template,scenarios,input,modified}:{template:CityScenarioDefaults|undefined;scenarios:ScenarioDataset|null;input:MarketInput;modified:boolean}){
+ if(!template)return <p className="model-errors">이 도시의 조사·분석 기본값을 불러오지 못했습니다. 다른 도시·차량 현황은 계속 사용할 수 있습니다.</p>;
+ return <section className="panel scenario-basis"><div className="panel-heading"><div><h3>숫자의 근거 · 공식 통계 / 대체 자료 / 분석 가정</h3><p>{template.confidence} · 원자료 기준 {template.sourceBasis} · 모델 {scenarios?.version}</p></div></div><div className="evidence-grid">{template.evidence.map((e,i)=><article key={i} className={e.kind}><span className="badge">{e.label}</span><b>{e.value}</b><p>{e.note}</p>{e.url&&<a href={e.url} target="_blank" rel="noreferrer">확인한 원자료 ↗</a>}</article>)}</div><div className="default-assumptions"><b>분석 기본 가정 · 관측값이나 Tesla 전망이 아닙니다</b><p>전환율 20 / 50 / 80% · Tesla 수요 점유율 10 / 25 / 40% · 동승 1.3명 · 순수 유발 신규수요 0 / 10 / 25% (분석 가정)<br/>2030: 원자료 기준연도부터 수요 연 2% 성장 + 개인차 이동 중 5%를 추가 전환 대상으로 선택</p><p>기본 수요: 택시·호출차 {fmt(template.taxiPersonTrips)} 사람 이동/일 · 별도 개인차 대상 풀 {fmt(template.privatePersonTrips)} 사람 이동/일. 보행·대중교통 제외.</p><p>현재 계산의 지역: {input.customScope||template.scope}{modified?' · 사용자 수정값 적용 중. 아래 근거는 기본값의 자료이며 수정한 숫자를 공식 통계로 보증하지 않습니다.':''}</p><details><summary>기본 가정 선택 이유와 시간 예산 보기</summary>{scenarios?.assumptions.rationale.map(r=><p key={r}>{r}</p>)}</details></div></section>;
+}
+export function Sensitivity({input,calculation}:{input:MarketInput;calculation:MarketCalculation}){
+ if(!calculation.coherent)return null;
+ const r=calculation.results[1],p=Number(input.scenarios[1].teslaProductivity),paid=r.teslaPaidTrips!;
+ const values=[['기준 가정',r.teslaFleet!],['대상 수요 +20%',Math.ceil(paid*1.2/p)],['생산성 +20%',Math.ceil(paid/(p*1.2))],['생산성 −20%',Math.ceil(paid/(p*.8))]] as const;
+  return <section className="panel sensitivity"><h3>기준 시나리오 민감도 · Tesla 필요 차량</h3><p>한 번에 한 변수만 바꾸고 나머지는 유지합니다. 필요 차량은 수요에 비례하고 생산성에 반비례합니다.</p><div>{values.map(([label,count])=><article key={label}><span>{label}</span><b>{approx(count)}대</b></article>)}</div></section>;
+}

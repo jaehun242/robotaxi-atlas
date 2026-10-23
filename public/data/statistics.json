@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T02:37:53.524Z",
-  "lastAttemptAt": "2026-10-23T03:06:17.542Z",
+  "updatedAt": "2026-10-23T04:58:54.442Z",
+  "lastAttemptAt": "2026-10-23T04:58:54.442Z",
   "populations": [
     {
       "id": "us:place:4805000",
@@ -242,6 +242,126 @@
       "note": "최신 검증 수치: 2026년 2분기. 2026년 8월 통계 발표는 확인했으나 동적 표의 숫자 추출 대기. 발표일 미공개.",
       "firstCollectedAt": "2026-10-23T02:37:53.524Z",
       "changedAt": "2026-10-23T02:37:53.524Z"
+    },
+    {
+      "id": "us:place:0455000",
+      "scopeId": "us:place:0455000",
+      "kind": "city",
+      "name": "Phoenix city, Arizona",
+      "value": 1665481,
+      "asOf": "2025-07-01",
+      "publishedAt": "2026-05-14",
+      "vintage": "Census Vintage 2025",
+      "sourceUrl": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
+      "publisher": "U.S. Census Bureau",
+      "firstCollectedAt": "2026-10-23T04:58:54.442Z",
+      "changedAt": "2026-10-23T04:58:54.442Z",
+      "note": "법정 도시 경계의 추계 인구. 광역권과 합산하지 않음."
+    },
+    {
+      "id": "us:place:3240000",
+      "scopeId": "us:place:3240000",
+      "kind": "city",
+      "name": "Las Vegas city, Nevada",
+      "value": 679817,
+      "asOf": "2025-07-01",
+      "publishedAt": "2026-05-14",
+      "vintage": "Census Vintage 2025",
+      "sourceUrl": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
+      "publisher": "U.S. Census Bureau",
+      "firstCollectedAt": "2026-10-23T04:58:54.442Z",
+      "changedAt": "2026-10-23T04:58:54.442Z",
+      "note": "법정 도시 경계의 추계 인구. 광역권과 합산하지 않음."
+    },
+    {
+      "id": "us:place:1235000",
+      "scopeId": "us:place:1235000",
+      "kind": "city",
+      "name": "Jacksonville city, Florida",
+      "value": 1017689,
+      "asOf": "2025-07-01",
+      "publishedAt": "2026-05-14",
+      "vintage": "Census Vintage 2025",
+      "sourceUrl": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
+      "publisher": "U.S. Census Bureau",
+      "firstCollectedAt": "2026-10-23T04:58:54.442Z",
+      "changedAt": "2026-10-23T04:58:54.442Z",
+      "note": "법정 도시 경계의 추계 인구. 광역권과 합산하지 않음."
+    },
+    {
+      "id": "us:place:4865000",
+      "scopeId": "us:place:4865000",
+      "kind": "city",
+      "name": "San Antonio city, Texas",
+      "value": 1548422,
+      "asOf": "2025-07-01",
+      "publishedAt": "2026-05-14",
+      "vintage": "Census Vintage 2025",
+      "sourceUrl": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
+      "publisher": "U.S. Census Bureau",
+      "firstCollectedAt": "2026-10-23T04:58:54.442Z",
+      "changedAt": "2026-10-23T04:58:54.442Z",
+      "note": "법정 도시 경계의 추계 인구. 광역권과 합산하지 않음."
+    },
+    {
+      "id": "us:cbsa:38060",
+      "scopeId": "us:cbsa:38060",
+      "kind": "metro",
+      "name": "Phoenix-Mesa-Chandler, AZ",
+      "value": 5228938,
+      "asOf": "2025-07-01",
+      "publishedAt": "2026-03-26",
+      "vintage": "Census Vintage 2025",
+      "sourceUrl": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+      "publisher": "U.S. Census Bureau",
+      "firstCollectedAt": "2026-10-23T04:58:54.442Z",
+      "changedAt": "2026-10-23T04:58:54.442Z",
+      "note": "MSA 전체 인구. 중심 도시만의 인구와 다름. 같은 MSA는 한 번만 집계."
+    },
+    {
+      "id": "us:cbsa:29820",
+      "scopeId": "us:cbsa:29820",
+      "kind": "metro",
+      "name": "Las Vegas-Henderson-North Las Vegas, NV",
+      "value": 2407226,
+      "asOf": "2025-07-01",
+      "publishedAt": "2026-03-26",
+      "vintage": "Census Vintage 2025",
+      "sourceUrl": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+      "publisher": "U.S. Census Bureau",
+      "firstCollectedAt": "2026-10-23T04:58:54.442Z",
+      "changedAt": "2026-10-23T04:58:54.442Z",
+      "note": "MSA 전체 인구. 중심 도시만의 인구와 다름. 같은 MSA는 한 번만 집계."
+    },
+    {
+      "id": "us:cbsa:27260",
+      "scopeId": "us:cbsa:27260",
+      "kind": "metro",
+      "name": "Jacksonville, FL",
+      "value": 1785500,
+      "asOf": "2025-07-01",
+      "publishedAt": "2026-03-26",
+      "vintage": "Census Vintage 2025",
+      "sourceUrl": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+      "publisher": "U.S. Census Bureau",
+      "firstCollectedAt": "2026-10-23T04:58:54.442Z",
+      "changedAt": "2026-10-23T04:58:54.442Z",
+      "note": "MSA 전체 인구. 중심 도시만의 인구와 다름. 같은 MSA는 한 번만 집계."
+    },
+    {
+      "id": "us:cbsa:41700",
+      "scopeId": "us:cbsa:41700",
+      "kind": "metro",
+      "name": "San Antonio-New Braunfels, TX",
+      "value": 2813140,
+      "asOf": "2025-07-01",
+      "publishedAt": "2026-03-26",
+      "vintage": "Census Vintage 2025",
+      "sourceUrl": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+      "publisher": "U.S. Census Bureau",
+      "firstCollectedAt": "2026-10-23T04:58:54.442Z",
+      "changedAt": "2026-10-23T04:58:54.442Z",
+      "note": "MSA 전체 인구. 중심 도시만의 인구와 다름. 같은 MSA는 한 번만 집계."
     }
   ],
   "profiles": [
@@ -293,6 +413,34 @@
       "metroScopeId": "us:cbsa:41860",
       "note": "도시와 MSA를 별도로 표시. 서비스 구역 인구는 미확인.",
       "trafficNote": "SFCTA 2016년 TNC 평일 기록은 현재 수요 기본값으로 부적절하며 최신 전체 수요 미확보."
+    },
+    {
+      "city": "phoenix",
+      "cityScopeId": "us:place:0455000",
+      "metroScopeId": "us:cbsa:38060",
+      "note": "도시와 MSA를 별도로 표시. 서비스 구역 인구는 미확인.",
+      "trafficNote": "현재 도시 전체 택시·호출차 일일 수요를 검증하지 못함. 인구 비율 기본값 없음."
+    },
+    {
+      "city": "las-vegas",
+      "cityScopeId": "us:place:3240000",
+      "metroScopeId": "us:cbsa:29820",
+      "note": "도시와 MSA를 별도로 표시. 서비스 구역 인구는 미확인.",
+      "trafficNote": "현재 도시 전체 택시·호출차 일일 수요를 검증하지 못함. 인구 비율 기본값 없음."
+    },
+    {
+      "city": "jacksonville",
+      "cityScopeId": "us:place:1235000",
+      "metroScopeId": "us:cbsa:27260",
+      "note": "도시와 MSA를 별도로 표시. 서비스 구역 인구는 미확인.",
+      "trafficNote": "현재 도시 전체 택시·호출차 일일 수요를 검증하지 못함. 인구 비율 기본값 없음."
+    },
+    {
+      "city": "san-antonio",
+      "cityScopeId": "us:place:4865000",
+      "metroScopeId": "us:cbsa:41700",
+      "note": "도시와 MSA를 별도로 표시. 서비스 구역 인구는 미확인.",
+      "trafficNote": "현재 도시 전체 택시·호출차 일일 수요를 검증하지 못함. 인구 비율 기본값 없음."
     },
     {
       "city": "london",
@@ -349,17 +497,17 @@
   "checks": [
     {
       "sourceId": "census-city",
-      "checkedAt": "2026-10-23T03:06:17.542Z",
+      "checkedAt": "2026-10-23T04:58:54.442Z",
       "state": "ok",
       "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
-      "message": "7개 도시 통계 확인. 값·빈티지가 같으면 통계 날짜를 갱신하지 않음."
+      "message": "11개 도시 통계 확인. 값·빈티지가 같으면 통계 날짜를 갱신하지 않음."
     },
     {
       "sourceId": "census-metro",
-      "checkedAt": "2026-10-23T03:06:17.542Z",
+      "checkedAt": "2026-10-23T04:58:54.442Z",
       "state": "ok",
       "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
-      "message": "7개 MSA 통계 확인. 값·빈티지가 같으면 통계 날짜를 갱신하지 않음."
+      "message": "11개 MSA 통계 확인. 값·빈티지가 같으면 통계 날짜를 갱신하지 않음."
     }
   ],
   "revisions": [

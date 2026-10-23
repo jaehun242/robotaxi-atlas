@@ -15,9 +15,9 @@ id,city,model,basis,count,asOf,sourceId,sourceUrl,scope,verification,locked,note
 | 열 | 입력값 |
 |---|---|
 | id | 고유한 기록 이름. 같은 기록 정정 시 같은 ID |
-| city | austin, dallas, houston, miami, orlando, tampa, san-francisco, london, seoul |
-| model | cybercab / model_y |
-| basis | allocated(배정), deployed(현지 배치), testing(시험), commercial(영업). 불명이면 unknown + unverified |
+| city | atlas.json의 cities에 등록된 ID. 현재 13개 도시 |
+| model | cybercab / model_y. 원문에서 차종이 불명이면 unspecified + unknown + unverified만 허용 |
+| basis | allocated(배정), deployed(현지 배치), observed(추적 명부·관측), testing(시험), commercial(영업). 불명이면 unknown + unverified |
 | count | 출처에서 확인된 0 이상의 정수. 모르면 빈 수치를 등록하지 말고 소식/서비스에 기록 |
 | asOf | 근거의 기준 시각. `2026-10-23T08:00:00+09:00`처럼 시차 포함. 미확인이면 빈칸 + unverified |
 | sourceId | manual 또는 sources에 등록된 출처 ID |
@@ -31,7 +31,7 @@ id,city,model,basis,count,asOf,sourceId,sourceUrl,scope,verification,locked,note
 
 독립 복수 검증은 JSON의 `independentGroups` 배열 또는 CSV의 `independentGroups` 열에서 `tesla|regulator`처럼 서로 다른 원출처 그룹 2개 이상이 필요합니다. 언론의 같은 게시물 재인용 2건은 같은 그룹입니다. 검증 수준은 사람이 원문을 검토한 분류이며 AI가 자동으로 공식 검증을 부여하지 않습니다.
 
-미검증이며 기준일이 없는 사용자 예시 343·312·108은 모든 합계에서 제외됩니다. 기준일과 집계 기준을 추측해 채우지 않습니다. 원문 기준이 모호하면 입력을 보류하거나 unverified로 유지하세요.
+미검증이며 기준일이 없는 사용자 예시 343·312·108은 모든 합계에서 제외됩니다. 오스틴 343·312는 차종도 unspecified로 보존합니다. 기준일과 집계 기준을 추측해 채우지 않습니다. 원문 기준이 모호하면 입력을 보류하거나 unverified로 유지하세요.
 
 ## 정정과 충돌
 
@@ -53,7 +53,10 @@ asOf는 실제 근거의 시각, collectedAt은 최초 수집 시각입니다. �
 - Tesla Q3 PDF / California DMV: 접근·내용 해시 변경 감지. DMV 허가를 차량 수나 특정 도시의 운행으로 변환하지 않음. PDF 차량 수 자동 추출 미연결.
 - 새로운 Tesla 공시는 `sources`와 수집 어댑터에 추가해야 함. 현재 Q3 공시 URL은 고정된 문서이며 새 분기 공시를 자동 발견하지 않음.
 - X 원문: 403으로 미열람. 공식 API/로그인 미연결.
-- RobotaxiTracker: 원문 집계 방법론은 조사했으나 지속 사용 가능한 공개 API·재사용 조건 미확인.
-- TxDMV 등록부: 브라우저 렌더링 필요; 자동 수치 추출 미연결. 주 등록 수치를 도시별로 배분하지 않음.
+- RobotaxiTracker 직접 API: 자동 접근 금지 403. 이를 우회하지 않음. Pioneerlands 공개 미러의 지역별 집계 뷰를 수집. 누적 명부이며 최근 30일 영업 차량 수가 아님. Bay Area는 샌프란시스코 시 대수로 편입하지 않음.
+- TxDMV 등록부: 공식 UI가 사용하는 공개 JSON을 페이지별 수집. VIN 중복 제거·차종 별칭 정규화 후 집계만 저장. VIN 원문은 저장·배포하지 않음. 주 등록 수치를 도시별로 배분하지 않음.
+- FSD Database: 공개 집계 JSON. 같은 TxDMV 자료를 사용하므로 독립 검증으로 세지 않음.
+- Tesla 안전 페이지: 정상 조회 때 확인한 신규 계획은 원래 확인일로 보존. 이후 403은 실패로 기록. 계획을 운행으로 바꾸지 않음.
+- 51개 관할 문서·해외 문서·공개 RSS: [점검 범위](COVERAGE.md)와 public/data/monitoring.json. 모든 주의 수치·서비스 변경 자동 해석까지 완성된 것은 아님.
 
 유료 API, 프록시, AI 서비스는 사용하지 않습니다. 사이트에는 API 키가 필요 없습니다. GitHub Actions가 자동 제공하는 GITHUB_TOKEN만 사용합니다. 접근 차단을 우회하거나 세션 쿠키를 저장하지 않습니다.

@@ -1,0 +1,1803 @@
+{
+  "version": "2.0.0",
+  "reviewedOn": "2026-10-23",
+  "defaults": {
+    "austin": {
+      "current": {
+        "city": "austin",
+        "scopeId": "us:resident-travel:austin",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "11067.679054038197",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-austin",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "austin",
+        "scopeId": "us:resident-travel:austin",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "11067.679054038197",
+        "additional": "111388.44922580782",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-austin",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "456,113가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/austincitytexas/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.02427, 개인차 4.884 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 33건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "21.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 11067.679054038197,
+      "privatePersonTrips": 2227768.9845161564,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "dallas": {
+      "current": {
+        "city": "dallas",
+        "scopeId": "us:resident-travel:dallas",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "19511.741723873773",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-dallas",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "dallas",
+        "scopeId": "us:resident-travel:dallas",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "19511.741723873773",
+        "additional": "116080.51360593467",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-dallas",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "533,915가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/dallascitytexas/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.03654, 개인차 4.348 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 61건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "29.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 19511.741723873773,
+      "privatePersonTrips": 2321610.272118693,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "houston": {
+      "current": {
+        "city": "houston",
+        "scopeId": "us:resident-travel:houston",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "34001.29711069937",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-houston",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "houston",
+        "scopeId": "us:resident-travel:houston",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "34001.29711069937",
+        "additional": "202282.71200662284",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-houston",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "930,404가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/houstoncitytexas/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.03654, 개인차 4.348 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 61건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "29.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 34001.29711069937,
+      "privatePersonTrips": 4045654.2401324566,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "miami": {
+      "current": {
+        "city": "miami",
+        "scopeId": "us:resident-travel:miami",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "7119.667052596035",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-miami",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "miami",
+        "scopeId": "us:resident-travel:miami",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "7119.667052596035",
+        "additional": "42356.78289844226",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-miami",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "194,821가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/miamicityflorida/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.03654, 개인차 4.348 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 61건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "29.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 7119.667052596035,
+      "privatePersonTrips": 847135.6579688451,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "orlando": {
+      "current": {
+        "city": "orlando",
+        "scopeId": "us:resident-travel:orlando",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "3183.086363751256",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-orlando",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "orlando",
+        "scopeId": "us:resident-travel:orlando",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "3183.086363751256",
+        "additional": "32035.538081554885",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-orlando",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "131,179가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/orlandocityflorida/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.02427, 개인차 4.884 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 33건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "21.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 3183.086363751256,
+      "privatePersonTrips": 640710.7616310976,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "tampa": {
+      "current": {
+        "city": "tampa",
+        "scopeId": "us:resident-travel:tampa",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "6076.572844670562",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-tampa",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "tampa",
+        "scopeId": "us:resident-travel:tampa",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "6076.572844670562",
+        "additional": "36151.13949105682",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-tampa",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "166,278가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/tampacityflorida/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.03654, 개인차 4.348 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 61건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "29.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 6076.572844670562,
+      "privatePersonTrips": 723022.7898211364,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "san-francisco": {
+      "current": {
+        "city": "san-francisco",
+        "scopeId": "us:resident-travel:san-francisco",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "13301.159613868007",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-san-francisco",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "san-francisco",
+        "scopeId": "us:resident-travel:san-francisco",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "13301.159613868007",
+        "additional": "79132.11754146642",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-san-francisco",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "363,970가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/sanfranciscocitycalifornia/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.03654, 개인차 4.348 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 61건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "29.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 13301.159613868007,
+      "privatePersonTrips": 1582642.3508293282,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "phoenix": {
+      "current": {
+        "city": "phoenix",
+        "scopeId": "us:resident-travel:phoenix",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "22308.394859490654",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-phoenix",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "phoenix",
+        "scopeId": "us:resident-travel:phoenix",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "22308.394859490654",
+        "additional": "132718.5430014777",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-phoenix",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "610,442가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/phoenixcityarizona/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.03654, 개인차 4.348 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 61건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "29.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 300만 이상 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 22308.394859490654,
+      "privatePersonTrips": 2654370.860029554,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "29.584278302585112",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "las-vegas": {
+      "current": {
+        "city": "las-vegas",
+        "scopeId": "us:resident-travel:las-vegas",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "6011.488110460516",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-las-vegas",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "las-vegas",
+        "scopeId": "us:resident-travel:las-vegas",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "6011.488110460516",
+        "additional": "60501.42354997742",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-las-vegas",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "247,741가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/lasvegascitynevada/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.02427, 개인차 4.884 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 33건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "21.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 6011.488110460516,
+      "privatePersonTrips": 1210028.4709995484,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "jacksonville": {
+      "current": {
+        "city": "jacksonville",
+        "scopeId": "us:resident-travel:jacksonville",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "9569.472013604181",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-jacksonville",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "jacksonville",
+        "scopeId": "us:resident-travel:jacksonville",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "9569.472013604181",
+        "additional": "96310.04317171803",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-jacksonville",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "394,370가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/jacksonvillecityflorida/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.02427, 개인차 4.884 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 33건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "21.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 9569.472013604181,
+      "privatePersonTrips": 1926200.8634343606,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "san-antonio": {
+      "current": {
+        "city": "san-antonio",
+        "scopeId": "us:resident-travel:san-antonio",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "13457.026038432488",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-san-antonio",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "san-antonio",
+        "scopeId": "us:resident-travel:san-antonio",
+        "customScope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "13457.026038432488",
+        "additional": "135435.55557525816",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-san-antonio",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 통계",
+          "value": "554,581가구 · 2020–2024 ACS 5-year",
+          "url": "https://www.census.gov/quickfacts/fact/table/sanantoniocitytexas/HSD410224",
+          "note": "행정시 거주 가구. 인구를 임의 고정 비율로 바꾸지 않음. 가구 수는 공식 페이지 수동 검토 값이며 API 자동 수집 미연결."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 자료",
+          "value": "택시·호출차 0.02427, 개인차 4.884 사람 이동/가구·일",
+          "url": "https://nhts.ornl.gov/downloads",
+          "note": "NHTS 2022 전국 동일 MSA 규모의 가중 평균. 현지 도시 관측값 아님. 택시·TNC 표본 33건으로 불확실성이 크고 2022년 팬데믹 영향·관광객 차이·최신 수요 증가 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "21.58분/건",
+          "url": "https://nhts.ornl.gov/media/2022/doc/codebook.pdf",
+          "note": "같은 MSA 규모 택시/TNC 사람 이동시간을 유료 운행시간의 대체자료로 사용. 결측 음수 제외. 픽업·대기 포함 여부의 조사상 한계 존재."
+        }
+      ],
+      "scope": "도시 거주 가구의 이동 수요 · NHTS MSA 규모 100만–300만 미만 평균 적용",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 13457.026038432488,
+      "privatePersonTrips": 2708711.111505163,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "21.58163574032361",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 통계 + MSA 규모 대체 추정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "london": {
+      "current": {
+        "city": "london",
+        "scopeId": "uk:transport:tfl-london-touching-trips",
+        "customScope": "Greater London에서 출발·도착 중 하나 이상인 이동, 2024년 7일 평균",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "400000",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-london",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.75",
+            "teslaProductivity": "18.75",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.75",
+            "teslaProductivity": "18.75",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.75",
+            "teslaProductivity": "18.75",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "london",
+        "scopeId": "uk:transport:tfl-london-touching-trips",
+        "customScope": "Greater London에서 출발·도착 중 하나 이상인 이동, 2024년 7일 평균",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "400000",
+        "additional": "455000",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-london",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.75",
+            "teslaProductivity": "18.75",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.75",
+            "teslaProductivity": "18.75",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.75",
+            "teslaProductivity": "18.75",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 이동 통계",
+          "value": "택시/PHV 약 400,000 · 개인차 약 9,100,000 사람 이동/일",
+          "url": "https://content.tfl.gov.uk/travel-in-london-2025-consolidated-estimates-of-total-travel-and-mode-shares-acc.pdf",
+          "note": "Table 1. 택시/PHV 0.4m, 개인차 운전자 5.7m+승객 3.4m. 0.1m 단위 반올림. 방문·통근 포함."
+        },
+        {
+          "kind": "assumption",
+          "label": "운행시간 분석 가정",
+          "value": "유료 운행 30분/건",
+          "url": null,
+          "note": "같은 지역·수단의 평균 운행시간을 확보하지 못해 설명 가능한 시간 예산 가정으로 설정. 관측 통계 아님."
+        }
+      ],
+      "scope": "Greater London에서 출발·도착 중 하나 이상인 이동, 2024년 7일 평균",
+      "sourceBasis": "2024-12-31",
+      "taxiPersonTrips": 400000,
+      "privatePersonTrips": 9100000,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "30",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "30",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 지역 이동 통계 + 분석 가정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    },
+    "seoul": {
+      "current": {
+        "city": "seoul",
+        "scopeId": "kr:transport:seoul-od-2023",
+        "customScope": "서울시 교통통계 2023년 평일 O/D 수단분담 자료 (등록 택시 실적과 별도)",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2023-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "894460",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-seoul",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "25.075987841945288",
+            "teslaProductivity": "25.075987841945288",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "25.075987841945288",
+            "teslaProductivity": "25.075987841945288",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "25.075987841945288",
+            "teslaProductivity": "25.075987841945288",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "future": {
+        "city": "seoul",
+        "scopeId": "kr:transport:seoul-od-2023",
+        "customScope": "서울시 교통통계 2023년 평일 O/D 수단분담 자료 (등록 택시 실적과 별도)",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2023-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "894460",
+        "additional": "444035.5",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "default-seoul",
+        "sourceIncludesExternal": true,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "25.075987841945288",
+            "teslaProductivity": "25.075987841945288",
+            "inducedDemand": "0"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "25.075987841945288",
+            "teslaProductivity": "25.075987841945288",
+            "inducedDemand": "10"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "25.075987841945288",
+            "teslaProductivity": "25.075987841945288",
+            "inducedDemand": "25"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "official",
+          "label": "공식 이동 통계",
+          "value": "31,945,000 사람 이동/평일 × 택시 2.8% / 승용차 27.8%",
+          "url": "https://news.seoul.go.kr/traffic/archives/289",
+          "note": "동일 자료의 택시와 승용차 수요를 별도 산출. 보행·자전거·대중교통은 로보택시 대상에 넣지 않음. 2023년 평일을 전 요일 수요의 대체자료로 사용하므로 주말 차이 미반영."
+        },
+        {
+          "kind": "proxy",
+          "label": "대체 운행시간",
+          "value": "18.9분/건 · 2026-01-31 등록 택시 실적",
+          "url": "https://news.seoul.go.kr/traffic/archives/307",
+          "note": "2023 O/D 수요와 연도·차량 모집단이 다름. 로보택시 생산성 실측치가 아닌 시간 대체자료."
+        }
+      ],
+      "scope": "서울시 교통통계 2023년 평일 O/D 수단분담 자료 (등록 택시 실적과 별도)",
+      "sourceBasis": "2023-12-31",
+      "taxiPersonTrips": 894460,
+      "privatePersonTrips": 8880710,
+      "marketBudget": {
+        "hours": "20",
+        "paidMinutes": "18.9",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "teslaBudget": {
+        "hours": "20",
+        "paidMinutes": "18.9",
+        "pickupMinutes": "6",
+        "emptyMinutes": "8",
+        "chargeMinutes": "120",
+        "cleanMinutes": "45",
+        "maintenanceMinutes": "30",
+        "otherDowntimeMinutes": "180"
+      },
+      "confidence": "공식 지역 이동 통계 + 분석 가정",
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+    }
+  },
+  "assumptions": {
+    "conversion": [
+      20,
+      50,
+      80
+    ],
+    "teslaDemandShare": [
+      10,
+      25,
+      40
+    ],
+    "occupancy": 1.3,
+    "futurePrivateEligiblePercent": 5,
+    "annualDemandGrowth": 2,
+    "rationale": [
+      "전환율 20/50/80%: 기존 택시·호출차 수요에 대한 낮음/중간/높음의 분석 범위이며 회사 전망이 아님.",
+      "Tesla 수요 점유율 10/25/40%: 복수 사업자가 공존하는 경쟁 구도를 보는 분석 가정.",
+      "평균 동승 1.3명: 1인·일행 탑승의 변환 가정. 관측 평균 아님.",
+      "2030 확장은 기존 택시·호출차와 겹치지 않는 개인차 이동 중 5%를 추가 대상으로 설정.",
+      "연간 수요 성장 2%는 원자료 기준연도부터 적용하는 가정이며 인구 예측을 다시 곱하지 않음.",
+      "보유차 20시간 계획 중 충전120·청소45·정비30·기타비가동180분 제외. 건당 픽업6·추가 공차8분. 시장/Tesla에 처음에는 같은 시간 가정을 적용하고 각각 수정 가능.",
+      "피크 대기시간·교통 혼잡·수요의 시간대 집중은 반영하지 않았으며 최소 서비스 차량이나 배치 계획을 의미하지 않음.",
+      "순수 유발 신규수요 0/10/25%: 저렴한 요금 때문에 기존 이동의 대체가 아닌 추가 운행이 생긴다는 분석 가정. 가격·탄력성 실측 근거는 미확보. 기존 전환 운행에 한 번만 적용하며 개인차 전환·연 2% 기초수요 성장에 이미 포함된 이동을 다시 세지 않는다고 가정."
+    ],
+    "inducedDemand": [
+      0,
+      10,
+      25
+    ]
+  }
+}

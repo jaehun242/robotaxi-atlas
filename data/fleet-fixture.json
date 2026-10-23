@@ -1,0 +1,82 @@
+{
+  "source": "https://pioneerlands.org/cybercabtracker",
+  "retrievedAt": "2026-10-23T04:19:58.214Z",
+  "rows": [
+    {
+      "city": "Dallas",
+      "total": 73,
+      "cybercab": 1,
+      "new_24h": 0,
+      "new_7d": 1,
+      "newest": "2026-10-17T21:24:04+00:00"
+    },
+    {
+      "city": "Austin",
+      "total": 421,
+      "cybercab": 195,
+      "new_24h": 3,
+      "new_7d": 10,
+      "newest": "2026-10-23T01:33:51+00:00"
+    },
+    {
+      "city": "Orlando",
+      "total": 8,
+      "cybercab": 0,
+      "new_24h": 0,
+      "new_7d": 0,
+      "newest": "2026-10-11T18:20:11+00:00"
+    },
+    {
+      "city": "Unassigned",
+      "total": 7,
+      "cybercab": 0,
+      "new_24h": 0,
+      "new_7d": 0,
+      "newest": "2026-02-17T00:08:03+00:00"
+    },
+    {
+      "city": "Bay Area",
+      "total": 747,
+      "cybercab": 0,
+      "new_24h": 0,
+      "new_7d": 0,
+      "newest": "2026-10-14T22:37:34+00:00"
+    },
+    {
+      "city": "Houston",
+      "total": 33,
+      "cybercab": 0,
+      "new_24h": 0,
+      "new_7d": 0,
+      "newest": "2026-10-12T22:15:09+00:00"
+    },
+    {
+      "city": "Tampa",
+      "total": 25,
+      "cybercab": 0,
+      "new_24h": 1,
+      "new_7d": 3,
+      "newest": "2026-10-22T14:41:17+00:00"
+    },
+    {
+      "city": "Miami",
+      "total": 5,
+      "cybercab": 0,
+      "new_24h": 0,
+      "new_7d": 0,
+      "newest": "2026-09-18T12:00:00+00:00"
+    }
+  ],
+  "runs": [
+    {
+      "ran_at": "2026-10-23T04:07:05.471202+00:00",
+      "cybercab_seen": 195,
+      "ok": true
+    },
+    {
+      "ran_at": "2026-10-23T03:07:03.775946+00:00",
+      "cybercab_seen": 195,
+      "ok": true
+    }
+  ]
+}

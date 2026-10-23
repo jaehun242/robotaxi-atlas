@@ -1,5 +1,5 @@
 import {kstDay} from './domain.mjs';
-export const MODEL_VERSION='1.0.0';
+export const MODEL_VERSION='2.0.0';
 export const SCENARIO_NAMES=['보수적','기준','공격적'];
 export const numeric=v=>v===null||v===undefined||String(v).trim()===''?null:Number.isFinite(Number(v))?Number(v):null;
 export function blankMarket(city,scopeId){return {city,scopeId,customScope:'',market:'replacement',horizon:'current',referenceDate:'',unit:'vehicle_trips',occupancy:'',replacement:'',additional:'',additionalDistinct:false,externalEnabled:false,external:'',externalDistinct:false,growth:'',mix:'',sourceDemandId:null,sourceIncludesExternal:false,scenarios:SCENARIO_NAMES.map(()=>({conversion:'',teslaShare:'',marketProductivity:'',teslaProductivity:''}))};}
@@ -37,22 +37,25 @@ export function calculateMarket(input){
   const mix=numeric(input.mix);if(input.mix.trim()&&(mix===null||mix<0||mix>100))errors.push('Cybercab 비중은 0~100%입니다.');
   const results=SCENARIO_NAMES.map((name,i)=>{
     const s=input.scenarios[i],localErrors=[];if(!s)return {name,errors:['시나리오 입력 없음'],paidTrips:null,teslaPaidTrips:null,marketFleet:null,teslaFleet:null,cybercab:null,modelY:null};
-    const conversion=numeric(s.conversion),share=numeric(s.teslaShare),marketP=numeric(s.marketProductivity),teslaP=numeric(s.teslaProductivity);
+    const conversion=numeric(s.conversion),share=numeric(s.teslaShare),marketP=numeric(s.marketProductivity),teslaP=numeric(s.teslaProductivity),induced=numeric(s.inducedDemand??'0');
     if(conversion===null||conversion<0||conversion>100)localErrors.push('로보택시 전환율 0~100% 필요');
     if(share===null||share<0||share>100)localErrors.push('Tesla 수요 점유율 0~100% 필요');
     if(marketP===null||marketP<=0||teslaP===null||teslaP<=0)localErrors.push('전체 시장과 Tesla의 보유 차량 생산성을 각각 0 초과로 입력');
-    const paid=target===null||localErrors.length?null:target*conversion/100,teslaPaid=paid===null?null:paid*share/100;
+    if(induced===null||induced<0||induced>100)localErrors.push('추가 유발 수요는 기존 전환 운행 대비 0~100%로 입력');
+    const basePaid=target===null||localErrors.length?null:target*conversion/100;
+    const inducedPaid=basePaid===null?null:basePaid*induced/100;
+    const paid=basePaid===null?null:basePaid+inducedPaid,teslaPaid=paid===null?null:paid*share/100;
     const marketFleet=paid===null?null:Math.ceil(paid/marketP),teslaFleet=teslaPaid===null?null:Math.ceil(teslaPaid/teslaP);
     if(marketFleet!==null&&(!Number.isSafeInteger(marketFleet)||!Number.isSafeInteger(teslaFleet)))localErrors.push('필요 차량 수가 안전하게 계산 가능한 정수 범위를 초과합니다.');
     if(teslaFleet!==null&&teslaFleet>marketFleet)localErrors.push('Tesla 차량 수가 전체 시장보다 큽니다. 점유율·평균 생산성 가정이 모순됩니다.');
     if(paid>0&&share<100&&teslaFleet===marketFleet)localErrors.push('Tesla 이외 수요를 처리할 차량이 남지 않습니다. 반올림·생산성 가정을 확인해 주세요.');
     if(paid>0&&share===100&&marketP!==teslaP)localErrors.push('Tesla 점유율 100%이면 전체 시장과 Tesla 생산성이 같아야 합니다.');
     const cybercab=teslaFleet!==null&&mix!==null?Math.round(teslaFleet*mix/100):null;
-    return {name,paidTrips:paid,teslaPaidTrips:teslaPaid,marketFleet,teslaFleet,cybercab,modelY:cybercab===null?null:teslaFleet-cybercab,errors:localErrors};
+    return {name,paidTrips:paid,basePaidTrips:basePaid,inducedPaidTrips:inducedPaid,teslaPaidTrips:teslaPaid,marketFleet,teslaFleet,cybercab,modelY:cybercab===null?null:teslaFleet-cybercab,errors:localErrors};
   });
   if(results.every(r=>r.marketFleet!==null&&r.teslaFleet!==null)){
     for(let i=1;i<3;i++){
-      if(results[i].marketFleet<results[i-1].marketFleet||results[i].teslaFleet<results[i-1].teslaFleet)warnings.push(`${SCENARIO_NAMES[i-1]} → ${SCENARIO_NAMES[i]} 필요 차량 수가 감소합니다. 시나리오 명칭과 생산성 가정을 다시 확인해 주세요.`);
+      if(results[i].paidTrips<results[i-1].paidTrips)warnings.push(`${SCENARIO_NAMES[i-1]} → ${SCENARIO_NAMES[i]} 유료 운행 수요가 감소합니다. 수요·보급 수준을 기준으로 정의한 명칭과 가정을 확인해 주세요.`);
       if(numeric(input.scenarios[i].conversion)<numeric(input.scenarios[i-1].conversion)||numeric(input.scenarios[i].teslaShare)<numeric(input.scenarios[i-1].teslaShare))warnings.push('보수적 → 기준 → 공격적 전환율·Tesla 점유율 순서가 일치하지 않습니다.');
     }
   }

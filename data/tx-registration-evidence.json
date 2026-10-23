@@ -1,0 +1,61 @@
+{
+  "kind": "research_snapshot",
+  "checkedOn": "2026-10-23",
+  "sourceId": "txdmv-official-tesla-roster",
+  "sourceName": "Texas Department of Motor Vehicles - Truck Stop",
+  "sourceURL": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+  "programURL": "https://www.txdmv.gov/AVprogram",
+  "urlPaginationPrefix": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles?limit=100&offset=",
+  "companyId": "81edcff1-8a6e-4ed0-be1f-60668515e223",
+  "jurisdiction": "US-TX",
+  "scope": "Texas statewide",
+  "basis": "registered",
+  "verification": "official_single_source",
+  "collectedAt": "2026-10-23T04:50:31.456Z",
+  "sourceAsOf": null,
+  "sourceAsOfReason": "공식 응답에 자료 기준 시각 필드가 없다. collectedAt은 공개 현재 명부를 조회한 시각이며 차량의 최근 운행 확인 시각이 아니다.",
+  "recordSchema": {
+    "vehicles": "array",
+    "total": "integer",
+    "vehicleFields": [
+      "vin",
+      "make",
+      "model",
+      "modelYear"
+    ]
+  },
+  "reportedTotal": 858,
+  "recordCount": 858,
+  "uniqueVINCount": 858,
+  "duplicateVINCount": 0,
+  "rawModelCounts": {
+    "Model Y": 507,
+    "Cybercab": 321,
+    "cybercab": 30
+  },
+  "normalizedModelCounts": {
+    "Cybercab": 351,
+    "modelY": 507
+  },
+  "normalization": "make Tesla 대소문자 무시, model Cybercab/cybercab 대소문자 별칭 통합, Model Y 공백 정규화; VIN 중복은 메모리에서만 제거",
+  "pageSize": 100,
+  "pagesRead": 9,
+  "httpStatus": 200,
+  "vehicleIdentifiersStored": false,
+  "limitations": [
+    "등록·허가 명부이며 현지 배치·시험·상업운행 대수와 같지 않다.",
+    "공식 명부에는 차량별 소속 도시가 없으므로 Austin·Dallas 등에 나누어 배정하지 않는다.",
+    "동일 총계라도 페이지 수집 중 구성 변경 가능성이 있어 배포 수집기는 합계·중복·응답 구조를 검증해야 한다."
+  ],
+  "independentMirrorCrossCheck": {
+    "source": "https://fsddb.com/robotaxi.json?operator=tesla-robotaxi-llc&service=all",
+    "reportedTotal": 858,
+    "normalizedModelCounts": {
+      "Cybercab": 351,
+      "modelY": 507
+    },
+    "lastSyncedAt": "2026-10-22T21:47:59-07:00",
+    "independentEvidence": false,
+    "reason": "FSD Database도 동일 TxDMV 명부의 재배포이므로 독립된 두 원천 확인으로 계산하지 않는다."
+  }
+}
