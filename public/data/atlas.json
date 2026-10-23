@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T03:06:17.474Z",
-  "lastAttemptAt": "2026-10-23T03:06:16.185Z",
-  "lastSuccessAt": "2026-10-23T03:06:16.185Z",
+  "updatedAt": "2026-10-23T03:09:18.104Z",
+  "lastAttemptAt": "2026-10-23T03:09:17.448Z",
+  "lastSuccessAt": "2026-10-23T03:09:17.448Z",
   "nextUpdateAt": "2026-10-23T23:00:00.000Z",
   "cities": [
     {
@@ -504,29 +504,29 @@
     {
       "sourceId": "tesla-support",
       "state": "failed",
-      "checkedAt": "2026-10-23T03:06:16.185Z",
+      "checkedAt": "2026-10-23T03:09:17.448Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-cybercab",
       "state": "failed",
-      "checkedAt": "2026-10-23T03:06:16.185Z",
+      "checkedAt": "2026-10-23T03:09:17.448Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-ir-q3",
       "state": "failed",
-      "checkedAt": "2026-10-23T03:06:16.185Z",
+      "checkedAt": "2026-10-23T03:09:17.448Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "ca-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-23T03:06:16.185Z",
-      "lastSuccessAt": "2026-10-23T03:06:16.185Z",
+      "checkedAt": "2026-10-23T03:09:17.448Z",
+      "lastSuccessAt": "2026-10-23T03:09:17.448Z",
       "message": "허가 명단 접근 성공. 도시별 대수·서비스로 변환하지 않음.",
       "contentHash": "9e3a3cf87f2ed3d050e1a941b015c196c131be2f06d9ffefcc67955604705ea2"
     },
@@ -563,8 +563,8 @@
   "runs": [
     {
       "id": "daily-2026-10-23",
-      "startedAt": "2026-10-23T03:06:16.185Z",
-      "completedAt": "2026-10-23T03:06:17.474Z",
+      "startedAt": "2026-10-23T03:09:17.448Z",
+      "completedAt": "2026-10-23T03:09:18.104Z",
       "state": "partial"
     }
   ],
