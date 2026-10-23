@@ -9,5 +9,6 @@ const [method='GET',path='/repos/jaehun242/robotaxi-atlas',body]=process.argv.sl
 if(!path.startsWith('/repos/jaehun242/robotaxi-atlas')) throw new Error('이 프로젝트 저장소 경로만 허용합니다.');
 const response=await fetch(`https://api.github.com${path}`,{method,headers:{Authorization:`Bearer ${fields.password}`,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'robotaxi-atlas-maintainer',...(body?{'Content-Type':'application/json'}:{})},body:body||undefined});
 const data=await response.text();
-console.log(JSON.stringify({status:response.status,scopes:response.headers.get('x-oauth-scopes'),data:data?JSON.parse(data):null}));
+let payload=null;try{payload=data?JSON.parse(data):null;}catch{payload=data;}
+console.log(JSON.stringify({status:response.status,scopes:response.headers.get('x-oauth-scopes'),data:payload}));
 if(!response.ok) process.exitCode=1;
