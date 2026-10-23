@@ -1,0 +1,28 @@
+import { mkdir, writeFile,access } from 'node:fs/promises';
+import { nextUpdate } from '../src/domain.mjs';
+let exists=false;try{await access('public/data/atlas.json');exists=true;}catch{}
+if(exists)throw new Error('초기 데이터가 이미 있습니다. 기존 기록을 보존하기 위해 초기화를 중단합니다.');
+const now=new Date().toISOString();
+const city=(id,name,english,region,regionName,coordinates,country='US',countryName='미국')=>({id,name,english,country,countryName,region,regionName,coordinates});
+const cities=[city('austin','오스틴','Austin','TX','텍사스',[-97.7431,30.2672]),city('dallas','댈러스','Dallas','TX','텍사스',[-96.797,32.7767]),city('houston','휴스턴','Houston','TX','텍사스',[-95.3698,29.7604]),city('miami','마이애미','Miami','FL','플로리다',[-80.1918,25.7617]),city('orlando','올랜도','Orlando','FL','플로리다',[-81.3792,28.5383]),city('tampa','탬파','Tampa','FL','플로리다',[-82.4572,27.9506]),city('san-francisco','샌프란시스코','San Francisco','CA','캘리포니아',[-122.4194,37.7749]),city('london','런던','London','ENG','잉글랜드',[-0.1276,51.5072],'GB','영국'),city('seoul','서울','Seoul','11','서울특별시',[126.978,37.5665],'KR','대한민국')];
+const sources=[
+{id:'tesla-support',name:'Tesla · Robotaxi 지원',url:'https://www.tesla.com/support/robotaxi',priority:1,access:'공식 원문 확인 · 자동 접근은 실행 결과 참조',definition:'서비스 제공 지역. 도시별 차량 수·차종별 대수 미공개.',automation:'HTML의 명시적인 서비스 문장만 추출'},
+{id:'tesla-cybercab',name:'Tesla · Cybercab FAQ',url:'https://www.tesla.com/support/robotaxi/cybercab',priority:1,access:'공식 원문 확인',definition:'차종별 서비스 도시. 차량 수와 안전요원 여부는 공개 문장만으로 확인 불가.',automation:'차종·도시별 서비스 문장 추출'},
+{id:'tesla-ir-q3',name:'Tesla · 2026 Q3 실적 공시',url:'https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf',priority:1,access:'공식 PDF 확인',definition:'2026-10-21 발표. Austin Cybercab 승객 운행 시작일 2026-09-03. 도시별 대수 없음.',automation:'PDF 변경 감지. 새 수치 자동 승인 없음; 원문 검토 필요'},
+{id:'ca-dmv',name:'California DMV · AV 허가 명단',url:'https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/',priority:2,access:'공식 원문 확인',definition:'안전운전자 동승 시험허가 명단. 허가를 차량 수·도시 운행으로 환산하지 않음.',automation:'명단 변경 감지와 검토 알림'},
+{id:'tx-dmv',name:'TxDMV · Tesla 운영자 등록부',url:'https://txmccs.txdmv.gov/automated-vehicles/operators/AV8313426653583',priority:2,access:'자동 추출 미연결',definition:'텍사스 주 등록 차량. 도시 배정·상업운행 대수와 다른 기준.',automation:'브라우저 렌더링 및 API 조사 필요'},
+{id:'tracker',name:'RobotaxiTracker · 집계 방법론',url:'https://robotaxitracker.com/methodology',priority:3,access:'자동 추출 미연결',definition:'비공식 목격·등록부 기반. 최근 목격 수와 전체 fleet를 구분해야 함.',automation:'공개 API·재사용 조건 미확인. 수동 입력 가능'},
+{id:'user-x',name:'사용자 제공 · X 참고 게시물',url:'https://x.com/ethanmckanna/status/2113068103659819405',priority:5,access:'403 · 원문 열람 불가',definition:'343 / 312 / 108은 사용자 제공 예시. 기준일·차종·집계 기준 검증 전 집계 제외.',automation:'로그인/API 미연결. 숫자 자동 추출 안 함'},
+{id:'manual',name:'검토한 수동 입력',url:'https://github.com/jaehun242/robotaxi-atlas',priority:4,access:'관리자 CSV / JSON',definition:'각 행의 원문 URL·기준일·집계 범위를 별도로 기록. 잠금 수치 보존.',automation:'data/manual.csv 및 data/manual.json'}
+];
+const url=id=>sources.find(s=>s.id===id).url;
+const services=[];
+for(const c of ['austin','dallas','houston','miami','orlando','tampa']) services.push({id:`tesla-service-${c}`,city:c,model:'unspecified',status:'limited',safety:'unknown',paid:true,asOf:null,observedAt:now,sourceId:'tesla-support',sourceUrl:url('tesla-support'),verification:'official_single',note:'일부 지역 유료 서비스 안내. 게시일 미공개; 수집일은 서비스 시작일이 아님.'});
+for(const c of ['austin','dallas','houston','miami','tampa']) services.push({id:`tesla-model-y-${c}`,city:c,model:'model_y',status:'limited',safety:'unknown',paid:true,asOf:null,observedAt:now,sourceId:'tesla-cybercab',sourceUrl:url('tesla-cybercab'),verification:'official_single',note:'Cybercab FAQ에서 Model Y 서비스 도시를 명시. 안전요원 탑승 여부 미확인.'});
+services.push({id:'tesla-cybercab-austin',city:'austin',model:'cybercab',status:'limited',safety:'unknown',paid:true,asOf:null,observedAt:now,sourceId:'tesla-cybercab',sourceUrl:url('tesla-cybercab'),verification:'official_single',note:'Austin 일부 지역 Cybercab 서비스 명시. 해당 문장만으로 모든 차량의 운행·안전요원 상태를 단정하지 않음.'});
+const observations=[['austin','cybercab',343],['austin','model_y',312],['dallas','model_y',108]].map(([city,model,count])=>({id:`user-example-${city}-${model}`,city,model,count,basis:'unknown',asOf:null,collectedAt:now,sourceId:'user-x',sourceUrl:url('user-x'),scope:'불명 · 사용자 제공 미검증 예시',verification:'unverified',locked:true,note:'배정·현지 배치·운행 중 어느 기준인지 원문 확인 불가. 기준일 불명. 모든 수치 집계에서 제외.'}));
+const news=[{id:'cybercab-austin-launch',city:'austin',model:'cybercab',title:'오스틴 Cybercab 승객 운행 시작',summary:'Tesla Q3 공시에서 운행 시작일을 확인했습니다. 도시별 차량 대수는 공개하지 않았습니다.',eventDate:'2026-09-03',publishedAt:'2026-10-21',firstCollectedAt:now,sourceId:'tesla-ir-q3',sourceUrl:url('tesla-ir-q3')},...['austin','dallas','houston','miami','orlando','tampa'].map(c=>({id:`initial-service-${c}`,city:c,model:'unspecified',title:`${cities.find(x=>x.id===c).name} · 제한적 서비스 안내 확인`,summary:'Tesla 공식 지원 페이지의 일부 지역 서비스 안내를 수집했습니다. 시작일과 도시별 차량 수는 미공개입니다.',eventDate:null,publishedAt:null,firstCollectedAt:now,sourceId:'tesla-support',sourceUrl:url('tesla-support')}))];
+const data={version:1,updatedAt:now,lastAttemptAt:null,lastSuccessAt:null,nextUpdateAt:nextUpdate(),cities,observations,services,news,sources,sourceRuns:sources.map(s=>({sourceId:s.id,state:['tx-dmv','tracker','user-x'].includes(s.id)?'unconnected':'reviewed',checkedAt:now,lastSuccessAt:null,message:s.access})),revisions:[],runs:[]};
+await mkdir('public/data',{recursive:true});await mkdir('data',{recursive:true});
+await writeFile('public/data/atlas.json',JSON.stringify(data,null,2)+'\n');
+console.log('출처를 검토한 초기 데이터 저장. 검증된 차량 대수 없음.');
