@@ -25,7 +25,7 @@ export default function App(){
   const [reduce,setReduce]=useState(localStorage.getItem('atlas-reduce-motion')==='true'||matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [carry,setCarry]=useState(false),[newsToday,setNewsToday]=useState(false);
   const load=()=>fetch(`${import.meta.env.BASE_URL}data/atlas.json?at=${Date.now()}`).then(r=>{if(!r.ok)throw Error('데이터 응답 오류');return r.json();}).then(setReal).catch(()=>setLoadError('데이터를 읽지 못했습니다. 연결을 확인하고 다시 시도해 주세요.'));
-  useEffect(()=>{load();fetch(`${import.meta.env.BASE_URL}data/statistics.json`).then(r=>{if(!r.ok)throw Error('통계');return r.json();}).then(setStatistics).catch(()=>setStatistics(null));},[]);
+  useEffect(()=>{load();fetch(`${import.meta.env.BASE_URL}data/statistics.json?at=${Date.now()}`).then(r=>{if(!r.ok)throw Error('통계');return r.json();}).then(setStatistics).catch(()=>setStatistics(null));},[]);
   useEffect(()=>{document.documentElement.dataset.reduceMotion=String(reduce);localStorage.setItem('atlas-reduce-motion',String(reduce));},[reduce]);
   const data=useMemo(()=>real?(demo?demoData(real):real):null,[real,demo]);
   const cities=useMemo(()=>data?citiesFor(data,filters):[],[data,filters]);
