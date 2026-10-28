@@ -1,0 +1,59 @@
+name: Refresh Texas registrations
+on:
+  schedule:
+    - cron: '23 * * * *'
+      timezone: Asia/Seoul
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: robotaxi-atlas-publish
+  cancel-in-progress: false
+
+jobs:
+  collect-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11.25.0'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - name: Refresh only public Texas registration aggregates
+        run: node scripts/collect-registrations.mjs
+      - name: Preserve daily city records and commit registration check
+        run: |
+          git config user.name 'robotaxi-atlas[bot]'
+          git config user.email 'robotaxi-atlas[bot]@users.noreply.github.com'
+          git add public/data/atlas.json public/data/monitoring.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: refresh Texas registration check [skip ci]'
+            git push origin HEAD:main
+          fi
+      - run: pnpm build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Registration summary
+        run: node -e 'const d=require("./public/data/monitoring.json"); for(const r of d.registries)console.log(r.id+": "+r.checkState+" total="+r.total+" Cybercab="+r.cybercab+" Model Y="+r.model_y+" asOf="+r.asOf)' >> "$GITHUB_STEP_SUMMARY"
+  deploy:
+    needs: collect-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

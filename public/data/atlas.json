@@ -1016,7 +1016,7 @@
       "priority": 2,
       "access": "자동 추출 미연결",
       "definition": "주 전체 등록 차량. 도시 배정·동시 운행 대수와 구분.",
-      "automation": "텍사스 공식 주 전체 등록부 · 공개 JSON 페이지 수집·VIN 중복 제거"
+      "automation": "텍사스 공식 주 전체 등록부 · 매시간 공개 JSON 수집·VIN 중복 제거"
     },
     {
       "id": "tracker",
@@ -1133,9 +1133,9 @@
     {
       "sourceId": "tx-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-28T00:30:13.882Z",
-      "lastSuccessAt": "2026-10-28T00:30:13.882Z",
-      "message": "공식 텍사스 등록부 1051개 고유 VIN. Cybercab 544 / Model Y 507. 도시 합계와 별도."
+      "checkedAt": "2026-10-28T07:16:41.703Z",
+      "lastSuccessAt": "2026-10-28T07:16:41.703Z",
+      "message": "공식 텍사스 등록부 1080개 고유 VIN. Cybercab 573 / Model Y 507. 도시 합계와 별도."
     }
   ],
   "revisions": [

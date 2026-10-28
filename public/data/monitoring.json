@@ -1081,8 +1081,8 @@
       "durationMs": 535,
       "numericParserConnected": true,
       "numericCheckState": "ok",
-      "numericLastSuccessAt": "2026-10-28T00:30:13.882Z",
-      "numericReferenceDate": "2026-10-28T00:30:13.882Z"
+      "numericLastSuccessAt": "2026-10-28T07:16:41.703Z",
+      "numericReferenceDate": "2026-10-28T07:16:41.703Z"
     },
     {
       "code": "UT",
@@ -1338,23 +1338,23 @@
       "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
       "apiUrl": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
       "note": "도시 배정 필드 없음. 사업자 주소로 도시 대수를 추정하지 않음. VIN 중복 제거·차종 대소문자 정규화. 배치·영업 대수와 별도.",
-      "total": 1051,
-      "cybercab": 544,
+      "total": 1080,
+      "cybercab": 573,
       "model_y": 507,
       "unknown": 0,
       "rawModels": {
-        "Cybercab": 514,
+        "Cybercab": 543,
         "Model Y": 507,
         "cybercab": 30
       },
       "duplicateRecords": 0,
-      "contentHash": "19a02ffde0067ac00322e0d4c2d492f3e8c933ae0d65e3c036ebbe931775bfb6",
+      "contentHash": "0b553901d2e9c76fb2b9b63be4d8484a0a923662d63d8541795084bc673ed362",
       "pages": 11,
-      "asOf": "2026-10-28T00:30:13.882Z",
+      "asOf": "2026-10-28T07:16:41.703Z",
       "asOfMeaning": "공식 등록부 스냅샷을 확인한 시각. 모든 차량의 신규 등록일이 아님.",
       "firstCollectedAt": "2026-10-23T04:56:23.970Z",
-      "lastCheckedAt": "2026-10-28T00:30:13.882Z",
-      "lastSuccessAt": "2026-10-28T00:30:13.882Z",
+      "lastCheckedAt": "2026-10-28T07:16:41.703Z",
+      "lastSuccessAt": "2026-10-28T07:16:41.703Z",
       "checkState": "ok",
       "error": null
     },
@@ -1365,18 +1365,18 @@
       "basis": "registered",
       "verification": "unofficial",
       "note": "동일 TxDMV 원자료의 재집계이며 독립 검증 출처가 아님. JSON은 집계만 제공.",
-      "total": 1051,
-      "cybercab": 544,
+      "total": 1080,
+      "cybercab": 573,
       "model_y": 507,
       "unknown": 0,
-      "sourceAsOf": "2026-10-27T17:25:02-07:00",
+      "sourceAsOf": "2026-10-28T00:16:32-07:00",
       "sourceUrl": "https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc",
-      "contentHash": "884f5d1902e83d7912f85df9931cb61009c214338c1b1b5b4331aba41f1a8229",
-      "asOf": "2026-10-28T00:25:02.000Z",
+      "contentHash": "1f4404988d9cf158a81759eb05d7f8ebd85c17a46c22b32a2e17e28e12a16337",
+      "asOf": "2026-10-28T07:16:32.000Z",
       "asOfMeaning": "민간 재집계가 공개한 마지막 동기화 시각. 신규 등록일과 별도.",
       "firstCollectedAt": "2026-10-23T05:09:46.286Z",
-      "lastCheckedAt": "2026-10-28T00:30:13.882Z",
-      "lastSuccessAt": "2026-10-28T00:30:13.882Z",
+      "lastCheckedAt": "2026-10-28T07:16:41.703Z",
+      "lastSuccessAt": "2026-10-28T07:16:41.703Z",
       "checkState": "ok",
       "error": null
     }
@@ -4256,5 +4256,6 @@
         "note": "전 세계 검색 피드 탐색과 연결된 공식 자료 변경 감지는 별도 작업. 검색 결과가 모든 국가·언어의 모든 소식을 포괄하지 않음."
       }
     }
-  ]
+  ],
+  "registrationLastAttemptAt": "2026-10-28T07:16:41.703Z"
 }

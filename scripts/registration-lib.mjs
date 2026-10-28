@@ -36,3 +36,26 @@ export async function fetchPrivateTexasRegistry(fetcher=fetch){
  if(Object.values(counts).reduce((s,n)=>s+n,0)!==operator.fleet_size)throw Error('민간 총계·차종 합계 불일치');
  return {total:operator.fleet_size,...counts,sourceAsOf:operator.last_synced_at??data.generated_at,sourceUrl:'https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc',contentHash:createHash('sha256').update(JSON.stringify([operator.fleet_size,counts])).digest('hex')};
 }
+export async function collectTexasRegistrations(prior=[],{now=new Date().toISOString(),fetcher=fetch,forceFailure=false}={}){
+ const old=prior.find(r=>r.id==='tx-tesla-official');let official;
+ try{
+  if(forceFailure)throw Error('수집 실패 모의');
+  official=preserveRegistration(old,{id:'tx-tesla-official',country:'US',region:'TX',scope:'텍사스 전체 Tesla Robotaxi LLC 등록부',basis:'registered',verification:'official_single',sourceUrl:TX_PAGE,apiUrl:TX_API,note:'도시 배정 필드 없음. 사업자 주소로 도시 대수를 추정하지 않음. VIN 중복 제거·차종 대소문자 정규화. 배치·영업 대수와 별도.',...await fetchTexasRegistry(fetcher)},now);
+ }catch(e){official={...(old??{id:'tx-tesla-official',region:'TX',sourceUrl:TX_PAGE,total:null,cybercab:null,model_y:null,asOf:null}),lastCheckedAt:now,checkState:'failed',error:e.message+' · 마지막 정상값 보존'};}
+ const oldPrivate=prior.find(r=>r.id==='tx-tesla-fsddb');let privateRegistry;
+ try{
+  if(forceFailure)throw Error('수집 실패 모의');const counts=await fetchPrivateTexasRegistry(fetcher);
+  privateRegistry=preserveRegistration(oldPrivate,{id:'tx-tesla-fsddb',region:'TX',scope:'Texas · FSD Database 민간 재집계',basis:'registered',verification:'unofficial',note:'동일 TxDMV 원자료의 재집계이며 독립 검증 출처가 아님. JSON은 집계만 제공.',...counts},now);
+  if(!oldPrivate||oldPrivate.contentHash!==counts.contentHash){privateRegistry.asOf=Number.isFinite(Date.parse(counts.sourceAsOf))?new Date(counts.sourceAsOf).toISOString():now;privateRegistry.asOfMeaning='민간 재집계가 공개한 마지막 동기화 시각. 신규 등록일과 별도.';}
+ }catch(e){privateRegistry={...(oldPrivate??{id:'tx-tesla-fsddb',region:'TX',verification:'unofficial',sourceUrl:'https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc',total:null,cybercab:null,model_y:null,asOf:null}),lastCheckedAt:now,checkState:'failed',error:e.message};}
+ return [official,privateRegistry];
+}
+export function applyRegistrationStatus(atlas,monitoring,registries,now){
+ monitoring.registries=registries;monitoring.registrationLastAttemptAt=now;
+ const registry=registries.find(r=>r.id==='tx-tesla-official'),tx=monitoring.jurisdictions.find(r=>r.code==='TX');
+ if(tx)Object.assign(tx,{numericParserConnected:true,numericCheckState:registry.checkState,numericLastSuccessAt:registry.lastSuccessAt??null,numericReferenceDate:registry.asOf,quantityStatus:registry.checkState==='ok'?'available':'last_good_or_unknown'});
+ const source=atlas.sources.find(s=>s.id==='tx-dmv');
+ if(source)Object.assign(source,{url:TX_PAGE,automation:'텍사스 공식 주 전체 등록부 · 매시간 공개 JSON 수집·VIN 중복 제거',definition:'주 전체 등록 차량. 도시 배정·동시 운행 대수와 구분.'});
+ atlas.sourceRuns=atlas.sourceRuns.filter(r=>r.sourceId!=='tx-dmv');atlas.sourceRuns.push({sourceId:'tx-dmv',state:registry.checkState==='ok'?'ok':'failed',checkedAt:now,lastSuccessAt:registry.lastSuccessAt??null,message:registry.checkState==='ok'?`공식 텍사스 등록부 ${registry.total}개 고유 VIN. Cybercab ${registry.cybercab} / Model Y ${registry.model_y}. 도시 합계와 별도.`:registry.error});
+ // Do not relabel the daily city/news run or official-document check clocks.
+}

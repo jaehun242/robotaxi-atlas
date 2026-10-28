@@ -3,6 +3,12 @@ import {kstDay} from './domain.mjs';
 import type {MonitoringDataset} from './monitoring-types';
 const kst=(v:string|null|undefined)=>v?new Date(v).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',hour12:false})+' KST':'미확인';
 const statuses:Record<string,string>={success_baseline:'조회 성공 · 최초 기준',success_changed:'조회 성공 · 문서 변경',success_unchanged:'조회 성공 · 문서 변경 없음',count_not_public:'차량 수 비공개',access_failed:'접근 실패',extraction_failed:'추출 실패',unconnected:'자동 수집 미연결',unresearched:'아직 조사하지 않음'};
+export function RegistrationHighlight({monitoring,country,region}:{monitoring:MonitoringDataset|null;country:string;region:string}){
+ if(country&&country!=='US'||region&&region!=='TX')return null;
+ const r=monitoring?.registries.find(r=>r.id==='tx-tesla-official');
+ if(!r)return <p className="registration-loading">텍사스 공식 등록부를 불러오고 있습니다.</p>;
+ return <section className="panel registration-highlight" aria-label="텍사스 공식 등록 요약"><div><span className="badge good">TxDMV 공식 등록부</span><h2>텍사스 주 전체 등록 차량</h2><p>도시 명부·실제 배치·영업 대수와 별도입니다.</p></div><div className="registry-counts">{[['등록 합계',r.total,''],['Cybercab',r.cybercab,'gold'],['Model Y',r.model_y,'teal']].map(([label,value,color])=><div key={String(label)}><span>{label}</span><b className={String(color)}>{value===null?'미확인':Number(value).toLocaleString('ko-KR')}<small>대</small></b></div>)}</div><div className="registration-summary-meta"><a href={r.sourceUrl} target="_blank" rel="noreferrer">공식 원본 ↗</a><span>수치 확인 {kst(r.asOf)}<br/>최근 점검 {kst(r.lastCheckedAt)}</span><p>{r.checkState==='ok'?'자동 수집 성공 · 매시간 추가 점검 예정':'수집 실패 · 이전 확인값 유지'}</p></div></section>;
+}
 export function StateRegistry({monitoring,country,region,verification='credible'}:{monitoring:MonitoringDataset|null;country:string;region:string;verification?:string}){
  if(!monitoring||country&&country!=='US')return null;
  const rows=monitoring.registries.filter(r=>(!region||r.region===region)&&r.id==='tx-tesla-official');if(!rows.length)return null;

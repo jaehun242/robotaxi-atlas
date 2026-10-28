@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {monitorDocument,coverageSummary} from '../scripts/monitoring-lib.mjs';
-import {summarizeVehicles,fetchTexasRegistry,preserveRegistration} from '../scripts/registration-lib.mjs';
+import {summarizeVehicles,fetchTexasRegistry,preserveRegistration,collectTexasRegistrations,applyRegistrationStatus} from '../scripts/registration-lib.mjs';
 import {parseNewsFeed,collectDiscovery} from '../scripts/discovery-lib.mjs';
 import {parseSafetyPlans,collectSafety} from '../scripts/safety-lib.mjs';
 import {calculateMarket} from '../src/market.mjs';
@@ -28,6 +28,14 @@ test('HTTP200 challenges, loading shells, wrong PDF and oversize are not collect
  assert.equal((await monitorDocument(config,null,{now,fetcher:async()=>new Response(doc,{headers:{'content-length':'102000000'}})})).status,'extraction_failed');
 });
 const vehicle=(i,model)=>({vin:'5YJ'+String(i).padStart(14,'0'),make:'Tesla',model,modelYear:2026});
+test('hourly registration failure keeps official counts separate from a newer private aggregate and daily clocks',async()=>{
+ const old=preserveRegistration(null,{id:'tx-tesla-official',total:1080,cybercab:573,model_y:507,contentHash:'old'},now);
+ const rows=await collectTexasRegistrations([old],{now:later,fetcher:async url=>url.includes('txmccs')?new Response('',{status:403}):Response.json({operators:[{slug:'tesla-robotaxi-llc',fleet_size:1100,models:{Cybercab:593,'Model Y':507},last_synced_at:later}]})});
+ assert.equal(rows[0].checkState,'failed');assert.equal(rows[0].total,1080);assert.equal(rows[0].asOf,now);assert.equal(rows[1].total,1100);assert.equal(rows[1].verification,'unofficial');
+ const atlas={lastAttemptAt:now,services:[{observedAt:now}],sourceRuns:[],sources:[{id:'tx-dmv'}]},monitoring={lastAttemptAt:now,jurisdictions:[{code:'TX',lastCheckedAt:now}]};
+ applyRegistrationStatus(atlas,monitoring,rows,later);
+ assert.equal(atlas.lastAttemptAt,now);assert.equal(atlas.services[0].observedAt,now);assert.equal(monitoring.lastAttemptAt,now);assert.equal(monitoring.jurisdictions[0].lastCheckedAt,now);assert.equal(monitoring.registrationLastAttemptAt,later);
+});
 test('official registrations normalize aliases and VIN case, deduplicate and reconcile pages',async()=>{
  const records=[vehicle(1,'Cybercab'),vehicle(2,'cybercab'),vehicle(3,'Model Y'),vehicle(3,'Model Y')];
  const a=summarizeVehicles(records,3);assert.equal(a.cybercab,2);assert.equal(a.model_y,1);assert.equal(a.total,3);assert.equal(a.duplicateRecords,1);assert.ok(!JSON.stringify(a).includes(records[0].vin));
