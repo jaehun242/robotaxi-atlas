@@ -4488,5 +4488,82 @@
       }
     }
   ],
-  "registrationLastAttemptAt": "2026-10-28T07:29:32.030Z"
+  "registrationLastAttemptAt": "2026-10-28T07:29:32.030Z",
+  "registrationHistory": [
+    {
+      "id": "tx-registry-2026-10-23T05:22:44.629Z",
+      "sourceId": "tx-tesla-official",
+      "scopeId": "us:state:TX:tesla:registered",
+      "basis": "registered",
+      "checkedAt": "2026-10-23T05:22:44.629Z",
+      "lastCheckedAt": "2026-10-23T05:26:01.858Z",
+      "valueAsOf": "2026-10-23T04:56:23.970Z",
+      "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+      "total": 858,
+      "cybercab": 351,
+      "model_y": 507,
+      "unknown": 0,
+      "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/blob/bc96b6940c4a7db1ac870da59f11e60fd2c6f91b/public/data/monitoring.json"
+    },
+    {
+      "id": "tx-registry-2026-10-24T01:15:19.580Z",
+      "sourceId": "tx-tesla-official",
+      "scopeId": "us:state:TX:tesla:registered",
+      "basis": "registered",
+      "checkedAt": "2026-10-24T01:15:19.580Z",
+      "lastCheckedAt": "2026-10-24T01:15:19.580Z",
+      "valueAsOf": "2026-10-24T01:15:19.580Z",
+      "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+      "total": 927,
+      "cybercab": 420,
+      "model_y": 507,
+      "unknown": 0,
+      "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/blob/940ce70e01a4b8ef63825fff0590de9988ee568e/public/data/monitoring.json"
+    },
+    {
+      "id": "tx-registry-2026-10-25T00:41:17.159Z",
+      "sourceId": "tx-tesla-official",
+      "scopeId": "us:state:TX:tesla:registered",
+      "basis": "registered",
+      "checkedAt": "2026-10-25T00:41:17.159Z",
+      "lastCheckedAt": "2026-10-25T00:41:17.159Z",
+      "valueAsOf": "2026-10-25T00:41:17.159Z",
+      "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+      "total": 938,
+      "cybercab": 431,
+      "model_y": 507,
+      "unknown": 0,
+      "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/blob/4a76474d1a4245a7c6f4f6d8f996dd1761bb6b3b/public/data/monitoring.json"
+    },
+    {
+      "id": "tx-registry-2026-10-28T00:30:13.882Z",
+      "sourceId": "tx-tesla-official",
+      "scopeId": "us:state:TX:tesla:registered",
+      "basis": "registered",
+      "checkedAt": "2026-10-28T00:30:13.882Z",
+      "lastCheckedAt": "2026-10-28T00:30:13.882Z",
+      "valueAsOf": "2026-10-28T00:30:13.882Z",
+      "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+      "total": 1051,
+      "cybercab": 544,
+      "model_y": 507,
+      "unknown": 0,
+      "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/blob/654119dff9b52085da1ac0087fd2d554b1586b7e/public/data/monitoring.json"
+    },
+    {
+      "id": "tx-registry-2026-10-28T07:16:41.703Z",
+      "sourceId": "tx-tesla-official",
+      "scopeId": "us:state:TX:tesla:registered",
+      "basis": "registered",
+      "checkedAt": "2026-10-28T07:16:41.703Z",
+      "lastCheckedAt": "2026-10-28T07:29:32.030Z",
+      "valueAsOf": "2026-10-28T07:16:41.703Z",
+      "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+      "total": 1080,
+      "cybercab": 573,
+      "model_y": 507,
+      "unknown": 0,
+      "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/blob/a3760bb2b56fe05116311aac6eaf4f789ecfc2c3/public/data/monitoring.json"
+    }
+  ]
 }

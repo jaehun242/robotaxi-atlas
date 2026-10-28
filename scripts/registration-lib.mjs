@@ -1,5 +1,6 @@
 import {createHash} from 'node:crypto';
 import {boundedFetch} from './statistics-lib.mjs';
+import {appendRegistrationHistory} from '../src/fleet-changes.mjs';
 export const TX_API='https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles';
 export const TX_PAGE='https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles';
 export function normalizeModel(value){const v=String(value).toLowerCase().replace(/[^a-z0-9]/g,'');return v==='cybercab'?'cybercab':['modely','teslamodely'].includes(v)?'model_y':'unknown';}
@@ -53,6 +54,7 @@ export async function collectTexasRegistrations(prior=[],{now=new Date().toISOSt
 export function applyRegistrationStatus(atlas,monitoring,registries,now){
  monitoring.registries=registries;monitoring.registrationLastAttemptAt=now;
  const registry=registries.find(r=>r.id==='tx-tesla-official'),tx=monitoring.jurisdictions.find(r=>r.code==='TX');
+ monitoring.registrationHistory=appendRegistrationHistory(monitoring.registrationHistory,registry,now);
  if(tx)Object.assign(tx,{numericParserConnected:true,numericCheckState:registry.checkState,numericLastSuccessAt:registry.lastSuccessAt??null,numericReferenceDate:registry.asOf,quantityStatus:registry.checkState==='ok'?'available':'last_good_or_unknown'});
  const source=atlas.sources.find(s=>s.id==='tx-dmv');
  if(source)Object.assign(source,{url:TX_PAGE,automation:'텍사스 공식 주 전체 등록부 · 매시간 공개 JSON 수집·VIN 중복 제거',definition:'주 전체 등록 차량. 도시 배정·동시 운행 대수와 구분.'});

@@ -18,7 +18,7 @@ const discovery=await collectDiscovery(prior.discovery,{now,forceFailure});
 const atlasContext=await read('public/data/atlas.json');
 discovery.officialPlans=atlasContext.services.filter(s=>s.id.startsWith('tesla-safety-plan-')).map(s=>({city:atlasContext.cities.find(c=>c.id===s.city)?.name??s.city,status:s.status,observedAt:s.observedAt,sourceUrl:s.sourceUrl}));
 discovery.regionCandidates=atlasContext.regionCandidates??[];
-const result={version:1,lastAttemptAt:now,jurisdictions:records,international,registries:[registry,privateRegistry],discovery,summary:coverageSummary(records,now),runs:prior.runs??[]};
+const result={version:1,lastAttemptAt:now,jurisdictions:records,international,registries:[registry,privateRegistry],registrationHistory:prior.registrationHistory??[],discovery,summary:coverageSummary(records,now),runs:prior.runs??[]};
 applyRegistrationStatus(atlasContext,result,[registry,privateRegistry],now);
 result.summary=coverageSummary(records,now);
 const run={id:'monitor-'+kstDay(now),startedAt:now,completedAt:new Date().toISOString(),summary:result.summary,discovery:discovery.lastRun};const index=result.runs.findIndex(r=>r.id===run.id);if(index<0)result.runs.push(run);else result.runs[index]=run;result.runs=result.runs.slice(-90);
