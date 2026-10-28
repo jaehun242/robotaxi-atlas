@@ -1081,7 +1081,7 @@
       "durationMs": 409,
       "numericParserConnected": true,
       "numericCheckState": "ok",
-      "numericLastSuccessAt": "2026-10-28T07:23:58.204Z",
+      "numericLastSuccessAt": "2026-10-28T07:25:50.576Z",
       "numericReferenceDate": "2026-10-28T07:16:41.703Z"
     },
     {
@@ -1353,8 +1353,8 @@
       "asOf": "2026-10-28T07:16:41.703Z",
       "asOfMeaning": "공식 등록부 스냅샷을 확인한 시각. 모든 차량의 신규 등록일이 아님.",
       "firstCollectedAt": "2026-10-23T04:56:23.970Z",
-      "lastCheckedAt": "2026-10-28T07:23:58.204Z",
-      "lastSuccessAt": "2026-10-28T07:23:58.204Z",
+      "lastCheckedAt": "2026-10-28T07:25:50.576Z",
+      "lastSuccessAt": "2026-10-28T07:25:50.576Z",
       "checkState": "ok",
       "error": null
     },
@@ -1375,8 +1375,8 @@
       "asOf": "2026-10-28T07:16:32.000Z",
       "asOfMeaning": "민간 재집계가 공개한 마지막 동기화 시각. 신규 등록일과 별도.",
       "firstCollectedAt": "2026-10-23T05:09:46.286Z",
-      "lastCheckedAt": "2026-10-28T07:23:58.204Z",
-      "lastSuccessAt": "2026-10-28T07:23:58.204Z",
+      "lastCheckedAt": "2026-10-28T07:25:50.576Z",
+      "lastSuccessAt": "2026-10-28T07:25:50.576Z",
       "checkState": "ok",
       "error": null
     }
@@ -4475,5 +4475,5 @@
       }
     }
   ],
-  "registrationLastAttemptAt": "2026-10-28T07:23:58.204Z"
+  "registrationLastAttemptAt": "2026-10-28T07:25:50.576Z"
 }
