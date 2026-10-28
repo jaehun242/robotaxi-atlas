@@ -54,7 +54,7 @@ export async function collectTexasRegistrations(prior=[],{now=new Date().toISOSt
 export function applyRegistrationStatus(atlas,monitoring,registries,now){
  monitoring.registries=registries;monitoring.registrationLastAttemptAt=now;
  const registry=registries.find(r=>r.id==='tx-tesla-official'),tx=monitoring.jurisdictions.find(r=>r.code==='TX');
- monitoring.registrationHistory=appendRegistrationHistory(monitoring.registrationHistory,registry,now);
+ monitoring.registrationHistory=appendRegistrationHistory(monitoring.registrationHistory,registry,now,{evidenceUrl:process.env.GITHUB_RUN_ID?`https://github.com/jaehun242/robotaxi-atlas/actions/runs/${process.env.GITHUB_RUN_ID}`:undefined});
  if(tx)Object.assign(tx,{numericParserConnected:true,numericCheckState:registry.checkState,numericLastSuccessAt:registry.lastSuccessAt??null,numericReferenceDate:registry.asOf,quantityStatus:registry.checkState==='ok'?'available':'last_good_or_unknown'});
  const source=atlas.sources.find(s=>s.id==='tx-dmv');
  if(source)Object.assign(source,{url:TX_PAGE,automation:'텍사스 공식 주 전체 등록부 · 매시간 공개 JSON 수집·VIN 중복 제거',definition:'주 전체 등록 차량. 도시 배정·동시 운행 대수와 구분.'});
