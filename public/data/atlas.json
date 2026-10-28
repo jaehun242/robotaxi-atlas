@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T00:30:13.760Z",
-  "lastAttemptAt": "2026-10-28T00:30:12.648Z",
-  "lastSuccessAt": "2026-10-28T00:30:12.648Z",
+  "updatedAt": "2026-10-28T07:21:25.694Z",
+  "lastAttemptAt": "2026-10-28T07:21:23.602Z",
+  "lastSuccessAt": "2026-10-28T07:21:23.602Z",
   "nextUpdateAt": "2026-10-28T23:00:00.000Z",
   "cities": [
     {
@@ -586,8 +586,8 @@
       "city": "houston",
       "model": "model_y",
       "basis": "observed",
-      "count": 39,
-      "asOf": "2026-10-28T00:07:02.892Z",
+      "count": 41,
+      "asOf": "2026-10-28T07:07:03.397Z",
       "collectedAt": "2026-10-28T00:30:12.648Z",
       "sourceId": "pioneer-tracker",
       "sourceUrl": "https://pioneerlands.org/cybercabtracker",
@@ -596,8 +596,8 @@
       "vehicleDefinition": "community_registry",
       "coverageComplete": false,
       "verification": "unofficial",
-      "discoveryThrough": "2026-10-26T23:10:55+00:00",
-      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-26T23:10:55+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+      "discoveryThrough": "2026-10-28T00:05:13+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-28T00:05:13+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
     }
   ],
   "services": [
@@ -1068,30 +1068,30 @@
     {
       "sourceId": "tesla-support",
       "state": "failed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-cybercab",
       "state": "failed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-ir-q3",
       "state": "failed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "ca-dmv",
-      "state": "changed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
-      "lastSuccessAt": "2026-10-28T00:30:12.648Z",
-      "message": "허가 명단 내용 변경 감지 · 원문 검토 필요. 도시별 수치로 변환하지 않음.",
+      "state": "ok",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
+      "lastSuccessAt": "2026-10-28T07:21:23.602Z",
+      "message": "허가 명단 접근 성공. 도시별 대수·서비스로 변환하지 않음.",
       "contentHash": "9f3deb950fe4d4045e639f6201ad059059ef65989bc135357e4412e33666ce49"
     },
     {
@@ -1118,23 +1118,23 @@
     {
       "sourceId": "tesla-safety",
       "state": "failed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
       "lastSuccessAt": "2026-10-23T04:55:09.000Z",
       "message": "HTTP 403 · 기존 계획·지도·최초 확인일 보존"
     },
     {
       "sourceId": "pioneer-tracker",
       "state": "ok",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
-      "lastSuccessAt": "2026-10-28T00:30:12.648Z",
-      "message": "공개 지역 집계 성공 · 4개 수치 신규/변경. 원자료 미러 시각 2026-10-28T00:07:02.892Z. 배치·영업 대수 아님.",
-      "sourceSnapshotAt": "2026-10-28T00:07:02.892Z"
+      "checkedAt": "2026-10-28T07:21:23.602Z",
+      "lastSuccessAt": "2026-10-28T07:21:23.602Z",
+      "message": "공개 지역 집계 성공 · 1개 수치 신규/변경. 원자료 미러 시각 2026-10-28T07:07:03.397Z. 배치·영업 대수 아님.",
+      "sourceSnapshotAt": "2026-10-28T07:07:03.397Z"
     },
     {
       "sourceId": "tx-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-28T07:16:41.703Z",
-      "lastSuccessAt": "2026-10-28T07:16:41.703Z",
+      "checkedAt": "2026-10-28T07:21:25.785Z",
+      "lastSuccessAt": "2026-10-28T07:21:25.785Z",
       "message": "공식 텍사스 등록부 1080개 고유 VIN. Cybercab 573 / Model Y 507. 도시 합계와 별도."
     }
   ],
@@ -1208,6 +1208,46 @@
         "locked": true,
         "note": "배정·현지 배치·운행 중 어느 기준인지 원문 확인 불가. 기준일 불명. 모든 수치 집계에서 제외."
       }
+    },
+    {
+      "id": "pioneer-houston-model_y-2026-10-28",
+      "changedAt": "2026-10-28T07:21:23.602Z",
+      "previous": {
+        "id": "pioneer-houston-model_y-2026-10-28",
+        "city": "houston",
+        "model": "model_y",
+        "basis": "observed",
+        "count": 39,
+        "asOf": "2026-10-28T00:07:02.892Z",
+        "collectedAt": "2026-10-28T00:30:12.648Z",
+        "sourceId": "pioneer-tracker",
+        "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+        "scope": "Robotaxi Tracker 지역명 Houston의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+        "scopeId": "tracker:area:houston",
+        "vehicleDefinition": "community_registry",
+        "coverageComplete": false,
+        "verification": "unofficial",
+        "discoveryThrough": "2026-10-26T23:10:55+00:00",
+        "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-26T23:10:55+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+      },
+      "replacement": {
+        "id": "pioneer-houston-model_y-2026-10-28",
+        "city": "houston",
+        "model": "model_y",
+        "basis": "observed",
+        "count": 41,
+        "asOf": "2026-10-28T07:07:03.397Z",
+        "collectedAt": "2026-10-28T07:21:23.602Z",
+        "sourceId": "pioneer-tracker",
+        "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+        "scope": "Robotaxi Tracker 지역명 Houston의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+        "scopeId": "tracker:area:houston",
+        "vehicleDefinition": "community_registry",
+        "coverageComplete": false,
+        "verification": "unofficial",
+        "discoveryThrough": "2026-10-28T00:05:13+00:00",
+        "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-28T00:05:13+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+      }
     }
   ],
   "runs": [
@@ -1231,8 +1271,8 @@
     },
     {
       "id": "daily-2026-10-28",
-      "startedAt": "2026-10-28T00:30:12.648Z",
-      "completedAt": "2026-10-28T00:30:28.141Z",
+      "startedAt": "2026-10-28T07:21:23.602Z",
+      "completedAt": "2026-10-28T07:21:41.935Z",
       "state": "partial"
     }
   ],

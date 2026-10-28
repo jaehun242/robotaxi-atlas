@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "runAt": "2026-10-28T00:30:12.648Z",
+  "runAt": "2026-10-28T07:21:23.602Z",
   "summaries": {
     "allocated": {
       "total": null,
@@ -31,11 +31,11 @@
       "asOf": null
     },
     "observed": {
-      "total": 617,
+      "total": 619,
       "cybercab": 229,
-      "model_y": 388,
+      "model_y": 390,
       "coverage": 12,
-      "asOf": "2026-10-28T00:07:02.892Z"
+      "asOf": "2026-10-28T07:07:03.397Z"
     }
   },
   "observations": [
@@ -449,8 +449,8 @@
       "city": "houston",
       "model": "model_y",
       "basis": "observed",
-      "count": 39,
-      "asOf": "2026-10-28T00:07:02.892Z",
+      "count": 41,
+      "asOf": "2026-10-28T07:07:03.397Z",
       "collectedAt": "2026-10-28T00:30:12.648Z",
       "sourceId": "pioneer-tracker",
       "sourceUrl": "https://pioneerlands.org/cybercabtracker",
@@ -459,8 +459,8 @@
       "vehicleDefinition": "community_registry",
       "coverageComplete": false,
       "verification": "unofficial",
-      "discoveryThrough": "2026-10-26T23:10:55+00:00",
-      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-26T23:10:55+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+      "discoveryThrough": "2026-10-28T00:05:13+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-28T00:05:13+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
     }
   ],
   "services": [
@@ -693,30 +693,30 @@
     {
       "sourceId": "tesla-support",
       "state": "failed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-cybercab",
       "state": "failed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-ir-q3",
       "state": "failed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "ca-dmv",
-      "state": "changed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
-      "lastSuccessAt": "2026-10-28T00:30:12.648Z",
-      "message": "허가 명단 내용 변경 감지 · 원문 검토 필요. 도시별 수치로 변환하지 않음.",
+      "state": "ok",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
+      "lastSuccessAt": "2026-10-28T07:21:23.602Z",
+      "message": "허가 명단 접근 성공. 도시별 대수·서비스로 변환하지 않음.",
       "contentHash": "9f3deb950fe4d4045e639f6201ad059059ef65989bc135357e4412e33666ce49"
     },
     {
@@ -743,24 +743,24 @@
     {
       "sourceId": "tx-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-25T00:41:17.159Z",
-      "lastSuccessAt": "2026-10-25T00:41:17.159Z",
-      "message": "공식 텍사스 등록부 938개 고유 VIN. Cybercab 431 / Model Y 507. 도시 합계와 별도."
+      "checkedAt": "2026-10-28T07:16:41.703Z",
+      "lastSuccessAt": "2026-10-28T07:16:41.703Z",
+      "message": "공식 텍사스 등록부 1080개 고유 VIN. Cybercab 573 / Model Y 507. 도시 합계와 별도."
     },
     {
       "sourceId": "tesla-safety",
       "state": "failed",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
+      "checkedAt": "2026-10-28T07:21:23.602Z",
       "lastSuccessAt": "2026-10-23T04:55:09.000Z",
       "message": "HTTP 403 · 기존 계획·지도·최초 확인일 보존"
     },
     {
       "sourceId": "pioneer-tracker",
       "state": "ok",
-      "checkedAt": "2026-10-28T00:30:12.648Z",
-      "lastSuccessAt": "2026-10-28T00:30:12.648Z",
-      "message": "공개 지역 집계 성공 · 4개 수치 신규/변경. 원자료 미러 시각 2026-10-28T00:07:02.892Z. 배치·영업 대수 아님.",
-      "sourceSnapshotAt": "2026-10-28T00:07:02.892Z"
+      "checkedAt": "2026-10-28T07:21:23.602Z",
+      "lastSuccessAt": "2026-10-28T07:21:23.602Z",
+      "message": "공개 지역 집계 성공 · 1개 수치 신규/변경. 원자료 미러 시각 2026-10-28T07:07:03.397Z. 배치·영업 대수 아님.",
+      "sourceSnapshotAt": "2026-10-28T07:07:03.397Z"
     }
   ]
 }
