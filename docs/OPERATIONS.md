@@ -30,7 +30,9 @@ node scripts/collect-statistics.mjs --simulate-failure --force --dry-run
 
 저장소 → Settings → Pages → Build and deployment → Source: GitHub Actions. 기본 브랜치 main에 `.github/workflows/update-deploy.yml`이 있으면 push/수동/예약으로 수집과 배포가 실행됩니다. 무료 공개 저장소와 무료 GitHub 호스팅 실행기만 사용합니다. 유료 실행기·API는 설정하지 않았습니다.
 
-예약은 `0 23 * * *` UTC, 한국시간 매일 오전 8시입니다. 개인 컴퓨터와 관계없이 GitHub 서버에서 실행됩니다. 예약 파일의 존재, GitHub 워크플로 활성 상태, 실제 실행 성공은 별개이므로 Actions 기록을 확인하세요. GitHub의 시간대·예약 동작: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
+예약은 `timezone: Asia/Seoul`의 매일 오전 8시입니다. 08:17·09:17·10:17·11:17에는 보완 점검을 실행합니다. 공개 사이트에 오늘 오전 8시 이후 성공·부분 성공한 수집 결과가 이미 배포됐다면 중복 수집을 생략합니다. 실패·누락·배포 실패로 공개 데이터가 오래됐으면 다시 수집·배포합니다. 단순 데이터 커밋만으로 완료를 판단하지 않습니다. 수동 실행과 코드 push는 항상 갱신합니다.
+
+개인 컴퓨터와 관계없이 GitHub 서버에서 실행됩니다. 예약 파일의 존재, GitHub 워크플로 활성 상태, 실제 실행 성공은 별개이므로 Actions 기록을 확인하세요. GitHub의 시간대·예약 동작: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
 
 GitHub는 정각 시작·완료를 보장하지 않습니다. 특히 매시 정각은 지연되거나 큐 작업이 누락될 수 있습니다. 공개 저장소는 60일간 활동이 없으면 예약이 비활성화될 수 있습니다. 이 작업은 매일 스냅샷 커밋을 남기지만 플랫폼의 예약 제한과 장애는 통제하지 못합니다.
 
@@ -58,3 +60,7 @@ atlas.json의 cities에 country/countryName/region/regionName/coordinates를 추
 2. Tesla 자동 요청 403, 미연결 주의 수치 자료, 신규 RSS 원문 검토. 공식 신규 계획은 검토된 지역 목록과 일치할 때 지도에 추가하며 모르는 지역명은 검토 대기.
 3. 필요하면 근거를 확인한 자료를 manual.csv에 추가. 이 자료는 잠금으로 보존.
 4. 최초 예약 시각 이후 Actions가 schedule 이벤트로 실행됐는지 확인. 수동 실행 성공만으로 정기 예약 실행 실적을 주장하지 않기.
+
+## 2026-10-28 예약 중단 복구
+
+10월 24·25일 예약은 성공했지만 26·27일은 수집 전 테스트에서 중단됐다. 테스트가 계속 변하는 실제 atlas.json의 실행 기록과 고정된 10월 24일을 함께 사용하고, 배열 마지막 항목을 테스트 대상 실행으로 간주한 것이 원인이다. 현재는 단위 테스트 입력을 고정된 예제로 분리하고 한국 날짜의 실행 ID로 결과를 검증한다. 이후 날짜의 기록이 있어도 같은 날 재실행·실패 보존 검증이 동작하는 회귀 테스트를 추가했다. 예약을 늦게 시작하거나 실패해도 자동 보완하도록 위 점검 시간을 추가했다. 데이터 원본 기준일은 갱신 성공 표시를 위해 변경하지 않는다.

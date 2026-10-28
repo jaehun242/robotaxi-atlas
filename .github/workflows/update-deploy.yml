@@ -3,8 +3,11 @@ on:
   push:
     branches: [main]
   schedule:
-    # 23:00 UTC = next day 08:00 Asia/Seoul (no daylight saving).
-    - cron: '0 23 * * *'
+    - cron: '0 8 * * *'
+      timezone: Asia/Seoul
+    # Recovery checks. Skip collection only after today's refresh is publicly deployed.
+    - cron: '17 8-11 * * *'
+      timezone: Asia/Seoul
   workflow_dispatch:
     inputs:
       refresh_statistics:
@@ -23,7 +26,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check-refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: read
+    outputs:
+      refresh: ${{ steps.check.outputs.refresh }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - id: check
+        name: Check whether today's refresh is already publicly deployed
+        run: node scripts/refresh-schedule.mjs
   collect-build:
+    needs: check-refresh
+    if: needs.check-refresh.outputs.refresh == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

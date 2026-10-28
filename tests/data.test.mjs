@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 import { aggregate,latest,history,comparableDelta,ingest,validateObservation,citiesFor,nextUpdate,findConflicts } from '../src/domain.mjs';
 import { collectDataset,extractServices } from '../scripts/collector-lib.mjs';
 import {parseCSV} from '../scripts/import-csv.mjs';
-const base=JSON.parse(await readFile('public/data/atlas.json','utf8'));
+// Unit tests must not depend on the dates/statuses added by daily production runs.
+const base={cities:['austin','dallas','houston','miami','orlando','tampa','seoul'].map(id=>({id,english:({austin:'Austin',dallas:'Dallas',houston:'Houston',miami:'Miami',orlando:'Orlando',tampa:'Tampa',seoul:'Seoul'})[id],country:id==='seoul'?'KR':'US',region:id==='seoul'?'SEOUL':['miami','orlando','tampa'].includes(id)?'FL':'TX'})),sources:['tesla-support','tesla-cybercab','tesla-ir-q3','ca-dmv','manual'].map(id=>({id,url:'https://example.test/'+id+(id==='tesla-ir-q3'?'.pdf':'')})),observations:[],services:[{id:'tesla-cybercab-austin',city:'austin',model:'cybercab',status:'limited',sourceId:'tesla-cybercab',observedAt:'2026-10-22T00:00:00Z',asOf:null}],news:[],sourceRuns:[],runs:[],revisions:[],lastSuccessAt:'2026-10-22T00:00:00Z'};
 const f={country:'',region:'',city:'',model:'',basis:'deployed',status:'',verification:'verified'};
 const make=(extra={})=>({id:'test',city:'austin',model:'model_y',basis:'deployed',count:10,asOf:'2026-10-22T00:00:00Z',collectedAt:'2026-10-23T00:00:00Z',sourceId:'manual',sourceUrl:'https://example.org/source',scope:'city fleet',verification:'official_single',note:'test fixture',...extra});
 const withRows=observations=>({...structuredClone(base),observations});
@@ -60,7 +60,7 @@ test('collector failure preserves last-good observations, services and dates',as
  const d=withRows([make()]);
  const result=await collectDataset(d,{now:'2026-10-24T00:00:00Z',forceFailure:true,retries:1});
  assert.deepEqual(result.observations,d.observations);assert.deepEqual(result.services,d.services);
- assert.equal(result.lastSuccessAt,d.lastSuccessAt);assert.equal(result.runs.at(-1).state,'failed');
+ assert.equal(result.lastSuccessAt,d.lastSuccessAt);assert.equal(result.runs.find(r=>r.id==='daily-2026-10-24').state,'failed');
 });
 test('deterministic official extraction, per-model statuses, no counts inferred',()=>{
  const facts=extractServices('tesla-cybercab','Robotaxi is currently operating in Tampa and Miami, Florida and Austin, Dallas, and Houston, Texas with Model Y vehicles. Cybercab rides are currently available in limited areas of Austin, Texas.',base.cities,'2026-10-23T00:00:00Z');
@@ -73,8 +73,16 @@ test('collector same-day rerun does not duplicate news, daily runs or numeric re
  const a=await collectDataset(base,{fetcher,now:'2026-10-24T00:00:00Z',retries:1});
  const b=await collectDataset(a,{fetcher,now:'2026-10-24T02:00:00Z',retries:1});
  assert.equal(b.news.length,a.news.length);assert.equal(b.runs.length,a.runs.length);assert.deepEqual(b.observations,base.observations);
- assert.equal(b.runs.at(-1).state,'success');
+ assert.equal(b.runs.find(r=>r.id==='daily-2026-10-24').state,'success');
  assert.equal(b.services.find(s=>s.id==='tesla-cybercab-austin').observedAt,base.services.find(s=>s.id==='tesla-cybercab-austin').observedAt);
+});
+test('collector targets the requested day even with newer historical runs and remains idempotent',async()=>{
+ const d={...withRows([make()]),runs:[{id:'daily-2026-10-24',state:'success'},{id:'daily-2026-10-25',state:'partial'}]};
+ const a=await collectDataset(d,{now:'2026-10-24T00:00:00Z',forceFailure:true,retries:1});
+ const b=await collectDataset(a,{now:'2026-10-24T02:00:00Z',forceFailure:true,retries:1});
+ assert.equal(b.runs.find(r=>r.id==='daily-2026-10-24').state,'failed');
+ assert.deepEqual(b.runs.find(r=>r.id==='daily-2026-10-25'),d.runs[1]);
+ assert.equal(b.runs.length,d.runs.length);assert.deepEqual(b.observations,d.observations);
 });
 test('CSV quoted fields and missing count; KST next update',()=>{
  const records=parseCSV('id,count,note\n1,0,"zero, verified"\n2,,unknown');
