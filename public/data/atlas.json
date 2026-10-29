@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T07:51:04.140Z",
-  "lastAttemptAt": "2026-10-28T07:51:02.702Z",
-  "lastSuccessAt": "2026-10-28T07:51:02.702Z",
-  "nextUpdateAt": "2026-10-28T23:00:00.000Z",
+  "updatedAt": "2026-10-29T00:07:00.258Z",
+  "lastAttemptAt": "2026-10-29T00:06:57.801Z",
+  "lastSuccessAt": "2026-10-29T00:06:57.801Z",
+  "nextUpdateAt": "2026-10-29T23:00:00.000Z",
   "cities": [
     {
       "id": "austin",
@@ -598,6 +598,60 @@
       "verification": "unofficial",
       "discoveryThrough": "2026-10-28T00:05:13+00:00",
       "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-28T00:05:13+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-austin-cybercab-2026-10-29",
+      "city": "austin",
+      "model": "cybercab",
+      "basis": "observed",
+      "count": 229,
+      "asOf": "2026-10-28T23:07:06.908Z",
+      "collectedAt": "2026-10-29T00:06:57.801Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Austin의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:austin",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-27T12:27:32+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-27T12:27:32+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-austin-model_y-2026-10-29",
+      "city": "austin",
+      "model": "model_y",
+      "basis": "observed",
+      "count": 236,
+      "asOf": "2026-10-28T23:07:06.908Z",
+      "collectedAt": "2026-10-29T00:06:57.801Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Austin의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:austin",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-27T12:27:32+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-27T12:27:32+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
+    },
+    {
+      "id": "pioneer-houston-model_y-2026-10-29",
+      "city": "houston",
+      "model": "model_y",
+      "basis": "observed",
+      "count": 43,
+      "asOf": "2026-10-28T23:07:06.908Z",
+      "collectedAt": "2026-10-29T00:06:57.801Z",
+      "sourceId": "pioneer-tracker",
+      "sourceUrl": "https://pioneerlands.org/cybercabtracker",
+      "scope": "Robotaxi Tracker 지역명 Houston의 커뮤니티 명부 (행정경계·당일 가동 미검증)",
+      "scopeId": "tracker:area:houston",
+      "vehicleDefinition": "community_registry",
+      "coverageComplete": false,
+      "verification": "unofficial",
+      "discoveryThrough": "2026-10-28T19:35:41+00:00",
+      "note": "원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 2026-10-28T19:35:41+00:00. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음."
     }
   ],
   "services": [
@@ -1068,29 +1122,29 @@
     {
       "sourceId": "tesla-support",
       "state": "failed",
-      "checkedAt": "2026-10-28T07:51:02.702Z",
+      "checkedAt": "2026-10-29T00:06:57.801Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-cybercab",
       "state": "failed",
-      "checkedAt": "2026-10-28T07:51:02.702Z",
+      "checkedAt": "2026-10-29T00:06:57.801Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-ir-q3",
       "state": "failed",
-      "checkedAt": "2026-10-28T07:51:02.702Z",
+      "checkedAt": "2026-10-29T00:06:57.801Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "ca-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-28T07:51:02.702Z",
-      "lastSuccessAt": "2026-10-28T07:51:02.702Z",
+      "checkedAt": "2026-10-29T00:06:57.801Z",
+      "lastSuccessAt": "2026-10-29T00:06:57.801Z",
       "message": "허가 명단 접근 성공. 도시별 대수·서비스로 변환하지 않음.",
       "contentHash": "9f3deb950fe4d4045e639f6201ad059059ef65989bc135357e4412e33666ce49"
     },
@@ -1118,23 +1172,23 @@
     {
       "sourceId": "tesla-safety",
       "state": "failed",
-      "checkedAt": "2026-10-28T07:51:02.702Z",
+      "checkedAt": "2026-10-29T00:06:57.801Z",
       "lastSuccessAt": "2026-10-23T04:55:09.000Z",
       "message": "HTTP 403 · 기존 계획·지도·최초 확인일 보존"
     },
     {
       "sourceId": "pioneer-tracker",
       "state": "ok",
-      "checkedAt": "2026-10-28T07:51:02.702Z",
-      "lastSuccessAt": "2026-10-28T07:51:02.702Z",
-      "message": "공개 지역 집계 성공 · 0개 수치 신규/변경. 원자료 미러 시각 2026-10-28T07:07:03.397Z. 배치·영업 대수 아님.",
-      "sourceSnapshotAt": "2026-10-28T07:07:03.397Z"
+      "checkedAt": "2026-10-29T00:06:57.801Z",
+      "lastSuccessAt": "2026-10-29T00:06:57.801Z",
+      "message": "공개 지역 집계 성공 · 3개 수치 신규/변경. 원자료 미러 시각 2026-10-28T23:07:06.908Z. 배치·영업 대수 아님.",
+      "sourceSnapshotAt": "2026-10-28T23:07:06.908Z"
     },
     {
       "sourceId": "tx-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-29T00:05:35.052Z",
-      "lastSuccessAt": "2026-10-29T00:05:35.052Z",
+      "checkedAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
       "message": "공식 텍사스 등록부 1080개 고유 VIN. Cybercab 573 / Model Y 507. 도시 합계와 별도."
     }
   ],
@@ -1273,6 +1327,12 @@
       "id": "daily-2026-10-28",
       "startedAt": "2026-10-28T07:51:02.702Z",
       "completedAt": "2026-10-28T07:51:33.074Z",
+      "state": "partial"
+    },
+    {
+      "id": "daily-2026-10-29",
+      "startedAt": "2026-10-29T00:06:57.801Z",
+      "completedAt": "2026-10-29T00:07:14.841Z",
       "state": "partial"
     }
   ],
