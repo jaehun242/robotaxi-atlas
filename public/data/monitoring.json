@@ -1,6 +1,8 @@
 {
   "version": 1,
-  "lastAttemptAt": "2026-10-29T01:19:23.459Z",
+  "geographicScope": "US",
+  "internationalPaused": true,
+  "lastAttemptAt": "2026-10-29T02:01:10.248Z",
   "jurisdictions": [
     {
       "code": "AL",
@@ -16,15 +18,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "33c3a3bb6f1b0f737e9cad4f0100335f5c30c70d5b5fa90ea529473aa77e08f9",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 339
+      "durationMs": 646
     },
     {
       "code": "AK",
@@ -40,7 +42,7 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "c4fd83400d8e21116e4c58221df0aff090812e72a311edf0e3d2b60afa1fa135",
@@ -48,7 +50,7 @@
       "status": "access_failed",
       "message": "HTTP 404 · 마지막 정상 문서 해시·원본 기준일 유지.",
       "quantityStatus": "not_extracted",
-      "durationMs": 637
+      "durationMs": 546
     },
     {
       "code": "AZ",
@@ -64,11 +66,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 179
+      "durationMs": 187
     },
     {
       "code": "AR",
@@ -87,14 +89,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 1366,
+      "durationMs": 1572,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "282d285aba5f6b046b04f056bd54de06d015504c0f5b0f9bcf7b86150280b201",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -114,15 +116,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "9f3deb950fe4d4045e639f6201ad059059ef65989bc135357e4412e33666ce49",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 104
+      "durationMs": 95
     },
     {
       "code": "CO",
@@ -138,15 +140,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "31d0dc9b15642513b463331f8f5e39d66fda420095043de848594b3063f4f813",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 322
+      "durationMs": 159
     },
     {
       "code": "CT",
@@ -162,15 +164,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "faeeaebadbbd0c3f5defd66341518ac9e32fc7a39942a545189d8d550d4887bf",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 1308
+      "durationMs": 1188
     },
     {
       "code": "DE",
@@ -186,15 +188,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "2f169eab3ba0d0c4031e6cb5a4aa63bb524c3a95bb9d2964fa0406a8f289a05b",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 433
+      "durationMs": 538
     },
     {
       "code": "DC",
@@ -210,15 +212,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "2a87ef9b1300e8ceb10277cad49a37adc84d385ebaf6b11b5d3823b8bcee9db7",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 232
+      "durationMs": 150
     },
     {
       "code": "FL",
@@ -237,15 +239,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "7b5da23ce85fe917d29cc428bb1bd09185e38e56283b989ae286346073c20d29",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 1506
+      "durationMs": 1665
     },
     {
       "code": "GA",
@@ -264,15 +266,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "2e148fa3a3b5bd3f995c74e1c6b15e3e6afa28b5fd48865a9b58eb95a637ed47",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 492
+      "durationMs": 632
     },
     {
       "code": "HI",
@@ -291,15 +293,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "09bb091ec9caf8f9d88a1d4da7ed9ccd0a41df2168ab33c57f6c6a5f26689c92",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 304
+      "durationMs": 92
     },
     {
       "code": "ID",
@@ -315,11 +317,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 404 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 1714
+      "durationMs": 1496
     },
     {
       "code": "IL",
@@ -335,15 +337,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "ac292861e1d265c6689694b050e8f97dc041a3e2f08f5dd29fdd96fc52a418e3",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 632
+      "durationMs": 211
     },
     {
       "code": "IN",
@@ -359,15 +361,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "c49e5a109105a873dc1be1e0aba9eb6ddfae60f0d5850483cb87f24a90ba1977",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 4485
+      "durationMs": 341
     },
     {
       "code": "IA",
@@ -383,14 +385,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 2760,
+      "durationMs": 219,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "5c8fdbe41b1b40e7e536ae0a9444b54571e4fc73dcd0a18722b5773dab41d399",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -410,15 +412,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": true,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
-      "contentHash": "7c3af198a727c3b2aced3350fffbfd19f972c96723820c5086f936e380cad427",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "contentHash": "5f8732836515145bd0eecd4ec4a1373c1750592240c746751a2fc7099ca6cfa9",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_changed",
       "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
       "quantityStatus": "not_extracted",
-      "durationMs": 416
+      "durationMs": 238
     },
     {
       "code": "KY",
@@ -437,15 +439,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "583d107a04b97dba41fa6143ecad6faa6cb45bf39e071a4caea8dae6364b7ef9",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 977
+      "durationMs": 552
     },
     {
       "code": "LA",
@@ -461,14 +463,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 214,
+      "durationMs": 390,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "e2ba986b845f6f4cc7e18859f2fdec4def28c7224be6db17036609fba5654fae",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -488,15 +490,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "1dc8d255d1e04147513845ea43aaaf7cc77751e06b61b2e42cd765eada2eb4ac",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 422
+      "durationMs": 501
     },
     {
       "code": "MD",
@@ -512,14 +514,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 642,
+      "durationMs": 1046,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "b37c843fc59fea4fbc6b34ea6c847a82033b1e8ae2fef3fceca5a1b570bce3ac",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -540,15 +542,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "89c8e7e1a179f7d6c8cb09a8905aa1ddd53478b62981e876039fa282cad00a2f",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 333
+      "durationMs": 306
     },
     {
       "code": "MI",
@@ -564,11 +566,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 178
+      "durationMs": 135
     },
     {
       "code": "MN",
@@ -584,15 +586,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "225a398c894a54f899744bf297b887028e04b9f0ff17786ee4770e6208a461bb",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 288
+      "durationMs": 497
     },
     {
       "code": "MS",
@@ -608,15 +610,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "75f7ca0f9033f49f5723268a443037c46537e3e7c39c6af3b119143da0bb2fdd",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 861
+      "durationMs": 1076
     },
     {
       "code": "MO",
@@ -635,15 +637,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "fe77ac8959ef5e53f7f71b35e925b1ac597491622dcfc46034c669d0c578347e",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 593
+      "durationMs": 831
     },
     {
       "code": "MT",
@@ -659,14 +661,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 456,
+      "durationMs": 353,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "0aae5c7bc3a2e7826df6099d4ac0888822f2b9bea2c2d7aab084ba0c8bf3ce5c",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -683,14 +685,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 173,
+      "durationMs": 205,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "5a10d8ebdfa47454292a44bf3620f2f0426edcd198d43572d14405f4d1c09aef",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -707,15 +709,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "bdb59c825c7d9aa7df8e227bfb0ed5917e02a482cc71778eb6ea8bd829b80cbb",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 460
+      "durationMs": 90
     },
     {
       "code": "NH",
@@ -731,14 +733,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 230,
+      "durationMs": 319,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "049a2fb14ee7698af15a1c3c18c0c9f8aa9ab5df12fc6dca7c1856b63b018f87",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -758,14 +760,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 296,
+      "durationMs": 411,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "9ab80da75181fbe994af390b4e8376126bfba65244078796a64c2dc68a158160",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -782,15 +784,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "556ddf3c92843c7a50dfa7d486a5282d5cc354197859bde03bcdac2c8f9ae302",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 1034
+      "durationMs": 1498
     },
     {
       "code": "NY",
@@ -806,15 +808,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "0e29859daf18c9014d1f0e9b475f056796037e29d665fa45f56a73419ecc5be8",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 311
+      "durationMs": 269
     },
     {
       "code": "NC",
@@ -830,14 +832,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 860,
+      "durationMs": 1121,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "24f71e4e52c906808e8388a4a6768150589a49477b60bfe0005bedebf8f72085",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -854,14 +856,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 306,
+      "durationMs": 375,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "ce50b30ebeba493e2324ee024107cc90f99e70c0a27af7c7217dd0e21bc72dd8",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -878,11 +880,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 404 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 206
+      "durationMs": 267
     },
     {
       "code": "OK",
@@ -898,11 +900,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "extraction_failed",
       "message": "문서 용량 제한 초과 · 다운로드 생략 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 206
+      "durationMs": 166
     },
     {
       "code": "OR",
@@ -918,15 +920,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "8480963e8606500c6282a6e732b45b86876875d230efb8312419d2f6cb529975",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 4225
+      "durationMs": 381
     },
     {
       "code": "PA",
@@ -942,15 +944,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "92e8894a2f18880dff4e2d105b24c8346435653c07d9f58ddf823eeff5af8800",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 421
+      "durationMs": 2045
     },
     {
       "code": "RI",
@@ -966,15 +968,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "8dcc649aac1f1ee4878722971fa7cee0b12103ef42a3fa11d23007e7f039075f",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 330
+      "durationMs": 271
     },
     {
       "code": "SC",
@@ -993,15 +995,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "0f3136512895263e2a3fd7f6e6bd988e42cd994b54e19b0fbcd7658425c7a5c1",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 452
+      "durationMs": 408
     },
     {
       "code": "SD",
@@ -1017,7 +1019,7 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "75c5b56e59108750dbfdd8c0388fabceb05a38d295d2660b54c173cf57f16b68",
@@ -1025,7 +1027,7 @@
       "status": "extraction_failed",
       "message": "AV 관련 본문 추출 확인 실패 · 마지막 정상 문서 해시·원본 기준일 유지.",
       "quantityStatus": "not_extracted",
-      "durationMs": 285
+      "durationMs": 379
     },
     {
       "code": "TN",
@@ -1040,12 +1042,12 @@
       "checkedOn": "2026-10-23",
       "automatic": true,
       "referenceDate": null,
-      "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
-      "attempts": 2,
-      "status": "success_unchanged",
-      "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 768,
+      "changed": null,
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
+      "attempts": 1,
+      "status": "access_failed",
+      "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
+      "durationMs": 427,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "c3026764495ca4096a5122af043461f66cda2ca5310033d3d3b1b458d970c5e6",
       "lastSuccessAt": "2026-10-29T01:19:23.459Z",
@@ -1070,18 +1072,18 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "7ceaa8a876fde24955e44e0eb7da232004ccdad0fc609928b2e9e9648fbcfe59",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "available",
-      "durationMs": 532,
+      "durationMs": 630,
       "numericParserConnected": true,
       "numericCheckState": "ok",
-      "numericLastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "numericLastSuccessAt": "2026-10-29T02:01:10.248Z",
       "numericReferenceDate": "2026-10-28T07:16:41.703Z"
     },
     {
@@ -1098,15 +1100,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "ff13a26cc20861f503235da4968795a176107937ad479f7bfcbedb840afa12b2",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 628
+      "durationMs": 321
     },
     {
       "code": "VT",
@@ -1122,15 +1124,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "3571eb7e1f6537a1f59e4f20f1419d7e366808573453a1f66dd3b374b4c7fcb2",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 534
+      "durationMs": 932
     },
     {
       "code": "VA",
@@ -1146,15 +1148,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "9b12202a4c593a1fe6c795ad0390434d5dbf94b4dc840f1b9bd22a91c8647bc4",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 635
+      "durationMs": 3333
     },
     {
       "code": "WA",
@@ -1170,15 +1172,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "f180438bd05321f4bea6c973f0395ef7ebf083a51a3c456932213ae868b3d002",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 430
+      "durationMs": 595
     },
     {
       "code": "WV",
@@ -1194,14 +1196,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": true,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "status": "success_changed",
       "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
-      "durationMs": 7990,
+      "durationMs": 550,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
-      "contentHash": "beddadde1b052c935c6f1cb18ebbc65463f9f8164d8a94515e2385c273f2ac59",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "contentHash": "cdeeeb16051b0275eeb0f4cd82c9bd88802b39c4496a179b0b9935ad9b69939f",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -1218,7 +1220,7 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 2,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "a6d3fac2cd72d4248b3c53e0d82ce129cdbde42ac3bd01bdfb2f04b147665144",
@@ -1226,7 +1228,7 @@
       "status": "access_failed",
       "message": "The operation was aborted due to timeout · 마지막 정상 문서 해시·원본 기준일 유지.",
       "quantityStatus": "not_extracted",
-      "durationMs": 20001
+      "durationMs": 20000
     },
     {
       "code": "WY",
@@ -1242,15 +1244,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "e40c0991a7a2c05769011adf0ddda77d8d4d6f021b716a4b022b26aa666ee14a",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 285
+      "durationMs": 305
     }
   ],
   "international": [
@@ -1353,8 +1355,8 @@
       "asOf": "2026-10-28T07:16:41.703Z",
       "asOfMeaning": "공식 등록부 스냅샷을 확인한 시각. 모든 차량의 신규 등록일이 아님.",
       "firstCollectedAt": "2026-10-23T04:56:23.970Z",
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "checkState": "ok",
       "error": null
     },
@@ -1375,8 +1377,8 @@
       "asOf": "2026-10-28T07:16:32.000Z",
       "asOfMeaning": "민간 재집계가 공개한 마지막 동기화 시각. 신규 등록일과 별도.",
       "firstCollectedAt": "2026-10-23T05:09:46.286Z",
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
-      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
+      "lastSuccessAt": "2026-10-29T02:01:10.248Z",
       "checkState": "ok",
       "error": null,
       "historical": {
@@ -1388,7 +1390,7 @@
         "verification": "unofficial",
         "dateBasis": "publisher_calendar",
         "timezone": null,
-        "sourceAsOf": "2026-10-28T18:19:57-07:00",
+        "sourceAsOf": "2026-10-28T19:01:39-07:00",
         "definition": "FSD Database가 TxDMV 동기화별 일일 등록 총계로 공개한 이력. 과거 차종 구분·날짜의 시간대는 미공개. 직접 수집한 KST 시각의 공식 스냅샷과 별개.",
         "points": [
           {
@@ -1397,7 +1399,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-10",
@@ -1405,7 +1407,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-11",
@@ -1413,7 +1415,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-12",
@@ -1421,7 +1423,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-13",
@@ -1429,7 +1431,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-14",
@@ -1437,7 +1439,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-15",
@@ -1445,7 +1447,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-16",
@@ -1453,7 +1455,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-17",
@@ -1461,7 +1463,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-18",
@@ -1469,7 +1471,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-19",
@@ -1477,7 +1479,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-20",
@@ -1485,7 +1487,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-21",
@@ -1493,7 +1495,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-22",
@@ -1501,7 +1503,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-23",
@@ -1509,7 +1511,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-24",
@@ -1517,7 +1519,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-25",
@@ -1525,7 +1527,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-26",
@@ -1533,7 +1535,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-27",
@@ -1541,7 +1543,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-28",
@@ -1549,7 +1551,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-29",
@@ -1557,7 +1559,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-06-30",
@@ -1565,7 +1567,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-01",
@@ -1573,7 +1575,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-02",
@@ -1581,7 +1583,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-03",
@@ -1589,7 +1591,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-04",
@@ -1597,7 +1599,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-05",
@@ -1605,7 +1607,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-06",
@@ -1613,7 +1615,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-07",
@@ -1621,7 +1623,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-08",
@@ -1629,7 +1631,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-09",
@@ -1637,7 +1639,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-10",
@@ -1645,7 +1647,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-11",
@@ -1653,7 +1655,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-12",
@@ -1661,7 +1663,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-13",
@@ -1669,7 +1671,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-14",
@@ -1677,7 +1679,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-15",
@@ -1685,7 +1687,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-16",
@@ -1693,7 +1695,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-17",
@@ -1701,7 +1703,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-18",
@@ -1709,7 +1711,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-19",
@@ -1717,7 +1719,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-20",
@@ -1725,7 +1727,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-21",
@@ -1733,7 +1735,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-22",
@@ -1741,7 +1743,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-23",
@@ -1749,7 +1751,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-24",
@@ -1757,7 +1759,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-25",
@@ -1765,7 +1767,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-26",
@@ -1773,7 +1775,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-27",
@@ -1781,7 +1783,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-28",
@@ -1789,7 +1791,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-29",
@@ -1797,7 +1799,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-07-30",
@@ -1805,7 +1807,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-10",
@@ -1813,7 +1815,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-11",
@@ -1821,7 +1823,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-12",
@@ -1829,7 +1831,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-13",
@@ -1837,7 +1839,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-14",
@@ -1845,7 +1847,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-15",
@@ -1853,7 +1855,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-16",
@@ -1861,7 +1863,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-17",
@@ -1869,7 +1871,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-18",
@@ -1877,7 +1879,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-19",
@@ -1885,7 +1887,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-20",
@@ -1893,7 +1895,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-21",
@@ -1901,7 +1903,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-22",
@@ -1909,7 +1911,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-23",
@@ -1917,7 +1919,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-24",
@@ -1925,7 +1927,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-25",
@@ -1933,7 +1935,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-26",
@@ -1941,7 +1943,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-27",
@@ -1949,7 +1951,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-28",
@@ -1957,7 +1959,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-29",
@@ -1965,7 +1967,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-30",
@@ -1973,7 +1975,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-08-31",
@@ -1981,7 +1983,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-01",
@@ -1989,7 +1991,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-02",
@@ -1997,7 +1999,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-03",
@@ -2005,7 +2007,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-04",
@@ -2013,7 +2015,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-05",
@@ -2021,7 +2023,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-06",
@@ -2029,7 +2031,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-07",
@@ -2037,7 +2039,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-08",
@@ -2045,7 +2047,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-09",
@@ -2053,7 +2055,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-10",
@@ -2061,7 +2063,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-11",
@@ -2069,7 +2071,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-12",
@@ -2077,7 +2079,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-13",
@@ -2085,7 +2087,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-14",
@@ -2093,7 +2095,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-15",
@@ -2101,7 +2103,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-16",
@@ -2109,7 +2111,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-17",
@@ -2117,7 +2119,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-18",
@@ -2125,7 +2127,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-19",
@@ -2133,7 +2135,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-20",
@@ -2141,7 +2143,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-21",
@@ -2149,7 +2151,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-22",
@@ -2157,7 +2159,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-23",
@@ -2165,7 +2167,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-24",
@@ -2173,7 +2175,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-25",
@@ -2181,7 +2183,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-26",
@@ -2189,7 +2191,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-27",
@@ -2197,7 +2199,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-28",
@@ -2205,7 +2207,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-29",
@@ -2213,7 +2215,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-09-30",
@@ -2221,7 +2223,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-01",
@@ -2229,7 +2231,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-02",
@@ -2237,7 +2239,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-03",
@@ -2245,7 +2247,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-04",
@@ -2253,7 +2255,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-05",
@@ -2261,7 +2263,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-06",
@@ -2269,7 +2271,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-07",
@@ -2277,7 +2279,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-08",
@@ -2285,7 +2287,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-09",
@@ -2293,7 +2295,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-10",
@@ -2301,7 +2303,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-11",
@@ -2309,7 +2311,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-12",
@@ -2317,7 +2319,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-13",
@@ -2325,7 +2327,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-14",
@@ -2333,7 +2335,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-15",
@@ -2341,7 +2343,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-16",
@@ -2349,7 +2351,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-17",
@@ -2357,7 +2359,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-18",
@@ -2365,7 +2367,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-19",
@@ -2373,7 +2375,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-20",
@@ -2381,7 +2383,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-21",
@@ -2389,7 +2391,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-22",
@@ -2397,7 +2399,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-23",
@@ -2405,7 +2407,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-24",
@@ -2413,7 +2415,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-25",
@@ -2421,7 +2423,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-26",
@@ -2429,7 +2431,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-27",
@@ -2437,7 +2439,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           },
           {
             "date": "2026-10-28",
@@ -2445,13 +2447,13 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T01:19:23.459Z"
+            "lastCheckedAt": "2026-10-29T02:01:10.248Z"
           }
         ],
         "firstCollectedAt": "2026-10-28T08:03:31.055Z",
         "updatedAt": "2026-10-28T08:03:31.055Z",
-        "lastCheckedAt": "2026-10-29T01:19:23.459Z",
-        "lastSuccessAt": "2026-10-29T01:19:23.459Z",
+        "lastCheckedAt": "2026-10-29T02:01:10.248Z",
+        "lastSuccessAt": "2026-10-29T02:01:10.248Z",
         "checkState": "ok",
         "error": null,
         "revisions": []
@@ -2540,7 +2542,7 @@
       "scopeId": "us:state:TX:tesla:registered",
       "basis": "registered",
       "checkedAt": "2026-10-28T15:12:15.661Z",
-      "lastCheckedAt": "2026-10-29T01:19:23.459Z",
+      "lastCheckedAt": "2026-10-29T02:01:10.248Z",
       "valueAsOf": "2026-10-28T07:16:41.703Z",
       "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
       "total": 1080,
@@ -2552,6 +2554,1356 @@
   ],
   "discovery": {
     "items": [
+      {
+        "id": "ac89fc2afff8d5caa45faba4",
+        "title": "Tesla eyes San Antonio for Cybercab launch as robotaxi race heats up - AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQX3pqeTF2VFZyVFVyWHJUbzY2NktOSFFYSm5NWF85aC1ua1ZfaTBmalBTUExYeTFPMmVuV0tNSmU4Rzc5alI2dTFBdGI5MVh0am1rU2N3SlB5OUhLd19PNFlBRUJ0dDNrb29Od3h4Nnl4OWNzZENRTGxUaVFBTlN4aA?oc=5",
+        "publisher": "AOL.com",
+        "publishedAt": "2026-10-28T16:15:15.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "430839ec5e2c9b50c9826749",
+        "title": "Tesla Robotaxi blocks some downtown Houston pickup points — Electrek - UA.NEWS",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSy1fbUgwOUFBWmpDOVdWak9QNVBGZnFDVG0tb0ctNGtCbDAxS3dxQ1JmZWVvVnpVdVIyNmJyYmVqS25DVHE0eVppQjRhYzI0ODhnVkhYV05UdGZxZUtfa3gyVXlDeDBqTTgzdjVuVURlY1EzNC12LVhzekR6R3h4bnpaZDNRLXJNX1FsaVlQd3Fsblhkc01Cb05xX3IwSk5rdEVwcWxZOThlZDU0ZVBaVw?oc=5",
+        "publisher": "UA.NEWS",
+        "publishedAt": "2026-10-28T15:49:08.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "31119d323720fc31e5173343",
+        "title": "F1 Legend Damon Hill Trades the Driver’s Seat for Tesla’s Cybercab - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOFh0c3c5VGxaUXFPdXNFU2s0RXpxZVByM2pfT1RQV1ZJRzR1SUtnWG1mejYtUWt0aXZBa1NLaFR6UXZTTlBsU09CUGFySTlqNG9IREE4cHBmMFhRdGxaVm5mRF9fZUNHbTNKc1RiYVVMT1dXN0VObE5LY2pBZDlPNkNB?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-28T15:35:08.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "07b0ea84780daa012129330e",
+        "title": "Tesla Adds 29 More Cybercabs, Expanding Texas Robotaxi Fleet to 1,080 - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQW02UXh6VDhYb3VQT0hMc0ROU0J3c2FwRTR3a0VEenlDRXFBNU1iN0tpbzh5RUNCUXMxUHVlRW9wbllIcFcwVFFJTUtEUnVPbVVCT19sLXpoNDh1NUhPbnJiNkEwU1pENFFyaDFjcjBNdkZ5VjRjUDRSbkUwV0N0UTVhRFVfYkFZZzd0NHM4YTU?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-28T12:54:54.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "5b6e897137a68e7238f3ff6a",
+        "title": "Tesla Stock Forecast: TSLA Triangle Breakout Targets $411.90 as Cybercabs Overtake Model Ys - TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQMURaQzNGYWJvZjhXWUhpNUpZVzhDaFpJcnRSQ01Sc2Ntdm1MTUVIRHRxVi11dGpfSVJ6YjhWODU5NGJmdlNFQTB2ZFlOUnhmc0s1Y2hVb2ZacEhwVFppZUZGZFpJc0ZnLWVkUWxuekhyLTBRUTRmNk96TThCYl9UN29XenNNX0EyU3dhSzVlak9QY0d1TUtYVlJaZGF1ei0wcWVMR3gyVGtZTmVGUVpJcDBLYW05NHpZRkhWZjNQNFdQUktKemNESkRqQTJ6b1Y0enpfUWU0LWNwZll0cF9uYjBGdGlaS3lIOThGSms5dXZrcFptY1VBWUk1WGttdw?oc=5",
+        "publisher": "TradingKey",
+        "publishedAt": "2026-10-28T11:52:51.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "fb226561ec40497a9dbf0555",
+        "title": "Tesla’s rocket-shaped Robotaxi map in Houston is partly ‘fake’",
+        "url": "https://electrek.co/2026/10/28/tesla-robotaxi-houston-rocket-service-area-fake/",
+        "publisher": "electrek.co",
+        "publishedAt": "2026-10-28T09:17:00.000Z",
+        "firstCollectedAt": "2026-10-29T00:07:00.347Z",
+        "feedId": "bing-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "29c480d07505fd52db39b067",
+        "title": "Elon Musk Says Tesla Robotaxi Expansion to Miami, Tampa Beaches Is ‘Coming Soon’ After Ron DeSantis’ Call - Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNeTdvWHJEdl83eGx5UXU0cWtXc2FLeTFGZDFJS2NRZENVNkMzSkNpYkp1Z2o3czd4a0VlX0RKalhuQ0N5WXVUcHVqdE96U3RrTjFIMmZDSEFrU1pGTHNyRExEdmRJUEp3Y0NjX24zY3VUekFIMmRuVUtRTHB0QTRzSGlzLTVJS2dsbmJ0NFZ0ckZqM2xBT2o4VmdfQldVbHNHR0ZPcnNtR0lZWGR0UkxIc0dTMU5QWVNRT0FNRVlXWm9DNlN6OG1IRVJpNlh1Xzc3V3RqTFBlRmJLWktVaFJ2TEdiSTJzQ1Z0MkpSS2lZQVNXSjI3ejJacUota3Q?oc=5",
+        "publisher": "Benzinga",
+        "publishedAt": "2026-10-28T05:35:20.000Z",
+        "firstCollectedAt": "2026-10-29T00:07:00.347Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "2e529e6fd36dbe2683046691",
+        "title": "Elon Musk Says Tesla Robotaxi Expansion to Miami, Tampa Beaches Is ‘Coming Soon’ After Ron DeSantis’ Call for Expansion - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPU0ZHRFgwYVQxaEkxMENpOVR5Nk5BNzJHekN3V0hQLV9ybXNUM2ZfUldYckhEekZDU2NzcjRNVVJZNlpDMkdqQkhpbGJjUTNNaVctREtHdWxYMVdwU3h1VWlJejVhTWFTUG1Rc1B1TFZXOWRoM2dab3ZpX05TalY1dXplLWZEbzFnTHNYU1E5RWgzb3dzM1Q4MUt6bE4xWkctb2dIcFp6M2o5cEh0ZU52aFdVc21EUExiT1hOUHJZS201ZS1RNWgzQ09wMlpsVzZIU0x4anNiR0Z6UVBnQkV4SEk5aHRUUm52QzRhNDczNmFuNm1nR2ZOOFZ2V1Q2TzhEcXJFbQ?oc=5",
+        "publisher": "TradingView",
+        "publishedAt": "2026-10-28T05:35:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "ef2eb143818995ea2286610d",
+        "title": "Tesla’s Cybercab Robotaxi Is Probably Not “Unsupervised.” Here’s Why",
+        "url": "https://www.forbes.com/sites/bradtempleton/2026/10/28/teslas-cybercab-robotaxi-is-probably-not-unsupervised-heres-why/",
+        "publisher": "www.forbes.com",
+        "publishedAt": "2026-10-28T05:00:00.000Z",
+        "firstCollectedAt": "2026-10-29T00:07:00.347Z",
+        "feedId": "bing-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "a37f37a99d55b98651b095f2",
+        "title": "Model Y Battery Repair vs Cybercab: Save $8K [2026] - https://tech-insider.org/",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTnpkYXNfZkJka0xSdjhlbEdNUGtFdG8zM2FmcVJiTnFBVUFkZFJpNmllRDBIUDdMNXV4TGZIdG5PTUlkdWh5M2RFR0Q3VWpxYjVZQWZ5WS1RZ3ZaOWpmSENNSGdzeU9McFU1N3MwVUV1V2x6LUJ4elRfR1BEMkZzY2RyR09oTi1QSEJZN0ZrekE?oc=5",
+        "publisher": "https://tech-insider.org/",
+        "publishedAt": "2026-10-28T02:53:06.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "7590389c42299d3498db7c53",
+        "title": "Tesla Spotlights 1996 F1 Champ Damon Hill on an Austin Cybercab - TeslaNorth.com",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBjS2VLVldYd29CNVlUMEZLOWhHUHBkV0lmVlp1WnVZNnNQN1RuQXlpcGJCbFZBRHpUX005R2V4THZHMVpCbTZxOEFzdFpnbkJJYlplXzMzb0lnUnRpQUotTjI5RTg1NUlqSk5ueFB3?oc=5",
+        "publisher": "TeslaNorth.com",
+        "publishedAt": "2026-10-28T01:37:15.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "eaec3c3b7d54b951af1bc01a",
+        "title": "Moravy Says Optimus Will Plug Cybercabs Until Charging Automates - TeslaNorth.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4xU1ViNHNUa2RDcXQ4ZVE5dG1yLVUySW9iWVdHOG5jWDBLcW5GUjhxTFhSUTJwcUFjZW9VRWFlOWpyRnZiWURzTmtMWFVEVUxjYl9MWjl5M294LWMyOWdmMVVGTU1GNGI2cnlCR1NiaFB1MXRhTHc?oc=5",
+        "publisher": "TeslaNorth.com",
+        "publishedAt": "2026-10-27T23:03:18.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "ba55573dea95bacbcba5a1e1",
+        "title": "Tesla Cybercabs now outnumber Model Ys in Texas Robotaxi fleet - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdVhfQWI4QV9JTFNjblNRNUxqVndMQWFSOE9IMWh1d2liLUQ5bVF6dVIzdUlJQ0NURDlqaTRMTkhSNWNwc3VaX0tYN29saGlZLUlhQWJ4TnhLeVFsZlF0SUhGUm13eDFXSEJqZHhMdXIza3lXa2JUN0Fualoxc2NKZk9acWVQSTVtQmlQRkxSdWJOQQ?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-27T22:04:50.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e186da8fdb07d0d989c0850f",
+        "title": "Tesla Stock Rises In A Buy Range; Musk Touts Cybercab Fleet Expansion - Investor's Business Daily",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE95RWx3Nmh3YUxaRTJoZW9Kd2RrRV9PV2ZOcDRXTjl4U0ZIdXg3VmtWemNhVTlTQ2dwM3dkSVhvWUdZenB1Zy1wcWQ1bURObFNUWDZkVk5iM1RlaThYbFlaZFZ0MDZSTDY0U3g2Vmc2VUF4cnM?oc=5",
+        "publisher": "Investor's Business Daily",
+        "publishedAt": "2026-10-27T21:43:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "eff10209aa43ed19d0bf5255",
+        "title": "Waymo Expands Robotaxi Service Across Five Cities, Adding Nearly 250 Square Miles - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX0pMYW1uZFNhcXFfbWtQYmlBUmVkbWJ5X3k4M2NHNlZIbnVtdjFGQ2hZSXdDNEFGUTdLNGZ4NXBjOHlFcHdBZnpoLTlieF9WRXFnUmNPNXJ3UVg5NWQyMDk4UFhVRC05amFWNnFnbnNQeG1qNGdDQnplb2VTYmsxS3lmcWdsTndZVFdRU0JmQmE?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-27T21:17:43.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "233f51ae9ff626f5870cc74d",
+        "title": "Houston gets larger Starship-shaped Tesla Robotaxi geofence, Cybercab + Model Y surpass 1,000 vehicles in Texas - Tesla Oracle",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZDI0a2s2dElhV2d3ekdxaHhCQkRVUXJuNjFIWjF4c19BMUNXRFdnamJMd3hYamZlcWJxWEFTWEpnaDkxOXlHMjBrZ210SUlrUUdNbHFxZVVNclg0S2ozXzAyaFUyaDZoQUJlOGVMME13WGQ3VXAyMTBOOTlZQmI2WVNuZDZtdGozNjZzQnVsU1lZQ1gyNnRNWExKeU1DR1pFZzdFUWs3NS1JbHBTc1pOZ25MeEpVa2gtQ2xKcGhBVkFtQ2ZkcExwendyUFNMdW5nWUJKME9FWmxiUWNydUVVWg?oc=5",
+        "publisher": "Tesla Oracle",
+        "publishedAt": "2026-10-27T20:22:39.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "a1380f3f610926879eb3eefa",
+        "title": "Cybercab Surpasses Model Y as Tesla’s Texas Robotaxi Fleet Hits 1,051 - TeslaNorth.com",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Xb3ZyMTRjbVl3Q1RGbU53WlpnZlFoVjN1MjZ5Ml93b3FqT3hYZTlYbkRWR2JPLWg4U25rLTA5WC02TDExdV84Mm5feEVnWEYwWkhoNlhlcTQzMUFwQzZHdEtPUkxWLUxLSS1lN181YzNJLTRBX1NwSUpYTDUtdUU?oc=5",
+        "publisher": "TeslaNorth.com",
+        "publishedAt": "2026-10-27T18:56:22.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "93eedbf498d0c5e4ac50686a",
+        "title": "Tesla Shares Hit Three-Month High as Texas Robotaxi Fleet Passes 1,000 Vehicles - Electric Vehicles",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNemc4Y3Y5S3Y1QW82djN1MkhMN19fQW1YNTFIbTFMMjFZa3pDTHUzQUx5QUtHTTVSNUtkUGU0UklIUHV1WFlhM1R3Y2VhYTRYWE96VG1TSjFXRzNNVGRaUFkxaFNnN0x4Wjd2OUZOdll3cVRVRVk3Y2dTOTNBajcyWmx4LUtxLVowUE52N1VkdGZoTzV2WERqTkduX0VGRzJ2YmUwb0J2ak9EOHBYSVVFU3BmZ2I?oc=5",
+        "publisher": "Electric Vehicles",
+        "publishedAt": "2026-10-27T18:33:00.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "47fdf88867cd5463575510b6",
+        "title": "Elon Musk Says Tesla Robotaxi Beach Expansion in Miami and Tampa Is Coming Soon - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdGNxVWZiN2NCMTA0ZnNsMkdfbTBiZGpKMFpOM1c3Mmo0cWhtcmk4aHBOdzJpM3BRWVRZTHlnT29hMU4xeGJTNHdvZi12REVwV3RvVkdoSnAtQW1GZW0wQkFScUlFeWp2WkwxUlViTDRoZVFxYUJ2bXp4N2RWRVdkMGVsanpueVktWGVadjNPNA?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-27T18:24:45.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "087a066583b4622adda1aca0",
+        "title": "Tesla Robotaxi Fleet Tops 1,000 in Texas as Cybercab Passes Model Y - BASENOR - Tesla Accessories",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSG1STFpFeEZSSkZ2NFk3anl0RVBNLUdaNFFOVTVkZGh3bF9qMzFKMkF2clpWUUtzdktaamRZUDZFQk9vYVZBRmxDVWRBdTdvMVE5U3RKLVg1UlV3UlJaQ2lwS0JmRkFHZ1lrM09TQU1yQmZiYU84VzJ0TlUySzFOZ21yMGQ2VDdTaWxCeWtvNGZxNnJRUjU3RTZrN0FERmpjUUZibg?oc=5",
+        "publisher": "BASENOR - Tesla Accessories",
+        "publishedAt": "2026-10-27T18:05:27.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "0f8cb097a3052ce51df79d28",
+        "title": "Tesla Robotaxi Beach Expansion: Miami & Tampa Questions Answered - BASENOR - Tesla Accessories",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQekZDRnp1SUhSVDFWNFRaaEJ1ejRvLVZEd3NlYXpfc1BSMjd5NjF5aUg5TzhJTWJZbHFRS05kalpqdjBnQ3JpSV8wRDBiR1FMb25KbkhTRE1JZU1PM3dEU2otUDBhRXZhaHpVVk1qOXZEQWd5YUZVb2gtT0tXN2k0WlhlUzBLcEczSm9wc1FVc190Uy1rOUpVS09pTEU?oc=5",
+        "publisher": "BASENOR - Tesla Accessories",
+        "publishedAt": "2026-10-27T16:04:47.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "2d0c855dfc5bf71f5b273f1e",
+        "title": "Tesla’s Optimus Robot Will Soon Plug In Robotaxis to Charge - Not a Tesla App",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPanlTS2ZfUHdkWURLWk1pTmY0ZVhsckFXV1RoclQxbk8yUlFydmltWXQzUTJrVEVqZU1rbWZQR2lPNy1jYzRUWTI3ODMtN2FDRmU0RHNYYjhZOW9yVGNTRHZDdktHZnJDTk1mRDFWaWFMRDViaTBlc3dxa0lfQ090OWpiRVk4ajd2X0l0Tk9maHM3XzE1dm1yUkZ6ekc1Zw?oc=5",
+        "publisher": "Not a Tesla App",
+        "publishedAt": "2026-10-27T15:25:00.000Z",
+        "firstCollectedAt": "2026-10-29T00:07:00.347Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e13959a1901e4f6763ec6b7f",
+        "title": "Musk declares Tesla Robotaxi win over Waymo, but Waymo still drives 7x more - Electrek",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBONFpuZ1RKX1dlamdJczRXYVZzd0VmMTkwV210RDdvdExlUzBrLVN6eTJGdGxmUzNacnNvRm5FcDNCeF9BRV9QRGtiaWNESlF1TFVwOFREVm80d3BGdFRTNmY4UXNkSFMzUTdvTWJQckhELWNjRXlNakdmUXA?oc=5",
+        "publisher": "Electrek",
+        "publishedAt": "2026-10-27T15:21:00.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "9b5b1da0ea6f7ca7595e4c5c",
+        "title": "Tesla grows its Houston robotaxi zone tenfold to ~250 sq mi, in the shape of a rocket - Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUDhVLWJzajhuSFRiTFR2bTFjaFR2dmVQYlpjeEx2Q2diWmdKdldlMndvbndGYUxPbzZyNlRFd0tGLU5nWERNTmQzT0xHTkRKU2dWUE1mbUJtN29QUjd4dFBtZnZrNXNrTHlMQUNfamJub2RTZWdNUGlaaTIxVFQ2aG84TzVjaGhDcVFhU202VWsyWGlKa0RQVWdHNUxoMm0wenIyYzJwY2dqZWd5OU9YU1FFN0tVT1NK?oc=5",
+        "publisher": "Dealroom",
+        "publishedAt": "2026-10-27T15:12:10.000Z",
+        "firstCollectedAt": "2026-10-28T07:21:25.785Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e4468ffa4167686fd49bea66",
+        "title": "Tesla's robotaxi footprint grows in Houston",
+        "url": "https://www.msn.com/en-us/technology/general/tesla-s-robotaxi-footprint-grows-in-houston/ar-AA2gc2sX",
+        "publisher": "www.msn.com",
+        "publishedAt": "2026-10-27T14:30:33.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "bing-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "db759c69bc5815ea995dfb5b",
+        "title": "Barclays Upgrades Tesla Stock Citing SpaceX Merger Potential And Robotaxi Growth - TIKR.com",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZHdDWnliNDNmbnlPU0xGTG5GcjNTQlZoUlhFZEZhR2ZkaDNudFZ1QU44UUpfZEdlZ2g3eWpRY1MwbEtXd2pZZk5OTTRRM2U4b2JFeUk1SU1PYkp5bjdGd1F0cVhhc2ZOSnM3dVpUc1o5OGtqak5fMi1UWnRJcmY5eGJFcm1lNmM3LXQtZFk3aUtNMEVrNVFzZVB1T1g?oc=5",
+        "publisher": "TIKR.com",
+        "publishedAt": "2026-10-27T12:49:23.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "fb833eab73e580c717b5d083",
+        "title": "Robotaxi Market Projected to Hit US$ 198.6 Billion by 2033 as Waymo, Tesla, and Uber Scale Operations - openPR.com",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYnI5NUJ3cDlDOFlEcTVJM1hJUTlQVEtZLVpVRVV5WUREMDdtT3BmVnQydGZ3RnNMRUFGN3h0eTR4bjdON0F4NkNJUi16T1Q4WGZYVFJNZG4yR1VoZnk5b0Q4QVBwVS1sMHBWTE9hMFNDSHd0cUhzQ21sZ3p4WllONWZERFdTazVRVTRYTEFKak1YQ3Zvc3ByRXQyMHU?oc=5",
+        "publisher": "openPR.com",
+        "publishedAt": "2026-10-27T11:55:24.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "93b0d56cf59aeb149767afc0",
+        "title": "Musk declares Tesla Robotaxi win over Waymo, but Waymo still drives 7x more",
+        "url": "https://electrek.co/2026/10/27/musk-robotaxi-victory-waymo-austin-miles/",
+        "publisher": "electrek.co",
+        "publishedAt": "2026-10-27T08:21:00.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "bing-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "babe789ca5c5063a79d428a2",
+        "title": "Tesla makes another joke of its Robotaxi geofence expansion - Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcG1aRlM0RHlicHlKMGpMRjNNVXk0Z3FxMWVXWnFRM0VZSk1UX0tJUVhUbmdOb0tuRXF3YllIcTlBdXl2WHZUUkVBRkdrYWxUdUg2djZlLVpYNDVlM3dMLXA0V2hCM3M1aWswZ3l4TWJiMk15STVZNGtQY0doT3JnTWFvUlhSdFpMWFVZem9BS0xKS3hLTDdEcDZsd0pWMmJOYl9xNGxkYlFPOWZtV0JnRVZMdw?oc=5",
+        "publisher": "Moomoo",
+        "publishedAt": "2026-10-27T06:05:51.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "1ead78c073009125d94c2de5",
+        "title": "Tesla Confirms New Cybercab Inverter Technology is Coming to Model 3 - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYjVRQm9fZ2hhWUJoYUZmbVBoUkhYSWlzYVVCMmliaXJobnBvR0lqVU1GRUVhOWlnU0V4b01QWVBFdE9acWhneENQcU1SbzBndEdNdVk0ZlY3b2RnNEdlYVdWaldQVEZkU3Zxd3hjM0h0SnV2bGFaaTRtVFJzWFBGcVZaaVFCcjByY293aw?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-26T19:05:00.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "6458a3517a94351bc819761e",
+        "title": "Tesla Doesn’t Run Its Cybercab Line Every Day Because It’s Too Fast - TeslaNorth.com",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX1ZCRUtyN3J1eFpSY3ZpeTlidkNrWTFTWTFTQnBadF9lN2s2T2hFQ29oTlNubWl6SmhLVDNSem9jWE9ZcDZXeFZkdy1RbDVYNFltbElEdzBaM2U1bXpoTDRKMU1peWVVSFZOZFlwam9OSnJWa01mVnFBMWk3VF9keWNUVkhWdw?oc=5",
+        "publisher": "TeslaNorth.com",
+        "publishedAt": "2026-10-26T18:51:59.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "a6125ee3f61adad7d4992807",
+        "title": "Tesla designed Cybercab battery pack to support cheaper LFP chemistry - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbzh2UFFmVGtyak92TmcyVy03LW43TXJtSFVtS3l1Sk5IbE1fUFVUZzJMYkN4czRJcGtrMmE3SzRDNXBpWmtSdjNFNDBRSHdpUXhVc2VaMjRLVVIxVG5fOEJrVTFkdDUwb2s2N2g4MnFkTWNicTgzbmM4Y0RRYVR1UkZWX1FRLUMwNXc?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-26T18:51:57.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "c840aa1ee51f4fafa2452d32",
+        "title": "Tesla Moves Away From Fully Structural Battery Packs with Cybercab – Here’s Why - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUVFfY3BKek1YMnh2V3EwZFBzdzhYME1HWmZvQmhWa1d4TmxPVDRDc1I0SHZJZjd5Rkd2VUNIbHhJeGdtSEU4TC1MNUVqUGpPNFItc3JjZENGRmlMT0huZWJWbFNnbU4xSEU0TGJrOFFOMHpvTE9UYlY3WkNBTjFmWG56Rl9VQ2JN?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-26T18:32:28.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "0b16b6eea13249eb2ba620b1",
+        "title": "Tesla says Cybercab production is already outpacing Robotaxi deployments - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObmZLdHcyZmdjRTRmNjlXdzAwM3dyYmlRc2VsNjVjOWJsQjVIQkM4RTJyWUtTVHR1TVM3QUtlVWVNUVEyZ1pkQ3Iya1gtY29FcVRkZDRmMEpvSDdoS3dsMzBfRzg1aVBIeTZFbUpXZ21PMm9naVVvNGk1VlZ4RXBXVXg2Zk1EN0tpQkRYUXhIXy1YN0kt?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-26T18:17:26.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "a00d5bcb3e307b577a0640b0",
+        "title": "Tesla Cybercab Activity Hits Record High as Robotaxis Serve Austin F1 Grand Prix - TipRanks",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNemFIaFZ0MjB1WU1qQW0xODhjVnBZOWJTVl9CYTRhb3cweHhsTUN3QXVXemo5VDNFaFk1aXFzdjV1dnhmS1o3TUVWWV84NUZkU3hUR3dQVkhNQVBrc2lIa3BpTlVvTnhBNmNJTHNfNy1uWFphNU11ajhURFZ2MlJ3WVQxM2kwNWx1a1duMmEtTFAtQmhUS3R3Sy1obV9Md3dyaVlkdVpNR1h6NW55UEJB?oc=5",
+        "publisher": "TipRanks",
+        "publishedAt": "2026-10-26T17:21:03.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "458b207aaf61e4d7ef24d059",
+        "title": "Tesla's Houston Robotaxi Expansion: 5 Details That Matter - BASENOR - Tesla Accessories",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdmM1QjRBY3NEcFl5SUp3aTBZQ3lXYjFuU0lrMjRKRmdiNEtYeEJYWUdjTGhGSmhFa0x3SjN6WnA4TE51T2E2NkwtalFfSnlHQXEtc2Mza1pDbG4yN0ZTZUpUaHJMNVdObnNFX2dZSUhQX3dtYWdwX0M1enFaSGVBemhFVzhKNk1BOU5wcWViTUx5ejhi?oc=5",
+        "publisher": "BASENOR - Tesla Accessories",
+        "publishedAt": "2026-10-26T15:07:07.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "d77e4885e1e80e12941d8cff",
+        "title": "Tesla significantly expands Houston Robotaxi service area - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRlphQWdqRFg5X01sOGRKbVUzRVAwUTBGLXhhQllvd0VLV2JOTktPd0MtLXdEbE5GTm16WW9DQm02WC1uOTZfSERmS2M5UFowdzI4WjFPcVJlTWxrZVV0SlhieFFhc05qU3Ffdjd0Q1EyS1lLajYzZGtxRDcxNFdDdzNFSEVPUQ?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-26T14:17:21.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "eaba77ee6b37284860d6a59b",
+        "title": "Tesla Cybercabs and Robotaxis Turn Out in Force at Austin F1 Grand Prix - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOa2xuQlNGdWEzT0IzeVVna2tjcjFkMUhkYjRSUTQxVlgyTGpMZGlUZWJSUmRpY0FWZ1MxazZEWlZ2bG1LaV9abnNaOHlrS2lic3h2dVZVT1ViazA4TmlZbExDRzZRVHRNSU9hMGtsdUlJdm1NU0pTWXl1VXAxQl9fclU3d00zUQ?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-26T14:07:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "bfc307eb0ed230c9f03df88e",
+        "title": "Tesla expands robotaxi in Houston. See the new rocket-shaped map",
+        "url": "https://www.msn.com/en-us/technology/general/tesla-expands-robotaxi-in-houston-see-the-new-rocket-shaped-map/ar-AA2g7hwD",
+        "publisher": "www.msn.com",
+        "publishedAt": "2026-10-26T11:27:16.000Z",
+        "firstCollectedAt": "2026-10-29T00:07:00.347Z",
+        "feedId": "bing-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "8d17ccf75f47446ec8f916eb",
+        "title": "Tesla robotaxi seen closing in on Waymo if weekly miles rise 20 percent",
+        "url": "https://www.digitaltoday.co.kr/en/view/119488/tesla-robotaxi-closing-in-on-waymo-what-happens-if-weekly-miles-rise-20-percent",
+        "publisher": "www.digitaltoday.co.kr",
+        "publishedAt": "2026-10-26T08:05:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "bing-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "11804a1507944f7b342efab3",
+        "title": "Tesla Cybercabs take over Austin’s F1 weekend - Teslarati",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0xSHliTGVDeWJJWDZ5UFBoYXcxYVZXbm93bUFZbTA1WHlHRmlkNnRuM0E5ZE1xTDFpLTZYc25sb25hUTJ2VTFKeUpNS2hDSDRMdkZrNjAwNXNwNk10VzlvdEVYOG83NndSM2RTX0tuNDBoSGk5R1JmMXRCSQ?oc=5",
+        "publisher": "Teslarati",
+        "publishedAt": "2026-10-26T05:06:27.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "ce2b15654f270112430c2e1c",
+        "title": "Tesla robotaxi seen closing in on Waymo if weekly miles rise 20 percent - 디지털투데이",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYm96NzBKbS1Va3Bmc0ZvbEJyak11UDQ1X0I2cVplOW02anpJV21RMjJYYUR2RU5ubVVYRFRSa210NmpQVm40cGV0Y1JCV0JGRTBVbUV0dm5hQzd5QkxjU0xld29DVFF2ZDR3NnJ5ekdhWDJvTENSejdXZ1VkZXNsTElLbmxqQnN5QmRsS1hGZ0tMSEdwSlA0UHpUOWhPdXRDSHdOUW5UaVZPYl9iU0p4VHUxWWdjdzVrWTRob1pTVWl5U28?oc=5",
+        "publisher": "디지털투데이",
+        "publishedAt": "2026-10-26T04:50:13.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "6598e3d7a916d8cad7c16e25",
+        "title": "Tesla Cybercab Adds 2 Features: Rear Cam, Quiet Mode [2026] - https://tech-insider.org/",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRzhJaGVfZ3FpUE1oaFlnOEItREJMZ1ZJeXhUMU1jbHFjWkRsWkZCLTdTTXM3SXNIUm1LdGxUanZWY3BpcGZMTUlLeFhrZlVQWWw3ck9vZC1tMm9Vdk1SUVp5eVlQcGpmVWlVN000OGFncmVZTmU3aWktRmVMWVZ3WVRuRXM?oc=5",
+        "publisher": "https://tech-insider.org/",
+        "publishedAt": "2026-10-26T01:50:23.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "52bff689abd5549f84b42e2f",
+        "title": "Tesla Cybercabs Ferry F1 Fans in Austin as Sightings Hit New Record - Electric Vehicles",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZWEwUGVyaGpxREZGQ2tQTXd3cGFHT3hiUDAtMjlrRENfSTdwWlA3VUxOT2Z0SnRROXJmWTY5MjBuUV96dnMyU0h3UnpGYjBlcFRXMkZxbXNTNzRSZldYb3N1UnRYS0hqMmF0M0tBa19fOGtiWTk2b09wUHB0YWpvNDRUeF9fajNQNGJtY3pacHZveEZab3V6MUtOcnhnR1ZPdTlIdFNn?oc=5",
+        "publisher": "Electric Vehicles",
+        "publishedAt": "2026-10-25T22:04:00.000Z",
+        "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "848443ed0661259270629cf5",
+        "title": "Tesla To Start Selling The Cybercab Later This Year - AUTOJOSH",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB1aXR0bWkwTnlJN3dYY2FnYnNSLTFLTlc4OHZJTGVyOEhiV0k4Nm9VSkZpMFV1TGZkeHptM3ZhLXJjcWhQUnI5MDE4TS13eEFCdFotTVY3bDdpSzBOY0hGUE9LSzNKV0FPZ1lzY3h6LW9ibmtMTG91UmhUcnBOQQ?oc=5",
+        "publisher": "AUTOJOSH",
+        "publishedAt": "2026-10-25T21:35:35.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "851baf478ef5600de950c85d",
+        "title": "Tesla Cybercab Adds Rear Camera View and New Robotaxi Rider Features - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSmFGb2NzalJDaV94ejl5U1R4Z1JLNV83VlBuRlpfczk2ZVpDSnBRQ3kyS3NyQ1VTSnBVVlJCUWVlZHhSclE0YmpXMmw5NzdvSEhSbzkxcFk1UG1vMnJwRC1NeVg5MFgzX0NaNHBfYWtUTWhUTlRsa3FQNVBfYk5md0tWcDR1cW1BN0Vj?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-25T16:51:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "84dd435fbf7b2c4e6e7db560",
+        "title": "A Car with No Steering Wheel Was Parked in Toa Payoh: Tesla’s Cybercab in Singapore - DANAMIC",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQa2l6eUZHNE5qTWdEQ1dQcFhBUVlQeXQ1VkgteTVpVGU4NjdTdTBOSjhNaEdZdnhMRVFjNldaTWYtY1FsS29ZOFFQeE9NZVZRTVFFMmpTdk16bWZGdW9hazg3UThmWU0wZkIzMi1vbE00a085S0FKcm0xOWpzOEUyMDhnSk14WHBGd2ZtZXBzd1FyMEhOMllxRmlpRm9lQUtvMGc?oc=5",
+        "publisher": "DANAMIC",
+        "publishedAt": "2026-10-25T11:01:16.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e62e1087ca71db4411632be9",
+        "title": "Tesla Reshapes Its Website Around Robotaxi, Semi, and Roadster - BASENOR - Tesla Accessories",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTmdEN0RDNTdqOC1pNUp6UkZuNnZGMjNvQVBhb2w4RVU0QnljQWZWbGV1OGFQejVKYUR3cm8zRElTcFh4RVg0bjVPMzlCaUdfTW5SXzcyWDY3X1Z4a1dqQjdlcGVncHVuU2hsN1NaaVdYRXV4ek91aFo3bjJCazhzVXlzdDlmYVYtYVc4R3lZamFsOTFoWWJUdVV0WQ?oc=5",
+        "publisher": "BASENOR - Tesla Accessories",
+        "publishedAt": "2026-10-25T06:04:36.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "2677bc85a1f21cefa5733399",
+        "title": "Tesla Cybercab in Texas: 5 Details That Matter - BASENOR - Tesla Accessories",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR3RKVHdMa3ZIS1J5V3B2bUY4dndoNlN1QXh5aGplOWpaeVBSTVpiajRZSlVGYlNYNjVmRGtidDFlemtrc2FfTVd3UG90T2NITV9oUnZoZVk1NUY3NDlZc0JmMXdqM2luWk1TazY4UWp0cEZEbUo4djZCVjAzekI0MnBpZzBDSHM?oc=5",
+        "publisher": "BASENOR - Tesla Accessories",
+        "publishedAt": "2026-10-24T22:04:16.000Z",
+        "firstCollectedAt": "2026-10-25T00:41:17.159Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "d172be0be83547eecee0e606",
+        "title": "Bank of America resets Tesla forecast as Robotaxi miles double - TheStreet",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNR0pMY3cwREJXRVRHbkJuZHNpZmkxYndVSnNHamdUZ3Jsdi1RUVF3MF9JOWk5Zkdldy11R1poN3VWU29Nc2VQNVF0dXRINWI4LTZvY1BzZEVDNDdTdmZyNWtLVUI5NGY1Z2hoTF8xcUZ1d3lodm5SdkV3R3NNUmVCdm5zMjRUS2ZQWlg2Z0NZdFpCdDJWNG1vemlfeWp5ZUs1NVZyWQ?oc=5",
+        "publisher": "TheStreet",
+        "publishedAt": "2026-10-24T22:03:00.000Z",
+        "firstCollectedAt": "2026-10-25T00:41:17.159Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "161c3ebb252c9e132e047bb4",
+        "title": "Tesla Cybercabs take over Austin’s F1 weekend",
+        "url": "https://www.teslarati.com/tesla-cybercabs-take-over-austins-f1-weekend/",
+        "publisher": "www.teslarati.com",
+        "publishedAt": "2026-10-24T17:00:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "bing-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "07d41c85e349ab43cf4740f0",
+        "title": "Tesla Stock Holds $369 as Cybercab Launch Puts $380 Breakout in Focus - TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSkFEbFVRdUE5ajZySWlLSGQ5NVdWVmFzWWlMSTllaGtZWDlsdHh3Q0lJUWlDTDBoVHpHWk9vNnN6eDR1d2JsaEtzN3dNNW44MzA2RWxPSTRObmk5dHY1eEgwLWtEdGV4TkdPcEMwcWEyNDA4V1Vkb09HbFZQa1VqTTl0TEtDcThNZ1k5a09WZjFOLWI5dzVNT2IxM2pwQWlvNjMxenJ4STFZb0dlRjdpaVF3?oc=5",
+        "publisher": "TradingKey",
+        "publishedAt": "2026-10-24T13:20:30.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "91f2bfe59cdbe65be9ee2f37",
+        "title": "Tesla Robotaxi vs. Google Waymo: Who Has the Advantage in Autonomous Taxi Commercialization? - TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWGpHYk1JM1BiTWNTS3lGU1VkX0F4a0RwUENxaHhqYklZUkNHY05IUnFPY2FfOFVGcDF5N0NiT0pfTGFxc0hLZ3lLd0JKdDF1c0xXb05CanRMUGpfWWdsb0tiWmVDODU4WDdENlgzdk1fMHVRdzdTMzdfalA0cmxkRlFTeExTVVd2MFlna09UUzR0N3RiRjBYcmwyQkNPOGRNVzlPV0lmdEd5X3BtR0trejlVc21DNm9pTl9vR1RnSC1jU1J4N1g3SmVaM0NmRFZEOXBvSW5KVVJzSVNaYWNiS09n?oc=5",
+        "publisher": "TradingKey",
+        "publishedAt": "2026-10-24T04:08:30.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "c0c72ccbd86e2d31a3f9be04",
+        "title": "Tesla expands Cybercab Robotaxi Austin geofence ahead of 2026 US Grand Prix - Tesla Oracle",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV29SYXhLWm0xQ0g1cl9ob29QUjN4Q2U2WkdxRlk0XzRaZGo5eW9fMkQ1UmtFNVNXTGJHX01SYWtIaGpnWFpodFVmblBmSDQ5RTc5N3NiaU85Y0w3dUhzQXdJMGt1djFIWUZTNFo4TGI2c1dRSU9Ib3VpaGU3dUxmSXpZd2tVYm9FNEN5d1o0TGtSMC1aNjRMZTlIVWtOMVYyT29fX011UG5GcnN2MnBwWXVNRDVUZw?oc=5",
+        "publisher": "Tesla Oracle",
+        "publishedAt": "2026-10-23T18:52:09.000Z",
+        "firstCollectedAt": "2026-10-24T01:15:19.580Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "11c65a3169a5b66476cfdb6a",
+        "title": "NHTSA Proposes Easing Manual Lighting Control Rules for Driverless Vehicles Like Cybercab - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSlh0eGtpc0ZHdnMwa0JaZzZyZlUtN0h1SnlrTm5QYkd0bkJMalpnNU1wTC1ZT0wydHdRcGx1LWIxbWVMcDhDYV9UN0NQSlE3RGRSc2pwSUlqaVp4Y1pkZC1KVVRTRGJaTl9mUFBZM3J0blM1VllaYVc4Sl9GbF9iVkJjVTZKNUNJbDlNRG8zMVEzNThCdkVB?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-23T17:19:49.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "f117ade3aa691314088c05ba",
+        "title": "Tesla’s First Cybercab Crash Lands Inside an Active NHTSA Audit - Yahoo",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOakotcnJVSHhsYzRzVnN2czZlTmZneGdxZ09iWFhVMHZzeWRudElYQnR2ckdua21GbnoxQ1FsaERZODV3RGdrZDhpWEJqUzdtUGFjbXgxQ2NTc19yVnFyVkp3c3pLUFVJVE40Y2RVX0FKbnJjTUJPR0JMLUdOQUh6SF9ycVRGa1g2cTZsMlRxdw?oc=5",
+        "publisher": "Yahoo",
+        "publishedAt": "2026-10-23T17:18:07.000Z",
+        "firstCollectedAt": "2026-10-24T01:15:19.580Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "722515bdbe98cd6dee1a7a20",
+        "title": "Tesla Robotaxi expands Austin service to COTA, extends hours to 1 AM ahead of F1 weekend - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE84c242WW5hWS1KXzlGS3ptX1dDQ1dMdWtDdndpYUZSMFg1RFpfM1RPa1dHWC1wZXZfcWNvTFVGNF9IMFE0MEdZa3d0ODJlRC1neDJtYVdmOWxxVzh3T0lidy1NTElkdEZoRzg4VzR6MXMwZw?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-23T16:08:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "7baf7c41352943124057992a",
+        "title": "Tesla to Launch Unsupervised FSD, Let Owners Join Robotaxi Network in Q2 2027 - Not a Tesla App",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPLTBUZnRWeFotYVBoQTE3bEhJVDdxdFotMFI4cFNXd1dlbTFzZDVsR3pxSVJSWGszOFJnemVGR29JWnBIS0NzZ0w4SVVvb2lkR1p5SWI0LURpVG02Q1lBMmNNLWloaDBQblZOcUtvT3BNR1licHNqR0lSWWZNaDZhLVVYdDFmSFhzcjFXdUw0UlFWcGI0Vk81RjNTS05GMG5YeFk0ZVhGME9Wa0VxVUs5UzlETFZtUQ?oc=5",
+        "publisher": "Not a Tesla App",
+        "publishedAt": "2026-10-23T15:31:00.000Z",
+        "firstCollectedAt": "2026-10-24T01:15:19.580Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "8a19a7bc1694c40ff8d649f0",
+        "title": "Tesla Robotaxi Runs Until 1 AM in Austin, Adds COTA Before F1 Weekend - TeslaNorth.com",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE15b0d3ZTR6OUVHMHVnN0Vua1dMdUwyMDFSbV9vQmVkV0FrMGVJd1VYTDUzaXV1TmRTR1V3UnVMUGlZZXhBSzlzakw1TzVuYjU0RVhIMkRGeE1EVVp1UlZodGRiaU96aFo0ajA1S1hzXzJXWHc?oc=5",
+        "publisher": "TeslaNorth.com",
+        "publishedAt": "2026-10-23T13:02:11.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "1290422156d265837f6f9714",
+        "title": "Tesla announces Robotaxi launch in four more cities, releases safety data via new website (no kittens got hurt) - Tesla Oracle",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTE1NVzQ5MUhLb2VPYktSVW1zMmwxM010U1VhQ0dSVzNUUjFMeUpZaERVUjRDVTVRbndzOEItUXhRTVZnaV9Pc3B3OEc2LWlsYkh6Qk1BdkF1Zlhhci15SHBsQ3ZsNkdyal9jMWZzVDlyWmJuWmJOSVdDcGZYRy1JbVVQSHg1bzFnZklCMmR0dEMwZ21aVElUd09kcnU3VWdVanYxckowWnJUZXU2UVdybzVuV1ZTWFFYQ21RcTZIX2hUbDJBX3U5Z3RLWjhXTG5RSVdMTzNyUnoyb3ItUWN6SUpKZw?oc=5",
+        "publisher": "Tesla Oracle",
+        "publishedAt": "2026-10-23T10:06:36.000Z",
+        "firstCollectedAt": "2026-10-24T01:15:19.580Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e10c7e5d7ccaa61edd6117ba",
+        "title": "Tesla Targets Public Cybercab Sales by Year-End as US Safety Probe Raises Regulatory Questions - Tekedia",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHR6Z3dJb18wU2NIcVV5dkd5MnFGUzZXbEpRS0RhSzlBWG8yQTF1R0xYOWdXd0xYTGRtR0xhcENZLWlRVGVTRTNoS2FrR0E1anBPbTBqYW4xbTlsLU9qWVFJYTlHU29DRzNQc2F4Y0pLQkVZX0tSdWhBTUM1dXQ1RXJEYlkzQWllS2c2eEliamNJaS0tenNraEVnRnZqSTBfRXZHY1dhUmRYSk95T1lUMDZERi1NcmtPYk1v?oc=5",
+        "publisher": "Tekedia",
+        "publishedAt": "2026-10-23T02:44:54.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e919ef9e46fd6fcc5582ccf9",
+        "title": "Tesla plans to expand its Cybercab robotaxi ser... - Pluang",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRzQ4RjRXbFlrVUFCZFlrZXAwQ3pUUlUtNUg5VVpHRTZHQUZfTHN6WkxwMHpmN3NwRjVfc3c2MllvWGJiUU11WEtxdzlxaE94OGJoNTZaWV96VlpNMklnV0lBdVlkOGY0R3ZCR2RLTkI5dk5aanJoUC1kc0NrYk1oZ2YtaGxrUDlLZnVUbGZR?oc=5",
+        "publisher": "Pluang",
+        "publishedAt": "2026-10-22T23:04:39.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "3a88e9cf6e2545dfd6c6d310",
+        "title": "Elon Musk's Tesla eyes transportation 'domination' as Cybercab expansion heats up competition with Waymo - New York Post",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxORE1XYjJ4d1NiRUtELThQSnJoWmJvNXU4UHdQcVB6OC1ZV0dhUEZWOFUxTTI3UWE1Q01zZmJVWUdNLV9OY3FEWEZDaWxyREU1TFdDWkFIV1JIbjdGMnFmUnBqX2M4RU5SODY5WWVmUUFXVWJiVjVGY21LN04tWVFhOVYwRmVVVXpHLUxPUDVEMzBzZXBmanBaRENzUktucEQwM1FYVzFVbWx5RWl3N0VrV1B1a3RkeXQ3VkVzcVdFdHJ2SExjc1l4WDA2ejk5NXRjWFlIUEU3X0o?oc=5",
+        "publisher": "New York Post",
+        "publishedAt": "2026-10-22T22:43:00.000Z",
+        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "2778915263454a360998d231",
+        "title": "The Tesla Cybercab Had An Accident in Austin, Likely Because It Has No Lidar Sensors - Autonocion.com",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8zaEItZVJHRzdGMWQzSm03X3ZrVjZTa0x2cVpVX1l3azFKc0NEMmJaS1VXVlVKWlA2T3E4dFZabE5odTRsd3FkcUZQRE1zNFBMXzhBS01Wd3hlZFBKWi1EaV95RVJPdw?oc=5",
+        "publisher": "Autonocion.com",
+        "publishedAt": "2026-10-22T22:30:47.000Z",
+        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e5e7b9040049c8026c695dbb",
+        "title": "Tesla Targets Q2 2027 for Unsupervised FSD and Owner Robotaxis - teslahubs.com",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdVFhVEhwZk1rZk5aRUxhcDQ0ZktXVjVYa0JVUWtvMFVFVWY3OVpiakZfT05Fb0oxZ1hYZEtqd2RMMTdGWEczSGEycktTTHJvNzhQdDZmbFdXVFRkZC00dTd0cmRJQTk3ZVN5S0l6RlNmRDdRS1BJa0p1em9aOE9qUUVFTWFUazBzQkhVWTN1aFQxMk9YeFZiM3NUVQ?oc=5",
+        "publisher": "teslahubs.com",
+        "publishedAt": "2026-10-22T20:03:57.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "8c49d3bca7ff1e9c87c462d6",
+        "title": "Tesla Targets Dallas Cybercab Launch as Regulators Probe Safety - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVUpWWG14dzNCVVdMN3ZlcHVtY3NCdUFnR0Q4TklaNmpKWUsyM3FablJpcmVpOXp0VE5lU0lRZlpld2Q4azdMR3F4VXdSZ2tBeFByRVBCSXg0dkRyWUZhamh3RjRXa1ZRbF9zVGduYkpXQ2dBQVhiWVJJU0ZFNldzNEdFS3ZVb09kZUN0bW56UVNDejd6cFZXRWlldVc1UQ?oc=5",
+        "publisher": "Yahoo Finance",
+        "publishedAt": "2026-10-22T19:03:13.000Z",
+        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "a86593e2883d480dffcdb25d",
+        "title": "Tesla Targets Limited Cybercab Deliveries as NHTSA Sets Oct. 30 Deadline - TOKENPOST",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE00YXd3eXJwcjJSLUFUUXNRY0pqUGtsSXZTTzN2azM1bkpTUXhwdmJnUUdpeTJCcXk5YXhNTm9Pem1MVzRpTl9WZU5QMVpyY2RoeENTLWJsM1RpOFk?oc=5",
+        "publisher": "TOKENPOST",
+        "publishedAt": "2026-10-22T18:08:15.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "bc1441796717d253cf6884c5",
+        "title": "Tesla’s Cybercab Fleet Grows 8x in 30 Days [2026] - https://tech-insider.org/",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMU1vdmgtMjhYOUNRNFNwdGNaakdaRkdpQTRvYk5ZX1hDbWpoZnh0Y2d5TUJ0clpvako3RVlnVTJxaGJacDNETHpnVzZWYjAzQXFUVFU4eDBpU1lCa1ltR2h2TndCbVZ2bkw4NFNBTTZUaWV0TGJLbk5EODdsRUxnRXRGTlY?oc=5",
+        "publisher": "https://tech-insider.org/",
+        "publishedAt": "2026-10-22T16:25:14.000Z",
+        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "42a6bbab0e512bd53f63443e",
+        "title": "Tesla app code hints owners could add their own cars to the Robotaxi network - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOa21iZC1QUWpBZUdBVzA3NHpzZzlVUTJHcWJCSlVTZUhNb19aLVcwcWxKSGk4WUdyUkhVcXU3WXNBcHVVaWdFYXNlc1VQblRkZk9mRjhmWDNwMHVmQUJ3ZllNU1Q2ckozSnRBSU1xZWU0LUpOaF9LZGVDeVBGNHZFSUt1eXQ4NjdWUFE?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-22T16:17:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "6eb31ae46b781ebbd2857762",
+        "title": "Tesla Targets 5 Million Vehicles by 2030, Cybercab Deliveries in 2026 - teslahubs.com",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdEh1MWxhcTI2Z0dHQTd0ek9HTlBMMzFtM2dZM2dsOVdqalZMQ0dnZDBfYkI4NXRkZWNEdGpwRWc2WXRFMXBRdDRHMllkWENIWlBxdkcwZTZvLXUwbUtMc0NsVDhmSjNMU1Bub2JGOXlBRWNjNDFQV3RWdjlFR21GTUtZOFFPeGtWUWNsVFBaNDYyRDNGS3BCaGI4NG5BSFYwYTQwTGhTV09DTzB2?oc=5",
+        "publisher": "teslahubs.com",
+        "publishedAt": "2026-10-22T16:04:18.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "38904d1e7b1100270da71590",
+        "title": "Tesla to roll out Cybercab in Dallas next month — TechCrunch - UA.NEWS",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQaEE5V3hncFlGbVNuNy1aN2pZOXhlQ1U2RHJoMEZ1OUQ5Nl9OdGE2V0VVdThlVTNLYlJWei1TejZLQVlHc2QwN2djc3ZxYkVMUUJ3TXR6cnRqVmxiN3NKblpKMFVVVldYNkNQMUhCUXVTVnp4YzJySFJpd3NXdk1kOUMwWWw4RTRwWF9YOXhmSzV5VktLUmROZ2Q5NW5RQQ?oc=5",
+        "publisher": "UA.NEWS",
+        "publishedAt": "2026-10-22T15:55:27.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "68d736b7b05cf5f6543a9e5b",
+        "title": "Tesla is prepping a Cybercab onslaught - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb3FnbXBwU3BMbXEyT1BOWHRHNm9XUnR0MVQ0TG5SQkxDT2NRRmwyeDNUSkotdE43SDgxMmtHdG5ReFA0UzNwYzJDdnVGMGl3US1RR1BrT2ZGTThIQlRMalhIVkF0Z20zTXhSckc2R25WZ1l6WW5oVzZENlg5NzRnUG9OZk9PdnU3TjFzeThCeHVlQkVVS2RScm5nYkJ2Zw?oc=5",
+        "publisher": "Yahoo Finance",
+        "publishedAt": "2026-10-22T15:44:39.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "82850ab1492daa38400d6c6b",
+        "title": "Tesla Should Start Selling Cybercabs by the End of the Year - Motor Illustrated",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbFI3YkoyWUMzc0s4b1d6dVpzWS1TMDVQSXJQM2psVTNnRndfWVF2T3Z6WkFKRkZMLWdHT01vaFkzZnVMa3BVWG13OEUxMGx5NzJWa1NqcDFYb1gzcjFFRHE1UjExQWZkNm5vLWw3LXp1QjZRaEhDaWtOanp4VmNHMWVXY2s5R1kyaVVkMjhkOEtfeW80VWFaSThmcXrSAaIBQVVfeXFMTkxDbU81aWtSSUlQelVHUVYwMTZNb3YxTmhIcWg0VnhaS0ZpMVZ0Q0FZLUo3Nnl5emZfeFR4X1ozOTFhdTRwaTNKTEZUYklFTzNSYW1CQjliY1BTeWd0MzVha2pTaXBvZkZVR0h3aUZLM20wQUpKSjJ0TTFra05sMmZhbnA2ZnV0SmlGc0c5NF8zREhUZHZ5a1ZrMlBRdDJBZnBn?oc=5",
+        "publisher": "Motor Illustrated",
+        "publishedAt": "2026-10-22T15:13:43.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "51b6beac443cf2eadde739e8",
+        "title": "Tesla Aiming to Deliver First Customer Cybercabs by End of 2026 - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5vU09UeEFZQ3dDM1NlMF9WVEk3UWtWY2xsZ1E4Q3h0S0V4TjF3UlczSzVldDB2UWRzRHBqR3N2eXQ5Sy1TZUs1UTNGQllGTzNZOEh3dlJSXzJTY2ZCMjRyLVl1NU5TU3lFMThhZ1I2NmdBTWZCRnNUbA?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-22T14:36:00.000Z",
+        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "41b2442e55fcc870440b9d19",
+        "title": "Tesla Targets Cybercab Customers by Year-End, Says Most Stay Tesla-Owned - Electric Vehicles",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQd2hPTlp1WF9IbHlhV3hBTkxBMjFCS1dOTG5yS09WQ3pEMHF0S3pEb29WanVPUGtidWtLWTV5MFZSQjl5MWx2cEUzYm4yQW4zeGZ5TDlnNkJhV2xaeHVOUWFSNnV0MS1pWHVZSGVEU2gyOUlVaEJGT0tNVnEzUzJDbHFCWDJZajVvYU1CLWRkWmgycVF2MmU0RXNtRS1uak4yYVJ6U1N3T2kwZzg?oc=5",
+        "publisher": "Electric Vehicles",
+        "publishedAt": "2026-10-22T14:01:00.000Z",
+        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "79d6ed333f94fc230fd70ffa",
+        "title": "Tesla Cybercab Launch: First Autonomous Fleet Sales Expected This Year - Innovation Village",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdjE2QUdNbGMweGVaWnBDbkdQTDctRHNaU2R5YnF3OTczZUVwOGY0QkFydHluWDlzWUVZNHRaNkVKNEZjSGZtT0xObG5Bem9kb3dFdnJGbGZKbTVfcGtyWlBDZmtJQlBrdEJZNmJVQmFQYzRVVTFFMjlnSHA0Vks0VTJXcjc5b3lHOHczMzM4a3ExRGt6bTZOYkh4M0M0cGU4U0Rj?oc=5",
+        "publisher": "Innovation Village",
+        "publishedAt": "2026-10-22T13:24:07.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "f5d5d525882fe29ba347c779",
+        "title": "Tesla Cybercab heading to Dallas next month - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBJSVAwVTNpQmlYY0RqVVNjX3p2ZWFYMmtEbDBZV2NoU2RDLWJ6VUhRWlN6NkRaeW9RdU5aclZqd2ZQT2VUNnJSUHh1QmFlazYxTEJha0VLcFRkZTNZR3dxb25kd19RX2t0WElCelc4WnpEbnEzaGJTTF9SZ1dhZw?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-22T13:15:00.000Z",
+        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "ca9747ee9923791afabba413",
+        "title": "Tesla to begin selling its Cybercab by year’s end - Kursiv Media",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzlORlMzV2tKVW1KMG5uNEI4a29JSUR6M2lpaTdnTzh6LVM0SzJoS2Q5dFM3NEVDcGoxelMzUmR4MXZXY1U5SnBYUE9vNVVFSmp3alZYaUg2eko0UWhWU1FJY3cwQU9Pb2xzVkFYRlljRUxMV0hhQVRmRHJaV00tNTRjSlFJNVlHYUpoRkRPMUVGenBBQi1lcTBxTVduZw?oc=5",
+        "publisher": "Kursiv Media",
+        "publishedAt": "2026-10-22T12:54:39.000Z",
+        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "592645f0f869251de4d0e7da",
+        "title": "Tesla targets Q2 2027 for first unsupervised FSD in customer cars, but only inside Robotaxi zones - Drive Tesla Canada",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcnpZLTQyUHRFbzB0VEFPQlRFMzJWaHZhNmpZQThJM3hMZ1lRNU0yV0wydGJZN0x3TXVpUWFMdkh2SnZ3dkpaRjc2NVktQWFiVndYbTB6dTBQalpCWnd0V2pYWGxIMVNpVm95R1lDeVJiRUdCV3JORU1DaVpiN081SUlxellZUHF3dXc?oc=5",
+        "publisher": "Drive Tesla Canada",
+        "publishedAt": "2026-10-22T12:36:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "ca5500fe9f11e121b3b580ef",
+        "title": "Tesla is prepping a Cybercab onslaught",
+        "url": "https://techcrunch.com/2026/10/22/tesla-is-prepping-a-cybercab-onslaught/",
+        "publisher": "techcrunch.com",
+        "publishedAt": "2026-10-22T08:44:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "bing-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e9543b218941f0e62ed8af0a",
+        "title": "Tesla Reveals When It Plans to Start Selling Driverless Cybercabs - Mezha",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeEN0NFVNZ3kxT1I0QVZyR1A5LTVpZ3VfdjFBanZVQy1fdW5pay1MNjZwWVJGWHU5WG40VXpjZldReEJxOWpzSnRMdC1YNE5RNUp5Vk9IMnh5dGhTTFNDOFF5T0h3OV9TMUJ5aUZNSXlEM0pFcXFmejZVc3BuTTUyd0ZlLV9VSEVPWjM0c3dHR3F0VDQ1QjJQenlJQ1VYR1RRZXZqRw?oc=5",
+        "publisher": "Mezha",
+        "publishedAt": "2026-10-22T06:03:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e817c820ddb5367e953588b3",
+        "title": "Tesla Q3 Revenue Hits $28.05B as Cybercab Heads to Dallas - News and Statistics - IndexBox",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeE9aM240Um5LMzBWRjh0UkRlekZCZzg2TXA5VGpZRzN4ZGd6SkZFSEtaMjhsdm94ZUhXamVzRllnQTdyVFdXa3BDZVo1cEgwYUUxeUxZTXpNa3U2ZHVjZ0NydjZ2Vi1qQV9Za1JpNjBhR21FZHNFSkt4cGY4ekdtMHVjZ29rOU9MRWIyRk5nd2c5LW93TVFoM2llaGRzNllmZk9wVGJ3LTNueW1MQWhZM3lvNzRQdw?oc=5",
+        "publisher": "IndexBox",
+        "publishedAt": "2026-10-22T05:20:58.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "683da0e41451a00d0452eafd",
+        "title": "Tesla targets public Cybercab sales by year-end amid US safety probe - Mezha.net",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRExFQTRPZXJ1M3pndVdheVh0cW1tYU5haWpfSXVQb2ZmRW8ybFk4R09EWlpVd0RxY0Zad3ZuNVZIbDRPVWgySmxSRVRhQ3lULWx5eEVOWjVRR0xYYTJ4amtqWHotZUx4SDhpVUdUZjgwNzFEcUxfWFZXc0pGRjBfdVlURFp1dw?oc=5",
+        "publisher": "Mezha.net",
+        "publishedAt": "2026-10-22T04:40:37.000Z",
+        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
+        "feedId": "google-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "6fcd7d3a06e51cc85e403f1c",
+        "title": "Tesla Plans to Deliver Cybercab by Year-End as Steering Wheel-Free Design Faces US Regulatory Investigation - TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWEQ1OS00WWkyZ0lDQUYyQU5iWmd2UjN5VnltNlRRa1l5bWlFRUVUaFhuenRMMlhfeDh1U1A0aEMwSmh3WjdTSVRUZlZSandPOGphRzg5cDBaRkJoV1NWZDRBc1d2RHl2ZHJ4UG5OTHdYMXR2Vnp6Qzg0WXlWd0RoNC1tRXE0XzRTNEVLblRMeVBsY3NLdXZnOVlwTDZIZ3pDZUZ4OE9aUWg5M2FqV3dRa3g1MVFUY3liWmxaSHg2NHU5b3dBWjdhSQ?oc=5",
+        "publisher": "TradingKey",
+        "publishedAt": "2026-10-22T03:25:49.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "e29b546293f44dc99ac96b5b",
+        "title": "Tesla wants to sell its Cybercab self-driving car as early as 2026. - Vietnam.vn",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVV9lLWQ5QVVoX2NTOG9sYmljZU93TUE5bEZBMGtoVEM2SFJxZXZtYmVQTlEwWXhzSEo2dVk1azBSUkdCOC1aNGllZGYzT01kbEdZY1hpN0h2bzFKM25TZDU0TG1jQ0ExckRfaFdvQllsdU5vLWhDd2cwTUxBbjQyX1BfU05YZw?oc=5",
+        "publisher": "Vietnam.vn",
+        "publishedAt": "2026-10-22T03:05:31.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "126b87d027d43e6b512b9890",
+        "title": "Tesla aims to sell Cybercab robotaxis by end of year despite federal probe - The Economic Times",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSjBsbHUtaGhVSWppVXdwQnRINExlenJVWThEbDlRZ1dCX2ZWY1pLRjQ3VHdQY1R3WUpIOFg2azdUREJDcWswcjktYThQdl81Qk5qRkFmNFpMbjJjb0s4STlodFhaYmU5Z3NRdXIwR1BJTW5GM0ZZZVdTMlRzV0dXNjk3akZKc1d6MzBaVlZhcGdhZi1YLTAwMDVkcGtqWFR6ekdNX3RHNGgtS3ZCdDR4OXdRenA3LXZ0aVJVR2o3eWNIQVZaQzUxQ19pVnhJcFk0VGViWFRwTldDTUlU0gHiAUFVX3lxTE5wa0JJcGVfVHhBNko2b0MxZENkVHE0dXF4YUU3eWYySnVnNGtobFNEM1Z5ZERlaWk5N3FOR1YtLXJhRTNKSEh4YllZQXlNTjZKQm9MYkNJbnZWN2FQbkt6dE5oUDVQdGZ0VExyQndxYUxvMDhSM0R2b0tTSlBFV1FUVGNsd2tUOUhuQXlGOGFqclE1ZlhIMzJyQkVPVnlDWkZYeVhmY2RSQTd3UHlzMHdLY1VRRENtX05IdWd3dzI2NkI4bEZUV1h4NmdpNEJzQnlaMUdRQWZGbzBObXVhYnJ5NFE?oc=5",
+        "publisher": "The Economic Times",
+        "publishedAt": "2026-10-22T03:00:44.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "d4ef9ac2e42e3070278444e0",
+        "title": "NHTSA Probes 1,000 Cybercabs, Tesla Eyes Sale [2026] - https://tech-insider.org/",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbXJHT3o3VURFQWw1YlI0cVBnSDY3TFhCYkxVOV9NUzk2UlltbFg3UE9iY2pZU0gtY0w1ZnZpRlVvOHhEYVVYamdmNWhwMTBubjBWeGVndjBockMzSndFY2o5d2ZPaW1QcGt0YWhQUlZGWC1OSkRMSjRlRnRvZEJ2Q2Fn?oc=5",
+        "publisher": "https://tech-insider.org/",
+        "publishedAt": "2026-10-22T02:52:34.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "1c06f9e22240eab17bf117d5",
+        "title": "Tesla aims to sell Cybercab robotaxis by end of 2026 despite federal probe - The Straits Times",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUVUwOHh2M2VZcW9aM09LSVkxcXFwSk4taXhheXRDOERjbE1aUkFMZ09MdjJtY3duNWRtaWRGaVpVZ1ZYMXFHdElyMF9HMU9WOTlfZXZpV2Nza3EzdEtaejRrUWd3dXpNajlnS25oWTA0OXpTYjl4WnhOdkZJbnlPZGQxODhiSUdyLWtqZkYzZHg3N3BHYnpVdUdJOXVNMTctZHFFRWZuLXo1SDBZYVg1dFVB?oc=5",
+        "publisher": "The Straits Times",
+        "publishedAt": "2026-10-22T02:15:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "a79908cb60d86bf1104ea42f",
+        "title": "Tesla's Cybercab Robotaxi Fleet Jumped Eightfold in a Month to More Than 300 Vehicles in Austin, With Dallas Up Next. Is Elon Musk's Robotaxi Bet Finally Scaling?",
+        "url": "https://www.fool.com/investing/2026/10/15/teslas-cybercab-robotaxi-fleet-jumped-eightfold-in/",
+        "publisher": "www.fool.com",
+        "publishedAt": "2026-10-15T13:05:00.000Z",
+        "firstCollectedAt": "2026-10-23T05:26:01.858Z",
+        "feedId": "bing-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "8755bb84cccffdae162147b1",
+        "title": "Tesla: The Robotaxi Dream Meets An Earnings Reality Check",
+        "url": "https://seekingalpha.com/article/4954153-tesla-the-robotaxi-dream-meets-an-earnings-reality-check",
+        "publisher": "seekingalpha.com",
+        "publishedAt": "2026-10-14T10:30:00.000Z",
+        "firstCollectedAt": "2026-10-23T05:27:26.771Z",
+        "feedId": "bing-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "c204c6402a5c6cf5a76215c5",
+        "title": "Elon Musk Says That Tesla’s Robotaxi Service Has A ‘Cat Problem’",
+        "url": "https://tech.yahoo.com/transportation/articles/elon-musk-says-tesla-robotaxi-155532398.html",
+        "publisher": "tech.yahoo.com",
+        "publishedAt": "2026-10-06T08:55:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "bing-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      },
+      {
+        "id": "c0ffe031a0731e0b730c27c0",
+        "title": "Not Cars. Not Energy Storage. Tesla's Robotics and Robotaxi Ambitions Are the Real Reason the Stock Is Priced Like a Tech Company.",
+        "url": "https://www.fool.com/investing/2026/10/01/not-cars-not-energy-storage-teslas-robotics-and-ro/",
+        "publisher": "www.fool.com",
+        "publishedAt": "2026-10-01T11:23:00.000Z",
+        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
+        "feedId": "bing-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-10-29T02:01:10.248Z"
+        }
+      }
+    ],
+    "runs": [],
+    "feeds": [
+      {
+        "id": "google-us",
+        "name": "Google News · 미국 Tesla Robotaxi 검색 RSS",
+        "url": "https://news.google.com/rss/search?q=Tesla%20(robotaxi%20OR%20Cybercab)%20(USA%20OR%20%22United%20States%22%20OR%20%22U.S.%22)%20when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+        "checkedAt": "2026-10-29T02:01:10.248Z",
+        "state": "ok",
+        "lastSuccessAt": "2026-10-29T02:01:10.248Z",
+        "found": 80,
+        "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
+      },
+      {
+        "id": "bing-us",
+        "name": "Bing News · 미국 Tesla Robotaxi 검색 RSS",
+        "url": "https://www.bing.com/news/search?q=Tesla+robotaxi+(USA+OR+%22United+States%22)&format=rss",
+        "checkedAt": "2026-10-29T02:01:10.248Z",
+        "state": "ok",
+        "lastSuccessAt": "2026-10-29T02:01:10.248Z",
+        "found": 12,
+        "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
+      }
+    ],
+    "lastRun": {
+      "checkedAt": "2026-10-29T02:01:10.248Z",
+      "successfulFeeds": 2,
+      "totalFeeds": 2,
+      "newCandidates": 54,
+      "state": "completed_with_review_candidates",
+      "scope": "US",
+      "note": "미국 관련 검색 후보이며 원문 검토 전입니다. 모든 미국 지역의 모든 소식을 포괄하지 않습니다."
+    },
+    "officialPlans": [
+      {
+        "city": "피닉스",
+        "status": "planned",
+        "observedAt": "2026-10-23T04:55:09.000Z",
+        "sourceUrl": "https://www.tesla.com/robotaxi/safety"
+      },
+      {
+        "city": "라스베이거스",
+        "status": "planned",
+        "observedAt": "2026-10-23T04:55:09.000Z",
+        "sourceUrl": "https://www.tesla.com/robotaxi/safety"
+      },
+      {
+        "city": "잭슨빌",
+        "status": "planned",
+        "observedAt": "2026-10-23T04:55:09.000Z",
+        "sourceUrl": "https://www.tesla.com/robotaxi/safety"
+      },
+      {
+        "city": "샌안토니오",
+        "status": "planned",
+        "observedAt": "2026-10-23T04:55:09.000Z",
+        "sourceUrl": "https://www.tesla.com/robotaxi/safety"
+      }
+    ],
+    "regionCandidates": [],
+    "scope": "US",
+    "archivedItems": [
       {
         "id": "2e300f0c104583e02637dd4c",
         "title": "Tesla Gains Another 4% as ARK Restates $4,400 Robotaxi Target and Musk Teases “A Storm of Cybercabs” - TIKR.com",
@@ -5797,81 +7149,13 @@
         "verification": "discovery_only",
         "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음."
       }
-    ],
-    "runs": [],
-    "feeds": [
-      {
-        "id": "google-global",
-        "name": "Google News · 전 세계 Tesla Robotaxi/Cybercab 검색 RSS",
-        "url": "https://news.google.com/rss/search?q=Tesla%20(robotaxi%20OR%20Cybercab)%20when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
-        "checkedAt": "2026-10-29T01:19:23.459Z",
-        "state": "ok",
-        "lastSuccessAt": "2026-10-29T01:19:23.459Z",
-        "found": 80,
-        "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
-      },
-      {
-        "id": "bing-global",
-        "name": "Bing News · Tesla Robotaxi 검색 RSS",
-        "url": "https://www.bing.com/news/search?q=Tesla+robotaxi&format=rss",
-        "checkedAt": "2026-10-29T01:19:23.459Z",
-        "state": "ok",
-        "lastSuccessAt": "2026-10-29T01:19:23.459Z",
-        "found": 11,
-        "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
-      },
-      {
-        "id": "google-korean",
-        "name": "Google News · 한국어 해외·국내 소식 탐색 RSS",
-        "url": "https://news.google.com/rss/search?q=%ED%85%8C%EC%8A%AC%EB%9D%BC%20%EB%A1%9C%EB%B3%B4%ED%83%9D%EC%8B%9C%20when%3A7d&hl=ko&gl=KR&ceid=KR%3Ako",
-        "checkedAt": "2026-10-29T01:19:23.459Z",
-        "state": "ok",
-        "lastSuccessAt": "2026-10-29T01:19:23.459Z",
-        "found": 30,
-        "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
-      }
-    ],
-    "lastRun": {
-      "checkedAt": "2026-10-29T01:19:23.459Z",
-      "successfulFeeds": 3,
-      "totalFeeds": 3,
-      "newCandidates": 1,
-      "state": "completed_with_review_candidates",
-      "note": "전 세계 검색 피드 탐색과 연결된 공식 자료 변경 감지는 별도 작업. 검색 결과가 모든 국가·언어의 모든 소식을 포괄하지 않음."
-    },
-    "officialPlans": [
-      {
-        "city": "피닉스",
-        "status": "planned",
-        "observedAt": "2026-10-23T04:55:09.000Z",
-        "sourceUrl": "https://www.tesla.com/robotaxi/safety"
-      },
-      {
-        "city": "라스베이거스",
-        "status": "planned",
-        "observedAt": "2026-10-23T04:55:09.000Z",
-        "sourceUrl": "https://www.tesla.com/robotaxi/safety"
-      },
-      {
-        "city": "잭슨빌",
-        "status": "planned",
-        "observedAt": "2026-10-23T04:55:09.000Z",
-        "sourceUrl": "https://www.tesla.com/robotaxi/safety"
-      },
-      {
-        "city": "샌안토니오",
-        "status": "planned",
-        "observedAt": "2026-10-23T04:55:09.000Z",
-        "sourceUrl": "https://www.tesla.com/robotaxi/safety"
-      }
-    ],
-    "regionCandidates": []
+    ]
   },
   "summary": {
     "jurisdictions": 51,
     "checkedToday": 51,
-    "success": 43,
-    "accessFailed": 6,
+    "success": 42,
+    "accessFailed": 7,
     "extractionFailed": 2,
     "unconnected": 0,
     "unresearched": 0,
@@ -5977,13 +7261,13 @@
     },
     {
       "id": "monitor-2026-10-29",
-      "startedAt": "2026-10-29T01:19:23.459Z",
-      "completedAt": "2026-10-29T01:19:58.651Z",
+      "startedAt": "2026-10-29T02:01:10.248Z",
+      "completedAt": "2026-10-29T02:01:40.079Z",
       "summary": {
         "jurisdictions": 51,
         "checkedToday": 51,
-        "success": 43,
-        "accessFailed": 6,
+        "success": 42,
+        "accessFailed": 7,
         "extractionFailed": 2,
         "unconnected": 0,
         "unresearched": 0,
@@ -5991,14 +7275,15 @@
         "numericParsers": 1
       },
       "discovery": {
-        "checkedAt": "2026-10-29T01:19:23.459Z",
-        "successfulFeeds": 3,
-        "totalFeeds": 3,
-        "newCandidates": 1,
+        "checkedAt": "2026-10-29T02:01:10.248Z",
+        "successfulFeeds": 2,
+        "totalFeeds": 2,
+        "newCandidates": 54,
         "state": "completed_with_review_candidates",
-        "note": "전 세계 검색 피드 탐색과 연결된 공식 자료 변경 감지는 별도 작업. 검색 결과가 모든 국가·언어의 모든 소식을 포괄하지 않음."
+        "scope": "US",
+        "note": "미국 관련 검색 후보이며 원문 검토 전입니다. 모든 미국 지역의 모든 소식을 포괄하지 않습니다."
       }
     }
   ],
-  "registrationLastAttemptAt": "2026-10-29T01:19:23.459Z"
+  "registrationLastAttemptAt": "2026-10-29T02:01:10.248Z"
 }

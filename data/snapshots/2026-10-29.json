@@ -1,6 +1,7 @@
 {
   "date": "2026-10-29",
-  "runAt": "2026-10-29T01:19:21.413Z",
+  "runAt": "2026-10-29T02:01:08.497Z",
+  "activeScope": "US",
   "summaries": {
     "allocated": {
       "total": null,
@@ -747,29 +748,29 @@
     {
       "sourceId": "tesla-support",
       "state": "failed",
-      "checkedAt": "2026-10-29T01:19:21.413Z",
+      "checkedAt": "2026-10-29T02:01:08.497Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-cybercab",
       "state": "failed",
-      "checkedAt": "2026-10-29T01:19:21.413Z",
+      "checkedAt": "2026-10-29T02:01:08.497Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "tesla-ir-q3",
       "state": "failed",
-      "checkedAt": "2026-10-29T01:19:21.413Z",
+      "checkedAt": "2026-10-29T02:01:08.497Z",
       "lastSuccessAt": null,
       "message": "HTTP 403"
     },
     {
       "sourceId": "ca-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-29T01:19:21.413Z",
-      "lastSuccessAt": "2026-10-29T01:19:21.413Z",
+      "checkedAt": "2026-10-29T02:01:08.497Z",
+      "lastSuccessAt": "2026-10-29T02:01:08.497Z",
       "message": "허가 명단 접근 성공. 도시별 대수·서비스로 변환하지 않음.",
       "contentHash": "9f3deb950fe4d4045e639f6201ad059059ef65989bc135357e4412e33666ce49"
     },
@@ -797,22 +798,22 @@
     {
       "sourceId": "tx-dmv",
       "state": "ok",
-      "checkedAt": "2026-10-29T00:54:20.153Z",
-      "lastSuccessAt": "2026-10-29T00:54:20.153Z",
+      "checkedAt": "2026-10-29T01:19:23.459Z",
+      "lastSuccessAt": "2026-10-29T01:19:23.459Z",
       "message": "공식 텍사스 등록부 1080개 고유 VIN. Cybercab 573 / Model Y 507. 도시 합계와 별도."
     },
     {
       "sourceId": "tesla-safety",
       "state": "failed",
-      "checkedAt": "2026-10-29T01:19:21.413Z",
+      "checkedAt": "2026-10-29T02:01:08.497Z",
       "lastSuccessAt": "2026-10-23T04:55:09.000Z",
       "message": "HTTP 403 · 기존 계획·지도·최초 확인일 보존"
     },
     {
       "sourceId": "pioneer-tracker",
       "state": "ok",
-      "checkedAt": "2026-10-29T01:19:21.413Z",
-      "lastSuccessAt": "2026-10-29T01:19:21.413Z",
+      "checkedAt": "2026-10-29T02:01:08.497Z",
+      "lastSuccessAt": "2026-10-29T02:01:08.497Z",
       "message": "공개 지역 집계 성공 · 0개 수치 신규/변경. 원자료 미러 시각 2026-10-29T01:07:03.010Z. 배치·영업 대수 아님.",
       "sourceSnapshotAt": "2026-10-29T01:07:03.010Z"
     }
