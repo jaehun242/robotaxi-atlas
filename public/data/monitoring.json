@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastAttemptAt": "2026-10-29T00:07:00.347Z",
+  "lastAttemptAt": "2026-10-29T00:09:52.509Z",
   "jurisdictions": [
     {
       "code": "AL",
@@ -16,15 +16,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "33c3a3bb6f1b0f737e9cad4f0100335f5c30c70d5b5fa90ea529473aa77e08f9",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 551
+      "durationMs": 517
     },
     {
       "code": "AK",
@@ -40,7 +40,7 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "c4fd83400d8e21116e4c58221df0aff090812e72a311edf0e3d2b60afa1fa135",
@@ -48,7 +48,7 @@
       "status": "access_failed",
       "message": "HTTP 404 · 마지막 정상 문서 해시·원본 기준일 유지.",
       "quantityStatus": "not_extracted",
-      "durationMs": 786
+      "durationMs": 760
     },
     {
       "code": "AZ",
@@ -64,11 +64,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 252
+      "durationMs": 324
     },
     {
       "code": "AR",
@@ -86,15 +86,15 @@
       ],
       "automatic": true,
       "referenceDate": null,
-      "changed": true,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "changed": false,
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
-      "status": "success_changed",
-      "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
-      "durationMs": 1108,
+      "status": "success_unchanged",
+      "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
+      "durationMs": 1404,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "282d285aba5f6b046b04f056bd54de06d015504c0f5b0f9bcf7b86150280b201",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -114,15 +114,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "9f3deb950fe4d4045e639f6201ad059059ef65989bc135357e4412e33666ce49",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 72
+      "durationMs": 164
     },
     {
       "code": "CO",
@@ -138,15 +138,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "31d0dc9b15642513b463331f8f5e39d66fda420095043de848594b3063f4f813",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 370
+      "durationMs": 157
     },
     {
       "code": "CT",
@@ -162,15 +162,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "faeeaebadbbd0c3f5defd66341518ac9e32fc7a39942a545189d8d550d4887bf",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 807
+      "durationMs": 1060
     },
     {
       "code": "DE",
@@ -186,15 +186,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "2f169eab3ba0d0c4031e6cb5a4aa63bb524c3a95bb9d2964fa0406a8f289a05b",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 273
+      "durationMs": 395
     },
     {
       "code": "DC",
@@ -210,15 +210,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "2a87ef9b1300e8ceb10277cad49a37adc84d385ebaf6b11b5d3823b8bcee9db7",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 924
+      "durationMs": 375
     },
     {
       "code": "FL",
@@ -237,15 +237,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "7b5da23ce85fe917d29cc428bb1bd09185e38e56283b989ae286346073c20d29",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 1566
+      "durationMs": 2108
     },
     {
       "code": "GA",
@@ -264,15 +264,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "2e148fa3a3b5bd3f995c74e1c6b15e3e6afa28b5fd48865a9b58eb95a637ed47",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 388
+      "durationMs": 506
     },
     {
       "code": "HI",
@@ -291,15 +291,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "09bb091ec9caf8f9d88a1d4da7ed9ccd0a41df2168ab33c57f6c6a5f26689c92",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 603
+      "durationMs": 216
     },
     {
       "code": "ID",
@@ -315,11 +315,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 404 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 1593
+      "durationMs": 1573
     },
     {
       "code": "IL",
@@ -335,15 +335,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "ac292861e1d265c6689694b050e8f97dc041a3e2f08f5dd29fdd96fc52a418e3",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 259
+      "durationMs": 398
     },
     {
       "code": "IN",
@@ -359,15 +359,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "c49e5a109105a873dc1be1e0aba9eb6ddfae60f0d5850483cb87f24a90ba1977",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 134
+      "durationMs": 393
     },
     {
       "code": "IA",
@@ -383,14 +383,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 2980,
+      "durationMs": 225,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "5c8fdbe41b1b40e7e536ae0a9444b54571e4fc73dcd0a18722b5773dab41d399",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -410,15 +410,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": true,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
-      "contentHash": "ec18831e40aecf852fc231c7106bde32200c82ebc5b7a8a1f8bb5fd5fbd32b23",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "contentHash": "688ae4a5b2df6486fd2978e548f9173aa520df2acaf55584d3afd278ce4d6ed1",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_changed",
       "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
       "quantityStatus": "not_extracted",
-      "durationMs": 342
+      "durationMs": 395
     },
     {
       "code": "KY",
@@ -437,15 +437,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "583d107a04b97dba41fa6143ecad6faa6cb45bf39e071a4caea8dae6364b7ef9",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 864
+      "durationMs": 690
     },
     {
       "code": "LA",
@@ -461,14 +461,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 367,
+      "durationMs": 289,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "e2ba986b845f6f4cc7e18859f2fdec4def28c7224be6db17036609fba5654fae",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -488,15 +488,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "1dc8d255d1e04147513845ea43aaaf7cc77751e06b61b2e42cd765eada2eb4ac",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 358
+      "durationMs": 445
     },
     {
       "code": "MD",
@@ -512,14 +512,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 832,
+      "durationMs": 1176,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "b37c843fc59fea4fbc6b34ea6c847a82033b1e8ae2fef3fceca5a1b570bce3ac",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -540,15 +540,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "89c8e7e1a179f7d6c8cb09a8905aa1ddd53478b62981e876039fa282cad00a2f",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 183
+      "durationMs": 130
     },
     {
       "code": "MI",
@@ -564,11 +564,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 197
+      "durationMs": 145
     },
     {
       "code": "MN",
@@ -584,15 +584,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "225a398c894a54f899744bf297b887028e04b9f0ff17786ee4770e6208a461bb",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 178
+      "durationMs": 560
     },
     {
       "code": "MS",
@@ -608,15 +608,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "75f7ca0f9033f49f5723268a443037c46537e3e7c39c6af3b119143da0bb2fdd",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 823
+      "durationMs": 840
     },
     {
       "code": "MO",
@@ -635,15 +635,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "fe77ac8959ef5e53f7f71b35e925b1ac597491622dcfc46034c669d0c578347e",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 514
+      "durationMs": 726
     },
     {
       "code": "MT",
@@ -659,14 +659,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 567,
+      "durationMs": 525,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "0aae5c7bc3a2e7826df6099d4ac0888822f2b9bea2c2d7aab084ba0c8bf3ce5c",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -683,14 +683,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 208,
+      "durationMs": 337,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "5a10d8ebdfa47454292a44bf3620f2f0426edcd198d43572d14405f4d1c09aef",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -707,15 +707,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "bdb59c825c7d9aa7df8e227bfb0ed5917e02a482cc71778eb6ea8bd829b80cbb",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 163
+      "durationMs": 140
     },
     {
       "code": "NH",
@@ -731,14 +731,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 140,
+      "durationMs": 289,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "049a2fb14ee7698af15a1c3c18c0c9f8aa9ab5df12fc6dca7c1856b63b018f87",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -758,14 +758,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 221,
+      "durationMs": 372,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "9ab80da75181fbe994af390b4e8376126bfba65244078796a64c2dc68a158160",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -782,15 +782,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "556ddf3c92843c7a50dfa7d486a5282d5cc354197859bde03bcdac2c8f9ae302",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 840
+      "durationMs": 1135
     },
     {
       "code": "NY",
@@ -806,15 +806,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "0e29859daf18c9014d1f0e9b475f056796037e29d665fa45f56a73419ecc5be8",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 299
+      "durationMs": 325
     },
     {
       "code": "NC",
@@ -830,14 +830,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 695,
+      "durationMs": 917,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "24f71e4e52c906808e8388a4a6768150589a49477b60bfe0005bedebf8f72085",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -854,14 +854,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 189,
+      "durationMs": 414,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "ce50b30ebeba493e2324ee024107cc90f99e70c0a27af7c7217dd0e21bc72dd8",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -878,11 +878,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 404 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 179
+      "durationMs": 187
     },
     {
       "code": "OK",
@@ -898,11 +898,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "extraction_failed",
       "message": "문서 용량 제한 초과 · 다운로드 생략 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 129
+      "durationMs": 313
     },
     {
       "code": "OR",
@@ -918,15 +918,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "8480963e8606500c6282a6e732b45b86876875d230efb8312419d2f6cb529975",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 1371
+      "durationMs": 503
     },
     {
       "code": "PA",
@@ -941,16 +941,16 @@
       "checkedOn": "2026-10-23",
       "automatic": true,
       "referenceDate": null,
-      "changed": true,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "changed": false,
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "92e8894a2f18880dff4e2d105b24c8346435653c07d9f58ddf823eeff5af8800",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
-      "status": "success_changed",
-      "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
+      "status": "success_unchanged",
+      "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 1933
+      "durationMs": 2135
     },
     {
       "code": "RI",
@@ -966,15 +966,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "8dcc649aac1f1ee4878722971fa7cee0b12103ef42a3fa11d23007e7f039075f",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 358
+      "durationMs": 427
     },
     {
       "code": "SC",
@@ -993,15 +993,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "0f3136512895263e2a3fd7f6e6bd988e42cd994b54e19b0fbcd7658425c7a5c1",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 428
+      "durationMs": 796
     },
     {
       "code": "SD",
@@ -1017,7 +1017,7 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "75c5b56e59108750dbfdd8c0388fabceb05a38d295d2660b54c173cf57f16b68",
@@ -1025,7 +1025,7 @@
       "status": "extraction_failed",
       "message": "AV 관련 본문 추출 확인 실패 · 마지막 정상 문서 해시·원본 기준일 유지.",
       "quantityStatus": "not_extracted",
-      "durationMs": 239
+      "durationMs": 235
     },
     {
       "code": "TN",
@@ -1041,11 +1041,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 307,
+      "durationMs": 394,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "c3026764495ca4096a5122af043461f66cda2ca5310033d3d3b1b458d970c5e6",
       "lastSuccessAt": "2026-10-23T05:27:26.771Z",
@@ -1070,18 +1070,18 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "7ceaa8a876fde24955e44e0eb7da232004ccdad0fc609928b2e9e9648fbcfe59",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "available",
-      "durationMs": 507,
+      "durationMs": 523,
       "numericParserConnected": true,
       "numericCheckState": "ok",
-      "numericLastSuccessAt": "2026-10-29T00:08:06.720Z",
+      "numericLastSuccessAt": "2026-10-29T00:09:52.509Z",
       "numericReferenceDate": "2026-10-28T07:16:41.703Z"
     },
     {
@@ -1098,15 +1098,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "ff13a26cc20861f503235da4968795a176107937ad479f7bfcbedb840afa12b2",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 266
+      "durationMs": 237
     },
     {
       "code": "VT",
@@ -1122,15 +1122,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "3571eb7e1f6537a1f59e4f20f1419d7e366808573453a1f66dd3b374b4c7fcb2",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 2646
+      "durationMs": 375
     },
     {
       "code": "VA",
@@ -1146,15 +1146,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "9b12202a4c593a1fe6c795ad0390434d5dbf94b4dc840f1b9bd22a91c8647bc4",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 162
+      "durationMs": 272
     },
     {
       "code": "WA",
@@ -1170,15 +1170,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "f180438bd05321f4bea6c973f0395ef7ebf083a51a3c456932213ae868b3d002",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 160
+      "durationMs": 133
     },
     {
       "code": "WV",
@@ -1194,14 +1194,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": true,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "status": "success_changed",
       "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
-      "durationMs": 568,
+      "durationMs": 648,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
-      "contentHash": "a7ec8f608e2f1aad49f762e249b725213083fb39f407e503e024e68cf299721e",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "contentHash": "2cc294b98a98ba47258d9b92e8e03833f5719c40aa00632fd441e22ea7dab441",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -1217,16 +1217,16 @@
       "checkedOn": "2026-10-23",
       "automatic": true,
       "referenceDate": null,
-      "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
-      "attempts": 1,
+      "changed": null,
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
+      "attempts": 2,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "a6d3fac2cd72d4248b3c53e0d82ce129cdbde42ac3bd01bdfb2f04b147665144",
       "lastSuccessAt": "2026-10-29T00:07:00.347Z",
-      "status": "success_unchanged",
-      "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
+      "status": "access_failed",
+      "message": "The operation was aborted due to timeout · 마지막 정상 문서 해시·원본 기준일 유지.",
       "quantityStatus": "not_extracted",
-      "durationMs": 181
+      "durationMs": 20000
     },
     {
       "code": "WY",
@@ -1242,15 +1242,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "e40c0991a7a2c05769011adf0ddda77d8d4d6f021b716a4b022b26aa666ee14a",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 243
+      "durationMs": 443
     }
   ],
   "international": [
@@ -1268,15 +1268,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "8d4014cd7f374e9cfd8be715a546abcaeaa498bed2a7812d47d9a011fd4d34dc",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 361
+      "durationMs": 1155
     },
     {
       "code": "GB-London",
@@ -1292,15 +1292,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "38319852a67cd993e062d209d52164dd4164ac4221623f0503e2880836a0a661",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 973
+      "durationMs": 1097
     },
     {
       "code": "KR-Seoul",
@@ -1316,15 +1316,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": true,
-      "lastCheckedAt": "2026-10-29T00:07:00.347Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
-      "contentHash": "42a0bd39eae6dc3f4e0750c6d6ffe339e1f975b4390dd596f7f67b4de651802f",
-      "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+      "contentHash": "9431038281e699f5857a62ee595440bb98818a8e73c59703c3d55e74c7e02710",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "status": "success_changed",
       "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
       "quantityStatus": "not_extracted",
-      "durationMs": 1847
+      "durationMs": 877
     }
   ],
   "registries": [
@@ -1353,8 +1353,8 @@
       "asOf": "2026-10-28T07:16:41.703Z",
       "asOfMeaning": "공식 등록부 스냅샷을 확인한 시각. 모든 차량의 신규 등록일이 아님.",
       "firstCollectedAt": "2026-10-23T04:56:23.970Z",
-      "lastCheckedAt": "2026-10-29T00:08:06.720Z",
-      "lastSuccessAt": "2026-10-29T00:08:06.720Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "checkState": "ok",
       "error": null
     },
@@ -1375,8 +1375,8 @@
       "asOf": "2026-10-28T07:16:32.000Z",
       "asOfMeaning": "민간 재집계가 공개한 마지막 동기화 시각. 신규 등록일과 별도.",
       "firstCollectedAt": "2026-10-23T05:09:46.286Z",
-      "lastCheckedAt": "2026-10-29T00:08:06.720Z",
-      "lastSuccessAt": "2026-10-29T00:08:06.720Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
+      "lastSuccessAt": "2026-10-29T00:09:52.509Z",
       "checkState": "ok",
       "error": null,
       "historical": {
@@ -1388,7 +1388,7 @@
         "verification": "unofficial",
         "dateBasis": "publisher_calendar",
         "timezone": null,
-        "sourceAsOf": "2026-10-28T17:08:08-07:00",
+        "sourceAsOf": "2026-10-28T17:10:23-07:00",
         "definition": "FSD Database가 TxDMV 동기화별 일일 등록 총계로 공개한 이력. 과거 차종 구분·날짜의 시간대는 미공개. 직접 수집한 KST 시각의 공식 스냅샷과 별개.",
         "points": [
           {
@@ -1397,7 +1397,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-10",
@@ -1405,7 +1405,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-11",
@@ -1413,7 +1413,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-12",
@@ -1421,7 +1421,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-13",
@@ -1429,7 +1429,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-14",
@@ -1437,7 +1437,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-15",
@@ -1445,7 +1445,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-16",
@@ -1453,7 +1453,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-17",
@@ -1461,7 +1461,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-18",
@@ -1469,7 +1469,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-19",
@@ -1477,7 +1477,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-20",
@@ -1485,7 +1485,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-21",
@@ -1493,7 +1493,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-22",
@@ -1501,7 +1501,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-23",
@@ -1509,7 +1509,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-24",
@@ -1517,7 +1517,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-25",
@@ -1525,7 +1525,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-26",
@@ -1533,7 +1533,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-27",
@@ -1541,7 +1541,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-28",
@@ -1549,7 +1549,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-29",
@@ -1557,7 +1557,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-06-30",
@@ -1565,7 +1565,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-01",
@@ -1573,7 +1573,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-02",
@@ -1581,7 +1581,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-03",
@@ -1589,7 +1589,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-04",
@@ -1597,7 +1597,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-05",
@@ -1605,7 +1605,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-06",
@@ -1613,7 +1613,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-07",
@@ -1621,7 +1621,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-08",
@@ -1629,7 +1629,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-09",
@@ -1637,7 +1637,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-10",
@@ -1645,7 +1645,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-11",
@@ -1653,7 +1653,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-12",
@@ -1661,7 +1661,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-13",
@@ -1669,7 +1669,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-14",
@@ -1677,7 +1677,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-15",
@@ -1685,7 +1685,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-16",
@@ -1693,7 +1693,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-17",
@@ -1701,7 +1701,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-18",
@@ -1709,7 +1709,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-19",
@@ -1717,7 +1717,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-20",
@@ -1725,7 +1725,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-21",
@@ -1733,7 +1733,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-22",
@@ -1741,7 +1741,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-23",
@@ -1749,7 +1749,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-24",
@@ -1757,7 +1757,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-25",
@@ -1765,7 +1765,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-26",
@@ -1773,7 +1773,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-27",
@@ -1781,7 +1781,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-28",
@@ -1789,7 +1789,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-29",
@@ -1797,7 +1797,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-07-30",
@@ -1805,7 +1805,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-10",
@@ -1813,7 +1813,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-11",
@@ -1821,7 +1821,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-12",
@@ -1829,7 +1829,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-13",
@@ -1837,7 +1837,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-14",
@@ -1845,7 +1845,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-15",
@@ -1853,7 +1853,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-16",
@@ -1861,7 +1861,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-17",
@@ -1869,7 +1869,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-18",
@@ -1877,7 +1877,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-19",
@@ -1885,7 +1885,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-20",
@@ -1893,7 +1893,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-21",
@@ -1901,7 +1901,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-22",
@@ -1909,7 +1909,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-23",
@@ -1917,7 +1917,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-24",
@@ -1925,7 +1925,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-25",
@@ -1933,7 +1933,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-26",
@@ -1941,7 +1941,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-27",
@@ -1949,7 +1949,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-28",
@@ -1957,7 +1957,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-29",
@@ -1965,7 +1965,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-30",
@@ -1973,7 +1973,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-08-31",
@@ -1981,7 +1981,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-01",
@@ -1989,7 +1989,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-02",
@@ -1997,7 +1997,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-03",
@@ -2005,7 +2005,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-04",
@@ -2013,7 +2013,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-05",
@@ -2021,7 +2021,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-06",
@@ -2029,7 +2029,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-07",
@@ -2037,7 +2037,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-08",
@@ -2045,7 +2045,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-09",
@@ -2053,7 +2053,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-10",
@@ -2061,7 +2061,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-11",
@@ -2069,7 +2069,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-12",
@@ -2077,7 +2077,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-13",
@@ -2085,7 +2085,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-14",
@@ -2093,7 +2093,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-15",
@@ -2101,7 +2101,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-16",
@@ -2109,7 +2109,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-17",
@@ -2117,7 +2117,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-18",
@@ -2125,7 +2125,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-19",
@@ -2133,7 +2133,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-20",
@@ -2141,7 +2141,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-21",
@@ -2149,7 +2149,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-22",
@@ -2157,7 +2157,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-23",
@@ -2165,7 +2165,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-24",
@@ -2173,7 +2173,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-25",
@@ -2181,7 +2181,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-26",
@@ -2189,7 +2189,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-27",
@@ -2197,7 +2197,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-28",
@@ -2205,7 +2205,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-29",
@@ -2213,7 +2213,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-09-30",
@@ -2221,7 +2221,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-01",
@@ -2229,7 +2229,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-02",
@@ -2237,7 +2237,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-03",
@@ -2245,7 +2245,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-04",
@@ -2253,7 +2253,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-05",
@@ -2261,7 +2261,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-06",
@@ -2269,7 +2269,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-07",
@@ -2277,7 +2277,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-08",
@@ -2285,7 +2285,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-09",
@@ -2293,7 +2293,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-10",
@@ -2301,7 +2301,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-11",
@@ -2309,7 +2309,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-12",
@@ -2317,7 +2317,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-13",
@@ -2325,7 +2325,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-14",
@@ -2333,7 +2333,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-15",
@@ -2341,7 +2341,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-16",
@@ -2349,7 +2349,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-17",
@@ -2357,7 +2357,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-18",
@@ -2365,7 +2365,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-19",
@@ -2373,7 +2373,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-20",
@@ -2381,7 +2381,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-21",
@@ -2389,7 +2389,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-22",
@@ -2397,7 +2397,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-23",
@@ -2405,7 +2405,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-24",
@@ -2413,7 +2413,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-25",
@@ -2421,7 +2421,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-26",
@@ -2429,7 +2429,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-27",
@@ -2437,7 +2437,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           },
           {
             "date": "2026-10-28",
@@ -2445,13 +2445,13 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-29T00:08:06.720Z"
+            "lastCheckedAt": "2026-10-29T00:09:52.509Z"
           }
         ],
         "firstCollectedAt": "2026-10-28T08:03:31.055Z",
         "updatedAt": "2026-10-28T08:03:31.055Z",
-        "lastCheckedAt": "2026-10-29T00:08:06.720Z",
-        "lastSuccessAt": "2026-10-29T00:08:06.720Z",
+        "lastCheckedAt": "2026-10-29T00:09:52.509Z",
+        "lastSuccessAt": "2026-10-29T00:09:52.509Z",
         "checkState": "ok",
         "error": null,
         "revisions": []
@@ -2540,7 +2540,7 @@
       "scopeId": "us:state:TX:tesla:registered",
       "basis": "registered",
       "checkedAt": "2026-10-28T15:12:15.661Z",
-      "lastCheckedAt": "2026-10-29T00:08:06.720Z",
+      "lastCheckedAt": "2026-10-29T00:09:52.509Z",
       "valueAsOf": "2026-10-28T07:16:41.703Z",
       "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
       "total": 1080,
@@ -3054,6 +3054,17 @@
         "publisher": "www.msn.com",
         "publishedAt": "2026-10-27T14:30:33.000Z",
         "firstCollectedAt": "2026-10-28T00:30:13.882Z",
+        "feedId": "bing-global",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음."
+      },
+      {
+        "id": "244167aac6203490e9b0fd84",
+        "title": "Tesla's robotaxi footprint grows in Houston",
+        "url": "https://www.msn.com/en-us/technology/tech-companies/tesla-s-robotaxi-footprint-grows-in-houston/ar-AA2gc2sX",
+        "publisher": "www.msn.com",
+        "publishedAt": "2026-10-27T14:30:33.000Z",
+        "firstCollectedAt": "2026-10-29T00:09:52.509Z",
         "feedId": "bing-global",
         "verification": "discovery_only",
         "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음."
@@ -5694,9 +5705,9 @@
         "id": "google-global",
         "name": "Google News · 전 세계 Tesla Robotaxi/Cybercab 검색 RSS",
         "url": "https://news.google.com/rss/search?q=Tesla%20(robotaxi%20OR%20Cybercab)%20when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
-        "checkedAt": "2026-10-29T00:07:00.347Z",
+        "checkedAt": "2026-10-29T00:09:52.509Z",
         "state": "ok",
-        "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+        "lastSuccessAt": "2026-10-29T00:09:52.509Z",
         "found": 80,
         "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
       },
@@ -5704,28 +5715,28 @@
         "id": "bing-global",
         "name": "Bing News · Tesla Robotaxi 검색 RSS",
         "url": "https://www.bing.com/news/search?q=Tesla+robotaxi&format=rss",
-        "checkedAt": "2026-10-29T00:07:00.347Z",
+        "checkedAt": "2026-10-29T00:09:52.509Z",
         "state": "ok",
-        "lastSuccessAt": "2026-10-29T00:07:00.347Z",
-        "found": 12,
+        "lastSuccessAt": "2026-10-29T00:09:52.509Z",
+        "found": 11,
         "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
       },
       {
         "id": "google-korean",
         "name": "Google News · 한국어 해외·국내 소식 탐색 RSS",
         "url": "https://news.google.com/rss/search?q=%ED%85%8C%EC%8A%AC%EB%9D%BC%20%EB%A1%9C%EB%B3%B4%ED%83%9D%EC%8B%9C%20when%3A7d&hl=ko&gl=KR&ceid=KR%3Ako",
-        "checkedAt": "2026-10-29T00:07:00.347Z",
+        "checkedAt": "2026-10-29T00:09:52.509Z",
         "state": "ok",
-        "lastSuccessAt": "2026-10-29T00:07:00.347Z",
+        "lastSuccessAt": "2026-10-29T00:09:52.509Z",
         "found": 33,
         "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
       }
     ],
     "lastRun": {
-      "checkedAt": "2026-10-29T00:07:00.347Z",
+      "checkedAt": "2026-10-29T00:09:52.509Z",
       "successfulFeeds": 3,
       "totalFeeds": 3,
-      "newCandidates": 16,
+      "newCandidates": 1,
       "state": "completed_with_review_candidates",
       "note": "전 세계 검색 피드 탐색과 연결된 공식 자료 변경 감지는 별도 작업. 검색 결과가 모든 국가·언어의 모든 소식을 포괄하지 않음."
     },
@@ -5760,8 +5771,8 @@
   "summary": {
     "jurisdictions": 51,
     "checkedToday": 51,
-    "success": 43,
-    "accessFailed": 6,
+    "success": 42,
+    "accessFailed": 7,
     "extractionFailed": 2,
     "unconnected": 0,
     "unresearched": 0,
@@ -5867,13 +5878,13 @@
     },
     {
       "id": "monitor-2026-10-29",
-      "startedAt": "2026-10-29T00:07:00.347Z",
-      "completedAt": "2026-10-29T00:07:14.841Z",
+      "startedAt": "2026-10-29T00:09:52.509Z",
+      "completedAt": "2026-10-29T00:10:24.771Z",
       "summary": {
         "jurisdictions": 51,
         "checkedToday": 51,
-        "success": 43,
-        "accessFailed": 6,
+        "success": 42,
+        "accessFailed": 7,
         "extractionFailed": 2,
         "unconnected": 0,
         "unresearched": 0,
@@ -5881,14 +5892,14 @@
         "numericParsers": 1
       },
       "discovery": {
-        "checkedAt": "2026-10-29T00:07:00.347Z",
+        "checkedAt": "2026-10-29T00:09:52.509Z",
         "successfulFeeds": 3,
         "totalFeeds": 3,
-        "newCandidates": 16,
+        "newCandidates": 1,
         "state": "completed_with_review_candidates",
         "note": "전 세계 검색 피드 탐색과 연결된 공식 자료 변경 감지는 별도 작업. 검색 결과가 모든 국가·언어의 모든 소식을 포괄하지 않음."
       }
     }
   ],
-  "registrationLastAttemptAt": "2026-10-29T00:08:06.720Z"
+  "registrationLastAttemptAt": "2026-10-29T00:09:52.509Z"
 }
