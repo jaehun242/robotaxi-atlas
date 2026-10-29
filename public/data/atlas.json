@@ -1134,6 +1134,15 @@
       "access": "public embedded JSON",
       "definition": "Coming Soon은 계획 발표. 주행거리를 차량 대수로 변환하지 않음.",
       "automation": "공개 JSON 계획 목록 수집 · 검증한 지리 사전과 일치할 때 지도 추가"
+    },
+    {
+      "id": "mycybercab-austin",
+      "name": "MyCybercab · 오스틴 Cybercab 표기",
+      "url": "https://mycybercab.com/live",
+      "priority": 3,
+      "access": "public HTML",
+      "definition": "사용자가 선택한 Austin fleet claim. +는 하한 표기. 공식 직접 확인·주 등록부·커뮤니티 명부와 별도이며 다른 차종과 합산하지 않음.",
+      "automation": "매일 08:00 및 매시간 공개 카드 확인 · 실패 시 원래 수치·기준일 유지"
     }
   ],
   "sourceRuns": [
@@ -1208,6 +1217,13 @@
       "checkedAt": "2026-10-29T06:21:53.804Z",
       "lastSuccessAt": "2026-10-29T06:21:53.804Z",
       "message": "공식 텍사스 등록부 1080개 고유 VIN. Cybercab 573 / Model Y 507. 도시 합계와 별도."
+    },
+    {
+      "sourceId": "mycybercab-austin",
+      "state": "ok",
+      "checkedAt": "2026-10-29T09:37:36.877Z",
+      "lastSuccessAt": "2026-10-29T09:37:36.877Z",
+      "message": "Austin fleet claim 573+ · 원문 2026-10-27 · 주 등록 총계·Model Y와 별도."
     }
   ],
   "revisions": [
@@ -1641,5 +1657,46 @@
   "pausedScopes": [
     "GB",
     "KR"
+  ],
+  "cityFleetClaims": [
+    {
+      "id": "mycybercab-austin-cybercab",
+      "sourceId": "mycybercab-austin",
+      "name": "MyCybercab · Austin fleet claim",
+      "sourceUrl": "https://mycybercab.com/live",
+      "country": "US",
+      "region": "TX",
+      "city": "austin",
+      "model": "cybercab",
+      "scopeId": "mycybercab:austin:reported-fleet",
+      "scope": "MyCybercab가 Austin 카드에 게시한 Cybercab fleet claim. 독립적인 도시 전체 조사나 당일 동시 영업 대수로 확인된 값이 아님.",
+      "basis": "reported_fleet",
+      "verification": "unofficial",
+      "vehicleDefinition": "Publisher-reported Austin Cybercab fleet claim; operational definition not independently verified.",
+      "datePrecision": "day",
+      "timezone": null,
+      "methodology": "Austin 카드의 Official fleet claim 항목만 읽음. Registered (TX)와 Unique seen은 이 값의 대체 자료로 사용하지 않음. 원문이 official이라고 부르더라도 당사 공식 확인으로 승격하지 않음.",
+      "asOf": "2026-10-27",
+      "sourceAsOf": "2026-10-27",
+      "sourceDateText": "OCT 27th",
+      "sourceDateYearContext": "explicit_card_date",
+      "count": 573,
+      "countQualifier": "at_least",
+      "displayCount": "573+",
+      "sourceLabel": "Official fleet claim",
+      "publisherCitation": "Sources: TxDMV · 10/27/2026 · @robotaxi · OCT 27th · Sightings from live MyCybercab.com community data",
+      "asOfMeaning": "MyCybercab가 해당 회사 발언의 기준일로 표기한 날짜. Tesla 원문을 직접 확인한 날짜나 실제 도시 배치일이 아님.",
+      "note": "사용자가 선택한 MyCybercab Austin 대표 자료. 573+ 같은 + 표기는 하한 수량으로 보존. 원문 회사 발표 링크와 전체 도시 명부 대조 방법은 확인되지 않았으며 비공식 게시 주장으로 취급.",
+      "firstCollectedAt": "2026-10-29T09:37:36.877Z",
+      "observedAt": "2026-10-29T09:37:36.877Z",
+      "fetchedAt": "2026-10-29T09:37:36.877Z",
+      "lastAttemptAt": "2026-10-29T09:37:36.877Z",
+      "lastCheckedAt": "2026-10-29T09:37:36.877Z",
+      "lastSuccessAt": "2026-10-29T09:37:36.877Z",
+      "checkState": "ok",
+      "error": null,
+      "revisions": [],
+      "contentHash": "d25bf773ca23d20bde93ee804e2bfb1c7422bdeed4421622721aa957cf9d2bcf"
+    }
   ]
 }

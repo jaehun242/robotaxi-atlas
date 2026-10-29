@@ -5,6 +5,7 @@ import {Plus,Minus,LocateFixed} from 'lucide-react';
 import type {City,Filters,Dataset} from './types';
 import {latest,aggregate} from './domain.mjs';
 import {US_REGIONS} from './us-regions';
+import {preferredCityClaim,formatClaimCount} from './preferred-city-claim.mjs';
 
 const mainlandBounds:[[number,number],[number,number]]=[[-126,24],[-66,50.5]];
 const compactBelow=4;
@@ -39,13 +40,15 @@ export default function AtlasMap({data,cities,filters,onNavigate,reduceMotion}:{
     markers.current=cities.filter(c=>c.country==='US').map(c=>{
       const sum=aggregate(latest(data,{...filters,country:'US',city:c.id})),services=data.services.filter(s=>s.city===c.id&&(!filters.model||s.model===filters.model));
       const active=services.some(s=>['commercial','limited'].includes(s.status));
+      const claim=preferredCityClaim(data,filters,c.id,'cybercab');
       const el=document.createElement('button');el.className=`city-marker ${filters.city===c.id?'selected':''} ${active?'active':'unknown'}`;
       el.dataset.dense=String(['dallas','houston','miami','tampa','orlando'].includes(c.id)&&filters.city!==c.id);
       el.classList.toggle('compact',el.dataset.dense==='true'&&map.current!.getZoom()<compactBelow);
       el.setAttribute('aria-label',`${c.name} 도시 상세`);
+      if(claim){const note='MyCybercab 사이트 표기 · Cybercab '+formatClaimCount(claim)+'대 · 명부 합계와 별도';el.title=note;el.setAttribute('aria-description',note);}
       const dot=document.createElement('span');dot.className='marker-dot';
       const label=document.createElement('span');label.className='marker-label';label.textContent=c.english;
-      const value=document.createElement('em');value.textContent=sum.total===null?'미확인':`${sum.total.toLocaleString()}대`;
+      const value=document.createElement('em');value.textContent=claim?'Cybercab '+formatClaimCount(claim)+'대':sum.total===null?'미확인':`${sum.total.toLocaleString()}대`;
       label.append(value);el.append(dot,label);
       el.onclick=e=>{e.stopPropagation();callback.current({country:'US',region:c.region,city:c.id});};
       return new maplibregl.Marker({element:el,anchor:'left'}).setLngLat(c.coordinates).addTo(map.current!);
