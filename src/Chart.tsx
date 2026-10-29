@@ -5,7 +5,7 @@ import { GridComponent, TooltipComponent, LegendComponent, TitleComponent, Graph
 import { CanvasRenderer } from 'echarts/renderers';
 import { Download } from 'lucide-react';
 echarts.use([LineChart,BarChart,PieChart,GridComponent,TooltipComponent,LegendComponent,TitleComponent,GraphicComponent,CanvasRenderer]);
-export function Chart({option,title,subtitle,empty,reduceMotion,small=false,demo=false}:{option:object;title:string;subtitle:string;empty?:string;reduceMotion:boolean;small?:boolean;demo?:boolean}) {
+export function Chart({option,title,subtitle,empty,reduceMotion,small=false,demo=false,compact=false}:{option:object;title:string;subtitle:string;empty?:string;reduceMotion:boolean;small?:boolean;demo?:boolean;compact?:boolean}) {
   const ref=useRef<HTMLDivElement>(null), chart=useRef<echarts.EChartsType|null>(null);
   const [exportUrl,setExportUrl]=useState('');
   useEffect(()=>{if(!ref.current)return;const c=echarts.init(ref.current,undefined,{renderer:'canvas'});chart.current=c;const resize=new ResizeObserver(()=>c.resize({width:'auto',height:'auto'}));resize.observe(ref.current);return()=>{resize.disconnect();c.dispose();};},[]);
@@ -32,5 +32,5 @@ export function Chart({option,title,subtitle,empty,reduceMotion,small=false,demo
     const url=URL.createObjectURL(new Blob([bytes],{type:'image/png'}));setExportUrl(url);
     const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();
   };
-  return <section className={`panel chart-card ${small?'small':''}`}><div className="panel-heading"><div><h3>{title}</h3><p>{subtitle}</p></div><button className="icon-button" onClick={save} title={`${title} PNG 저장`} aria-label={`${title} PNG 저장`}><Download size={15}/></button></div><div className="chart-wrap"><div ref={ref} className="chart" role="img" aria-label={`${title}. ${empty||subtitle}`}/>{empty&&<div className="chart-empty"><span className="empty-line"/><b>{empty}</b><span>근거가 있는 기록부터 그래프에 표시합니다</span></div>}</div>{exportUrl&&<a className="export-link" href={exportUrl} download={filename}>{title} PNG 다시 저장 ↗</a>}</section>;
+  return <section className={`panel chart-card ${small?'small':''} ${compact?'compact-title':''}`}><div className="panel-heading"><div className={compact?'sr-only':undefined}><h3>{title}</h3><p>{subtitle}</p></div><button className="icon-button" onClick={save} title={`${title} PNG 저장`} aria-label={`${title} PNG 저장`}><Download size={15}/></button></div><div className="chart-wrap"><div ref={ref} className="chart" role="img" aria-label={`${title}. ${empty||subtitle}`}/>{empty&&<div className="chart-empty"><span className="empty-line"/><b>{empty}</b><span>근거가 있는 기록부터 그래프에 표시합니다</span></div>}</div>{exportUrl&&<a className="export-link" href={exportUrl} download={filename}>{title} PNG 다시 저장 ↗</a>}</section>;
 }
