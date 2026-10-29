@@ -74,6 +74,30 @@
       "verification": "unofficial",
       "dateBasis": "publisher_calendar_timezone_unknown",
       "methodology": "2026-10-27 13:33 ET 보도 원문 직접 확인. Texas 등록 총1,051대의 모델별 수를 명시. 차량 현장 목격 대수와 등록 대수를 구분하고, 개별 자료의 정확한 관측 시각은 알 수 없다."
+    },
+    {
+      "id": "evwire-september28-registry",
+      "name": "EVwire · 9월 28일 Texas 등록 관측",
+      "url": "https://evwire.com/p/tesla-cybercab-texas-registrations-ramp-update",
+      "verification": "unofficial",
+      "dateBasis": "publisher_calendar_timezone_unknown",
+      "methodology": "2026-09-28 원문 직접 확인. Texas AV Tracker의 9월28일 스냅샷이라고 명시한 모델별 수·합계와 날짜가 있는 Cybercab 과거 수를 채택. TxDMV 원자료 재인용이며 당사 공식 직접 수집이나 독립 복수 검증으로 표시하지 않는다. 구체 관측 시각은 미공개."
+    },
+    {
+      "id": "tesla-universe-registry-history",
+      "name": "Tesla Universe · 날짜별 Texas 등록 표",
+      "url": "https://tesla-universe-site.vercel.app/robotaxi",
+      "verification": "unofficial",
+      "dateBasis": "publisher_calendar_timezone_unknown",
+      "methodology": "2026-10-29 페이지의 날짜별 Texas AV registry 표와 모델별 표를 직접 읽고 대조. 10월3·4일 각 행에 Model Y420·Cybercab169·총589를 명시한다. 민간 보관 집계이며 시간대·확인 시각·독립 수집 여부가 미공개다. 앞뒤 값의 이월로 빈 날짜를 생성하지 않았다."
+    },
+    {
+      "id": "fsddb-wayback-july14",
+      "name": "FSD Database · 7월 14일 보관본",
+      "url": "https://web.archive.org/web/20260714125832id_/https://fsddb.com/robotaxi",
+      "verification": "unofficial",
+      "dateBasis": "KST_confirmation_day",
+      "methodology": "실제 보관 HTML의 Tesla 카드에 등록 합계102 및 전체 모델 목록102×Model Y가 명시됨. 보관 시각의 공개 화면을 확인한 것이며 원기관 조회 시각은 아님. 당시 합계102와 전체 Model Y102의 닫힌 분할에서 Cybercab0을 산출. 다른 날짜의 총계나 현재 명부를 소급한 값이 아님."
     }
   ],
   "observations": [
@@ -167,6 +191,20 @@
       "firstCollectedAt": "2026-10-29T04:12:27.251Z",
       "originalDate": "2026-09-05",
       "note": "원문 날짜 2026-09-05. 민간 수집 로그의 모델별 수와 원문 합계를 대조했다. 시각이 공개되지 않아 원문 달력 날짜를 사용했다. 원문은 두 번의 조회가 일치했다고 설명한다.",
+      "dateBasis": "publisher_calendar_timezone_unknown"
+    },
+    {
+      "id": "ev-october9-registry-review-2026-09-08",
+      "sourceId": "ev-october9-registry-review",
+      "date": "2026-09-08",
+      "cybercab": 49,
+      "model_y": null,
+      "total": null,
+      "publishedAt": "2026-10-09T05:47:00-04:00",
+      "note": "원문이 8월31일 첫 Cybercab45대 이후 9월8일4대가 추가되어49대가 되었다고 명시. 이 날짜의 Model Y와 전체 합계는 이 문단에서 확인되지 않아 null.",
+      "observedAt": null,
+      "firstCollectedAt": "2026-10-29T06:06:30.243Z",
+      "originalDate": "2026-09-08",
       "dateBasis": "publisher_calendar_timezone_unknown"
     },
     {
@@ -322,6 +360,20 @@
       "dateBasis": "KST_confirmation_day"
     },
     {
+      "id": "evwire-september28-registry-2026-09-23",
+      "sourceId": "evwire-september28-registry",
+      "date": "2026-09-23",
+      "cybercab": 69,
+      "model_y": null,
+      "total": null,
+      "publishedAt": "2026-09-28",
+      "note": "원문 날짜별 회고가 9월23일 Cybercab69대를 명시한다. 그 날짜의 Model Y 숫자·총계를 같은 관측으로 확인하지 못해 null. 실제 등록 발생 시각은 미공개.",
+      "observedAt": null,
+      "firstCollectedAt": "2026-10-29T06:06:30.243Z",
+      "originalDate": "2026-09-23",
+      "dateBasis": "publisher_calendar_timezone_unknown"
+    },
+    {
       "id": "aishiftnews-txdmv-history-2026-09-24",
       "sourceId": "aishiftnews-txdmv-history",
       "date": "2026-09-24",
@@ -378,6 +430,20 @@
       "dateBasis": "KST_confirmation_day"
     },
     {
+      "id": "evwire-september28-registry-2026-09-28",
+      "sourceId": "evwire-september28-registry",
+      "date": "2026-09-28",
+      "cybercab": 126,
+      "model_y": 420,
+      "total": 546,
+      "publishedAt": "2026-09-28",
+      "note": "원문이 9월28일 기준 Texas AV Tracker의 등록 스냅샷으로 Cybercab126·Model Y420·총546대를 명시. 기사 기준일이며 실제 확인 시각·시간대 미공개.",
+      "observedAt": null,
+      "firstCollectedAt": "2026-10-29T06:06:30.243Z",
+      "originalDate": "2026-09-28",
+      "dateBasis": "publisher_calendar_timezone_unknown"
+    },
+    {
       "id": "aishiftnews-txdmv-history-2026-09-29",
       "sourceId": "aishiftnews-txdmv-history",
       "date": "2026-09-29",
@@ -432,6 +498,34 @@
       "originalDate": "2026-10-02",
       "note": "원문 날짜 2026-10-02. 민간 수집 로그의 모델별 수와 원문 합계를 대조했다. 한국 날짜 2026-10-02는 실제 확인 시각으로 변환했다. 관측 2026-10-02T10:12:43.309Z. 원문은 두 번의 조회가 일치했다고 설명한다.",
       "dateBasis": "KST_confirmation_day"
+    },
+    {
+      "id": "tesla-universe-registry-history-2026-10-03",
+      "sourceId": "tesla-universe-registry-history",
+      "date": "2026-10-03",
+      "cybercab": 169,
+      "model_y": 420,
+      "total": 589,
+      "publishedAt": null,
+      "note": "원문 날짜별 등록 표와 차종별 표의10월3일 행 모두169/420/589를 명시. 해당 원문의 역사 행이며 이 사이트가 이전 날짜 값을 이월해 만든 값이 아님. 날짜 시간대·확인 시각 미공개.",
+      "observedAt": null,
+      "firstCollectedAt": "2026-10-29T06:06:30.243Z",
+      "originalDate": "2026-10-03",
+      "dateBasis": "publisher_calendar_timezone_unknown"
+    },
+    {
+      "id": "tesla-universe-registry-history-2026-10-04",
+      "sourceId": "tesla-universe-registry-history",
+      "date": "2026-10-04",
+      "cybercab": 169,
+      "model_y": 420,
+      "total": 589,
+      "publishedAt": null,
+      "note": "원문 날짜별 등록 표와 차종별 표의10월4일 행 모두169/420/589를 명시. 해당 원문의 역사 행이며 이 사이트가 이전 날짜 값을 이월해 만든 값이 아님. 날짜 시간대·확인 시각 미공개.",
+      "observedAt": null,
+      "firstCollectedAt": "2026-10-29T06:06:30.243Z",
+      "originalDate": "2026-10-04",
+      "dateBasis": "publisher_calendar_timezone_unknown"
     },
     {
       "id": "aishiftnews-txdmv-history-2026-10-05",
@@ -739,6 +833,19 @@
       "originalDate": "2026-10-28",
       "note": "원문 날짜 2026-10-28. 민간 수집 로그의 모델별 수와 원문 합계를 대조했다. 한국 날짜 2026-10-28는 실제 확인 시각으로 변환했다. 첫 조회 2026-10-28T10:11:39.043Z; 마지막 일치 조회 2026-10-28T10:11:41.710Z. 원문은 두 번의 조회가 일치했다고 설명한다.",
       "dateBasis": "KST_confirmation_day"
+    },
+    {
+      "id": "fsddb-wayback-july14-2026-07-14",
+      "sourceId": "fsddb-wayback-july14",
+      "date": "2026-07-14",
+      "dateBasis": "KST_confirmation_day",
+      "cybercab": 0,
+      "model_y": 102,
+      "total": 102,
+      "observedAt": "2026-07-14T12:58:32.000Z",
+      "publishedAt": null,
+      "firstCollectedAt": "2026-10-29T06:09:22.634Z",
+      "note": "아카이브 보관 시각 7/14 21:58 KST. 원기관 조회 시각은 미공개(화면에는 6분 전 동기화). Tesla 전체 모델 목록은102×Model Y로 합계102와 일치. Cybercab0은 닫힌 분할 차감으로 산출했으며 비공식 보관 자료다."
     }
   ],
   "notes": [

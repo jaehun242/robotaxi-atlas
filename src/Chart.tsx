@@ -26,7 +26,7 @@ export function Chart({option,title,subtitle,empty,reduceMotion,small=false,demo
     document.body.appendChild(host);
     const exported=echarts.init(host,undefined,{renderer:'canvas',width,height:height+headingHeight});
     try{
-      exported.setOption({...original,animation:false,animationDuration:0,animationDurationUpdate:0,title:{text:`${demo?'[DEMO] ':''}ROBOTAXI ATLAS · ${title}`,subtext:lines.join('\n'),textStyle:{fontSize:12,color:'#e4eaf1'},subtextStyle:{fontSize:10,lineHeight:14,color:'#a5b4c7'},left:20,top:10},legend:((original.legend as Record<string,unknown>[]|undefined)??[{}]).map(l=>({...l,top:headingHeight+2})),grid:(rawGrid??[{}]).map(g=>({...g,height:undefined,top:headingHeight+Math.max(34,typeof g.top==='number'?g.top:34)})),...(empty?{graphic:[{type:'text',left:'center',top:'middle',style:{text:empty,fill:'#a5b4c7',fontSize:12}}]}:{})});
+      exported.setOption({...original,animation:false,animationDuration:0,animationDurationUpdate:0,title:{text:`${demo?'[DEMO] ':''}ROBOTAXI ATLAS · ${title}`,subtext:lines.join('\n'),textStyle:{fontSize:12,color:'#e4eaf1'},subtextStyle:{fontSize:10,lineHeight:14,color:'#a5b4c7'},left:20,top:10},legend:((original.legend as Record<string,unknown>[]|undefined)??[{}]).map(l=>({...l,show:true,top:headingHeight+2})),grid:(rawGrid??[{}]).map(g=>({...g,height:undefined,top:headingHeight+Math.max(34,typeof g.top==='number'?g.top:34)})),...(empty?{graphic:[{type:'text',left:'center',top:'middle',style:{text:empty,fill:'#a5b4c7',fontSize:12}}]}:{})});
       dataUrl=exported.getDataURL({pixelRatio:2,backgroundColor:'#0d1523'});
     }finally{
       exported.dispose();host.remove();

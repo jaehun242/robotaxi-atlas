@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "scope": "US-TX",
+  "basis": "registered",
+  "evidence": [
+    {
+      "id": "ev-20260715-all-model-y",
+      "scope": "US-TX",
+      "basis": "registered",
+      "anchorObservedAt": "2026-07-15T20:42:31.732Z",
+      "anchorTotal": 175,
+      "model": "model_y",
+      "allVehiclesModel": true,
+      "maxMissingModels": 1,
+      "sourceUrl": "https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/",
+      "publishedAt": "2026-07-16T05:15:00-04:00",
+      "updatedAt": "2026-07-18T09:48:00-04:00",
+      "firstReviewedAt": "2026-10-29T06:10:00.020Z",
+      "statement": "당시 보도는 Texas Autonomous Vehicle Fleet Tracker의 7월 15일 등록 명부가 117대에서 175대로 늘었고 해당 차량들이 모두 Model Y라고 명시한다.",
+      "derivation": "실제 7월 15일 마지막 명부 스냅샷의 총계·고유 명부 길이175가 정확히 일치하고 현재 명시적 모델 중 다른 차종이 없으며 누락 모델이 정확히1건일 때만, 그 폐쇄 명부의 누락1건을 Model Y로 분류한다. 동일 고정 차량이 포함된 다른 실제 보관 스냅샷에도 속성만 대조한다. 첫 발견일로 명부를 역산하거나 결측 날짜를 생성하지 않는다.",
+      "limitation": "비공식 보도와 실제 과거 명부를 연결한 파생 분류다. 기사에서 당시175대 전부가 같은 명부를 가리킨다는 근거에 의존한다. 공식 차종별 시계열로 승격하지 않는다."
+    }
+  ]
+}

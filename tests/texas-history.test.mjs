@@ -168,3 +168,70 @@ test('changed membership at the same timestamp and total is a real correction, n
   assert.notEqual(second.observations.at(-1).snapshotMembershipHash, first.observations.at(-1).snapshotMembershipHash);
   for (const identifier of [A, B, C, D]) assert.ok(!JSON.stringify(second).includes(identifier));
 });
+
+function closedSnapshotFixture() {
+  return {
+    vehicles: [{vin:A,model:'Model Y'},{vin:C,model:'Cybercab'}],
+    history: [
+      {timestamp:'2026-07-15T20:42:31.732Z',count:2,vins:[A,D]},
+      {timestamp:'2026-07-30T02:26:59.847Z',count:3,vins:[A,D,C]}
+    ]
+  };
+}
+const closedEvidence = [{
+  id:'synthetic-all-y-proof',scope:'US-TX',basis:'registered',
+  anchorObservedAt:'2026-07-15T20:42:31.732Z',anchorTotal:2,
+  model:'model_y',allVehiclesModel:true,maxMissingModels:1,
+  sourceUrl:'https://example.test/dated-model-evidence',
+  publishedAt:'2026-07-16T09:15:00Z',statement:'Synthetic closed snapshot is explicitly all Model Y.'
+}];
+test('one absent fixed model is derived only from an exact complete single-model evidence anchor',()=>{
+  const d=closedSnapshotFixture();
+  const out=parseTexasHistory(d,{now:NOW,modelEvidence:closedEvidence});
+  assert.deepEqual(out.map(o=>[o.cybercab,o.model_y,o.total]),[[0,2,2],[1,2,3]]);
+  assert.ok(out.every(o=>o.derivedModelCount===1));
+  assert.equal(out[0].modelEvidence[0].anchorTotal,2);
+  assert.equal(out[0].modelEvidence[0].verification,'unofficial');
+  assert.equal(out[0].modelEvidence[0].sourceUrl,closedEvidence[0].sourceUrl);
+  for(const id of [A,C,D])assert.ok(!JSON.stringify(out).includes(id));
+  assert.equal(parseTexasHistory(d,{now:NOW})[0].model_y,null);
+});
+test('wrong anchor timestamp/count, multiple missing models and contradictory explicit labels reject the closed deduction',()=>{
+  for(const mutate of [
+    (d,e)=>{e[0].anchorTotal=3;},
+    (d,e)=>{e[0].anchorObservedAt='2026-07-15T20:42:32.732Z';},
+    (d,e)=>{d.history[0].vins=[A,D,'another-synthetic-missing'];d.history[0].count=3;e[0].anchorTotal=3;},
+    (d)=>{d.vehicles[0].model='Cybercab';},
+    (d)=>{d.vehicles.push({vin:D,model:'Model 3'});},
+    (_d,e)=>{e[0].allVehiclesModel=false;},
+    (_d,e)=>{e[0].sourceUrl='';}
+  ]){
+    const d=closedSnapshotFixture(),e=structuredClone(closedEvidence);mutate(d,e);
+    const row=parseTexasHistory(d,{now:NOW,modelEvidence:e})[0];
+    assert.equal(row.model_y,null);assert.equal(row.cybercab,null);
+    assert.equal(row.derivedModelCount,undefined);
+  }
+});
+test('derived counts are idempotent, retain provenance and survive unavailable evidence without relabeling the past',async()=>{
+  const data=closedSnapshotFixture();
+  const first=await collectTexasHistory(null,{now:NOW,fetcher:success(data),modelEvidence:closedEvidence});
+  const later='2026-10-30T00:00:00Z';
+  const second=await collectTexasHistory(first,{now:later,fetcher:success(data),modelEvidence:closedEvidence});
+  assert.equal(second.checkState,'ok');assert.equal(second.revisions.length,0);
+  assert.equal(second.observations[0].firstCollectedAt,NOW);
+  assert.deepEqual(second.observations[0].modelEvidence,first.observations[0].modelEvidence);
+  const noProof=await collectTexasHistory(second,{now:later,fetcher:success(data),modelEvidence:[]});
+  assert.equal(noProof.observations[0].model_y,2);
+  assert.deepEqual(noProof.observations[0].modelEvidence,first.observations[0].modelEvidence);
+  assert.equal(noProof.revisions.length,0);
+  const failed=await collectTexasHistory(second,{now:later,forceFailure:true,modelEvidence:closedEvidence});
+  assert.deepEqual(failed.observations,second.observations);
+});
+test('a current explicit contradiction prevents silently preserving an earlier closed-set deduction',async()=>{
+  const data=closedSnapshotFixture();
+  const first=await collectTexasHistory(null,{now:NOW,fetcher:success(data),modelEvidence:closedEvidence});
+  data.vehicles[0].model='Cybercab';
+  const next=await collectTexasHistory(first,{now:'2026-10-30T00:00:00Z',fetcher:success(data),modelEvidence:closedEvidence});
+  assert.equal(next.observations[0].model_y,null);assert.equal(next.observations[0].modelEvidenceConflict,true);
+  assert.ok(next.revisions.length>0);
+});
