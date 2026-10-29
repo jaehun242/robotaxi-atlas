@@ -40,3 +40,12 @@ export function fleetLinePoints(rows,field,{log=false,publisherDates=false}={}){
  }
  return {times,raw,values,gaps,excluded:raw.filter(v=>log&&v!==null&&v<=0).length};
 }
+// Long-term totals share date-label coordinates only. Publisher dates and KST
+// observation dates remain distinct fields and never become one summed series.
+export function longTermTimeline(archive,history,period='all',now=new Date().toISOString()){
+ const privateRows=archiveTimeline(archive,'all'),officialRows=officialTimeline(history,'all',now);
+ const officialMap=new Map(officialRows.filter(r=>r.checkedAt).map(r=>[r.day,r]));
+ const combined=new Map(privateRows.map(r=>[r.day,{...r,privateSourceDate:r.total===null?null:r.day,privateLastCheckedAt:r.lastCheckedAt??null,official_total:null,officialCheckedAt:null,officialValueAsOf:null}]));
+ for(const [day,r] of officialMap){const old=combined.get(day)??{day,total:null,cybercab:null,model_y:null,deltaTotal:null,privateSourceDate:null,privateLastCheckedAt:null};combined.set(day,{...old,official_total:r.total,officialCheckedAt:r.lastCheckedAt??r.checkedAt,officialValueAsOf:r.valueAsOf??null,officialSourceUrl:r.sourceUrl});}
+ return calendar([...combined.values()].sort((a,b)=>a.day.localeCompare(b.day)),period,kstDay(now)).map(r=>({...r,official_total:r.official_total??null}));
+}
