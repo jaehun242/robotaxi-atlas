@@ -1081,7 +1081,7 @@
       "durationMs": 2356,
       "numericParserConnected": true,
       "numericCheckState": "ok",
-      "numericLastSuccessAt": "2026-10-29T00:05:35.052Z",
+      "numericLastSuccessAt": "2026-10-28T23:55:18.834Z",
       "numericReferenceDate": "2026-10-28T07:16:41.703Z"
     },
     {
@@ -1378,7 +1378,1084 @@
       "lastCheckedAt": "2026-10-29T00:05:35.052Z",
       "lastSuccessAt": "2026-10-29T00:05:35.052Z",
       "checkState": "ok",
-      "error": null
+      "error": null,
+      "historical": {
+        "sourceId": "fsddb-tesla-registration-history",
+        "publisher": "FSD Database",
+        "sourceUrl": "https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc",
+        "scopeId": "us:state:TX:tesla:registered",
+        "basis": "registered",
+        "verification": "unofficial",
+        "dateBasis": "publisher_calendar",
+        "timezone": null,
+        "sourceAsOf": "2026-10-28T16:55:23-07:00",
+        "definition": "FSD Database가 TxDMV 동기화별 일일 등록 총계로 공개한 이력. 과거 차종 구분·날짜의 시간대는 미공개. 직접 수집한 KST 시각의 공식 스냅샷과 별개.",
+        "points": [
+          {
+            "date": "2026-06-09",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-10",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-11",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-12",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-13",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-14",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-15",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-16",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-17",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-18",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-19",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-20",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-21",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-22",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-23",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-24",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-25",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-26",
+            "total": 69,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-27",
+            "total": 84,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-28",
+            "total": 84,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-29",
+            "total": 84,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-06-30",
+            "total": 84,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-01",
+            "total": 84,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-02",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-03",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-04",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-05",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-06",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-07",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-08",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-09",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-10",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-11",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-12",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-13",
+            "total": 102,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-14",
+            "total": 117,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-15",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-16",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-17",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-18",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-19",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-20",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-21",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-22",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-23",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-24",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-25",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-26",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-27",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-28",
+            "total": 175,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-29",
+            "total": 181,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-07-30",
+            "total": 181,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-10",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-11",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-12",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-13",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-14",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-15",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-16",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-17",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-18",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-19",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-20",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-21",
+            "total": 186,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-22",
+            "total": 191,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-23",
+            "total": 191,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-24",
+            "total": 191,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-25",
+            "total": 191,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-26",
+            "total": 191,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-27",
+            "total": 270,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-28",
+            "total": 269,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-29",
+            "total": 269,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-30",
+            "total": 269,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-08-31",
+            "total": 314,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-01",
+            "total": 314,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-02",
+            "total": 420,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-03",
+            "total": 420,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-04",
+            "total": 432,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-05",
+            "total": 432,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-06",
+            "total": 432,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-07",
+            "total": 432,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-08",
+            "total": 437,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-09",
+            "total": 437,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-10",
+            "total": 439,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-11",
+            "total": 439,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-12",
+            "total": 439,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-13",
+            "total": 439,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-14",
+            "total": 439,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-15",
+            "total": 439,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-16",
+            "total": 439,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-17",
+            "total": 439,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-18",
+            "total": 448,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-19",
+            "total": 448,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-20",
+            "total": 448,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-21",
+            "total": 476,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-22",
+            "total": 479,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-23",
+            "total": 489,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-24",
+            "total": 489,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-25",
+            "total": 546,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-26",
+            "total": 546,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-27",
+            "total": 546,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-28",
+            "total": 546,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-29",
+            "total": 546,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-09-30",
+            "total": 546,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-01",
+            "total": 578,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-02",
+            "total": 589,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-03",
+            "total": 589,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-04",
+            "total": 589,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-05",
+            "total": 589,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-06",
+            "total": 589,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-07",
+            "total": 589,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-08",
+            "total": 739,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-09",
+            "total": 739,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-10",
+            "total": 739,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-11",
+            "total": 739,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-12",
+            "total": 739,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-13",
+            "total": 739,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-14",
+            "total": 769,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-15",
+            "total": 769,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-16",
+            "total": 803,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-17",
+            "total": 803,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-18",
+            "total": 803,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-19",
+            "total": 803,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-20",
+            "total": 803,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-21",
+            "total": 858,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-22",
+            "total": 858,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-23",
+            "total": 927,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-24",
+            "total": 970,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-25",
+            "total": 970,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-26",
+            "total": 970,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-27",
+            "total": 1080,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          },
+          {
+            "date": "2026-10-28",
+            "total": 1080,
+            "cybercab": null,
+            "model_y": null,
+            "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+            "lastCheckedAt": "2026-10-28T23:55:18.834Z"
+          }
+        ],
+        "firstCollectedAt": "2026-10-28T08:03:31.055Z",
+        "updatedAt": "2026-10-28T08:03:31.055Z",
+        "lastCheckedAt": "2026-10-28T23:55:18.834Z",
+        "lastSuccessAt": "2026-10-28T23:55:18.834Z",
+        "checkState": "ok",
+        "error": null,
+        "revisions": []
+      }
     }
   ],
   "registrationHistory": [
@@ -1448,7 +2525,7 @@
       "scopeId": "us:state:TX:tesla:registered",
       "basis": "registered",
       "checkedAt": "2026-10-28T07:16:41.703Z",
-      "lastCheckedAt": "2026-10-28T07:51:04.265Z",
+      "lastCheckedAt": "2026-10-28T08:03:31.055Z",
       "valueAsOf": "2026-10-28T07:16:41.703Z",
       "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
       "total": 1080,

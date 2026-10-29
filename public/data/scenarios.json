@@ -1,6 +1,141 @@
 {
-  "version": "2.0.0",
-  "reviewedOn": "2026-10-23",
+  "version": "3.0.0",
+  "reviewedOn": "2026-10-29",
+  "contexts": {
+    "austin": {
+      "visitor": {
+        "annualVisits": 30100000,
+        "year": 2024,
+        "scope": "Greater Austin 관광 목적지·광역권",
+        "scopeId": "us:destination:greater-austin",
+        "publisher": "Visit Austin / City of Austin",
+        "sourceUrl": "https://services.austintexas.gov/edims/document.cfm?id=456994",
+        "publishedOn": null,
+        "verificationUrl": "https://www.austintexas.org/partnerships/",
+        "note": "2024년 국내 방문량. 국제 방문을 포함한 총 고유 방문객 수가 아니며 행정시 인구와 범위가 다름. 정부 계획 PDF는 이번 직접 접근에서 시간초과, Visit Austin의 30.1 million 표기를 대조. 관광 목적지와 Census MSA 경계 일치 미확인."
+      },
+      "driver": {
+        "count": null,
+        "scope": "Austin·Texas 택시/Uber/Lyft 중복 제거 운전자",
+        "sourceUrl": "https://www.tdlr.texas.gov/tnc/drivers.htm",
+        "note": "TDLR은 개별 TNC 운전자에게 면허를 발급하지 않음. 택시 시 허가와 플랫폼 운전자 등록은 모집단이 다르고 복수 플랫폼 중복 제거 총수를 확보하지 못함."
+      },
+      "analystReading": "도심·대학·이벤트 수요와 광역권 통근을 분리해 봐야 합니다. 도시 거주 가구 추정만으로 공항·방문 수요 전체를 설명할 수 없습니다.",
+      "prioritySourceUrl": "https://www.tesla.com/support/robotaxi"
+    },
+    "dallas": {
+      "visitor": {
+        "annualVisits": 27700000,
+        "year": 2024,
+        "scope": "Visit Dallas 관광 목적지 · 행정시/MSA 경계와 일치 미확인",
+        "scopeId": "us:destination:visit-dallas",
+        "publisher": "Visit Dallas",
+        "sourceUrl": "https://www.visitdallas.com/about/",
+        "publishedOn": null,
+        "qualifier": "over",
+        "note": "공식 표기는 more than27.7million. 2024 방문량으로 고유 인원·운행 건수가 아니며 정확한 경계 미공개. Dallas 행정시나 DFW MSA 전체 통계로 확정하지 않음. 2025 최신치는 미확보."
+      },
+      "driver": {
+        "count": null,
+        "scope": "Dallas·Texas 택시/Uber/Lyft 중복 제거 운전자",
+        "sourceUrl": "https://www.tdlr.texas.gov/tnc/drivers.htm",
+        "note": "개별 TNC 운전자 주 면허 체계가 아니며 택시 허가만으로 Uber·Lyft 포함 총수를 알 수 없음. 복수 플랫폼 중복 제거 실인원 미확보."
+      },
+      "analystReading": "Dallas 행정시와 Fort Worth를 포함한 광역권은 수요 범위가 크게 다릅니다. 두 도시를 각각 계산한 뒤 같은 MSA를 다시 더하면 중복입니다.",
+      "prioritySourceUrl": "https://www.tesla.com/support/robotaxi"
+    },
+    "houston": {
+      "visitor": {
+        "annualVisits": 90100000,
+        "year": 2025,
+        "scope": "Greater Houston 광역 관광 목적지",
+        "scopeId": "us:destination:greater-houston",
+        "publisher": "Houston First",
+        "sourceUrl": "https://houstonfirst.com/media/uploads/HoustonFirst.com/PDFS/TravelSectorImpact_2025.pdf",
+        "publishedOn": null,
+        "note": "2025년 광역 방문량 90.1 million. 같은 보고서의 Houston 시 52.3 million은 광역 수치에 포함되므로 더하지 않음. 관광 목적지와 Census MSA 경계 일치·개별 서비스 구역 유입 비율은 미확인."
+      },
+      "secondaryVisitor": {
+        "annualVisits": 52300000,
+        "year": 2025,
+        "scope": "Houston 행정시·광역 수치의 부분집합"
+      },
+      "driver": {
+        "count": null,
+        "scope": "Houston·Texas 택시/Uber/Lyft 중복 제거 운전자",
+        "sourceUrl": "https://www.tdlr.texas.gov/tnc/drivers.htm",
+        "note": "시 택시·대여 차량 허가와 TNC 운전자 모집단이 다름. TDLR 개별 TNC 운전자 면허 없음. 플랫폼 간 중복 제거 총수 미확보."
+      },
+      "fareContext": {
+        "label": "2026년 규제 택시 요금 참고",
+        "sourceUrl": "https://www.houstontx.gov/ara/vfh/vfhdocs/2026-Taxicab-Meter-Rate-Increase.pdf",
+        "note": "첫 1/11마일 $3.72, 이후 마일당 $2.97, 대기 시간당 $24. Uber·Lyft·Tesla 실제 평균 요금이 아니며 거리 요금만으로 총 운임을 비교할 수 없음."
+      },
+      "analystReading": "광역권이 넓고 이동 거리가 긴 시장입니다. 요금이 낮아져도 긴 유료 이동·픽업·공차 시간이 차량 한 대의 일일 처리량을 제한합니다.",
+      "prioritySourceUrl": "https://www.tesla.com/support/robotaxi"
+    },
+    "miami": {
+      "visitor": {
+        "annualVisits": 28300000,
+        "year": 2025,
+        "scope": "Greater Miami & Miami Beach / Miami-Dade County",
+        "scopeId": "us:county:12086",
+        "publisher": "Greater Miami Convention & Visitors Bureau",
+        "sourceUrl": "https://www.gmcvb.com/press/miami-press-releases/gmcvb-reports-strong-tourism",
+        "publishedOn": "2026-06-03",
+        "note": "연간 방문량 28.3 million으로 반올림 발표. Miami 행정시·Miami–Fort Lauderdale–West Palm Beach MSA와 각각 범위가 다름. 고유 인원·체류 인구 또는 차량 운행 건수가 아님."
+      },
+      "driver": {
+        "count": null,
+        "scope": "Miami-Dade 택시/Uber/Lyft 중복 제거 운전자",
+        "sourceUrl": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.748.html",
+        "note": "Florida §627.748(17)의 TNC 주 단위 규제로 시·카운티 택시 허가에 Uber·Lyft 전체가 포함되지 않음. §(9)는 다른 플랫폼 활동을 허용하므로 플랫폼 합산은 중복 위험. 현재 실인원 공개 총수 미확보."
+      },
+      "analystReading": "해변·공항·크루즈 방문과 지역 거주 수요가 공존합니다. Miami-Dade 관광량을 Miami 시 전체 수요나 3개 카운티 광역권 수요로 바꿔 표시하지 않습니다.",
+      "prioritySourceUrl": "https://www.tesla.com/support/robotaxi"
+    },
+    "orlando": {
+      "visitor": {
+        "annualVisits": 76700000,
+        "year": 2025,
+        "scope": "Visit Orlando 관광 목적지 / Central Florida",
+        "scopeId": "us:destination:visit-orlando",
+        "publisher": "Visit Orlando",
+        "sourceUrl": "https://www.visitorlando.org/media/press-releases/post/orlando-welcomed-record-767-million-visitors-in-2025-remaining-most-visited-destination-in-the-us/",
+        "publishedOn": "2026-05-07",
+        "note": "연간 방문량 76.7 million. Orlando 행정시 인구와 범위가 다르고 Census MSA와 같은 경계라는 근거 미확보. 재방문·당일 방문·숙박 방문이 있는 방문량이며 일평균 체류 인구가 아님."
+      },
+      "driver": {
+        "count": null,
+        "scope": "Orlando·Central Florida 택시/Uber/Lyft 중복 제거 운전자",
+        "sourceUrl": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.748.html",
+        "note": "시 Vehicle-for-Hire 허가는 택시·리무진 등으로 TNC 전체 운전자 명부가 아님. Florida TNC 주 규제·복수 플랫폼 활동으로 중복 제거 현재 총수 미확보."
+      },
+      "analystReading": "테마파크·공항·호텔 방문의 비중이 커서 거주 가구 수요만으로 시장을 설명하기 어렵습니다. 일행·렌터카·호텔 셔틀 이용 때문에 방문 1건이 로보택시 1건은 아닙니다.",
+      "prioritySourceUrl": "https://www.tesla.com/support/robotaxi"
+    },
+    "tampa": {
+      "visitor": {
+        "annualVisits": 28000000,
+        "year": 2025,
+        "scope": "Hillsborough County",
+        "scopeId": "us:county:12057",
+        "publisher": "Visit Tampa Bay",
+        "sourceUrl": "https://www.visittampabay.com/media/news/post/2025-tourism-campaigns-net-95-billion/",
+        "publishedOn": "2026-06-05",
+        "note": "원문은 over 28 million으로 발표한 약식 수치. Tampa 행정시 또는 Tampa–St. Petersburg–Clearwater MSA 전체 수치가 아님. Pinellas 관광량을 더하면 동일 방문 중복 위험.",
+        "qualifier": "over"
+      },
+      "driver": {
+        "count": null,
+        "scope": "Tampa·Hillsborough 택시/Uber/Lyft 중복 제거 운전자",
+        "sourceUrl": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.748.html",
+        "note": "Hillsborough 차량 대여·택시 허가와 Florida 주법 TNC는 별도 모집단. 플랫폼 간 중복 제거 운전자 현재 총수 미확보."
+      },
+      "analystReading": "Tampa 시·Hillsborough 카운티·해변을 포함한 광역권을 구분해야 합니다. 관광량은 카운티 기준이므로 광역 인구에 단순 합산하지 않습니다.",
+      "prioritySourceUrl": "https://www.tesla.com/support/robotaxi"
+    }
+  },
   "defaults": {
     "austin": {
       "current": {
@@ -21,30 +156,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-austin",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "austin",
@@ -64,30 +205,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-austin",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -137,7 +284,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "austin",
+        "scopeId": "us:msa-resident-proxy:austin",
+        "customScope": "Austin-Round Rock-San Marcos, TX 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "28931.63002805231",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-austin",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "austin",
+        "scopeId": "us:msa-resident-proxy:austin",
+        "customScope": "Austin-Round Rock-San Marcos, TX 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "28931.63002805231",
+        "additional": "291176.6221865399",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-austin",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "1,192,309가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 1192308.929682077
     },
     "dallas": {
       "current": {
@@ -158,30 +411,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-dallas",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "dallas",
@@ -201,30 +460,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-dallas",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -274,7 +539,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "dallas",
+        "scopeId": "us:msa-resident-proxy:dallas",
+        "customScope": "Dallas-Fort Worth-Arlington, TX 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "124411.59657096483",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-dallas",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "dallas",
+        "scopeId": "us:msa-resident-proxy:dallas",
+        "customScope": "Dallas-Fort Worth-Arlington, TX 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "124411.59657096483",
+        "additional": "740157.5027421353",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-dallas",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "3,404,372가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 3404371.507332505
     },
     "houston": {
       "current": {
@@ -295,30 +666,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-houston",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "houston",
@@ -338,30 +715,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-houston",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -411,7 +794,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "houston",
+        "scopeId": "us:msa-resident-proxy:houston",
+        "customScope": "Houston-Pasadena-The Woodlands, TX 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "112111.91319299143",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-houston",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "houston",
+        "scopeId": "us:msa-resident-proxy:houston",
+        "customScope": "Houston-Pasadena-The Woodlands, TX 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "112111.91319299143",
+        "additional": "666983.4322818549",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-houston",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "3,067,806가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 3067805.682318761
     },
     "miami": {
       "current": {
@@ -432,30 +921,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-miami",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "miami",
@@ -475,30 +970,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-miami",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -548,7 +1049,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "miami",
+        "scopeId": "us:msa-resident-proxy:miami",
+        "customScope": "Miami-Fort Lauderdale-West Palm Beach, FL 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "92897.48872867355",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-miami",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "miami",
+        "scopeId": "us:msa-resident-proxy:miami",
+        "customScope": "Miami-Fort Lauderdale-West Palm Beach, FL 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "92897.48872867355",
+        "additional": "552671.7377122511",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-miami",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "2,542,026가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 2542026.406278327
     },
     "orlando": {
       "current": {
@@ -569,30 +1176,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-orlando",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "orlando",
@@ -612,30 +1225,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-orlando",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -685,7 +1304,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "orlando",
+        "scopeId": "us:msa-resident-proxy:orlando",
+        "customScope": "Orlando-Kissimmee-Sanford, FL 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "28196.65699770254",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-orlando",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "orlando",
+        "scopeId": "us:msa-resident-proxy:orlando",
+        "customScope": "Orlando-Kissimmee-Sanford, FL 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "28196.65699770254",
+        "additional": "283779.6326575037",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-orlando",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "1,162,020가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 1162019.7649750814
     },
     "tampa": {
       "current": {
@@ -706,30 +1431,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-tampa",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "tampa",
@@ -749,30 +1480,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-tampa",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -822,7 +1559,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "tampa",
+        "scopeId": "us:msa-resident-proxy:tampa",
+        "customScope": "Tampa-St. Petersburg-Clearwater, FL 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "50235.67542758614",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-tampa",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "tampa",
+        "scopeId": "us:msa-resident-proxy:tampa",
+        "customScope": "Tampa-St. Petersburg-Clearwater, FL 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "50235.67542758614",
+        "additional": "298865.32363434206",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-tampa",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "1,374,638가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 1374637.9500863247
     },
     "san-francisco": {
       "current": {
@@ -843,30 +1686,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-san-francisco",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "san-francisco",
@@ -886,30 +1735,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-san-francisco",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -959,7 +1814,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "san-francisco",
+        "scopeId": "us:msa-resident-proxy:san-francisco",
+        "customScope": "San Francisco-Oakland-Fremont, CA 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "74550.87753078464",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-san-francisco",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "san-francisco",
+        "scopeId": "us:msa-resident-proxy:san-francisco",
+        "customScope": "San Francisco-Oakland-Fremont, CA 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "74550.87753078464",
+        "additional": "443522.89385616715",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-san-francisco",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "2,039,994가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 2039993.7811879977
     },
     "phoenix": {
       "current": {
@@ -980,30 +1941,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-phoenix",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "phoenix",
@@ -1023,30 +1990,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-phoenix",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.928843888899884",
             "teslaProductivity": "18.928843888899884",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -1096,7 +2069,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "phoenix",
+        "scopeId": "us:msa-resident-proxy:phoenix",
+        "customScope": "Phoenix-Mesa-Chandler, AZ 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "70039.35415642409",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-phoenix",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "phoenix",
+        "scopeId": "us:msa-resident-proxy:phoenix",
+        "customScope": "Phoenix-Mesa-Chandler, AZ 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "70039.35415642409",
+        "additional": "416682.6477186235",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-phoenix",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "18.928843888899884",
+            "teslaProductivity": "18.928843888899884",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "1,916,541가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 1916541.449945091
     },
     "las-vegas": {
       "current": {
@@ -1117,30 +2196,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-las-vegas",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "las-vegas",
@@ -1160,30 +2245,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-las-vegas",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -1233,7 +2324,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "las-vegas",
+        "scopeId": "us:msa-resident-proxy:las-vegas",
+        "customScope": "Las Vegas-Henderson-North Las Vegas, NV 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "21286.626368848418",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-las-vegas",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "las-vegas",
+        "scopeId": "us:msa-resident-proxy:las-vegas",
+        "customScope": "Las Vegas-Henderson-North Las Vegas, NV 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "21286.626368848418",
+        "additional": "214235.0070776664",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-las-vegas",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "877,249가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 877248.6955548332
     },
     "jacksonville": {
       "current": {
@@ -1254,30 +2451,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-jacksonville",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "jacksonville",
@@ -1297,30 +2500,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-jacksonville",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -1370,7 +2579,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "jacksonville",
+        "scopeId": "us:msa-resident-proxy:jacksonville",
+        "customScope": "Jacksonville, FL 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "16789.30624217248",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-jacksonville",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "jacksonville",
+        "scopeId": "us:msa-resident-proxy:jacksonville",
+        "customScope": "Jacksonville, FL 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "16789.30624217248",
+        "additional": "168972.62531392454",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-jacksonville",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "691,908가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 691908.466142407
     },
     "san-antonio": {
       "current": {
@@ -1391,30 +2706,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-san-antonio",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "san-antonio",
@@ -1434,30 +2755,36 @@
         "growth": "2",
         "mix": "",
         "sourceDemandId": "default-san-antonio",
-        "sourceIncludesExternal": true,
+        "sourceIncludesExternal": false,
         "scenarios": [
           {
             "conversion": "20",
             "teslaShare": "10",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "23.186117862059167",
             "teslaProductivity": "23.186117862059167",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -1507,7 +2834,113 @@
         "otherDowntimeMinutes": "180"
       },
       "confidence": "공식 통계 + MSA 규모 대체 추정",
-      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음."
+      "limitations": "시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.",
+      "metroCurrent": {
+        "city": "san-antonio",
+        "scopeId": "us:msa-resident-proxy:san-antonio",
+        "customScope": "San Antonio-New Braunfels, TX 거주자 이동 · 가구밀도 대체 추정",
+        "market": "replacement",
+        "horizon": "current",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "24448.43733152588",
+        "additional": "",
+        "additionalDistinct": false,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-san-antonio",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroFuture": {
+        "city": "san-antonio",
+        "scopeId": "us:msa-resident-proxy:san-antonio",
+        "customScope": "San Antonio-New Braunfels, TX 거주자 이동 · 가구밀도 대체 추정",
+        "market": "expanded",
+        "horizon": "2030",
+        "referenceDate": "2024-12-31",
+        "unit": "person_trips",
+        "occupancy": "1.3",
+        "replacement": "24448.43733152588",
+        "additional": "246056.4231268877",
+        "additionalDistinct": true,
+        "externalEnabled": false,
+        "external": "",
+        "externalDistinct": false,
+        "growth": "2",
+        "mix": "",
+        "sourceDemandId": "metro-proxy-san-antonio",
+        "sourceIncludesExternal": false,
+        "scenarios": [
+          {
+            "conversion": "20",
+            "teslaShare": "10",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "2"
+          },
+          {
+            "conversion": "50",
+            "teslaShare": "25",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1.5"
+          },
+          {
+            "conversion": "80",
+            "teslaShare": "40",
+            "marketProductivity": "23.186117862059167",
+            "teslaProductivity": "23.186117862059167",
+            "inducedDemand": "0",
+            "fare": "1"
+          }
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
+      },
+      "metroEvidence": {
+        "kind": "proxy",
+        "label": "광역권 가구 수 대체 추정",
+        "value": "1,007,551가구 · 분석용",
+        "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+        "note": "도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함."
+      },
+      "metroHouseholdProxy": 1007550.9094678324
     },
     "london": {
       "current": {
@@ -1535,23 +2968,29 @@
             "teslaShare": "10",
             "marketProductivity": "18.75",
             "teslaProductivity": "18.75",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.75",
             "teslaProductivity": "18.75",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.75",
             "teslaProductivity": "18.75",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "london",
@@ -1578,23 +3017,29 @@
             "teslaShare": "10",
             "marketProductivity": "18.75",
             "teslaProductivity": "18.75",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "18.75",
             "teslaProductivity": "18.75",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "18.75",
             "teslaProductivity": "18.75",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -1665,23 +3110,29 @@
             "teslaShare": "10",
             "marketProductivity": "25.075987841945288",
             "teslaProductivity": "25.075987841945288",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "25.075987841945288",
             "teslaProductivity": "25.075987841945288",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "25.075987841945288",
             "teslaProductivity": "25.075987841945288",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "future": {
         "city": "seoul",
@@ -1708,23 +3159,29 @@
             "teslaShare": "10",
             "marketProductivity": "25.075987841945288",
             "teslaProductivity": "25.075987841945288",
-            "inducedDemand": "0"
+            "inducedDemand": "0",
+            "fare": "2"
           },
           {
             "conversion": "50",
             "teslaShare": "25",
             "marketProductivity": "25.075987841945288",
             "teslaProductivity": "25.075987841945288",
-            "inducedDemand": "10"
+            "inducedDemand": "0",
+            "fare": "1.5"
           },
           {
             "conversion": "80",
             "teslaShare": "40",
             "marketProductivity": "25.075987841945288",
             "teslaProductivity": "25.075987841945288",
-            "inducedDemand": "25"
+            "inducedDemand": "0",
+            "fare": "1"
           }
-        ]
+        ],
+        "pricingMode": "fare",
+        "referenceFare": "2",
+        "elasticity": "0.6"
       },
       "evidence": [
         {
@@ -1792,12 +3249,23 @@
       "연간 수요 성장 2%는 원자료 기준연도부터 적용하는 가정이며 인구 예측을 다시 곱하지 않음.",
       "보유차 20시간 계획 중 충전120·청소45·정비30·기타비가동180분 제외. 건당 픽업6·추가 공차8분. 시장/Tesla에 처음에는 같은 시간 가정을 적용하고 각각 수정 가능.",
       "피크 대기시간·교통 혼잡·수요의 시간대 집중은 반영하지 않았으며 최소 서비스 차량이나 배치 계획을 의미하지 않음.",
-      "순수 유발 신규수요 0/10/25%: 저렴한 요금 때문에 기존 이동의 대체가 아닌 추가 운행이 생긴다는 분석 가정. 가격·탄력성 실측 근거는 미확보. 기존 전환 운행에 한 번만 적용하며 개인차 전환·연 2% 기초수요 성장에 이미 포함된 이동을 다시 세지 않는다고 가정."
+      "요금 $2/$1.5/$1은 동일 대표 운행의 총요금을 거리로 나눈 유효가격 분석 가정이며 실측 Tesla/Uber 요금이 아닙니다. 기준 $2 대비 수요 × (요금/2)^(-0.6), 탄력성0.6은 현지 실측 계수 미확보에 따른 분석 민감도입니다. 별도 유발 수요는0으로 두어 요금 효과를 이중 계산하지 않습니다."
     ],
     "inducedDemand": [
       0,
-      10,
-      25
-    ]
+      0,
+      0
+    ],
+    "fare": {
+      "reference": 2,
+      "scenario": [
+        2,
+        1.5,
+        1
+      ],
+      "elasticity": 0.6,
+      "unit": "USD/equivalent-mile",
+      "kind": "analyst_assumption"
+    }
   }
 }

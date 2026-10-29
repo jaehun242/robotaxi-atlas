@@ -1,5 +1,5 @@
 import {kstDay} from './domain.mjs';
-export const MODEL_VERSION='2.0.0';
+export const MODEL_VERSION='3.0.0';
 export const SCENARIO_NAMES=['보수적','기준','공격적'];
 export const numeric=v=>v===null||v===undefined||String(v).trim()===''?null:Number.isFinite(Number(v))?Number(v):null;
 export function blankMarket(city,scopeId){return {city,scopeId,customScope:'',market:'replacement',horizon:'current',referenceDate:'',unit:'vehicle_trips',occupancy:'',replacement:'',additional:'',additionalDistinct:false,externalEnabled:false,external:'',externalDistinct:false,growth:'',mix:'',sourceDemandId:null,sourceIncludesExternal:false,scenarios:SCENARIO_NAMES.map(()=>({conversion:'',teslaShare:'',marketProductivity:'',teslaProductivity:''}))};}
@@ -42,8 +42,15 @@ export function calculateMarket(input){
     if(share===null||share<0||share>100)localErrors.push('Tesla 수요 점유율 0~100% 필요');
     if(marketP===null||marketP<=0||teslaP===null||teslaP<=0)localErrors.push('전체 시장과 Tesla의 보유 차량 생산성을 각각 0 초과로 입력');
     if(induced===null||induced<0||induced>100)localErrors.push('추가 유발 수요는 기존 전환 운행 대비 0~100%로 입력');
+    let fareMultiplier=1;
+    if(input.pricingMode==='fare'){
+      const reference=numeric(input.referenceFare),fare=numeric(s.fare),elasticity=numeric(input.elasticity);
+      if(reference===null||reference<=0||fare===null||fare<=0||elasticity===null||elasticity<0||elasticity>2)localErrors.push('요금은 0 초과, 가격 탄력성은 0~2의 분석 가정이 필요합니다.');
+      else{fareMultiplier=Math.pow(fare/reference,-elasticity);if(fare/reference<.1||fare/reference>10)localErrors.push('기준 요금의 0.1~10배를 벗어난 가격 외삽은 지원하지 않습니다.');}
+      if(induced!==0)localErrors.push('요금 탄력성과 별도 유발 신규수요를 중복 적용할 수 없습니다.');
+    }
     const basePaid=target===null||localErrors.length?null:target*conversion/100;
-    const inducedPaid=basePaid===null?null:basePaid*induced/100;
+    const inducedPaid=basePaid===null?null:input.pricingMode==='fare'?Math.min(target,basePaid*fareMultiplier)-basePaid:basePaid*induced/100;
     const paid=basePaid===null?null:basePaid+inducedPaid,teslaPaid=paid===null?null:paid*share/100;
     const marketFleet=paid===null?null:Math.ceil(paid/marketP),teslaFleet=teslaPaid===null?null:Math.ceil(teslaPaid/teslaP);
     if(marketFleet!==null&&(!Number.isSafeInteger(marketFleet)||!Number.isSafeInteger(teslaFleet)))localErrors.push('필요 차량 수가 안전하게 계산 가능한 정수 범위를 초과합니다.');
@@ -51,7 +58,7 @@ export function calculateMarket(input){
     if(paid>0&&share<100&&teslaFleet===marketFleet)localErrors.push('Tesla 이외 수요를 처리할 차량이 남지 않습니다. 반올림·생산성 가정을 확인해 주세요.');
     if(paid>0&&share===100&&marketP!==teslaP)localErrors.push('Tesla 점유율 100%이면 전체 시장과 Tesla 생산성이 같아야 합니다.');
     const cybercab=teslaFleet!==null&&mix!==null?Math.round(teslaFleet*mix/100):null;
-    return {name,paidTrips:paid,basePaidTrips:basePaid,inducedPaidTrips:inducedPaid,teslaPaidTrips:teslaPaid,marketFleet,teslaFleet,cybercab,modelY:cybercab===null?null:teslaFleet-cybercab,errors:localErrors};
+    return {name,fareMultiplier:input.pricingMode==='fare'&&basePaid>0?paid/basePaid:fareMultiplier,paidTrips:paid,basePaidTrips:basePaid,inducedPaidTrips:inducedPaid,teslaPaidTrips:teslaPaid,marketFleet,teslaFleet,cybercab,modelY:cybercab===null?null:teslaFleet-cybercab,errors:localErrors};
   });
   if(results.every(r=>r.marketFleet!==null&&r.teslaFleet!==null)){
     for(let i=1;i<3;i++){
@@ -63,7 +70,7 @@ export function calculateMarket(input){
 }
 export function compareFleet(rows,input,calculation){
   const unavailable=reason=>({allowed:false,count:rows.length?rows.reduce((n,o)=>n+o.count,0):null,reason,ratios:[null,null,null],additional:[null,null,null]});
-  if(!rows.length)return unavailable('현재 검증된 차량 수가 없습니다.');
+  if(!rows.length)return unavailable('범위가 일치하는 검증된 현지 배치 대수가 없습니다.');
   if(input.horizon!=='current')return unavailable('2030 수요와 현재 재고는 기간이 달라 비율·추가 차량 수를 계산하지 않습니다.');
   if(!calculation.coherent)return unavailable('필수 입력 또는 시나리오 일관성 검증을 먼저 완료해 주세요.');
   if(new Set(rows.map(o=>o.model)).size!==2||rows.some(o=>o.coverageComplete!==true))return unavailable('Cybercab·Model Y 전체 범위가 확인된 차량 수가 필요합니다.');

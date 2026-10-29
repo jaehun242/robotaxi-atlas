@@ -2,6 +2,7 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {blankMarket,calculateMarket,productivityFromTime,MODEL_VERSION} from '../src/market.mjs';
 const read=async file=>JSON.parse(await readFile(file,'utf8'));
 const stats=await read('public/data/statistics.json'),facts=await read('data/demand-evidence.json'),nhts=await read('data/nhts-2022-proxy.json');
+const research=await read('data/market-context.json');
 const defaults={};
 const nhtsBands=nhts.bands??nhts.groups;
 if(!nhtsBands)throw Error('NHTS 근거 구조 검토 필요');
@@ -25,11 +26,24 @@ for(const profile of stats.profiles){
   }else continue;
   const budget={hours:'20',paidMinutes:String(paid),pickupMinutes:'6',emptyMinutes:'8',chargeMinutes:'120',cleanMinutes:'45',maintenanceMinutes:'30',otherDowntimeMinutes:'180'};
   const marketP=productivityFromTime(budget).value,teslaBudget={...budget},teslaP=productivityFromTime(teslaBudget).value;
-  const base={...blankMarket(city,scopeId),customScope:scope,referenceDate:basisDate,unit,occupancy,replacement:String(taxi),growth:'2',sourceIncludesExternal:true,sourceDemandId:`default-${city}`,scenarios:[20,50,80].map((conversion,i)=>({conversion:String(conversion),teslaShare:String([10,25,40][i]),marketProductivity:String(marketP),teslaProductivity:String(teslaP),inducedDemand:String([0,10,25][i])}))};
+  const base={...blankMarket(city,scopeId),customScope:scope,referenceDate:basisDate,unit,occupancy,replacement:String(taxi),growth:'2',sourceIncludesExternal:!h,pricingMode:'fare',referenceFare:'2',elasticity:'0.6',sourceDemandId:`default-${city}`,scenarios:[20,50,80].map((conversion,i)=>({conversion:String(conversion),teslaShare:String([10,25,40][i]),marketProductivity:String(marketP),teslaProductivity:String(teslaP),inducedDemand:'0',fare:String([2,1.5,1][i])}))};
   const future={...base,horizon:'2030',market:'expanded',additional:String(privateTrips*.05),additionalDistinct:true};
   for(const input of [base,future]){const r=calculateMarket(input);if(!r.coherent)throw Error(city+': '+JSON.stringify(r));}
   defaults[city]={current:base,future,evidence,scope,sourceBasis:basisDate,taxiPersonTrips:taxi,privatePersonTrips:privateTrips,marketBudget:budget,teslaBudget,confidence:h?'공식 통계 + MSA 규모 대체 추정':'공식 지역 이동 통계 + 분석 가정',limitations:'시장 전체와 Tesla는 수요 점유율·각 생산성으로 별도 계산. 명부 차량과 지리·정의·시점이 달라 현재 비율·추가 대수는 계산하지 않음.'};
 }
-const output={version:MODEL_VERSION,reviewedOn:facts.reviewedOn,defaults,assumptions:{conversion:[20,50,80],teslaDemandShare:[10,25,40],occupancy:1.3,futurePrivateEligiblePercent:5,annualDemandGrowth:2,rationale:['전환율 20/50/80%: 기존 택시·호출차 수요에 대한 낮음/중간/높음의 분석 범위이며 회사 전망이 아님.','Tesla 수요 점유율 10/25/40%: 복수 사업자가 공존하는 경쟁 구도를 보는 분석 가정.','평균 동승 1.3명: 1인·일행 탑승의 변환 가정. 관측 평균 아님.','2030 확장은 기존 택시·호출차와 겹치지 않는 개인차 이동 중 5%를 추가 대상으로 설정.','연간 수요 성장 2%는 원자료 기준연도부터 적용하는 가정이며 인구 예측을 다시 곱하지 않음.','보유차 20시간 계획 중 충전120·청소45·정비30·기타비가동180분 제외. 건당 픽업6·추가 공차8분. 시장/Tesla에 처음에는 같은 시간 가정을 적용하고 각각 수정 가능.','피크 대기시간·교통 혼잡·수요의 시간대 집중은 반영하지 않았으며 최소 서비스 차량이나 배치 계획을 의미하지 않음.']}};
-output.assumptions.inducedDemand=[0,10,25];output.assumptions.rationale.push('순수 유발 신규수요 0/10/25%: 저렴한 요금 때문에 기존 이동의 대체가 아닌 추가 운행이 생긴다는 분석 가정. 가격·탄력성 실측 근거는 미확보. 기존 전환 운행에 한 번만 적용하며 개인차 전환·연 2% 기초수요 성장에 이미 포함된 이동을 다시 세지 않는다고 가정.');
+// Optional full-MSA resident-demand proxy. Census population ratio is an explicit
+// household-density assumption, never a measured MSA household count or geofence.
+for(const profile of stats.profiles){
+ const d=defaults[profile.city],h=facts.households.find(h=>h.city===profile.city);
+ const cityPop=stats.populations.find(p=>p.scopeId===profile.cityScopeId),metro=stats.populations.find(p=>p.scopeId===profile.metroScopeId);
+ if(!d||!h||!cityPop||!metro)continue;
+ const factor=metro.value/cityPop.value;
+ const evidence={kind:'proxy',label:'광역권 가구 수 대체 추정',value:Math.round(h.value*factor).toLocaleString('ko-KR')+'가구 · 분석용',url:metro.sourceUrl,note:'도시 ACS2020–24 가구 수 × (2025 MSA인구 ÷ 2025 도시인구). 도시와 광역권의 주민당 가구 수가 같다는 대체 가정. 실제 MSA 가구 관측값 아님. 교외 가구구조·방문객·기업통행 차이를 반영하지 못함.'};
+ const convert=input=>({...input,scopeId:'us:msa-resident-proxy:'+profile.city,customScope:metro.name+' 거주자 이동 · 가구밀도 대체 추정',replacement:String(Number(input.replacement)*factor),additional:input.additional?String(Number(input.additional)*factor):'',sourceIncludesExternal:false,sourceDemandId:'metro-proxy-'+profile.city});
+ d.metroCurrent=convert(d.current);d.metroFuture=convert(d.future);d.metroEvidence=evidence;d.metroHouseholdProxy=h.value*factor;
+ for(const input of [d.metroCurrent,d.metroFuture])if(!calculateMarket(input).coherent)throw Error('MSA scenario invalid: '+profile.city);
+}
+const output={version:MODEL_VERSION,reviewedOn:research.reviewedOn,contexts:research.contexts,defaults,assumptions:{conversion:[20,50,80],teslaDemandShare:[10,25,40],occupancy:1.3,futurePrivateEligiblePercent:5,annualDemandGrowth:2,rationale:['전환율 20/50/80%: 기존 택시·호출차 수요에 대한 낮음/중간/높음의 분석 범위이며 회사 전망이 아님.','Tesla 수요 점유율 10/25/40%: 복수 사업자가 공존하는 경쟁 구도를 보는 분석 가정.','평균 동승 1.3명: 1인·일행 탑승의 변환 가정. 관측 평균 아님.','2030 확장은 기존 택시·호출차와 겹치지 않는 개인차 이동 중 5%를 추가 대상으로 설정.','연간 수요 성장 2%는 원자료 기준연도부터 적용하는 가정이며 인구 예측을 다시 곱하지 않음.','보유차 20시간 계획 중 충전120·청소45·정비30·기타비가동180분 제외. 건당 픽업6·추가 공차8분. 시장/Tesla에 처음에는 같은 시간 가정을 적용하고 각각 수정 가능.','피크 대기시간·교통 혼잡·수요의 시간대 집중은 반영하지 않았으며 최소 서비스 차량이나 배치 계획을 의미하지 않음.']}};
+output.assumptions.inducedDemand=[0,0,0];output.assumptions.fare={reference:2,scenario:[2,1.5,1],elasticity:0.6,unit:'USD/equivalent-mile',kind:'analyst_assumption'};output.assumptions.rationale=output.assumptions.rationale.filter(r=>!r.includes('순수 유발'));
+output.assumptions.rationale.push('요금 $2/$1.5/$1은 동일 대표 운행의 총요금을 거리로 나눈 유효가격 분석 가정이며 실측 Tesla/Uber 요금이 아닙니다. 기준 $2 대비 수요 × (요금/2)^(-0.6), 탄력성0.6은 현지 실측 계수 미확보에 따른 분석 민감도입니다. 별도 유발 수요는0으로 두어 요금 효과를 이중 계산하지 않습니다.');
 await writeFile('public/data/scenarios.json',JSON.stringify(output,null,2)+'\n');console.log('기본 시나리오 생성: '+Object.keys(defaults).length+'개 도시 · 현재/2030 · '+MODEL_VERSION);

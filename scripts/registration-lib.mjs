@@ -1,6 +1,7 @@
 import {createHash} from 'node:crypto';
 import {boundedFetch} from './statistics-lib.mjs';
 import {appendRegistrationHistory} from '../src/fleet-changes.mjs';
+import {parseRegistrationArchive,mergeRegistrationArchive} from './registration-archive-lib.mjs';
 export const TX_API='https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles';
 export const TX_PAGE='https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles';
 export function normalizeModel(value){const v=String(value).toLowerCase().replace(/[^a-z0-9]/g,'');return v==='cybercab'?'cybercab':['modely','teslamodely'].includes(v)?'model_y':'unknown';}
@@ -35,7 +36,8 @@ export async function fetchPrivateTexasRegistry(fetcher=fetch){
  if(!operator||!Number.isSafeInteger(operator.fleet_size)||!operator.models)throw Error('민간 재집계 구조 변경');
  const counts={cybercab:0,model_y:0,unknown:0};for(const [model,count] of Object.entries(operator.models)){if(!Number.isSafeInteger(count)||count<0)throw Error('민간 차종 집계 검증 실패');counts[normalizeModel(model)]+=count;}
  if(Object.values(counts).reduce((s,n)=>s+n,0)!==operator.fleet_size)throw Error('민간 총계·차종 합계 불일치');
- return {total:operator.fleet_size,...counts,sourceAsOf:operator.last_synced_at??data.generated_at,sourceUrl:'https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc',contentHash:createHash('sha256').update(JSON.stringify([operator.fleet_size,counts])).digest('hex')};
+ let historical=null,historyError=null;try{historical=parseRegistrationArchive(data,operator);}catch(e){historyError=e.message;}
+ return {total:operator.fleet_size,...counts,sourceAsOf:operator.last_synced_at??data.generated_at,sourceUrl:'https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc',contentHash:createHash('sha256').update(JSON.stringify([operator.fleet_size,counts])).digest('hex'),historical,historyError};
 }
 export async function collectTexasRegistrations(prior=[],{now=new Date().toISOString(),fetcher=fetch,forceFailure=false}={}){
  const old=prior.find(r=>r.id==='tx-tesla-official');let official;
@@ -45,10 +47,11 @@ export async function collectTexasRegistrations(prior=[],{now=new Date().toISOSt
  }catch(e){official={...(old??{id:'tx-tesla-official',region:'TX',sourceUrl:TX_PAGE,total:null,cybercab:null,model_y:null,asOf:null}),lastCheckedAt:now,checkState:'failed',error:e.message+' · 마지막 정상값 보존'};}
  const oldPrivate=prior.find(r=>r.id==='tx-tesla-fsddb');let privateRegistry;
  try{
-  if(forceFailure)throw Error('수집 실패 모의');const counts=await fetchPrivateTexasRegistry(fetcher);
+  if(forceFailure)throw Error('수집 실패 모의');const {historical,historyError,...counts}=await fetchPrivateTexasRegistry(fetcher);
   privateRegistry=preserveRegistration(oldPrivate,{id:'tx-tesla-fsddb',region:'TX',scope:'Texas · FSD Database 민간 재집계',basis:'registered',verification:'unofficial',note:'동일 TxDMV 원자료의 재집계이며 독립 검증 출처가 아님. JSON은 집계만 제공.',...counts},now);
+  privateRegistry.historical=mergeRegistrationArchive(oldPrivate?.historical,historical,now,historyError);
   if(!oldPrivate||oldPrivate.contentHash!==counts.contentHash){privateRegistry.asOf=Number.isFinite(Date.parse(counts.sourceAsOf))?new Date(counts.sourceAsOf).toISOString():now;privateRegistry.asOfMeaning='민간 재집계가 공개한 마지막 동기화 시각. 신규 등록일과 별도.';}
- }catch(e){privateRegistry={...(oldPrivate??{id:'tx-tesla-fsddb',region:'TX',verification:'unofficial',sourceUrl:'https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc',total:null,cybercab:null,model_y:null,asOf:null}),lastCheckedAt:now,checkState:'failed',error:e.message};}
+ }catch(e){privateRegistry={...(oldPrivate??{id:'tx-tesla-fsddb',region:'TX',verification:'unofficial',sourceUrl:'https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc',total:null,cybercab:null,model_y:null,asOf:null}),lastCheckedAt:now,checkState:'failed',error:e.message,historical:mergeRegistrationArchive(oldPrivate?.historical,null,now,e.message)};}
  return [official,privateRegistry];
 }
 export function applyRegistrationStatus(atlas,monitoring,registries,now){

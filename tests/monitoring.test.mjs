@@ -60,7 +60,7 @@ test('official coming-soon facts add reviewed geography as planned, never counts
  const b=await collectSafety(a,catalog,{fetcher:async()=>new Response('',{status:403}),now:later});assert.deepEqual(a.services,b.services);assert.deepEqual(a.news,b.news);assert.deepEqual(a.cities,b.cities);
 });
 test('price-induced trips apply once after substitution; higher productivity may reduce fleet despite higher demand',async()=>{
- const scenarios=JSON.parse(await readFile('public/data/scenarios.json','utf8'));const input=structuredClone(scenarios.defaults.austin.current);input.scenarios.forEach(s=>s.inducedDemand='0');const base=calculateMarket(input);
+ const scenarios=JSON.parse(await readFile('public/data/scenarios.json','utf8'));const input=structuredClone(scenarios.defaults.austin.current);input.pricingMode='manual';input.scenarios.forEach(s=>s.inducedDemand='0');const base=calculateMarket(input);
  input.scenarios[1].inducedDemand='10';const r=calculateMarket(input);assert.ok(Math.abs(r.results[1].paidTrips-base.results[1].paidTrips*1.1)<1e-8);assert.equal(r.targetVehicleTrips,base.targetVehicleTrips);assert.ok(r.results[1].inducedPaidTrips>0);
 });
 test('today coverage excludes stale and unconnected records; semantic parsers have independent count',()=>{
