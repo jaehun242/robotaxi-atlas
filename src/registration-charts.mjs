@@ -16,7 +16,7 @@ export function archiveTimeline(archive,period='all'){
 }
 export function officialTimeline(history,period='all',now=new Date().toISOString()){
  // Preserve the original comparison metadata, but only adjacent KST calendar days
- // qualify for a daily bar. Intraday changes and multi-day gaps stay separate.
+ // qualify for a daily change point. Intraday changes and multi-day gaps stay separate.
  const points=registrationDailyChanges(history).map(p=>({...p,missing:false,dailyDeltaCybercab:p.gapDays===1?p.deltaCybercab:null,dailyDeltaModelY:p.gapDays===1?p.deltaModelY:null,dailyDeltaTotal:p.gapDays===1?p.deltaTotal:null}));
  return calendar(points,period,kstDay(now));
 }
@@ -24,4 +24,19 @@ export function filterChangePeriod(events,period='all',endDay=kstDay(new Date())
  if(period==='all')return events;
  const start=new Date(Date.parse(endDay+'T00:00:00Z')-(Number(period)-1)*86400000).toISOString().slice(0,10);
  return events.filter(e=>kstDay(e.checkedAt)>=start&&kstDay(e.checkedAt)<=endDay);
+}
+// Plot coordinates preserve elapsed time. Missing values remain absent observations.
+export function fleetLinePoints(rows,field,{log=false,publisherDates=false}={}){
+ const times=rows.map(r=>Date.parse(r.day+'T00:00:00'+(publisherDates?'Z':'+09:00')));
+ const raw=rows.map(r=>typeof r[field]==='number'&&Number.isFinite(r[field])?r[field]:null);
+ const values=raw.map(v=>log&&v!==null&&v<=0?null:v);
+ const gaps=[];let previous=null;
+ for(let i=0;i<raw.length;i++){
+  if(raw[i]===null)continue;
+  if(previous!==null&&values[previous]!==null&&values[i]!==null&&times[i]-times[previous]>86400000){
+   gaps.push({start:previous,end:i,days:Math.round((times[i]-times[previous])/86400000)});
+  }
+  previous=i;
+ }
+ return {times,raw,values,gaps,excluded:raw.filter(v=>log&&v!==null&&v<=0).length};
 }

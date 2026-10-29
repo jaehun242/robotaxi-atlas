@@ -8,7 +8,7 @@ echarts.use([LineChart,BarChart,PieChart,GridComponent,TooltipComponent,LegendCo
 export function Chart({option,title,subtitle,empty,reduceMotion,small=false,demo=false}:{option:object;title:string;subtitle:string;empty?:string;reduceMotion:boolean;small?:boolean;demo?:boolean}) {
   const ref=useRef<HTMLDivElement>(null), chart=useRef<echarts.EChartsType|null>(null);
   const [exportUrl,setExportUrl]=useState('');
-  useEffect(()=>{if(!ref.current)return;const c=echarts.init(ref.current,undefined,{renderer:'canvas'});chart.current=c;const resize=new ResizeObserver(()=>c.resize());resize.observe(ref.current);return()=>{resize.disconnect();c.dispose();};},[]);
+  useEffect(()=>{if(!ref.current)return;const c=echarts.init(ref.current,undefined,{renderer:'canvas'});chart.current=c;const resize=new ResizeObserver(()=>c.resize({width:'auto',height:'auto'}));resize.observe(ref.current);return()=>{resize.disconnect();c.dispose();};},[]);
   useEffect(()=>{chart.current?.setOption({backgroundColor:'#0d1523',color:['#d6bd85','#48d9cc'],animation:!reduceMotion,textStyle:{fontFamily:'Inter, Segoe UI, Malgun Gothic, sans-serif',color:'#7d8b9f'},tooltip:{trigger:'axis',backgroundColor:'#172538',borderColor:'#2b3c53',textStyle:{color:'#dce5ef'}},...option},true);},[option,reduceMotion]);
   useEffect(()=>setExportUrl(''),[option]);
   useEffect(()=>()=>{if(exportUrl)URL.revokeObjectURL(exportUrl);},[exportUrl]);
@@ -26,7 +26,7 @@ export function Chart({option,title,subtitle,empty,reduceMotion,small=false,demo
       c.setOption({animation:false,title:{text:`${demo?'[DEMO] ':''}ROBOTAXI ATLAS · ${title}`,subtext:lines.join('\n'),textStyle:{fontSize:12,color:'#e4eaf1'},subtextStyle:{fontSize:10,lineHeight:14,color:'#a5b4c7'},left:20,top:10},legend:{top:headingHeight+2},grid:(rawGrid??[{}]).map(g=>({...g,top:headingHeight+34})),...(empty?{graphic:[{type:'text',left:'center',top:'middle',style:{text:empty,fill:'#a5b4c7',fontSize:12}}]}:{})});
       dataUrl=c.getDataURL({pixelRatio:2,backgroundColor:'#0d1523'});
     }finally{
-      c.setOption(original,true);c.resize({width,height,silent:true});
+      c.setOption(original,true);c.resize({width:'auto',height:'auto',silent:true});
     }
     const bytes=Uint8Array.from(atob(dataUrl.split(',')[1]),x=>x.charCodeAt(0));
     const url=URL.createObjectURL(new Blob([bytes],{type:'image/png'}));setExportUrl(url);
