@@ -1,4 +1,5 @@
 name: Refresh Texas registrations
+run-name: "Hourly check and daily recovery · ${{ github.event_name }} · ${{ github.event.schedule || 'on demand' }}"
 on:
   schedule:
     - cron: '23 * * * *'
@@ -10,6 +11,8 @@ permissions:
   pages: write
   id-token: write
 
+# Share the publication lock with the main daily workflow. A delayed daily run
+# checks the public site after this workflow finishes and skips duplicate work.
 concurrency:
   group: robotaxi-atlas-publish
   cancel-in-progress: false
@@ -17,7 +20,7 @@ concurrency:
 jobs:
   collect-build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,20 +28,50 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - name: Check for a missed daily publication after 08:00 KST
+        id: daily
+        run: node scripts/refresh-schedule.mjs --watchdog
       - uses: pnpm/action-setup@v4
         with:
           version: '11.25.0'
       - run: pnpm install --frozen-lockfile
-      - run: pnpm test
+      - name: Validate data and recovery rules
+        run: pnpm test
+      - name: Persist recovery attempt before collecting sources
+        if: steps.daily.outputs.refresh == 'true'
+        run: |
+          node scripts/watchdog-journal.mjs
+          git config user.name 'robotaxi-atlas[bot]'
+          git config user.email 'robotaxi-atlas[bot]@users.noreply.github.com'
+          git add data/automation-watchdog.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'ops: record daily recovery attempt [skip ci]'
+            git push origin HEAD:main
+          fi
+      - name: Recover missed daily source collection
+        if: steps.daily.outputs.refresh == 'true'
+        run: pnpm collect
+      - name: Check official statistics during daily recovery
+        if: steps.daily.outputs.refresh == 'true'
+        run: node scripts/collect-statistics.mjs
+      - name: Recover daily state monitoring and discovery feeds
+        if: steps.daily.outputs.refresh == 'true'
+        run: node scripts/collect-monitoring.mjs
+      - name: Recalculate daily scenarios and record collection completion
+        if: steps.daily.outputs.refresh == 'true'
+        run: |
+          node scripts/build-scenarios.mjs
+          node scripts/watchdog-journal.mjs --complete
       - name: Refresh only public Texas registration aggregates
+        if: steps.daily.outputs.refresh != 'true'
         run: node scripts/collect-registrations.mjs
-      - name: Preserve daily city records and commit registration check
+      - name: Preserve records and commit collected data
         run: |
           git config user.name 'robotaxi-atlas[bot]'
           git config user.email 'robotaxi-atlas[bot]@users.noreply.github.com'
-          git add public/data/atlas.json public/data/monitoring.json
+          git add public/data/atlas.json public/data/statistics.json public/data/scenarios.json public/data/monitoring.json data/snapshots data/automation-watchdog.json
           if ! git diff --cached --quiet; then
-            git commit -m 'data: refresh Texas registration check [skip ci]'
+            git commit -m 'data: refresh registration or recover daily publication [skip ci]'
             git push origin HEAD:main
           fi
       - run: pnpm build
@@ -46,10 +79,15 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
-      - name: Registration summary
+      - name: Registration and recovery summary
+        env:
+          DAILY_RECOVERY: ${{ steps.daily.outputs.refresh }}
+          DAILY_REASON: ${{ steps.daily.outputs.reason }}
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
         run: |
+          node -e 'console.log(JSON.stringify({event:process.env.GITHUB_EVENT_NAME,schedule:process.env.TRIGGER_SCHEDULE,dailyRecovery:process.env.DAILY_RECOVERY,reason:process.env.DAILY_REASON,runId:process.env.GITHUB_RUN_ID,runAttempt:process.env.GITHUB_RUN_ATTEMPT}))' >> "$GITHUB_STEP_SUMMARY"
+          node -e 'const d=require("./public/data/atlas.json"); console.log("Daily lastAttemptAt:",d.lastAttemptAt);console.log("Latest daily:",JSON.stringify(d.runs.at(-1)));console.log("Next update:",d.nextUpdateAt)' >> "$GITHUB_STEP_SUMMARY"
           node -e 'const d=require("./public/data/monitoring.json"); for(const r of d.registries)console.log(r.id+": "+r.checkState+" total="+r.total+" Cybercab="+r.cybercab+" Model Y="+r.model_y+" asOf="+r.asOf)' >> "$GITHUB_STEP_SUMMARY"
-          node -e 'const d=require("./public/data/monitoring.json"); for(const s of d.modelHistory??[])console.log("Model history "+s.sourceId+": "+s.checkState+" observations="+s.observations.length+" lastSuccess="+s.lastSuccessAt+" error="+(s.error??"none"))' >> "$GITHUB_STEP_SUMMARY"
   deploy:
     needs: collect-build
     runs-on: ubuntu-latest
@@ -57,5 +95,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/deploy-pages@v4
+      - name: Publish GitHub Pages after registration or daily recovery
+        uses: actions/deploy-pages@v4
         id: deployment
