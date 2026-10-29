@@ -90,6 +90,7 @@ jobs:
           node -e 'const d=require("./public/data/atlas.json"); console.log("Run:", d.runs.at(-1).state); for(const r of d.sourceRuns) console.log(r.sourceId+": "+r.state+" — "+r.message)' >> "$GITHUB_STEP_SUMMARY"
           node -e 'const d=require("./public/data/statistics.json"); console.log("Statistics checked:", d.lastAttemptAt); for(const r of d.checks) console.log(r.sourceId+": "+r.state+" — "+r.message)' >> "$GITHUB_STEP_SUMMARY"
           node -e 'const d=require("./public/data/monitoring.json"); console.log("US documents:", JSON.stringify(d.summary)); console.log("Global discovery:",JSON.stringify(d.discovery.lastRun)); for(const r of d.registries)console.log(r.id+": "+r.checkState+" total="+r.total)' >> "$GITHUB_STEP_SUMMARY"
+          node -e 'const d=require("./public/data/monitoring.json"); for(const s of d.modelHistory??[])console.log("Model history "+s.sourceId+": "+s.checkState+" observations="+s.observations.length+" lastSuccess="+s.lastSuccessAt+" error="+(s.error??"none"))' >> "$GITHUB_STEP_SUMMARY"
   deploy:
     needs: collect-build
     runs-on: ubuntu-latest

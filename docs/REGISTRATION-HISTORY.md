@@ -22,3 +22,15 @@ FSD Database 공개 JSON의 Tesla 사업자 일별 등록 총계는 별도 민�
 TxDMV 현재 API는 vehicles/total과 vin/make/model/modelYear 필드를 제공하지만 과거 등록일·변경 이력이 없다. FSD Database의 과거132일 시계열도 총계 한 종류이며 현재 차종 합계는 과거 차종별 기록이 아니다. 공식 등록부 구주소의6/10 및 신주소9/3 이후 보관본을 조사했으나 확보한 HTML은 데이터 없는 화면 틀이었다. 과거 JS는404, API보관본은503·제한재시도후시간초과여서 공식 모델 이력을 복원하지 못했다.
 
 출처: [TxDMV 현재 API](https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles?limit=1&offset=0), [TxDMV 제도](https://www.txdmv.gov/AVprogram), [FSD 과거 총계 JSON](https://fsddb.com/robotaxi.json?operator=tesla-robotaxi-llc&service=all). 조사일2026-10-29.
+
+## 2026-10-29 비공식 차종별 이력 보강
+
+기본 탭은 **차종별 · 전체 근거**다. 공식 직접 확인은 실선·원형, 비공식 자료는 파선·마름모로 구분한다. 출처별 시리즈는 합치지 않으며 결측 구간의 희미한 점선은 안내선일 뿐 날짜별 수치가 아니다. 원자료·CSV의 결측은 null/빈칸이다. 공식만 보는 탭과 검증 수준 필터는 유지한다.
+
+검토 기사 파일 public/data/model-history-reviewed.json에는 9개 출처·48건 관측을 저장했다. 6/11 Model Y69,7/15 175,8/20·21 186,8/27 270과 8/31 이후 Cybercab 자료, AI Shift News의 당시 관측 로그39일을 포함한다. 기사 날짜·게시일·실제 확인 시각·최초 확보일은 별도 필드다. 구체 시각이 없는9/5·9/22 로그는 KST일로 단정하지 않는다. 이 검토 파일은 자동으로 오늘 날짜로 바뀌지 않는다.
+
+TSLAFG 공개 daily 모델 배열과 Texas AV Tracker 실제 과거 명부 snapshots를 기존08시 전체 수집·매시간23분 보완 수집에 연결했다. 초기 실수집은 각각24일/29일이며 후자는 모델명 전체 대조가 가능한24일만 차종 수치를 제공한다. 과거 명부에 있던 개별 차량의 고정 모델을 현재 명시적 모델명으로 대조한 파생 집계이고 VIN접두어 추정이나 현재명부firstSeen역산은 쓰지 않는다. 식별자와 위치는 저장하지 않으며 집계 및 명부 전체SHA256만 보존한다. 원본 명부가 없는 날짜는 만들지 않는다. 현재 명부에서 모델 매핑이 사라져도 이미 확인한 동일 과거 스냅샷 모델값은 보존한다.
+
+**6/9 차이:** Texas AV Tracker의 2026-06-09T16:01 UTC 실제 스냅샷은 Model Y59+Cybercab0=59. 기존 FSD 날짜별 총계는 같은 날짜라벨69. 출처별 원값·시간대·방법론을 보존하며 69대로 차종을 소급 배분하지 않는다. 공식 과거 모델값으로 승격하지 않는다. 다른 출처도 UTC/KST/시간대 미공개 및 당일 관측 시각 차이로 수치가 다를 수 있다.
+
+수집은 제한 시간·최대2회(403즉시중단)로 제한한다. 실패 시 모델 관측값·최초 확보일·성공일을 보존하며 lastAttemptAt/checkState만 바꾼다. 롤링 창 밖의 과거도 보존하고 정정은 revisions에 남긴다. 하루 증감은 같은 출처의 연속 달력 날짜만 계산하며 결측 며칠을 하루 증가로 나누지 않는다. 출처별 날짜 체계의 하루이지 실제 등록 발생일이 아니다. 원문 조사 과정의 채택·제외 이유는 MODEL-HISTORY-SOURCE-AUDIT.md 참조.

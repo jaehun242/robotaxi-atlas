@@ -49,6 +49,7 @@ jobs:
       - name: Registration summary
         run: |
           node -e 'const d=require("./public/data/monitoring.json"); for(const r of d.registries)console.log(r.id+": "+r.checkState+" total="+r.total+" Cybercab="+r.cybercab+" Model Y="+r.model_y+" asOf="+r.asOf)' >> "$GITHUB_STEP_SUMMARY"
+          node -e 'const d=require("./public/data/monitoring.json"); for(const s of d.modelHistory??[])console.log("Model history "+s.sourceId+": "+s.checkState+" observations="+s.observations.length+" lastSuccess="+s.lastSuccessAt+" error="+(s.error??"none"))' >> "$GITHUB_STEP_SUMMARY"
   deploy:
     needs: collect-build
     runs-on: ubuntu-latest

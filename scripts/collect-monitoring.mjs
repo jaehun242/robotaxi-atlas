@@ -1,6 +1,6 @@
 import {readFile,writeFile,rename} from 'node:fs/promises';
 import {monitorDocument,coverageSummary} from './monitoring-lib.mjs';
-import {collectTexasRegistrations,applyRegistrationStatus} from './registration-lib.mjs';
+import {collectTexasRegistrations,applyRegistrationStatus,collectHistoricalModels} from './registration-lib.mjs';
 import {collectDiscovery} from './discovery-lib.mjs';
 import {kstDay} from '../src/domain.mjs';
 const now=new Date().toISOString(),forceFailure=process.argv.includes('--simulate-failure'),dry=process.argv.includes('--dry-run');
@@ -20,6 +20,7 @@ discovery.officialPlans=atlasContext.services.filter(s=>s.id.startsWith('tesla-s
 discovery.regionCandidates=atlasContext.regionCandidates??[];
 const result={version:1,geographicScope:'US',internationalPaused:true,lastAttemptAt:now,jurisdictions:records,international,registries:[registry,privateRegistry],registrationHistory:prior.registrationHistory??[],discovery,summary:coverageSummary(records,now),runs:prior.runs??[]};
 applyRegistrationStatus(atlasContext,result,[registry,privateRegistry],now);
+result.modelHistory=await collectHistoricalModels(prior.modelHistory,{now,forceFailure});
 result.summary=coverageSummary(records,now);
 const run={id:'monitor-'+kstDay(now),startedAt:now,completedAt:new Date().toISOString(),summary:result.summary,discovery:discovery.lastRun};const index=result.runs.findIndex(r=>r.id===run.id);if(index<0)result.runs.push(run);else result.runs[index]=run;result.runs=result.runs.slice(-90);
 if(!dry){await writeFile('public/data/monitoring.json.tmp',JSON.stringify(result,null,2)+'\n');await rename('public/data/monitoring.json.tmp','public/data/monitoring.json');}

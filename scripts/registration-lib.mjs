@@ -1,3 +1,5 @@
+import {collectModelHistory} from './model-history-lib.mjs';
+import {collectTexasHistory} from './texas-history-lib.mjs';
 import {createHash} from 'node:crypto';
 import {boundedFetch} from './statistics-lib.mjs';
 import {appendRegistrationHistory} from '../src/fleet-changes.mjs';
@@ -63,4 +65,8 @@ export function applyRegistrationStatus(atlas,monitoring,registries,now){
  if(source)Object.assign(source,{url:TX_PAGE,automation:'텍사스 공식 주 전체 등록부 · 매시간 공개 JSON 수집·VIN 중복 제거',definition:'주 전체 등록 차량. 도시 배정·동시 운행 대수와 구분.'});
  atlas.sourceRuns=atlas.sourceRuns.filter(r=>r.sourceId!=='tx-dmv');atlas.sourceRuns.push({sourceId:'tx-dmv',state:registry.checkState==='ok'?'ok':'failed',checkedAt:now,lastSuccessAt:registry.lastSuccessAt??null,message:registry.checkState==='ok'?`공식 텍사스 등록부 ${registry.total}개 고유 VIN. Cybercab ${registry.cybercab} / Model Y ${registry.model_y}. 도시 합계와 별도.`:registry.error});
  // Do not relabel the daily city/news run or official-document check clocks.
+}
+
+export async function collectHistoricalModels(prior=[],options={}){
+ return Promise.all([collectModelHistory(prior.find(s=>s.sourceId==='tslafg'),options),collectTexasHistory(prior.find(s=>s.sourceId==='texas-av-history'),options)]);
 }

@@ -21,12 +21,15 @@ export function Chart({option,title,subtitle,empty,reduceMotion,small=false,demo
     const headingHeight=45+lines.length*14;
     const rawGrid=original.grid as Record<string,unknown>[]|undefined;
     let dataUrl='';
+    const host=document.createElement('div');
+    host.style.cssText='position:fixed;left:-10000px;top:0;pointer-events:none';
+    document.body.appendChild(host);
+    const exported=echarts.init(host,undefined,{renderer:'canvas',width,height:height+headingHeight});
     try{
-      c.resize({width,height:height+headingHeight,silent:true});
-      c.setOption({animation:false,title:{text:`${demo?'[DEMO] ':''}ROBOTAXI ATLAS · ${title}`,subtext:lines.join('\n'),textStyle:{fontSize:12,color:'#e4eaf1'},subtextStyle:{fontSize:10,lineHeight:14,color:'#a5b4c7'},left:20,top:10},legend:{top:headingHeight+2},grid:(rawGrid??[{}]).map(g=>({...g,top:headingHeight+34})),...(empty?{graphic:[{type:'text',left:'center',top:'middle',style:{text:empty,fill:'#a5b4c7',fontSize:12}}]}:{})});
-      dataUrl=c.getDataURL({pixelRatio:2,backgroundColor:'#0d1523'});
+      exported.setOption({...original,animation:false,animationDuration:0,animationDurationUpdate:0,title:{text:`${demo?'[DEMO] ':''}ROBOTAXI ATLAS · ${title}`,subtext:lines.join('\n'),textStyle:{fontSize:12,color:'#e4eaf1'},subtextStyle:{fontSize:10,lineHeight:14,color:'#a5b4c7'},left:20,top:10},legend:((original.legend as Record<string,unknown>[]|undefined)??[{}]).map(l=>({...l,top:headingHeight+2})),grid:(rawGrid??[{}]).map(g=>({...g,height:undefined,top:headingHeight+Math.max(34,typeof g.top==='number'?g.top:34)})),...(empty?{graphic:[{type:'text',left:'center',top:'middle',style:{text:empty,fill:'#a5b4c7',fontSize:12}}]}:{})});
+      dataUrl=exported.getDataURL({pixelRatio:2,backgroundColor:'#0d1523'});
     }finally{
-      c.setOption(original,true);c.resize({width:'auto',height:'auto',silent:true});
+      exported.dispose();host.remove();
     }
     const bytes=Uint8Array.from(atob(dataUrl.split(',')[1]),x=>x.charCodeAt(0));
     const url=URL.createObjectURL(new Blob([bytes],{type:'image/png'}));setExportUrl(url);
