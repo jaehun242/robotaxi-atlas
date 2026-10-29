@@ -1,4 +1,12 @@
 {
   "version": 1,
-  "attempts": []
+  "attempts": [
+    {
+      "id": "40973888197:1",
+      "day": "2026-10-30",
+      "startedAt": "2026-10-29T23:33:15.158Z",
+      "kind": "hourly_daily_recovery",
+      "state": "started"
+    }
+  ]
 }
