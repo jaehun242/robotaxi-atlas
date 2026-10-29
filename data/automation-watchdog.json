@@ -6,7 +6,10 @@
       "day": "2026-10-30",
       "startedAt": "2026-10-29T23:33:15.158Z",
       "kind": "hourly_daily_recovery",
-      "state": "started"
+      "state": "collected",
+      "completedAt": "2026-10-29T23:33:31.748Z",
+      "collectionState": "partial",
+      "dataLastAttemptAt": "2026-10-29T23:33:16.904Z"
     }
   ]
 }
