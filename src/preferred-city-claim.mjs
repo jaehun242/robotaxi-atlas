@@ -6,9 +6,15 @@ const sourceDay=claim=>claim.sourceAsOf??claim.asOf??'';
 const checkedAt=claim=>claim.lastSuccessAt??claim.lastCheckedAt??claim.collectedAt??claim.observedAt??'';
 const signature=claim=>[claim.count,claim.countQualifier,claim.sourceUrl].join('|');
 
-// A user-selected publisher reference is a presentation layer. It must never
-// replace observations or enter aggregate(), history(), or market comparisons.
-export function preferredCityClaim(data,filters,city,model){
+// Robotaxi Tracker's city roster is now the primary presentation source.
+// Keep other publishers available as dated references without replacing city
+// observations, aggregates, history or market comparisons.
+/** @returns {import('./types').CityFleetClaim | null} */
+export function preferredCityClaim(_data,_filters,_city,_model){
+ return null;
+}
+
+export function alternateCityClaim(data,filters,city,model){
  const cityId=typeof city==='string'?city:city?.id;
  if(!data||!filters||filters.basis!=='observed'||!allowedViews.has(filters.verification)
    ||cityId!=='austin'||model!=='cybercab'

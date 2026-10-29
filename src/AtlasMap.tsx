@@ -48,7 +48,7 @@ export default function AtlasMap({data,cities,filters,onNavigate,reduceMotion}:{
       if(claim){const note='MyCybercab 사이트 표기 · Cybercab '+formatClaimCount(claim)+'대 · 명부 합계와 별도';el.title=note;el.setAttribute('aria-description',note);}
       const dot=document.createElement('span');dot.className='marker-dot';
       const label=document.createElement('span');label.className='marker-label';label.textContent=c.english;
-      const value=document.createElement('em');value.textContent=claim?'Cybercab '+formatClaimCount(claim)+'대':sum.total===null?'미확인':`${sum.total.toLocaleString()}대`;
+      const value=document.createElement('em');value.textContent=claim?'Cybercab '+formatClaimCount(claim)+'대':sum.total===null?'미확인':`${sum.total.toLocaleString()}${filters.basis==='observed'&&sum.total===0?'건':'대'}`;
       label.append(value);el.append(dot,label);
       el.onclick=e=>{e.stopPropagation();callback.current({country:'US',region:c.region,city:c.id});};
       return new maplibregl.Marker({element:el,anchor:'left'}).setLngLat(c.coordinates).addTo(map.current!);

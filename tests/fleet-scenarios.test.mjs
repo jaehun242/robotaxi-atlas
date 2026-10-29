@@ -74,3 +74,19 @@ test('NHTS proxies reproduce weighted household/person units, exclude walking an
   assert.ok(Math.abs(t.personTripsPerHouseholdPerDay-t.annualPersonTrips/b.weightedHouseholds/365)<1e-10);
  }
 });
+
+test('mirror attribution refreshes existing metadata without querying the protected original or persisting public keys',async()=>{
+ const seed=empty();const source=seed.sources.find(s=>s.id==='pioneer-tracker');
+ if(source)source.name='legacy mirror name';else seed.sources.push({id:'pioneer-tracker',name:'legacy mirror name'});
+ const requested=[];const mock=fetcher();
+ const data=await collectFleet(seed,{fetcher:async(url,options)=>{requested.push(String(url));return mock(url,options);},now});
+ const metadata=data.sources.find(s=>s.id==='pioneer-tracker');
+ assert.equal(metadata.name,'Robotaxi Tracker · Pioneerlands 공개 집계 미러');
+ assert.equal(metadata.url,'https://pioneerlands.org/cybercabtracker');
+ assert.equal(metadata.access,'public aggregate mirror');
+ assert.match(metadata.definition,/Ethan McKanna/);assert.match(metadata.definition,/in service/);
+ assert.ok(requested.every(url=>url.startsWith('https://pioneerlands.org/')||url.startsWith('https://testproject.supabase.co/')));
+ assert.ok(requested.every(url=>!url.includes('robotaxitracker.com')));
+ assert.ok(!JSON.stringify(data).includes(testKey));
+ assert.equal(data.observations.filter(o=>o.sourceId==='pioneer-tracker').every(o=>o.basis==='observed'&&o.verification==='unofficial'&&o.coverageComplete===false),true);
+});

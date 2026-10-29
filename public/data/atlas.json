@@ -2,7 +2,7 @@
   "version": 1,
   "updatedAt": "2026-10-29T09:45:36.683Z",
   "lastAttemptAt": "2026-10-29T09:45:33.547Z",
-  "lastSuccessAt": "2026-10-29T09:45:33.547Z",
+  "lastSuccessAt": "2026-10-29T10:00:27.777Z",
   "nextUpdateAt": "2026-10-29T23:00:00.000Z",
   "cities": [
     {
@@ -1119,12 +1119,12 @@
     },
     {
       "id": "pioneer-tracker",
-      "name": "Pioneerlands / Robotaxi Tracker 공개 명부",
+      "name": "Robotaxi Tracker · Pioneerlands 공개 집계 미러",
       "url": "https://pioneerlands.org/cybercabtracker",
       "priority": 3,
-      "access": "public aggregate",
-      "definition": "커뮤니티 명부 기록. 배정·현지 배치·시험·상업운행 대수와 구분. Model Y=전체−Cybercab.",
-      "automation": "공개 지역별 집계 수집 · 실패 시 마지막 확인값 유지"
+      "access": "public aggregate mirror",
+      "definition": "원자료 Robotaxi Tracker / Ethan McKanna. Pioneerlands의 지역별 커뮤니티 추적 명부 미러이며 공식 등록·실제 영업 대수가 아님. 원본 in service 화면과 필터·수집 시각이 다를 수 있음. Model Y=미러 전체−Cybercab.",
+      "automation": "공개 미러의 지역별 집계만 수집 · 원본 자동 접근 403은 우회하지 않음 · 실패 시 마지막 확인값 유지"
     },
     {
       "id": "tesla-safety",
@@ -1204,14 +1204,6 @@
       "message": "HTTP 403 · 기존 계획·지도·최초 확인일 보존"
     },
     {
-      "sourceId": "pioneer-tracker",
-      "state": "ok",
-      "checkedAt": "2026-10-29T09:45:33.547Z",
-      "lastSuccessAt": "2026-10-29T09:45:33.547Z",
-      "message": "공개 지역 집계 성공 · 0개 수치 신규/변경. 원자료 미러 시각 2026-10-29T09:07:02.100Z. 배치·영업 대수 아님.",
-      "sourceSnapshotAt": "2026-10-29T09:07:02.100Z"
-    },
-    {
       "sourceId": "mycybercab-austin",
       "state": "ok",
       "checkedAt": "2026-10-29T09:45:33.547Z",
@@ -1224,6 +1216,14 @@
       "checkedAt": "2026-10-29T09:45:36.803Z",
       "lastSuccessAt": "2026-10-29T09:45:36.803Z",
       "message": "공식 텍사스 등록부 1080개 고유 VIN. Cybercab 573 / Model Y 507. 도시 합계와 별도."
+    },
+    {
+      "sourceId": "pioneer-tracker",
+      "state": "ok",
+      "checkedAt": "2026-10-29T10:00:27.777Z",
+      "lastSuccessAt": "2026-10-29T10:00:27.777Z",
+      "message": "Robotaxi Tracker 공개 미러 집계 성공 · 0개 수치 신규/변경. 원자료 미러 시각 2026-10-29T09:07:02.100Z. 배치·영업 대수 아님.",
+      "sourceSnapshotAt": "2026-10-29T09:07:02.100Z"
     }
   ],
   "revisions": [

@@ -11,4 +11,5 @@ import './visibility.css';
 import './us-map.css';
 import './us-scope.css';
 import './model-history.css';
+import './tracker-layout.css';
 createRoot(document.getElementById('root')!).render(<React.StrictMode><App/></React.StrictMode>);

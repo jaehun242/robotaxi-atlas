@@ -1,9 +1,11 @@
-# MyCybercab 도시 대표값
+# MyCybercab 보조 도시 참고값
 
-## MyCybercab 오스틴 대표 참고값 (2026-10-29)
+2026-10-29의 후속 사용자 요청에 따라 기본 도시 출처를 Robotaxi Tracker 공개 명부로 변경했다. MyCybercab은 기본 숫자를 대체하지 않으며, 도시 분석의 `차량 수 조사·근거` 안에서 접힌 **다른 출처 참고**로만 제공한다.
 
-사용자 선택에 따라 MyCybercab Austin 카드의 Official fleet claim을 도시 대표 표시로 사용한다. 초기 값573+는 최소573이라는 원문 표기이며 수치 기준일은원문2026-10-27(시각/시간대미공개)이다. 해당 사이트의표현을당사공식확인으로승격하지 않는다. Dataset.cityFleetClaims 별도클래스(basisreported_fleet,verificationunofficial)에 저장하고원observations와등록부는보존한다. 기본명부화면에서대표표시만우선하며공식전용·다른집계기준·데모에서는제외한다.
+MyCybercab Austin 카드의 `Official fleet claim` 초기 표기는 **573+**, 원문 기준일은 **2026-10-27**(시각·시간대 미공개)이다. 원문이 official이라고 표현해도 당사 공식 확인으로 승격하지 않는다. `Dataset.cityFleetClaims`의 `basis=reported_fleet`, `verification=unofficial`로 보존하며 원래 관측값·확인 날짜·정정 이력을 유지한다.
 
-지도/도시카드/도시별표/시장현재참고값은같은선택출처를사용한다. 커뮤니티229는보조명부로남긴다.573+와ModelY236또는Texas등록573을합산하지않으며보조명부의증감을선택출처증감처럼표시하지않는다. 도시과거명부그래프도보조자료로접었다. 시장침투율/추가필요차량계산에는별도집계주장을넣지않는다. CSV는reported_fleet/at_least/출처/원래일자를명시한다.
+도시 기본 화면은 Robotaxi Tracker / Pioneerlands 명부의 Austin Cybercab 229, Model Y 236을 사용한다. 텍사스 공식 등록 Cybercab 573은 주 전체 등록 수치로 별도 표시한다. 세 정의를 합산하거나 서로의 역사·증감·시장 비율로 사용하지 않는다.
 
-매일08시및매시간등록부보완workflow에서공개HTML추출을실행한다. 불변값의원문일자와최초확보시각을보존하며실패시마지막정상값을유지한다. 수동재확인: node scripts/collect-city-claims.mjs. --simulate-failure --dry-run 으로원자료를바꾸지않고실패보존검사가가능하다. 비밀키/유료서비스없음.
+`alternateCityClaim()`은 다른 출처 참고값의 검증·필터·날짜 보존을 담당한다. `preferredCityClaim()`은 현재 기본 출처 정책상 null을 반환하여 기존 지도·카드·시장·CSV의 명부 관측값을 덮어쓰지 않는다.
+
+수집기는 원래 Austin 카드의 claim 항목만 읽는다. 등록부 숫자나 unique sightings로 빈 claim을 채우지 않는다. 요청은 제한적으로 재시도하고 403은 재시도하지 않는다. 수집 실패 시 마지막 정상값과 원래 날짜를 유지한다.

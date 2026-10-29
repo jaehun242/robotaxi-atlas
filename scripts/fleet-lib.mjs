@@ -31,7 +31,11 @@ export async function fetchFleetSnapshot(fetcher=fetch,now=new Date().toISOStrin
 }
 export async function collectFleet(data,{now=new Date().toISOString(),fetcher=fetch,forceFailure=false}={}){
   let next=structuredClone(data);const id='pioneer-tracker';
-  if(!next.sources.some(s=>s.id===id))next.sources.push({id,name:'Pioneerlands / Robotaxi Tracker 공개 명부',url:FLEET_URL,priority:3,access:'public aggregate',definition:'커뮤니티 명부 기록. 배정·현지 배치·시험·상업운행 대수와 구분. Model Y=전체−Cybercab.',automation:'공개 지역별 집계 수집 · 실패 시 마지막 확인값 유지'});
+  // This publisher exposes aggregate mirror rows; it is not a route around the
+  // original site's app-only endpoints or a guarantee of identical live filters.
+  const source={id,name:'Robotaxi Tracker · Pioneerlands 공개 집계 미러',url:FLEET_URL,priority:3,access:'public aggregate mirror',definition:'원자료 Robotaxi Tracker / Ethan McKanna. Pioneerlands의 지역별 커뮤니티 추적 명부 미러이며 공식 등록·실제 영업 대수가 아님. 원본 in service 화면과 필터·수집 시각이 다를 수 있음. Model Y=미러 전체−Cybercab.',automation:'공개 미러의 지역별 집계만 수집 · 원본 자동 접근 403은 우회하지 않음 · 실패 시 마지막 확인값 유지'};
+  const sourceIndex=next.sources.findIndex(s=>s.id===id);
+  if(sourceIndex<0)next.sources.push(source);else next.sources[sourceIndex]={...next.sources[sourceIndex],...source};
   const prior=next.sourceRuns.find(s=>s.sourceId===id);
   let run={sourceId:id,state:'failed',checkedAt:now,lastSuccessAt:prior?.lastSuccessAt??null,message:''};
   try{
@@ -45,7 +49,7 @@ export async function collectFleet(data,{now=new Date().toISOString(),fetcher=fe
         const previous=next.observations.filter(o=>o.sourceId===id&&o.city===city&&o.model===model).sort((a,b)=>Date.parse(b.asOf)-Date.parse(a.asOf))[0];
         // A new source-check clock alone is not a new numeric observation.
         if(previous?.count===count)continue;
-        const record={id:`pioneer-${city}-${model}-${kstDay(snapshot.sourceAt)}`,city,model,basis:'observed',count,asOf:snapshot.sourceAt,collectedAt:now,sourceId:id,sourceUrl:FLEET_URL,scope:`Robotaxi Tracker 지역명 ${row.city}의 커뮤니티 명부 (행정경계·당일 가동 미검증)`,scopeId:`tracker:area:${row.city.toLowerCase()}`,vehicleDefinition:'community_registry',coverageComplete:false,verification:'unofficial',discoveryThrough:row.newest,note:`원자료 Robotaxi Tracker를 Pioneerlands가 읽은 명부. 최근 신규 발견 ${row.newest}. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음.`};
+        const record={id:`pioneer-${city}-${model}-${kstDay(snapshot.sourceAt)}`,city,model,basis:'observed',count,asOf:snapshot.sourceAt,collectedAt:now,sourceId:id,sourceUrl:FLEET_URL,scope:`Robotaxi Tracker 지역명 ${row.city}의 커뮤니티 명부 (행정경계·당일 가동 미검증)`,scopeId:`tracker:area:${row.city.toLowerCase()}`,vehicleDefinition:'community_registry',coverageComplete:false,verification:'unofficial',discoveryThrough:row.newest,note:`원자료 Robotaxi Tracker / Ethan McKanna (https://robotaxitracker.com/)를 Pioneerlands가 집계한 공개 미러 명부. 원본 in service 화면과 필터·시각이 다를 수 있음. 최근 신규 발견 ${row.newest}. 0은 명부 기록 0건이며 실제 차량 0대가 아님. Model Y는 같은 명부의 전체−Cybercab. 배치·영업 대수로 해석하지 않음.`};
         next=ingest(next,[record],now);changed++;
       }
     }
@@ -55,7 +59,7 @@ export async function collectFleet(data,{now=new Date().toISOString(),fetcher=fe
       next.fleetReferences=[...(next.fleetReferences??[]).filter(r=>r.id!==reference.id),reference];
     }
     const missing=Object.keys(AREA_CITY).filter(area=>!snapshot.rows.some(r=>r.city===area));
-    run={...run,state:missing.length?'changed':'ok',lastSuccessAt:now,sourceSnapshotAt:snapshot.sourceAt,message:`공개 지역 집계 성공 · ${changed}개 수치 신규/변경. 원자료 미러 시각 ${snapshot.sourceAt}. 배치·영업 대수 아님.${missing.length?' 누락 지역 이전 값 유지: '+missing.join(', '):''}`};
+    run={...run,state:missing.length?'changed':'ok',lastSuccessAt:now,sourceSnapshotAt:snapshot.sourceAt,message:`Robotaxi Tracker 공개 미러 집계 성공 · ${changed}개 수치 신규/변경. 원자료 미러 시각 ${snapshot.sourceAt}. 배치·영업 대수 아님.${missing.length?' 누락 지역 이전 값 유지: '+missing.join(', '):''}`};
   }catch(e){run.message=`${e.message}. 마지막 정상 명부와 원래 수치 기준일 보존.`;}
   next.sourceRuns=[...next.sourceRuns.filter(s=>s.sourceId!==id),run];
   if(run.state==='ok'){next.lastSuccessAt=now;const daily=next.runs.find(r=>r.id===`daily-${kstDay(now)}`);if(daily?.state==='failed')daily.state='partial';}
