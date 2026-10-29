@@ -6,7 +6,7 @@ function calendar(points,period,end){
  const first=points.map(p=>p.day).sort()[0];
  const start=period==='all'?first:new Date(Date.parse(end+'T00:00:00Z')-(Number(period)-1)*86400000).toISOString().slice(0,10);
  const byDay=new Map(points.map(p=>[p.day,p])),out=[];
- for(let at=Date.parse(start+'T00:00:00Z');at<=Date.parse(end+'T00:00:00Z');at+=86400000){const day=new Date(at).toISOString().slice(0,10);out.push(byDay.get(day)??{day,total:null,cybercab:null,model_y:null,deltaTotal:null,dailyDeltaCybercab:null,dailyDeltaModelY:null,dailyDeltaTotal:null,missing:true});}
+ for(let at=Date.parse(start+'T00:00:00Z');at<=Date.parse(end+'T00:00:00Z');at+=86400000){const day=new Date(at).toISOString().slice(0,10);out.push(byDay.get(day)??{day,total:null,cybercab:null,model_y:null,deltaTotal:null,deltaCybercab:null,deltaModelY:null,dailyDeltaCybercab:null,dailyDeltaModelY:null,dailyDeltaTotal:null,missing:true});}
  return out;
 }
 export function archiveTimeline(archive,period='all'){
