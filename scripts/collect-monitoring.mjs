@@ -11,14 +11,14 @@ let prior;try{prior=await read('public/data/monitoring.json');}catch{prior={juri
 const records=new Array(configs.length);let cursor=0;
 async function worker(){while(cursor<configs.length){const i=cursor++;records[i]=await monitorDocument(configs[i],prior.jurisdictions.find(r=>r.code===configs[i].code),{now,forceFailure});console.log(configs[i].code+': '+records[i].status);}}
 await Promise.all([worker(),worker(),worker(),worker()]);
-const internationalConfigs=await read('data/international-sources.json'),international=[];
-for(const config of internationalConfigs)international.push(await monitorDocument(config,prior.international?.find(r=>r.code===config.code),{now,forceFailure}));
+// Product scope is US-only. Preserve prior overseas evidence without new requests or timestamps.
+const international=prior.international??[];
 const [registry,privateRegistry]=await collectTexasRegistrations(prior.registries,{now,forceFailure});
-const discovery=await collectDiscovery(prior.discovery,{now,forceFailure});
-const atlasContext=await read('public/data/atlas.json');
+const discovery=await collectDiscovery(prior.discovery,{now,forceFailure,scope:'US'});
+const atlasContext=await read('public/data/atlas.json');atlasContext.activeScope='US';atlasContext.pausedScopes=['GB','KR'];
 discovery.officialPlans=atlasContext.services.filter(s=>s.id.startsWith('tesla-safety-plan-')).map(s=>({city:atlasContext.cities.find(c=>c.id===s.city)?.name??s.city,status:s.status,observedAt:s.observedAt,sourceUrl:s.sourceUrl}));
 discovery.regionCandidates=atlasContext.regionCandidates??[];
-const result={version:1,lastAttemptAt:now,jurisdictions:records,international,registries:[registry,privateRegistry],registrationHistory:prior.registrationHistory??[],discovery,summary:coverageSummary(records,now),runs:prior.runs??[]};
+const result={version:1,geographicScope:'US',internationalPaused:true,lastAttemptAt:now,jurisdictions:records,international,registries:[registry,privateRegistry],registrationHistory:prior.registrationHistory??[],discovery,summary:coverageSummary(records,now),runs:prior.runs??[]};
 applyRegistrationStatus(atlasContext,result,[registry,privateRegistry],now);
 result.summary=coverageSummary(records,now);
 const run={id:'monitor-'+kstDay(now),startedAt:now,completedAt:new Date().toISOString(),summary:result.summary,discovery:discovery.lastRun};const index=result.runs.findIndex(r=>r.id===run.id);if(index<0)result.runs.push(run);else result.runs[index]=run;result.runs=result.runs.slice(-90);

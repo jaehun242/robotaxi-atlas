@@ -14,7 +14,7 @@ export function extractServices(sourceId,html,cities,now){
   }
   return facts;
 }
-export async function collectDataset(data,{fetcher=fetch,now=new Date().toISOString(),manual=[],forceFailure=false,retries=3}={}){
+export async function collectDataset(data,{fetcher=fetch,now=new Date().toISOString(),manual=[],forceFailure=false,retries=3,scopeCountry=null}={}){
   let next=ingest(data,manual,now);let successes=0;
   const automatic=new Set(['tesla-support','tesla-cybercab','tesla-ir-q3','ca-dmv']);
   for(const source of next.sources.filter(s=>automatic.has(s.id))){
@@ -34,7 +34,7 @@ export async function collectDataset(data,{fetcher=fetch,now=new Date().toISOStr
     if(!error){try{
       const digest=hash(source.id==='tesla-ir-q3'?body:textFromHtml(body));const priorHash=prior?.contentHash;
       if(source.id==='tesla-support'||source.id==='tesla-cybercab'){
-        const facts=extractServices(source.id,body,next.cities,now);
+        const facts=extractServices(source.id,body,scopeCountry?next.cities.filter(c=>c.country===scopeCountry):next.cities,now);
         for(const fact of facts){fact.sourceUrl=source.url;const i=next.services.findIndex(s=>s.id===fact.id);const old=next.services[i];
           if(i>=0){next.services[i]=old.status===fact.status?{...old,lastCheckedAt:now}:{...old,...fact,lastCheckedAt:now};}
           else next.services.push(fact);
@@ -42,7 +42,7 @@ export async function collectDataset(data,{fetcher=fetch,now=new Date().toISOStr
           const newsId=`${fact.id}-${hash(`${fact.status}|${fact.model}`).slice(0,10)}`;
           if(!unchanged&&!next.news.some(n=>n.id===newsId))next.news.push({id:newsId,city:fact.city,model:fact.model,title:`${next.cities.find(c=>c.id===fact.city).name} · 공식 서비스 안내 변경 확인`,summary:'공식 지원 페이지의 차종·지역 문구를 확인했습니다. 시작일과 차량 수는 미공개입니다.',eventDate:null,publishedAt:null,firstCollectedAt:now,sourceId:source.id,sourceUrl:source.url});
         }
-        const missing=next.services.filter(s=>s.sourceId===source.id&&!facts.some(f=>f.id===s.id));
+        const missing=next.services.filter(s=>s.sourceId===source.id&&(!scopeCountry||next.cities.find(c=>c.id===s.city)?.country===scopeCountry)&&!facts.some(f=>f.id===s.id));
         run={...run,state:missing.length?'changed':'ok',message:missing.length?'기존 서비스가 새 문장에 없음. 운영 중단으로 단정하지 않고 이전 상태 보존.':`${facts.length}개 서비스 상태 확인. 도시별 대수 미공개.`};
       }else{
         if(source.id==='ca-dmv'&&!/TESLA\s+ROBOTAXI\s+LLC/i.test(textFromHtml(body)))throw new Error('Tesla 명단 패턴 변경. 허가 상태 수동 검토 필요.');

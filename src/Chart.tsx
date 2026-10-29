@@ -1,10 +1,10 @@
 import { useEffect, useRef,useState } from 'react';
 import * as echarts from 'echarts/core';
 import { LineChart, BarChart, PieChart } from 'echarts/charts';
-import { GridComponent, TooltipComponent, LegendComponent, TitleComponent, GraphicComponent } from 'echarts/components';
+import { GridComponent, TooltipComponent, LegendComponent, TitleComponent, GraphicComponent, MarkAreaComponent } from 'echarts/components';
 import { CanvasRenderer } from 'echarts/renderers';
 import { Download } from 'lucide-react';
-echarts.use([LineChart,BarChart,PieChart,GridComponent,TooltipComponent,LegendComponent,TitleComponent,GraphicComponent,CanvasRenderer]);
+echarts.use([LineChart,BarChart,PieChart,GridComponent,TooltipComponent,LegendComponent,TitleComponent,GraphicComponent,MarkAreaComponent,CanvasRenderer]);
 export function Chart({option,title,subtitle,empty,reduceMotion,small=false,demo=false,compact=false}:{option:object;title:string;subtitle:string;empty?:string;reduceMotion:boolean;small?:boolean;demo?:boolean;compact?:boolean}) {
   const ref=useRef<HTMLDivElement>(null), chart=useRef<echarts.EChartsType|null>(null);
   const [exportUrl,setExportUrl]=useState('');

@@ -13,3 +13,12 @@ FSD Database 공개 JSON의 Tesla 사업자 일별 등록 총계는 별도 민�
 매일 오전8시 전체 수집 및 매시간23분 보완 수집이 GitHub Actions에서 실행되도록 기존 예약을 유지한다. GitHub 실행은 지연될 수 있다. 공식 수집에 성공한 다음 한국 날짜에는 대수가 같아도 새 일별 확인점을 저장한다. 같은 날 재실행은 중복을 줄인다. 실패일에는 숫자를 생성하지 않으며 마지막 정상 기록·수치 기준일을 유지한다. 과거 민간 이력은 새 날짜가 공개될 때 추가하고 제공 창이 줄어도 이미 확보한 과거는 보존한다. 미래 날짜 테스트는 합성 fixture에서만 수행한다.
 
 출처: https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc 와 사이트의 TxDMV 공식 원본 링크. 매시간 등록 확인 및 매일08시 전체 수집 GitHub Actions에서 같은 수집기를 실행한다.
+
+
+## 2026-10-29 공식 차종별 과거 자료 재조사
+
+공식 차종별 화면의 조회 날짜는 2026-06-09부터 시작한다. 확보한 첫 공식 스냅샷은 2026-10-23(CC351+ModelY507=858)이며 6/9~10/22는 공식 차종별 기록 미확보로 표시하고 CSV에는 공백으로 남긴다. 차종별 69대 배분·현재 명부 소급·결측일 보간은 하지 않는다. 민간 총계 선은 별도 탭에서 유지한다.
+
+TxDMV 현재 API는 vehicles/total과 vin/make/model/modelYear 필드를 제공하지만 과거 등록일·변경 이력이 없다. FSD Database의 과거132일 시계열도 총계 한 종류이며 현재 차종 합계는 과거 차종별 기록이 아니다. 공식 등록부 구주소의6/10 및 신주소9/3 이후 보관본을 조사했으나 확보한 HTML은 데이터 없는 화면 틀이었다. 과거 JS는404, API보관본은503·제한재시도후시간초과여서 공식 모델 이력을 복원하지 못했다.
+
+출처: [TxDMV 현재 API](https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles?limit=1&offset=0), [TxDMV 제도](https://www.txdmv.gov/AVprogram), [FSD 과거 총계 JSON](https://fsddb.com/robotaxi.json?operator=tesla-robotaxi-llc&service=all). 조사일2026-10-29.

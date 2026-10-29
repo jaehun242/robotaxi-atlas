@@ -8,4 +8,6 @@ import './coverage.css';
 import './fleet-changes.css';
 import './home-polish.css';
 import './visibility.css';
+import './us-map.css';
+import './us-scope.css';
 createRoot(document.getElementById('root')!).render(<React.StrictMode><App/></React.StrictMode>);

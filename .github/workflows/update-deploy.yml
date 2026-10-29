@@ -68,7 +68,7 @@ jobs:
         run: node scripts/collect-statistics.mjs
         env:
           FORCE_STATISTICS: ${{ inputs.refresh_statistics || 'false' }}
-      - name: Monitor 50 states and DC, overseas documents, and global discovery feeds
+      - name: Monitor 50 states and DC and US discovery feeds
         run: node scripts/collect-monitoring.mjs
       - name: Save daily data and correction history
         run: |

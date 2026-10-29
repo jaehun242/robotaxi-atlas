@@ -14,10 +14,11 @@ export function archiveTimeline(archive,period='all'){
  const rows=points.map(p=>{const prev=map.get(previousDay(p.day));return {...p,missing:p.total===null,deltaTotal:p.total!==null&&prev?.total!==null&&prev?.total!==undefined?p.total-prev.total:null};});
  return calendar(rows,period,points.at(-1)?.day);
 }
-export function officialTimeline(history,period='all',now=new Date().toISOString()){
+export function officialTimeline(history,period='all',now=new Date().toISOString(),startDay=''){
  // Preserve the original comparison metadata, but only adjacent KST calendar days
  // qualify for a daily change point. Intraday changes and multi-day gaps stay separate.
  const points=registrationDailyChanges(history).map(p=>({...p,missing:false,dailyDeltaCybercab:p.gapDays===1?p.deltaCybercab:null,dailyDeltaModelY:p.gapDays===1?p.deltaModelY:null,dailyDeltaTotal:p.gapDays===1?p.deltaTotal:null}));
+ if(startDay&&startDay<=kstDay(now)&&(!points.length||startDay<points[0].day))points.unshift({day:startDay,total:null,cybercab:null,model_y:null,deltaTotal:null,deltaCybercab:null,deltaModelY:null,dailyDeltaTotal:null,dailyDeltaCybercab:null,dailyDeltaModelY:null,previousDay:null,gapDays:null,missing:true});
  return calendar(points,period,kstDay(now));
 }
 export function filterChangePeriod(events,period='all',endDay=kstDay(new Date())){
