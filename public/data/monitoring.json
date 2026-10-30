@@ -1083,7 +1083,7 @@
       "durationMs": 556,
       "numericParserConnected": true,
       "numericCheckState": "ok",
-      "numericLastSuccessAt": "2026-10-30T10:12:55.549Z",
+      "numericLastSuccessAt": "2026-10-30T16:43:48.816Z",
       "numericReferenceDate": "2026-10-28T07:16:41.703Z"
     },
     {
@@ -1355,8 +1355,8 @@
       "asOf": "2026-10-28T07:16:41.703Z",
       "asOfMeaning": "공식 등록부 스냅샷을 확인한 시각. 모든 차량의 신규 등록일이 아님.",
       "firstCollectedAt": "2026-10-23T04:56:23.970Z",
-      "lastCheckedAt": "2026-10-30T10:12:55.549Z",
-      "lastSuccessAt": "2026-10-30T10:12:55.549Z",
+      "lastCheckedAt": "2026-10-30T16:43:48.816Z",
+      "lastSuccessAt": "2026-10-30T16:43:48.816Z",
       "checkState": "ok",
       "error": null
     },
@@ -1377,8 +1377,8 @@
       "asOf": "2026-10-28T07:16:32.000Z",
       "asOfMeaning": "민간 재집계가 공개한 마지막 동기화 시각. 신규 등록일과 별도.",
       "firstCollectedAt": "2026-10-23T05:09:46.286Z",
-      "lastCheckedAt": "2026-10-30T10:12:55.549Z",
-      "lastSuccessAt": "2026-10-30T10:12:55.549Z",
+      "lastCheckedAt": "2026-10-30T16:43:48.816Z",
+      "lastSuccessAt": "2026-10-30T16:43:48.816Z",
       "checkState": "ok",
       "error": null,
       "historical": {
@@ -1390,7 +1390,7 @@
         "verification": "unofficial",
         "dateBasis": "publisher_calendar",
         "timezone": null,
-        "sourceAsOf": "2026-10-30T03:12:57-07:00",
+        "sourceAsOf": "2026-10-30T09:43:49-07:00",
         "definition": "FSD Database가 TxDMV 동기화별 일일 등록 총계로 공개한 이력. 과거 차종 구분·날짜의 시간대는 미공개. 직접 수집한 KST 시각의 공식 스냅샷과 별개.",
         "points": [
           {
@@ -1399,7 +1399,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-10",
@@ -1407,7 +1407,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-11",
@@ -1415,7 +1415,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-12",
@@ -1423,7 +1423,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-13",
@@ -1431,7 +1431,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-14",
@@ -1439,7 +1439,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-15",
@@ -1447,7 +1447,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-16",
@@ -1455,7 +1455,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-17",
@@ -1463,7 +1463,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-18",
@@ -1471,7 +1471,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-19",
@@ -1479,7 +1479,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-20",
@@ -1487,7 +1487,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-21",
@@ -1495,7 +1495,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-22",
@@ -1503,7 +1503,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-23",
@@ -1511,7 +1511,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-24",
@@ -1519,7 +1519,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-25",
@@ -1527,7 +1527,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-26",
@@ -1535,7 +1535,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-27",
@@ -1543,7 +1543,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-28",
@@ -1551,7 +1551,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-29",
@@ -1559,7 +1559,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-06-30",
@@ -1567,7 +1567,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-01",
@@ -1575,7 +1575,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-02",
@@ -1583,7 +1583,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-03",
@@ -1591,7 +1591,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-04",
@@ -1599,7 +1599,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-05",
@@ -1607,7 +1607,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-06",
@@ -1615,7 +1615,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-07",
@@ -1623,7 +1623,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-08",
@@ -1631,7 +1631,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-09",
@@ -1639,7 +1639,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-10",
@@ -1647,7 +1647,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-11",
@@ -1655,7 +1655,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-12",
@@ -1663,7 +1663,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-13",
@@ -1671,7 +1671,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-14",
@@ -1679,7 +1679,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-15",
@@ -1687,7 +1687,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-16",
@@ -1695,7 +1695,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-17",
@@ -1703,7 +1703,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-18",
@@ -1711,7 +1711,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-19",
@@ -1719,7 +1719,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-20",
@@ -1727,7 +1727,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-21",
@@ -1735,7 +1735,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-22",
@@ -1743,7 +1743,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-23",
@@ -1751,7 +1751,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-24",
@@ -1759,7 +1759,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-25",
@@ -1767,7 +1767,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-26",
@@ -1775,7 +1775,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-27",
@@ -1783,7 +1783,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-28",
@@ -1791,7 +1791,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-29",
@@ -1799,7 +1799,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-07-30",
@@ -1807,7 +1807,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-10",
@@ -1815,7 +1815,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-11",
@@ -1823,7 +1823,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-12",
@@ -1831,7 +1831,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-13",
@@ -1839,7 +1839,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-14",
@@ -1847,7 +1847,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-15",
@@ -1855,7 +1855,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-16",
@@ -1863,7 +1863,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-17",
@@ -1871,7 +1871,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-18",
@@ -1879,7 +1879,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-19",
@@ -1887,7 +1887,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-20",
@@ -1895,7 +1895,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-21",
@@ -1903,7 +1903,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-22",
@@ -1911,7 +1911,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-23",
@@ -1919,7 +1919,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-24",
@@ -1927,7 +1927,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-25",
@@ -1935,7 +1935,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-26",
@@ -1943,7 +1943,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-27",
@@ -1951,7 +1951,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-28",
@@ -1959,7 +1959,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-29",
@@ -1967,7 +1967,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-30",
@@ -1975,7 +1975,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-08-31",
@@ -1983,7 +1983,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-01",
@@ -1991,7 +1991,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-02",
@@ -1999,7 +1999,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-03",
@@ -2007,7 +2007,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-04",
@@ -2015,7 +2015,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-05",
@@ -2023,7 +2023,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-06",
@@ -2031,7 +2031,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-07",
@@ -2039,7 +2039,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-08",
@@ -2047,7 +2047,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-09",
@@ -2055,7 +2055,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-10",
@@ -2063,7 +2063,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-11",
@@ -2071,7 +2071,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-12",
@@ -2079,7 +2079,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-13",
@@ -2087,7 +2087,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-14",
@@ -2095,7 +2095,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-15",
@@ -2103,7 +2103,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-16",
@@ -2111,7 +2111,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-17",
@@ -2119,7 +2119,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-18",
@@ -2127,7 +2127,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-19",
@@ -2135,7 +2135,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-20",
@@ -2143,7 +2143,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-21",
@@ -2151,7 +2151,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-22",
@@ -2159,7 +2159,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-23",
@@ -2167,7 +2167,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-24",
@@ -2175,7 +2175,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-25",
@@ -2183,7 +2183,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-26",
@@ -2191,7 +2191,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-27",
@@ -2199,7 +2199,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-28",
@@ -2207,7 +2207,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-29",
@@ -2215,7 +2215,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-09-30",
@@ -2223,7 +2223,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-01",
@@ -2231,7 +2231,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-02",
@@ -2239,7 +2239,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-03",
@@ -2247,7 +2247,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-04",
@@ -2255,7 +2255,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-05",
@@ -2263,7 +2263,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-06",
@@ -2271,7 +2271,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-07",
@@ -2279,7 +2279,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-08",
@@ -2287,7 +2287,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-09",
@@ -2295,7 +2295,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-10",
@@ -2303,7 +2303,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-11",
@@ -2311,7 +2311,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-12",
@@ -2319,7 +2319,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-13",
@@ -2327,7 +2327,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-14",
@@ -2335,7 +2335,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-15",
@@ -2343,7 +2343,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-16",
@@ -2351,7 +2351,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-17",
@@ -2359,7 +2359,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-18",
@@ -2367,7 +2367,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-19",
@@ -2375,7 +2375,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-20",
@@ -2383,7 +2383,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-21",
@@ -2391,7 +2391,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-22",
@@ -2399,7 +2399,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-23",
@@ -2407,7 +2407,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-24",
@@ -2415,7 +2415,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-25",
@@ -2423,7 +2423,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-26",
@@ -2431,7 +2431,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-27",
@@ -2439,7 +2439,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-28",
@@ -2447,7 +2447,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-28T08:03:31.055Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-29",
@@ -2455,7 +2455,7 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-29T09:45:36.803Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           },
           {
             "date": "2026-10-30",
@@ -2463,13 +2463,13 @@
             "cybercab": null,
             "model_y": null,
             "firstCollectedAt": "2026-10-30T10:12:55.549Z",
-            "lastCheckedAt": "2026-10-30T10:12:55.549Z"
+            "lastCheckedAt": "2026-10-30T16:43:48.816Z"
           }
         ],
         "firstCollectedAt": "2026-10-28T08:03:31.055Z",
         "updatedAt": "2026-10-30T10:12:55.549Z",
-        "lastCheckedAt": "2026-10-30T10:12:55.549Z",
-        "lastSuccessAt": "2026-10-30T10:12:55.549Z",
+        "lastCheckedAt": "2026-10-30T16:43:48.816Z",
+        "lastSuccessAt": "2026-10-30T16:43:48.816Z",
         "checkState": "ok",
         "error": null,
         "revisions": []
@@ -2581,6 +2581,21 @@
       "model_y": 507,
       "unknown": 0,
       "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/actions/runs/40935988033"
+    },
+    {
+      "id": "tx-registry-2026-10-30T16:43:48.816Z",
+      "sourceId": "tx-tesla-official",
+      "scopeId": "us:state:TX:tesla:registered",
+      "basis": "registered",
+      "checkedAt": "2026-10-30T16:43:48.816Z",
+      "lastCheckedAt": "2026-10-30T16:43:48.816Z",
+      "valueAsOf": "2026-10-28T07:16:41.703Z",
+      "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
+      "total": 1080,
+      "cybercab": 573,
+      "model_y": 507,
+      "unknown": 0,
+      "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/actions/runs/41092480137"
     }
   ],
   "discovery": {
@@ -7747,7 +7762,7 @@
       }
     }
   ],
-  "registrationLastAttemptAt": "2026-10-30T10:12:55.549Z",
+  "registrationLastAttemptAt": "2026-10-30T16:43:48.816Z",
   "modelHistory": [
     {
       "sourceId": "tslafg",
@@ -7770,7 +7785,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7783,7 +7798,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7796,7 +7811,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7809,7 +7824,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7822,7 +7837,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7835,7 +7850,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7848,7 +7863,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7861,7 +7876,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7874,7 +7889,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7887,7 +7902,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7900,7 +7915,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7913,7 +7928,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7926,7 +7941,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7939,7 +7954,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7952,7 +7967,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7965,7 +7980,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7978,7 +7993,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -7991,7 +8006,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -8004,7 +8019,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -8017,7 +8032,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -8030,7 +8045,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -8043,7 +8058,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -8056,7 +8071,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -8069,7 +8084,7 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         },
         {
@@ -8082,12 +8097,25 @@
           "observedAt": null,
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T19:00:07.411Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
+          "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
+        },
+        {
+          "id": "tslafg:US-TX:registered:2026-10-30",
+          "sourceId": "tslafg",
+          "date": "2026-10-30",
+          "cybercab": 573,
+          "model_y": 507,
+          "total": 1080,
+          "observedAt": null,
+          "publishedAt": null,
+          "firstCollectedAt": "2026-10-30T16:43:48.816Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "출처의 일자만 공개됨(시간대·관측 시각 미공개). 모델별 등록 이력이며 실제 운행 대수가 아님."
         }
       ],
-      "lastAttemptAt": "2026-10-30T10:12:55.549Z",
-      "lastSuccessAt": "2026-10-30T10:12:55.549Z",
+      "lastAttemptAt": "2026-10-30T16:43:48.816Z",
+      "lastSuccessAt": "2026-10-30T16:43:48.816Z",
       "checkState": "ok",
       "error": null,
       "revisions": []
@@ -8113,7 +8141,7 @@
           "observedAt": "2026-06-09T16:01:27.815Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "b9ef85222c36b6614223d0bdfc5986a7f733a21e6a6a56e4ee2d5daf61370a55",
           "snapshotMembershipHash": "a5cd70ff0f93f27039640fcb77e7c5e400a494f1cb68e65f1d690a504f3f0210"
@@ -8128,7 +8156,7 @@
           "observedAt": "2026-06-11T00:54:11.592Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "962ea468d4f669f17f57d818e5118b02d94b05e50b8754cc9bd1d98279622f2b",
           "snapshotMembershipHash": "3bf2a2a37bd5ffddb8b0dc1188567087347fee4d117f27e49aae830c575812f4"
@@ -8143,7 +8171,7 @@
           "observedAt": "2026-06-28T00:16:21.136Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "3c5a0f84be253099484571b909ebdd9ea504836a87a36ee810612b0e26324639",
           "snapshotMembershipHash": "4caecfcfe87c34d86290a6180905a60db832a8df910efe1d2f529d046254b4a6"
@@ -8158,7 +8186,7 @@
           "observedAt": "2026-07-02T13:50:21.156Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "a3ac799394e663fe8563525aaf7136b8c47ae2385fbd959e76c17e74a3d629c1",
           "snapshotMembershipHash": "77629e706acf33b1ac52e59427bc9f0df1c2a5be6e31f729ce1bcd8c24ed8279"
@@ -8173,7 +8201,7 @@
           "observedAt": "2026-07-14T22:27:10.894Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "e59422d1a2028b673d6a1290430dd1aafddef6f6dae6eb2a2e41a365c8ef0b70",
           "snapshotMembershipHash": "f0aad18a620c303857fd996cdb782c8516bb78da3124ae46207eea82bd07a04e"
@@ -8188,7 +8216,7 @@
           "observedAt": "2026-07-15T20:42:31.732Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/",
           "snapshotHash": "86805df2a65c5925f1acc458a556b8832a0c91d789404b92e6f86b669509b1d0",
           "snapshotMembershipHash": "7c879783b8f81b0a200a7e18fe63e340fb8f5f4f1f1e558cdbdf04ec50489e4c",
@@ -8217,7 +8245,7 @@
           "observedAt": "2026-07-30T02:26:59.847Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/",
           "snapshotHash": "7f849a4a6868751576c14b973ffb7f222b3a576da7d377ffccb8d6d8cfcdeeea",
           "snapshotMembershipHash": "2048465c419c73101e0a4adae5196e955f6fb4541d031f2c5876bd929a8117a9",
@@ -8246,7 +8274,7 @@
           "observedAt": "2026-08-11T18:14:04.261Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/ 출처 공백 후 최초 관측 5건: 실제 등록일 미상. 이 날짜는 차량 명부 스냅샷 관측일.",
           "snapshotHash": "dd5f6fa14ae1f38f4d37e99ecc6bbe21c78b09615269322ebe4353312b4b34e2",
           "snapshotMembershipHash": "22acd510ee8dc51fbacd8978296a3a25083da4e5f5fa30212b53ed111664477b",
@@ -8275,7 +8303,7 @@
           "observedAt": "2026-08-23T02:55:32.333Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/",
           "snapshotHash": "e97eeb76ad4597ea6994b490403c78449505726b0cff380bbb7400557e6cccea",
           "snapshotMembershipHash": "e59eaf1026d67f2546d56531a3c70f639a9e0a41dbf3cf6e92f3166c34d84247",
@@ -8304,7 +8332,7 @@
           "observedAt": "2026-08-27T15:21:49.803Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/",
           "snapshotHash": "1d5a75789bc2865c16e957f85ceef68dbbf5bfc7b5bf488aa8c8cb0e12a246f9",
           "snapshotMembershipHash": "e1abf830973fb161e86cf0f0b5350e32d3cf4490548214098408d6248ba1e12d",
@@ -8333,7 +8361,7 @@
           "observedAt": "2026-08-28T16:36:49.827Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "615ed4236dba6128cbd0e8e0afd8acc06a6922e72b0778128e554d59e5cd1d73",
           "snapshotMembershipHash": "0f31bde5a82722962570d9b1f69c1d54ff9c4abf648c8c955fb11cb5c857eea2"
@@ -8348,7 +8376,7 @@
           "observedAt": "2026-08-31T18:44:27.825Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "79eaebce6c1f015e99fcc8774fc2a87b10fbd59be101926ca87893148d470e14",
           "snapshotMembershipHash": "5491cc7818a270db57b015deec9bf90d2ca382c9e3ad4b39cbb4ba2744e88e2e"
@@ -8363,7 +8391,7 @@
           "observedAt": "2026-09-02T22:01:48.901Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "60f208cab2797aab1fe008363cc5afe8f15226309d4fa8313c9af19799949431",
           "snapshotMembershipHash": "2b58ae85d4652cfeca053c892b3e8935decd187decdc139a4dbcbc5fc35e6554"
@@ -8378,7 +8406,7 @@
           "observedAt": "2026-09-03T14:34:48.987Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "7ac15cf859c7328ff7b42205bb48727053dcf8a418893233d5fa0d9b2bee1772",
           "snapshotMembershipHash": "2b58ae85d4652cfeca053c892b3e8935decd187decdc139a4dbcbc5fc35e6554"
@@ -8393,7 +8421,7 @@
           "observedAt": "2026-09-04T23:23:44.086Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "4c30f66627973fbd7890ae7cb48b9e0dcb4cb9276b4f341c4e8b37789a278b26",
           "snapshotMembershipHash": "7adb3983e43aee0ec803d7d59b602d1dd07245417546ce3314c4627e684975a7"
@@ -8408,7 +8436,7 @@
           "observedAt": "2026-09-09T03:37:34.543Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "f5247e82af6243e5bde7f45de4befdb4b2a73cc260dba0621aef4e16ba0338f2",
           "snapshotMembershipHash": "67f15b85dfd78a1322141266e331d4fb7a96d9d58898b0c54b762b5e57cf2f81"
@@ -8423,7 +8451,7 @@
           "observedAt": "2026-09-11T01:55:43.850Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "a7bdb667ea6ccd60a0b2c3b58bac6b94658b5c0aedae6d3c1600a85079da31cd",
           "snapshotMembershipHash": "88a616da2eb3cf9865460bb0c8b6c6b23252bd4a089030090fa68a78aa28b188"
@@ -8438,7 +8466,7 @@
           "observedAt": "2026-09-19T00:04:04.573Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "9c98562d9d977a3385ebc2c69b2b0d98672920008d72b411f5bc0b1fdd167780",
           "snapshotMembershipHash": "ce9728420442c57c8a5f36a3f0816b119b9e62580c8232ae364b94d8571548c6"
@@ -8453,7 +8481,7 @@
           "observedAt": "2026-09-22T20:48:59.829Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "7bff9616efdbaf825864db62a075cfdc2d45980afc33280afe03d4996c68d59b",
           "snapshotMembershipHash": "2a36323177841ae67bb49ca555d619af8bb454dfb3d9822b225ba64761180403"
@@ -8468,7 +8496,7 @@
           "observedAt": "2026-09-24T03:53:01.223Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "575bbf30c61247f01e3c7860d9d912f90912274ea98d1e3530378421eff52ff5",
           "snapshotMembershipHash": "042fb066385f7477212d7c498d7c5abecd946869bb5300861f6a87455179721b"
@@ -8483,7 +8511,7 @@
           "observedAt": "2026-09-25T20:46:55.959Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "36d8053ea87b0ea64d5aeea5a0a5b3c539fee1318d2ca761e929b56ad68f2d22",
           "snapshotMembershipHash": "cc342d4ffc2d3cdcd07d08fbd2c191fa4a5cfa9816ac1cad502afe82703c4f12"
@@ -8498,7 +8526,7 @@
           "observedAt": "2026-10-02T18:32:59.487Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "29880b9728ee8455c2badc11977204ea3c55257e9f033748135f6a8c062e4a84",
           "snapshotMembershipHash": "93064820a479d45780b2db6d4f2fc69c375592d635a43c81d0933f4aa0d0169f"
@@ -8513,7 +8541,7 @@
           "observedAt": "2026-10-09T00:41:39.396Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 출처 공백 후 최초 관측 150건: 실제 등록일 미상. 이 날짜는 차량 명부 스냅샷 관측일.",
           "snapshotHash": "e5139413acfe84a2dfd6d982479827173c99188f74ec7d5b045cae6029797a55",
           "snapshotMembershipHash": "3c2e18a148eb253a47e4c3fcc633d03ddf96719ce6df30805476e87cbf21c611"
@@ -8528,7 +8556,7 @@
           "observedAt": "2026-10-15T02:32:25.105Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "12ede0d4f10164afbc1b11b4b14facd44a072508915d6abeb81eec467974f6d8",
           "snapshotMembershipHash": "620380e6f4d30b456fb192217a2d564e288f6a591f05954dd4364d7484a38e82"
@@ -8543,7 +8571,7 @@
           "observedAt": "2026-10-17T03:39:42.743Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "d19fb007c6c93276f0b671fca4c89ce84bd2d3e73f1e6a9f56644b7a599eeccc",
           "snapshotMembershipHash": "4046ef1a10a2cdfc7a4c3996623174f684867d0efa50934e5b517434e1ad7c5d"
@@ -8558,7 +8586,7 @@
           "observedAt": "2026-10-22T03:53:40.017Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "089391c6014a87755b5c923148a32aa36b1acccf43a58788c2bcf9d1ada96de6",
           "snapshotMembershipHash": "918299127af436e3ff81a74981454848713453490252eda37b49a2b2b6c81c0c"
@@ -8573,7 +8601,7 @@
           "observedAt": "2026-10-23T20:47:52.990Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "b7307be504f986ee6884ee7fcbca484f9f7cb29edbe3188e8a890308d963497f",
           "snapshotMembershipHash": "59c39f3c8636d7e01546b802949ece00d51e88ae8d70b3b8aa77ad6ee0f3bdbf"
@@ -8588,7 +8616,7 @@
           "observedAt": "2026-10-25T04:51:53.032Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 출처 공백 후 최초 관측 32건: 실제 등록일 미상. 이 날짜는 차량 명부 스냅샷 관측일.",
           "snapshotHash": "243a87c1d40bb30c6b66bb7cc6fd33d4bd16a8743f97c72a4685e84dd6bfcd82",
           "snapshotMembershipHash": "d6cc2ef2661c44f7daafdfcaed3573ccff580dce062c46e892ee91e2ab1a389c"
@@ -8603,7 +8631,7 @@
           "observedAt": "2026-10-28T02:30:22.319Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-10-30T10:12:55.549Z",
+          "lastCheckedAt": "2026-10-30T16:43:48.816Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 출처 공백 후 최초 관측 98건: 실제 등록일 미상. 이 날짜는 차량 명부 스냅샷 관측일.",
           "snapshotHash": "10c3165fd9dc81545c0f6e7edbd4f221be7d665343401e55e424e6aa5f4bc125",
           "snapshotMembershipHash": "58dbf623409134e9a8ae7726c4113c1d7abf7e54cd56b22489c18775f400890d"
@@ -8811,8 +8839,8 @@
           }
         }
       ],
-      "lastAttemptAt": "2026-10-30T10:12:55.549Z",
-      "lastSuccessAt": "2026-10-30T10:12:55.549Z",
+      "lastAttemptAt": "2026-10-30T16:43:48.816Z",
+      "lastSuccessAt": "2026-10-30T16:43:48.816Z",
       "checkState": "ok",
       "error": null,
       "modelEvidenceState": "available"
