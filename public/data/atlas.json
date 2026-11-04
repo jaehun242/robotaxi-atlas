@@ -1428,18 +1428,18 @@
       "sourceSnapshotAt": "2026-11-04T00:07:03.579Z"
     },
     {
-      "sourceId": "mycybercab-austin",
-      "state": "ok",
-      "checkedAt": "2026-11-04T00:41:13.293Z",
-      "lastSuccessAt": "2026-11-04T00:41:13.293Z",
-      "message": "Austin fleet claim 573+ · 원문 2026-10-27 · 주 등록 총계·Model Y와 별도."
+      "sourceId": "tx-dmv",
+      "state": "failed",
+      "checkedAt": "2026-11-04T07:34:20.124Z",
+      "lastSuccessAt": "2026-11-04T00:41:15.028Z",
+      "message": "fetch failed · 마지막 정상값 보존"
     },
     {
-      "sourceId": "tx-dmv",
+      "sourceId": "mycybercab-austin",
       "state": "ok",
-      "checkedAt": "2026-11-04T00:41:15.028Z",
-      "lastSuccessAt": "2026-11-04T00:41:15.028Z",
-      "message": "공식 텍사스 등록부 1244개 고유 VIN. Cybercab 573 / Model Y 631. 도시 합계와 별도."
+      "checkedAt": "2026-11-04T07:34:20.124Z",
+      "lastSuccessAt": "2026-11-04T07:34:20.124Z",
+      "message": "Austin fleet claim 573+ · 원문 2026-10-27 · 주 등록 총계·Model Y와 별도."
     }
   ],
   "revisions": [
@@ -1949,10 +1949,10 @@
       "note": "사용자가 선택한 MyCybercab Austin 대표 자료. 573+ 같은 + 표기는 하한 수량으로 보존. 원문 회사 발표 링크와 전체 도시 명부 대조 방법은 확인되지 않았으며 비공식 게시 주장으로 취급.",
       "firstCollectedAt": "2026-10-29T09:37:36.877Z",
       "observedAt": "2026-10-29T09:37:36.877Z",
-      "fetchedAt": "2026-11-04T00:41:13.293Z",
-      "lastAttemptAt": "2026-11-04T00:41:13.293Z",
-      "lastCheckedAt": "2026-11-04T00:41:13.293Z",
-      "lastSuccessAt": "2026-11-04T00:41:13.293Z",
+      "fetchedAt": "2026-11-04T07:34:20.124Z",
+      "lastAttemptAt": "2026-11-04T07:34:20.124Z",
+      "lastCheckedAt": "2026-11-04T07:34:20.124Z",
+      "lastSuccessAt": "2026-11-04T07:34:20.124Z",
       "checkState": "ok",
       "error": null,
       "revisions": [],
