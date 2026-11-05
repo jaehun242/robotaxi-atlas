@@ -1447,10 +1447,11 @@
     },
     {
       "sourceId": "tx-dmv",
-      "state": "ok",
+      "state": "failed",
       "checkedAt": "2026-11-05T20:42:50.336Z",
-      "lastSuccessAt": "2026-11-05T20:42:50.336Z",
-      "message": "공식 텍사스 등록부 1244개 고유 VIN. Cybercab 0 / Model Y 0. 도시 합계와 별도."
+      "lastSuccessAt": "2026-11-04T22:40:54.238Z",
+      "message": "원본 차종 정보 누락 · 차종별 0대 확인 불가 · 마지막 정상 차종과 기준일 보존",
+      "classificationCorrectionId": "tx-model-metadata-loss-2026-11-05"
     },
     {
       "sourceId": "mycybercab-austin",

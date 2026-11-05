@@ -1079,12 +1079,12 @@
       "lastSuccessAt": "2026-11-05T01:10:47.377Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "quantityStatus": "available",
+      "quantityStatus": "last_good_or_unknown",
       "durationMs": 2063,
       "numericParserConnected": true,
-      "numericCheckState": "ok",
-      "numericLastSuccessAt": "2026-11-05T20:42:50.336Z",
-      "numericReferenceDate": "2026-11-05T01:10:47.377Z"
+      "numericCheckState": "failed",
+      "numericLastSuccessAt": "2026-11-04T22:40:54.238Z",
+      "numericReferenceDate": "2026-11-01T22:54:31.982Z"
     },
     {
       "code": "UT",
@@ -1341,22 +1341,26 @@
       "apiUrl": "https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
       "note": "도시 배정 필드 없음. 사업자 주소로 도시 대수를 추정하지 않음. VIN 중복 제거·차종 대소문자 정규화. 배치·영업 대수와 별도.",
       "total": 1244,
-      "cybercab": 0,
-      "model_y": 0,
-      "unknown": 1244,
+      "cybercab": 573,
+      "model_y": 631,
+      "unknown": 40,
       "rawModels": {
-        "undefined": 1244
+        "Modey Y": 40,
+        "Model Y": 631,
+        "Cybercab": 543,
+        "cybercab": 30
       },
       "duplicateRecords": 0,
-      "contentHash": "4980be092166338bf5c6ea2199782f9a553ee983d913aca482aea19d6015858a",
+      "contentHash": "fc75b371b83088d30ea06ca55d750a8940de5f68eb38b3d49303b6feaa4a97f7",
       "pages": 13,
-      "asOf": "2026-11-05T01:10:47.377Z",
+      "asOf": "2026-11-01T22:54:31.982Z",
       "asOfMeaning": "공식 등록부 스냅샷을 확인한 시각. 모든 차량의 신규 등록일이 아님.",
       "firstCollectedAt": "2026-10-23T04:56:23.970Z",
       "lastCheckedAt": "2026-11-05T20:42:50.336Z",
-      "lastSuccessAt": "2026-11-05T20:42:50.336Z",
-      "checkState": "ok",
-      "error": null
+      "lastSuccessAt": "2026-11-04T22:40:54.238Z",
+      "checkState": "failed",
+      "error": "원본 차종 정보 누락 · 차종별 0대 확인 불가 · 마지막 정상 차종과 기준일 보존",
+      "classificationCorrectionId": "tx-model-metadata-loss-2026-11-05"
     },
     {
       "id": "tx-tesla-fsddb",
@@ -1366,19 +1370,19 @@
       "verification": "unofficial",
       "note": "동일 TxDMV 원자료의 재집계이며 독립 검증 출처가 아님. JSON은 집계만 제공.",
       "total": 1244,
-      "cybercab": 0,
-      "model_y": 0,
-      "unknown": 1244,
-      "sourceAsOf": "2026-11-04T17:06:19-08:00",
+      "cybercab": 573,
+      "model_y": 631,
+      "unknown": 40,
+      "sourceAsOf": "2026-11-01T14:54:19-08:00",
       "sourceUrl": "https://fsddb.com/robotaxi?operator=tesla-robotaxi-llc",
-      "contentHash": "7d847f438fc589ab77450f18e9428bf881dcbd93d62a17b4a1e50c03c9a01200",
-      "asOf": "2026-11-05T01:06:19.000Z",
+      "contentHash": "ce9cee69021ad3eb44b672c2f198f27716e26a1e0cda2c3dd99a5dece282e4eb",
+      "asOf": "2026-11-01T22:54:19.000Z",
       "asOfMeaning": "민간 재집계가 공개한 마지막 동기화 시각. 신규 등록일과 별도.",
       "firstCollectedAt": "2026-10-23T05:09:46.286Z",
       "lastCheckedAt": "2026-11-05T20:42:50.336Z",
-      "lastSuccessAt": "2026-11-05T20:42:50.336Z",
-      "checkState": "ok",
-      "error": null,
+      "lastSuccessAt": "2026-11-04T22:40:54.238Z",
+      "checkState": "failed",
+      "error": "원본 차종 정보 누락 · 차종별 0대 확인 불가 · 마지막 정상 차종과 기준일 보존",
       "historical": {
         "sourceId": "fsddb-tesla-registration-history",
         "publisher": "FSD Database",
@@ -2534,7 +2538,8 @@
             "sourceAsOf": "2026-11-01T14:54:33-08:00"
           }
         ]
-      }
+      },
+      "classificationCorrectionId": "tx-model-metadata-loss-2026-11-05"
     }
   ],
   "registrationHistory": [
@@ -2762,36 +2767,6 @@
       "model_y": 631,
       "unknown": 40,
       "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/actions/runs/41866954448"
-    },
-    {
-      "id": "tx-registry-2026-11-05T01:10:47.377Z",
-      "sourceId": "tx-tesla-official",
-      "scopeId": "us:state:TX:tesla:registered",
-      "basis": "registered",
-      "checkedAt": "2026-11-05T01:10:47.377Z",
-      "lastCheckedAt": "2026-11-05T12:31:01.417Z",
-      "valueAsOf": "2026-11-05T01:10:47.377Z",
-      "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
-      "total": 1244,
-      "cybercab": 0,
-      "model_y": 0,
-      "unknown": 1244,
-      "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/actions/runs/41946663385"
-    },
-    {
-      "id": "tx-registry-2026-11-05T20:42:50.336Z",
-      "sourceId": "tx-tesla-official",
-      "scopeId": "us:state:TX:tesla:registered",
-      "basis": "registered",
-      "checkedAt": "2026-11-05T20:42:50.336Z",
-      "lastCheckedAt": "2026-11-05T20:42:50.336Z",
-      "valueAsOf": "2026-11-05T01:10:47.377Z",
-      "sourceUrl": "https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles",
-      "total": 1244,
-      "cybercab": 0,
-      "model_y": 0,
-      "unknown": 1244,
-      "evidenceUrl": "https://github.com/jaehun242/robotaxi-atlas/actions/runs/42105888373"
     }
   ],
   "discovery": {
@@ -10243,6 +10218,19 @@
       "checkState": "ok",
       "error": null,
       "modelEvidenceState": "available"
+    }
+  ],
+  "registrationCorrections": [
+    {
+      "id": "tx-model-metadata-loss-2026-11-05",
+      "correctedAt": "2026-11-05T23:51:14.123Z",
+      "reason": "원본 차종 정보 누락 · 차종별 0대 확인 불가 · 마지막 정상 차종과 기준일 보존",
+      "excludedHistoryIds": [
+        "tx-registry-2026-11-05T01:10:47.377Z",
+        "tx-registry-2026-11-05T20:42:50.336Z"
+      ],
+      "lastGoodCommit": "9a9f2be",
+      "archive": "data/corrections/2026-11-06-registration-model-metadata-loss.json"
     }
   ]
 }

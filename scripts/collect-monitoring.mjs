@@ -18,7 +18,7 @@ const discovery=await collectDiscovery(prior.discovery,{now,forceFailure,scope:'
 const atlasContext=await read('public/data/atlas.json');atlasContext.activeScope='US';atlasContext.pausedScopes=['GB','KR'];
 discovery.officialPlans=atlasContext.services.filter(s=>s.id.startsWith('tesla-safety-plan-')).map(s=>({city:atlasContext.cities.find(c=>c.id===s.city)?.name??s.city,status:s.status,observedAt:s.observedAt,sourceUrl:s.sourceUrl}));
 discovery.regionCandidates=atlasContext.regionCandidates??[];
-const result={version:1,geographicScope:'US',internationalPaused:true,lastAttemptAt:now,jurisdictions:records,international,registries:[registry,privateRegistry],registrationHistory:prior.registrationHistory??[],discovery,summary:coverageSummary(records,now),runs:prior.runs??[]};
+const result={version:1,geographicScope:'US',internationalPaused:true,lastAttemptAt:now,jurisdictions:records,international,registries:[registry,privateRegistry],registrationHistory:prior.registrationHistory??[],registrationCorrections:prior.registrationCorrections??[],discovery,summary:coverageSummary(records,now),runs:prior.runs??[]};
 applyRegistrationStatus(atlasContext,result,[registry,privateRegistry],now);
 result.modelHistory=await collectHistoricalModels(prior.modelHistory,{now,forceFailure});
 result.summary=coverageSummary(records,now);

@@ -7,6 +7,13 @@ import {parseRegistrationArchive,mergeRegistrationArchive} from './registration-
 export const TX_API='https://txmccs.txdmv.gov/api/TruckStop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles';
 export const TX_PAGE='https://txmccs.txdmv.gov/truckstop/companies/81edcff1-8a6e-4ed0-be1f-60668515e223/automated-motor-vehicles';
 export function normalizeModel(value){const v=String(value).toLowerCase().replace(/[^a-z0-9]/g,'');return v==='cybercab'?'cybercab':['modely','teslamodely'].includes(v)?'model_y':'unknown';}
+// An unclassified registration may belong to either tracked model. Missing
+// labels cannot establish a zero fleet; reject the snapshot before publishing.
+function validateModelCounts(counts){
+ const values=[counts.total,counts.cybercab,counts.model_y,counts.unknown??0];
+ if(values.some(n=>!Number.isSafeInteger(n)||n<0)||counts.total!==counts.cybercab+counts.model_y+(counts.unknown??0))throw Error('등록부 차종 합계 검증 실패');
+ if((counts.unknown??0)>0&&(counts.cybercab===0||counts.model_y===0))throw Error('등록부 차종 분류 누락 · 미분류 차량이 있어 차종별 0대를 확인할 수 없음');
+}
 export function summarizeVehicles(vehicles,expected){
  const unique=new Map(),rawModels={};
  for(const v of vehicles){const vin=String(v.vin??'').trim().toUpperCase(),model=normalizeModel(v.model);
@@ -16,6 +23,7 @@ export function summarizeVehicles(vehicles,expected){
  }
  if(unique.size!==expected)throw Error(`등록부 페이지 불일치: 고유 ${unique.size} / 원본 ${expected}. 마지막 정상값 유지`);
  const counts={cybercab:0,model_y:0,unknown:0};for(const model of unique.values())counts[model]++;
+ validateModelCounts({total:unique.size,...counts});
  return {total:unique.size,...counts,rawModels,duplicateRecords:vehicles.length-unique.size,contentHash:createHash('sha256').update([...unique].sort(([a],[b])=>a.localeCompare(b)).map(([vin,model])=>vin+'|'+model).join('\n')).digest('hex')};
 }
 export async function fetchTexasRegistry(fetcher=fetch){
@@ -29,6 +37,7 @@ export async function fetchTexasRegistry(fetcher=fetch){
  throw Error('등록부 페이지 제한 도달');
 }
 export function preserveRegistration(prior,incoming,now){
+ validateModelCounts(incoming);
  if(prior?.contentHash===incoming.contentHash)return {...prior,lastCheckedAt:now,lastSuccessAt:now,checkState:'ok',error:null};
  return {...incoming,asOf:now,asOfMeaning:'공식 등록부 스냅샷을 확인한 시각. 모든 차량의 신규 등록일이 아님.',firstCollectedAt:prior?.firstCollectedAt??now,lastCheckedAt:now,lastSuccessAt:now,checkState:'ok',error:null};
 }
