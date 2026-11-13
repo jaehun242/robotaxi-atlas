@@ -2,7 +2,7 @@
   "version": 1,
   "geographicScope": "US",
   "internationalPaused": true,
-  "lastAttemptAt": "2026-11-13T01:12:26.136Z",
+  "lastAttemptAt": "2026-11-13T23:40:49.951Z",
   "jurisdictions": [
     {
       "code": "AL",
@@ -18,15 +18,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "33c3a3bb6f1b0f737e9cad4f0100335f5c30c70d5b5fa90ea529473aa77e08f9",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 342
+      "durationMs": 652
     },
     {
       "code": "AK",
@@ -42,7 +42,7 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "c4fd83400d8e21116e4c58221df0aff090812e72a311edf0e3d2b60afa1fa135",
@@ -50,7 +50,7 @@
       "status": "access_failed",
       "message": "HTTP 404 · 마지막 정상 문서 해시·원본 기준일 유지.",
       "quantityStatus": "not_extracted",
-      "durationMs": 767
+      "durationMs": 799
     },
     {
       "code": "AZ",
@@ -66,11 +66,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 181
+      "durationMs": 160
     },
     {
       "code": "AR",
@@ -89,14 +89,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": true,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_changed",
       "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
-      "durationMs": 3089,
+      "durationMs": 4156,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
-      "contentHash": "0a963d947b04030273424358cbbbb627689b2530a2b1aec4cf9b19a1787d794b",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "contentHash": "7428c394e34aa6f39b0e55710000c8a163ed7f55c204e18fad2eec1b12385f1b",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -116,15 +116,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "e0b9de4eaa17c168de1bf6617eb8c8863c7856ef6437ce080cd4787a2fa7d8ec",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 54
+      "durationMs": 52
     },
     {
       "code": "CO",
@@ -140,15 +140,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "31d0dc9b15642513b463331f8f5e39d66fda420095043de848594b3063f4f813",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 250
+      "durationMs": 318
     },
     {
       "code": "CT",
@@ -164,15 +164,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "faeeaebadbbd0c3f5defd66341518ac9e32fc7a39942a545189d8d550d4887bf",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 761
+      "durationMs": 544
     },
     {
       "code": "DE",
@@ -188,15 +188,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "2f169eab3ba0d0c4031e6cb5a4aa63bb524c3a95bb9d2964fa0406a8f289a05b",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 187
+      "durationMs": 78
     },
     {
       "code": "DC",
@@ -212,15 +212,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "2a87ef9b1300e8ceb10277cad49a37adc84d385ebaf6b11b5d3823b8bcee9db7",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 153
+      "durationMs": 968
     },
     {
       "code": "FL",
@@ -239,15 +239,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "3b22911461a9fe5b53ba3a70104d93af47ebd3867502ea942ad4716d9f50f499",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 1197
+      "durationMs": 1403
     },
     {
       "code": "GA",
@@ -266,15 +266,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "2e148fa3a3b5bd3f995c74e1c6b15e3e6afa28b5fd48865a9b58eb95a637ed47",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 350
+      "durationMs": 229
     },
     {
       "code": "HI",
@@ -293,15 +293,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "09bb091ec9caf8f9d88a1d4da7ed9ccd0a41df2168ab33c57f6c6a5f26689c92",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 147
+      "durationMs": 568
     },
     {
       "code": "ID",
@@ -317,11 +317,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 404 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 1724
+      "durationMs": 2019
     },
     {
       "code": "IL",
@@ -337,15 +337,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "ac292861e1d265c6689694b050e8f97dc041a3e2f08f5dd29fdd96fc52a418e3",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 288
+      "durationMs": 259
     },
     {
       "code": "IN",
@@ -360,16 +360,16 @@
       "checkedOn": "2026-10-23",
       "automatic": true,
       "referenceDate": null,
-      "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "changed": false,
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "c49e5a109105a873dc1be1e0aba9eb6ddfae60f0d5850483cb87f24a90ba1977",
-      "lastSuccessAt": "2026-11-12T01:12:48.574Z",
-      "status": "access_failed",
-      "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
+      "status": "success_unchanged",
+      "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 104
+      "durationMs": 166
     },
     {
       "code": "IA",
@@ -385,14 +385,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 4989,
+      "durationMs": 64,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "5c8fdbe41b1b40e7e536ae0a9444b54571e4fc73dcd0a18722b5773dab41d399",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -412,15 +412,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": true,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
-      "contentHash": "4aafabd5266ba5da586258c437f3ff5740912f4a1c5fb137e37b767e2a540f0b",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "contentHash": "e7fdedb8be2ba4d47a388c83c10eecbaa5da1b9f6c35a1e4a347584c43b992c6",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_changed",
       "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
       "quantityStatus": "not_extracted",
-      "durationMs": 337
+      "durationMs": 273
     },
     {
       "code": "KY",
@@ -439,15 +439,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "583d107a04b97dba41fa6143ecad6faa6cb45bf39e071a4caea8dae6364b7ef9",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 421
+      "durationMs": 352
     },
     {
       "code": "LA",
@@ -463,14 +463,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 234,
+      "durationMs": 362,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "e2ba986b845f6f4cc7e18859f2fdec4def28c7224be6db17036609fba5654fae",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -490,15 +490,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "1dc8d255d1e04147513845ea43aaaf7cc77751e06b61b2e42cd765eada2eb4ac",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 298
+      "durationMs": 591
     },
     {
       "code": "MD",
@@ -514,14 +514,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 496,
+      "durationMs": 617,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "b37c843fc59fea4fbc6b34ea6c847a82033b1e8ae2fef3fceca5a1b570bce3ac",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -542,15 +542,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "89c8e7e1a179f7d6c8cb09a8905aa1ddd53478b62981e876039fa282cad00a2f",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 260
+      "durationMs": 433
     },
     {
       "code": "MI",
@@ -566,7 +566,7 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
@@ -586,15 +586,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "d652a8f9b665256efc5c31b20ef9aab21e739fc87acf23700cb1c5fbab27b90d",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 211
+      "durationMs": 453
     },
     {
       "code": "MS",
@@ -610,15 +610,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "75f7ca0f9033f49f5723268a443037c46537e3e7c39c6af3b119143da0bb2fdd",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 722
+      "durationMs": 687
     },
     {
       "code": "MO",
@@ -637,15 +637,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "6e5054d07e6d9a78f10d79d27dee7e74b25f1619fd3329d5221093ea4c50b052",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 388
+      "durationMs": 693
     },
     {
       "code": "MT",
@@ -661,14 +661,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 594,
+      "durationMs": 673,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "0aae5c7bc3a2e7826df6099d4ac0888822f2b9bea2c2d7aab084ba0c8bf3ce5c",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -685,14 +685,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 211,
+      "durationMs": 322,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "5a10d8ebdfa47454292a44bf3620f2f0426edcd198d43572d14405f4d1c09aef",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -709,15 +709,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "bdb59c825c7d9aa7df8e227bfb0ed5917e02a482cc71778eb6ea8bd829b80cbb",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 134
+      "durationMs": 458
     },
     {
       "code": "NH",
@@ -733,14 +733,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 114,
+      "durationMs": 57,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "049a2fb14ee7698af15a1c3c18c0c9f8aa9ab5df12fc6dca7c1856b63b018f87",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -760,14 +760,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 182,
+      "durationMs": 121,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "9ab80da75181fbe994af390b4e8376126bfba65244078796a64c2dc68a158160",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -784,15 +784,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "556ddf3c92843c7a50dfa7d486a5282d5cc354197859bde03bcdac2c8f9ae302",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 932
+      "durationMs": 1289
     },
     {
       "code": "NY",
@@ -808,15 +808,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "PDF 문서 해시 · 본문 의미/수치 추출 미연결",
       "contentHash": "0e29859daf18c9014d1f0e9b475f056796037e29d665fa45f56a73419ecc5be8",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 242
+      "durationMs": 143
     },
     {
       "code": "NC",
@@ -832,14 +832,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 426,
+      "durationMs": 819,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "24f71e4e52c906808e8388a4a6768150589a49477b60bfe0005bedebf8f72085",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -856,14 +856,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
-      "durationMs": 192,
+      "durationMs": 339,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "67134b4638729ffbdf0c96268a1249ed5cc29b55836342ed08a142ffb90acaa8",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -880,11 +880,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 404 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 236
+      "durationMs": 132
     },
     {
       "code": "OK",
@@ -900,11 +900,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "extraction_failed",
       "message": "문서 용량 제한 초과 · 다운로드 생략 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 87
+      "durationMs": 82
     },
     {
       "code": "OR",
@@ -920,15 +920,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "8480963e8606500c6282a6e732b45b86876875d230efb8312419d2f6cb529975",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 433
+      "durationMs": 438
     },
     {
       "code": "PA",
@@ -943,16 +943,16 @@
       "checkedOn": "2026-10-23",
       "automatic": true,
       "referenceDate": null,
-      "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
-      "attempts": 1,
+      "changed": true,
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
+      "attempts": 2,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
-      "contentHash": "4c2d123501c0d1bf7586f19a3ff61f8f30e44fc1e7a72a4fab3dab0eeaa994b6",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
-      "status": "success_unchanged",
-      "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
+      "contentHash": "306a6c9aad4c7fda88a3cfc269480131c07f1cfc60f785cff68c25106f6b6e75",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
+      "status": "success_changed",
+      "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
       "quantityStatus": "not_extracted",
-      "durationMs": 2147
+      "durationMs": 2171
     },
     {
       "code": "RI",
@@ -968,15 +968,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "8dcc649aac1f1ee4878722971fa7cee0b12103ef42a3fa11d23007e7f039075f",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 125
+      "durationMs": 123
     },
     {
       "code": "SC",
@@ -995,15 +995,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "0f3136512895263e2a3fd7f6e6bd988e42cd994b54e19b0fbcd7658425c7a5c1",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 328
+      "durationMs": 222
     },
     {
       "code": "SD",
@@ -1019,7 +1019,7 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "75c5b56e59108750dbfdd8c0388fabceb05a38d295d2660b54c173cf57f16b68",
@@ -1027,7 +1027,7 @@
       "status": "extraction_failed",
       "message": "AV 관련 본문 추출 확인 실패 · 마지막 정상 문서 해시·원본 기준일 유지.",
       "quantityStatus": "not_extracted",
-      "durationMs": 201
+      "durationMs": 198
     },
     {
       "code": "TN",
@@ -1043,11 +1043,11 @@
       "automatic": true,
       "referenceDate": null,
       "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "access_failed",
       "message": "HTTP 403 · 마지막 정상 문서 해시·원본 기준일 유지.",
-      "durationMs": 161,
+      "durationMs": 92,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "c3026764495ca4096a5122af043461f66cda2ca5310033d3d3b1b458d970c5e6",
       "lastSuccessAt": "2026-11-10T23:30:34.500Z",
@@ -1072,15 +1072,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "1b2b6ddf8d454c49219f69b9687404e7f82981d9cd3190d5154e0a8dbcb30a74",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "last_good_or_unknown",
-      "durationMs": 569,
+      "durationMs": 386,
       "numericParserConnected": true,
       "numericCheckState": "failed",
       "numericLastSuccessAt": "2026-11-04T22:40:54.238Z",
@@ -1100,15 +1100,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "ff13a26cc20861f503235da4968795a176107937ad479f7bfcbedb840afa12b2",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 168
+      "durationMs": 269
     },
     {
       "code": "VT",
@@ -1124,15 +1124,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "3571eb7e1f6537a1f59e4f20f1419d7e366808573453a1f66dd3b374b4c7fcb2",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 1444
+      "durationMs": 840
     },
     {
       "code": "VA",
@@ -1148,15 +1148,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "9b12202a4c593a1fe6c795ad0390434d5dbf94b4dc840f1b9bd22a91c8647bc4",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 119
+      "durationMs": 34
     },
     {
       "code": "WA",
@@ -1172,15 +1172,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "f180438bd05321f4bea6c973f0395ef7ebf083a51a3c456932213ae868b3d002",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 147
+      "durationMs": 182
     },
     {
       "code": "WV",
@@ -1196,14 +1196,14 @@
       "automatic": true,
       "referenceDate": null,
       "changed": true,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "status": "success_changed",
       "message": "등록한 문서 내용 변경 감지. Tesla 관련 의미는 원문 재검토 필요.",
-      "durationMs": 337,
+      "durationMs": 266,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
-      "contentHash": "8d1b41db4e41bb1f266c83d696788febe01cb0e83b8b4fbb3339db1052d62f6f",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "contentHash": "bd85d332a702edab3098ebfb04235fd3a9fe79a0709ec91517b7ec5f647d1d70",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "quantityStatus": "not_extracted"
     },
     {
@@ -1219,16 +1219,16 @@
       "checkedOn": "2026-10-23",
       "automatic": true,
       "referenceDate": null,
-      "changed": null,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
-      "attempts": 2,
+      "changed": false,
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
+      "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "0576cc1fa8c2be85d2f1dc22298a90b6d96a96c463868273ae28d5cc50e47198",
-      "lastSuccessAt": "2026-11-12T01:12:48.574Z",
-      "status": "access_failed",
-      "message": "The operation was aborted due to timeout · 마지막 정상 문서 해시·원본 기준일 유지.",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
+      "status": "success_unchanged",
+      "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 20001
+      "durationMs": 273
     },
     {
       "code": "WY",
@@ -1244,15 +1244,15 @@
       "automatic": true,
       "referenceDate": null,
       "changed": false,
-      "lastCheckedAt": "2026-11-13T01:12:26.136Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "attempts": 1,
       "contentType": "HTML 문서 변경 감지 · 차량 수 추출 미연결",
       "contentHash": "e40c0991a7a2c05769011adf0ddda77d8d4d6f021b716a4b022b26aa666ee14a",
-      "lastSuccessAt": "2026-11-13T01:12:26.136Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "status": "success_unchanged",
       "message": "등록한 문서 내용 변경 없음. 주 전체에 신규 발표가 없다는 뜻은 아님.",
       "quantityStatus": "not_extracted",
-      "durationMs": 329
+      "durationMs": 274
     }
   ],
   "international": [
@@ -1356,7 +1356,7 @@
       "asOf": "2026-11-01T22:54:31.982Z",
       "asOfMeaning": "공식 등록부 스냅샷을 확인한 시각. 모든 차량의 신규 등록일이 아님.",
       "firstCollectedAt": "2026-10-23T04:56:23.970Z",
-      "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "lastSuccessAt": "2026-11-04T22:40:54.238Z",
       "checkState": "failed",
       "error": "등록부 차종 분류 누락 · 미분류 차량이 있어 차종별 0대를 확인할 수 없음 · 마지막 정상값 보존",
@@ -1379,7 +1379,7 @@
       "asOf": "2026-11-01T22:54:19.000Z",
       "asOfMeaning": "민간 재집계가 공개한 마지막 동기화 시각. 신규 등록일과 별도.",
       "firstCollectedAt": "2026-10-23T05:09:46.286Z",
-      "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+      "lastCheckedAt": "2026-11-13T23:40:49.951Z",
       "lastSuccessAt": "2026-11-04T22:40:54.238Z",
       "checkState": "failed",
       "error": "등록부 차종 분류 누락 · 미분류 차량이 있어 차종별 0대를 확인할 수 없음",
@@ -2518,7 +2518,7 @@
         ],
         "firstCollectedAt": "2026-10-28T08:03:31.055Z",
         "updatedAt": "2026-11-05T12:31:01.417Z",
-        "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+        "lastCheckedAt": "2026-11-13T23:40:49.951Z",
         "lastSuccessAt": "2026-11-05T20:42:50.336Z",
         "checkState": "failed",
         "error": "등록부 차종 분류 누락 · 미분류 차량이 있어 차종별 0대를 확인할 수 없음",
@@ -2785,6 +2785,20 @@
   "discovery": {
     "items": [
       {
+        "id": "2cd3acd401ce67213af9e771",
+        "title": "Key facts: Tesla-SpaceX Merger Talks; Cybercab, Robotaxi Expand - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaGFIWFNZcF9iY2JVbWs1S3BzX1duQXM2cW9PSFVoWEp3czNZLWFkUzh0SGlwenllTWZMRThEbl9Ca2dEUXYwOTliV3h2QzNpZnczb0J0OWRfSW0ydTJnUmZzZldXaFdmTHFKNjczcjVIQm9INWplUVl6YkNLQXluQzhxRl9fd2ZZSURidXFsV0h1azA5LXZXMDhvbXgyOWJzRFNrVXNmMVo0TjBKWVFGcnI1ay1STlVWN2ZCSzM4TQ?oc=5",
+        "publisher": "TradingView",
+        "publishedAt": "2026-11-13T08:00:00.000Z",
+        "firstCollectedAt": "2026-11-13T23:40:49.951Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-11-13T23:40:49.951Z"
+        }
+      },
+      {
         "id": "d2827dca4a99b2bc87dc22a9",
         "title": "Tesla Robotaxi Now Runs 24/7 in Eight U.S. Cities - EVXL.co",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5oRHBwZkRMZUFxS1V6TFNtNGpuazFZYW12SEstNkp5TjdXWmlMMnY1T0VHZXdpblA2X0hYNWdtRnBqaGdSZ2ZMTTI1UVlLODZBNG5XZWRucVl5Q2Zkb0FtbXpMZlM4b2FQTjZJcUdoR3RmVnFjN1hz?oc=5",
@@ -2796,6 +2810,20 @@
         "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
         "scopeMatches": {
           "US": "2026-11-13T01:12:26.136Z"
+        }
+      },
+      {
+        "id": "714627783385ff091a0aa499",
+        "title": "🚨 Big news! Tesla's Robotaxi hits a major milestone: 8 US cities now enter the era of 24/7 operations! $Tesla(TSLA.US) - Longbridge",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1wbDJBZ1VManlfMndLNjNuWFFBYTVZWmpoeElIZFppZG13dFFmcVVzVlA3S2Y0djlpaEZHa1AxcUM2OWpmZHFPb0thVnUzVGc?oc=5",
+        "publisher": "Longbridge",
+        "publishedAt": "2026-11-12T19:02:11.000Z",
+        "firstCollectedAt": "2026-11-13T23:40:49.951Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-11-13T23:40:49.951Z"
         }
       },
       {
@@ -2883,6 +2911,20 @@
         }
       },
       {
+        "id": "b099a585f4ccb881538b59a0",
+        "title": "Tesla overtakes Waymo in Texas as Robotaxi fleet performs shock flip - Teslarati",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZDBoLW82YWhucXJYWDZTaW1YcmhLanlOT3hNcEtXLWdjWDdhdEZQQWFGTDVSV1VwZks1b3pPNUU2dVZqbXo0b2pBZ3Z6Xzk5b19idmpyRW90NFlFNkdpSGZvTWRsRGhzLUtfTmxJd3VQNHJOS0t4Mk1nVkJzSTBGel94dEdNX0RBZXY4OGdheUVIcUk?oc=5",
+        "publisher": "Teslarati",
+        "publishedAt": "2026-11-12T08:18:57.000Z",
+        "firstCollectedAt": "2026-11-13T23:40:49.951Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-11-13T23:40:49.951Z"
+        }
+      },
+      {
         "id": "f1f135912ef4561ad81656d9",
         "title": "Tesla Robotaxi Goes 24/7 in Every City It Serves - TeslaNorth.com",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0wa094Vkt5UW1tMG41V05iU1FZbnhBXy1nWmdLT1dJMXA0WWVsNXhUZ09wbW5fQ2RSazhfelNKWmdZQktLb2o2ZGtxWXhBQmF1dXNzOG5NRVJhYWQtT1pYX0I4V0ROWGM1Wmx2V3lTTzhNMzA?oc=5",
@@ -2964,6 +3006,20 @@
         "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
         "scopeMatches": {
           "US": "2026-11-12T01:12:48.574Z"
+        }
+      },
+      {
+        "id": "e7935536def192c6699ae6b0",
+        "title": "🚨 Major News! Tesla Robotaxi Hits a Significant Milestone: Full 24/7 Operations Launch in Eight U.S. Cities! $TSLA - Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeHpYMzNkaEZhOEhGUDQ5dFJYbktmYjJpQ29ySE96QnIyc0lwODlMbWZEY2c5ZU5jei1rdmdyQjlZOExBeEd4UEh1dG81aFR3ZlpTU3MtckRpb1BUYmowLWNfWmdlUkV5MVZyWko4RkJXbTdOeVpQa1JoT0ZGVlZZbHloRW1CSjZIT2RDTXFBWTFHVkxJWEV4blZsdkZERTE2VWJPUUtwamZaVjNSMnV0UlFKaw?oc=5",
+        "publisher": "Moomoo",
+        "publishedAt": "2026-11-11T19:29:00.000Z",
+        "firstCollectedAt": "2026-11-13T23:40:49.951Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-11-13T23:40:49.951Z"
         }
       },
       {
@@ -3093,6 +3149,20 @@
         }
       },
       {
+        "id": "67a59f0a486412bc66fd3784",
+        "title": "US opens probe into Tesla Cybercab compliance with federal safety rules - www.businessinsurance.com",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcVNYcVFjSmQtWHpoZGdtVzRqVXMzMXlqLWdraERaUms1ZWQ3aGtrdEVvYzd5bV9nLWl4N0JOb2w3V1NvdUVwMnFLUkhUMU9XQmRSdnBSQ3hYTGxubFNXUkVBRGlWTmFZUlpmUHRBYnUzUndPbDRSaTJNM3VSejVWTGdxUzY2WTJwU3psR1FOXzNNZ2tkaU1ETlBaRXZPQ1RQVFZGNTVLVXRFdw?oc=5",
+        "publisher": "www.businessinsurance.com",
+        "publishedAt": "2026-11-10T15:14:37.000Z",
+        "firstCollectedAt": "2026-11-13T23:40:49.951Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-11-13T23:40:49.951Z"
+        }
+      },
+      {
         "id": "55b6adaf198b6bd17ca5c145",
         "title": "Tesla launches driverless Robotaxi service in San Antonio, challenging Waymo - KTSA",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOHZPaVlmYVotcEtTRWZIOEZabEpUYmRYLTJySkVFSU1leWN3VmNYbV9GVXVaM2pfZWh6b1JQTDBjN2pzaG5aR2tlX29ET2d1YVNiZWdQY18yaGxwdGhLUFlkTXBYMmNRV3BUVkxYVm85c25QdEloc1hGcGRieG1sMHpDZ1B2dDY0NkF4NGU4R0hRdVg3T0EtVDkwMmJ0Zw?oc=5",
@@ -3118,6 +3188,20 @@
         "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
         "scopeMatches": {
           "US": "2026-11-10T23:30:34.500Z"
+        }
+      },
+      {
+        "id": "3f5484deda729c48005fb173",
+        "title": "Tesla launches Robotaxi service in San Antonio - Mashable SEA",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYW1UR3hrMjBhSmU2UXd6czl6YkFSNTIyUmp6ckY3OG5oWC01cVFFQkVBNFJZdTR0NTA5eDNEOWYzRjhHbnZ0eEVUWDh6bmhmbVdsazc3NHYyQW13TjR1TEdzSzk0c2pIRjlFeW8zMklZZ3FyckktTlBZUlhYcXh5ZGtWbUlYTnNYdm5yZURZdDBzdVpUQ0pB?oc=5",
+        "publisher": "Mashable SEA",
+        "publishedAt": "2026-11-10T09:45:54.000Z",
+        "firstCollectedAt": "2026-11-13T23:40:49.951Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-11-13T23:40:49.951Z"
         }
       },
       {
@@ -3328,6 +3412,20 @@
         "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
         "scopeMatches": {
           "US": "2026-11-10T01:11:45.283Z"
+        }
+      },
+      {
+        "id": "28a742cf0cf7df2595c23245",
+        "title": "Tesla launches Robotaxi in San Antonio with a 274 sq mi geofence on paper - Electrek",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15Sk05cXktRlZ4NWlsV1gydk43cWllcUVPYk4xUnhpUnRYYlhIZ0JUQlMwMC1EeVotR1VJRFFLOEp6cmtUbGdwM2pCNkxQczZwa045QTFpMVdxWlNOM0ZTUG9TczYwaGxkSUY4SFdTNkc3SnptdWM5LWZlWEF2NnM?oc=5",
+        "publisher": "Electrek",
+        "publishedAt": "2026-11-09T14:36:00.000Z",
+        "firstCollectedAt": "2026-11-13T23:40:49.951Z",
+        "feedId": "google-us",
+        "verification": "discovery_only",
+        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
+        "scopeMatches": {
+          "US": "2026-11-13T23:40:49.951Z"
         }
       },
       {
@@ -6885,104 +6983,6 @@
         "scopeMatches": {
           "US": "2026-10-29T02:01:10.248Z"
         }
-      },
-      {
-        "id": "ca9747ee9923791afabba413",
-        "title": "Tesla to begin selling its Cybercab by year’s end - Kursiv Media",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzlORlMzV2tKVW1KMG5uNEI4a29JSUR6M2lpaTdnTzh6LVM0SzJoS2Q5dFM3NEVDcGoxelMzUmR4MXZXY1U5SnBYUE9vNVVFSmp3alZYaUg2eko0UWhWU1FJY3cwQU9Pb2xzVkFYRlljRUxMV0hhQVRmRHJaV00tNTRjSlFJNVlHYUpoRkRPMUVGenBBQi1lcTBxTVduZw?oc=5",
-        "publisher": "Kursiv Media",
-        "publishedAt": "2026-10-22T12:54:39.000Z",
-        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
-        "feedId": "google-global",
-        "verification": "discovery_only",
-        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
-        "scopeMatches": {
-          "US": "2026-10-29T02:01:10.248Z"
-        }
-      },
-      {
-        "id": "592645f0f869251de4d0e7da",
-        "title": "Tesla targets Q2 2027 for first unsupervised FSD in customer cars, but only inside Robotaxi zones - Drive Tesla Canada",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPcnpZLTQyUHRFbzB0VEFPQlRFMzJWaHZhNmpZQThJM3hMZ1lRNU0yV0wydGJZN0x3TXVpUWFMdkh2SnZ3dkpaRjc2NVktQWFiVndYbTB6dTBQalpCWnd0V2pYWGxIMVNpVm95R1lDeVJiRUdCV3JORU1DaVpiN081SUlxellZUHF3dXc?oc=5",
-        "publisher": "Drive Tesla Canada",
-        "publishedAt": "2026-10-22T12:36:00.000Z",
-        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
-        "feedId": "google-us",
-        "verification": "discovery_only",
-        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
-        "scopeMatches": {
-          "US": "2026-10-29T02:01:10.248Z"
-        }
-      },
-      {
-        "id": "1623ab483a0eee9521996893",
-        "title": "Tesla aims to sell Cybercab robotaxis by end of year despite federal probe - ET Auto",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWVY3aUZZbGRZMGtyMnV4cnJGYkRxSlk2X0lDenJzWC05Snd1eHpxMGY0aUZXblk4YmQwVFJhd25QYjdrWHcwcFV3enJXYmhuV0k0MGR6Z2dSWm1veEFpMEJTdFNlTEJxRDNKMEU0NmpYUk90ejBLNk5jS0ZiMVF1emV3RklidjduSDRsYkdwUjYtaWRRQmtzODMxcm1abkZiTi1CTFI0dG1mUHZOdVI4bDVaZVM3NlJnRjgzZlZFLS10Nzc5SFduVlpaNW8xUndHbG5qTEdFTXBsNy1DV1dwTNIB5gFBVV95cUxOd1F6MEpjcm1YUUcyZnUtWnVyV2V4Szk5bXFGNGpiTF9RV2xZak5aZi1idUhKYUtuQzVjeG9aejFvWlQ1Uk4xb0R0QTFfNk5hQ1duQ0VZNllValN4Mm9sQmZnd3M3X3lwZmtrWGFtVTByRVpRWm4wYkhLTlp0V1RORi1vR1JsWVhmVWpDR1k2LWRiSTNZOWhmWDJvVUhVbVNBZXJtTXIya2NwaXpoYW9BSzBDNERaaDNIa2xLcmo2ekRhUE1seUJvOFpGQ1NrOHBQUmtCd0NJLWkwRFRhQUVqalJtekVfQQ?oc=5",
-        "publisher": "ET Auto",
-        "publishedAt": "2026-10-22T09:36:37.000Z",
-        "firstCollectedAt": "2026-10-29T04:25:35.018Z",
-        "feedId": "google-us",
-        "verification": "discovery_only",
-        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
-        "scopeMatches": {
-          "US": "2026-10-29T04:25:35.018Z"
-        }
-      },
-      {
-        "id": "ca5500fe9f11e121b3b580ef",
-        "title": "Tesla is prepping a Cybercab onslaught",
-        "url": "https://techcrunch.com/2026/10/22/tesla-is-prepping-a-cybercab-onslaught/",
-        "publisher": "techcrunch.com",
-        "publishedAt": "2026-10-22T08:44:00.000Z",
-        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
-        "feedId": "bing-us",
-        "verification": "discovery_only",
-        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
-        "scopeMatches": {
-          "US": "2026-10-29T02:01:10.248Z"
-        }
-      },
-      {
-        "id": "e9543b218941f0e62ed8af0a",
-        "title": "Tesla Reveals When It Plans to Start Selling Driverless Cybercabs - Mezha",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeEN0NFVNZ3kxT1I0QVZyR1A5LTVpZ3VfdjFBanZVQy1fdW5pay1MNjZwWVJGWHU5WG40VXpjZldReEJxOWpzSnRMdC1YNE5RNUp5Vk9IMnh5dGhTTFNDOFF5T0h3OV9TMUJ5aUZNSXlEM0pFcXFmejZVc3BuTTUyd0ZlLV9VSEVPWjM0c3dHR3F0VDQ1QjJQenlJQ1VYR1RRZXZqRw?oc=5",
-        "publisher": "Mezha",
-        "publishedAt": "2026-10-22T06:03:00.000Z",
-        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
-        "feedId": "google-us",
-        "verification": "discovery_only",
-        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
-        "scopeMatches": {
-          "US": "2026-10-29T02:01:10.248Z"
-        }
-      },
-      {
-        "id": "e817c820ddb5367e953588b3",
-        "title": "Tesla Q3 Revenue Hits $28.05B as Cybercab Heads to Dallas - News and Statistics - IndexBox",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeE9aM240Um5LMzBWRjh0UkRlekZCZzg2TXA5VGpZRzN4ZGd6SkZFSEtaMjhsdm94ZUhXamVzRllnQTdyVFdXa3BDZVo1cEgwYUUxeUxZTXpNa3U2ZHVjZ0NydjZ2Vi1qQV9Za1JpNjBhR21FZHNFSkt4cGY4ekdtMHVjZ29rOU9MRWIyRk5nd2c5LW93TVFoM2llaGRzNllmZk9wVGJ3LTNueW1MQWhZM3lvNzRQdw?oc=5",
-        "publisher": "IndexBox",
-        "publishedAt": "2026-10-22T05:20:58.000Z",
-        "firstCollectedAt": "2026-10-29T02:01:10.248Z",
-        "feedId": "google-us",
-        "verification": "discovery_only",
-        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
-        "scopeMatches": {
-          "US": "2026-10-29T02:01:10.248Z"
-        }
-      },
-      {
-        "id": "683da0e41451a00d0452eafd",
-        "title": "Tesla targets public Cybercab sales by year-end amid US safety probe - Mezha.net",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRExFQTRPZXJ1M3pndVdheVh0cW1tYU5haWpfSXVQb2ZmRW8ybFk4R09EWlpVd0RxY0Zad3ZuNVZIbDRPVWgySmxSRVRhQ3lULWx5eEVOWjVRR0xYYTJ4amtqWHotZUx4SDhpVUdUZjgwNzFEcUxfWFZXc0pGRjBfdVlURFp1dw?oc=5",
-        "publisher": "Mezha.net",
-        "publishedAt": "2026-10-22T04:40:37.000Z",
-        "firstCollectedAt": "2026-10-23T04:56:23.970Z",
-        "feedId": "google-global",
-        "verification": "discovery_only",
-        "note": "검색 피드에서 발견한 원문 검토 후보. 기사 제목만으로 차량 수·허가·상업운행을 확정하지 않음.",
-        "scopeMatches": {
-          "US": "2026-10-29T02:01:10.248Z"
-        }
       }
     ],
     "runs": [],
@@ -6991,28 +6991,28 @@
         "id": "google-us",
         "name": "Google News · 미국 Tesla Robotaxi 검색 RSS",
         "url": "https://news.google.com/rss/search?q=Tesla%20(robotaxi%20OR%20Cybercab)%20(USA%20OR%20%22United%20States%22%20OR%20%22U.S.%22)%20when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
-        "checkedAt": "2026-11-13T01:12:26.136Z",
+        "checkedAt": "2026-11-13T23:40:49.951Z",
         "state": "ok",
-        "lastSuccessAt": "2026-11-13T01:12:26.136Z",
-        "found": 41,
+        "lastSuccessAt": "2026-11-13T23:40:49.951Z",
+        "found": 29,
         "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
       },
       {
         "id": "bing-us",
         "name": "Bing News · 미국 Tesla Robotaxi 검색 RSS",
         "url": "https://www.bing.com/news/search?q=Tesla+robotaxi+(USA+OR+%22United+States%22)&format=rss",
-        "checkedAt": "2026-11-13T01:12:26.136Z",
+        "checkedAt": "2026-11-13T23:40:49.951Z",
         "state": "ok",
-        "lastSuccessAt": "2026-11-13T01:12:26.136Z",
-        "found": 11,
+        "lastSuccessAt": "2026-11-13T23:40:49.951Z",
+        "found": 12,
         "message": "검색 RSS 조회 성공. 원문 검토 후보이며 신규 진출 확인과 구분."
       }
     ],
     "lastRun": {
-      "checkedAt": "2026-11-13T01:12:26.136Z",
+      "checkedAt": "2026-11-13T23:40:49.951Z",
       "successfulFeeds": 2,
       "totalFeeds": 2,
-      "newCandidates": 20,
+      "newCandidates": 7,
       "state": "completed_with_review_candidates",
       "scope": "US",
       "note": "미국 관련 검색 후보이며 원문 검토 전입니다. 모든 미국 지역의 모든 소식을 포괄하지 않습니다."
@@ -10304,8 +10304,8 @@
   "summary": {
     "jurisdictions": 51,
     "checkedToday": 51,
-    "success": 41,
-    "accessFailed": 8,
+    "success": 43,
+    "accessFailed": 6,
     "extractionFailed": 2,
     "unconnected": 0,
     "unresearched": 0,
@@ -10808,9 +10808,34 @@
         "scope": "US",
         "note": "미국 관련 검색 후보이며 원문 검토 전입니다. 모든 미국 지역의 모든 소식을 포괄하지 않습니다."
       }
+    },
+    {
+      "id": "monitor-2026-11-14",
+      "startedAt": "2026-11-13T23:40:49.951Z",
+      "completedAt": "2026-11-13T23:40:59.249Z",
+      "summary": {
+        "jurisdictions": 51,
+        "checkedToday": 51,
+        "success": 43,
+        "accessFailed": 6,
+        "extractionFailed": 2,
+        "unconnected": 0,
+        "unresearched": 0,
+        "countNotPublic": 0,
+        "numericParsers": 1
+      },
+      "discovery": {
+        "checkedAt": "2026-11-13T23:40:49.951Z",
+        "successfulFeeds": 2,
+        "totalFeeds": 2,
+        "newCandidates": 7,
+        "state": "completed_with_review_candidates",
+        "scope": "US",
+        "note": "미국 관련 검색 후보이며 원문 검토 전입니다. 모든 미국 지역의 모든 소식을 포괄하지 않습니다."
+      }
     }
   ],
-  "registrationLastAttemptAt": "2026-11-13T17:51:32.602Z",
+  "registrationLastAttemptAt": "2026-11-13T23:40:49.951Z",
   "modelHistory": [
     {
       "sourceId": "tslafg",
@@ -11221,7 +11246,7 @@
           }
         }
       ],
-      "lastAttemptAt": "2026-11-13T17:51:32.602Z",
+      "lastAttemptAt": "2026-11-13T23:40:49.951Z",
       "checkState": "failed",
       "error": "TSLAFG 차종 합계와 등록 총계 불일치 · 마지막 정상 차종 이력 보존"
     },
@@ -11246,7 +11271,7 @@
           "observedAt": "2026-06-09T16:01:27.815Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "b9ef85222c36b6614223d0bdfc5986a7f733a21e6a6a56e4ee2d5daf61370a55",
           "snapshotMembershipHash": "a5cd70ff0f93f27039640fcb77e7c5e400a494f1cb68e65f1d690a504f3f0210"
@@ -11261,7 +11286,7 @@
           "observedAt": "2026-06-11T00:54:11.592Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "962ea468d4f669f17f57d818e5118b02d94b05e50b8754cc9bd1d98279622f2b",
           "snapshotMembershipHash": "3bf2a2a37bd5ffddb8b0dc1188567087347fee4d117f27e49aae830c575812f4"
@@ -11276,7 +11301,7 @@
           "observedAt": "2026-06-28T00:16:21.136Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "3c5a0f84be253099484571b909ebdd9ea504836a87a36ee810612b0e26324639",
           "snapshotMembershipHash": "4caecfcfe87c34d86290a6180905a60db832a8df910efe1d2f529d046254b4a6"
@@ -11291,7 +11316,7 @@
           "observedAt": "2026-07-02T13:50:21.156Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "a3ac799394e663fe8563525aaf7136b8c47ae2385fbd959e76c17e74a3d629c1",
           "snapshotMembershipHash": "77629e706acf33b1ac52e59427bc9f0df1c2a5be6e31f729ce1bcd8c24ed8279"
@@ -11306,7 +11331,7 @@
           "observedAt": "2026-07-14T22:27:10.894Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "e59422d1a2028b673d6a1290430dd1aafddef6f6dae6eb2a2e41a365c8ef0b70",
           "snapshotMembershipHash": "f0aad18a620c303857fd996cdb782c8516bb78da3124ae46207eea82bd07a04e"
@@ -11321,7 +11346,7 @@
           "observedAt": "2026-07-15T20:42:31.732Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/",
           "snapshotHash": "86805df2a65c5925f1acc458a556b8832a0c91d789404b92e6f86b669509b1d0",
           "snapshotMembershipHash": "7c879783b8f81b0a200a7e18fe63e340fb8f5f4f1f1e558cdbdf04ec50489e4c",
@@ -11350,7 +11375,7 @@
           "observedAt": "2026-07-30T02:26:59.847Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/",
           "snapshotHash": "7f849a4a6868751576c14b973ffb7f222b3a576da7d377ffccb8d6d8cfcdeeea",
           "snapshotMembershipHash": "2048465c419c73101e0a4adae5196e955f6fb4541d031f2c5876bd929a8117a9",
@@ -11379,7 +11404,7 @@
           "observedAt": "2026-08-11T18:14:04.261Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/ 출처 공백 후 최초 관측 5건: 실제 등록일 미상. 이 날짜는 차량 명부 스냅샷 관측일.",
           "snapshotHash": "dd5f6fa14ae1f38f4d37e99ecc6bbe21c78b09615269322ebe4353312b4b34e2",
           "snapshotMembershipHash": "22acd510ee8dc51fbacd8978296a3a25083da4e5f5fa30212b53ed111664477b",
@@ -11408,7 +11433,7 @@
           "observedAt": "2026-08-23T02:55:32.333Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/",
           "snapshotHash": "e97eeb76ad4597ea6994b490403c78449505726b0cff380bbb7400557e6cccea",
           "snapshotMembershipHash": "e59eaf1026d67f2546d56531a3c70f639a9e0a41dbf3cf6e92f3166c34d84247",
@@ -11437,7 +11462,7 @@
           "observedAt": "2026-08-27T15:21:49.803Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 보관 명부의 누락 모델 1건은 당시 전체명부가 단일차종이라는 명시 보도와 완전 명부의 폐쇄집합 대조로 보완. 공식 모델 이력 아님. 근거: https://eletric-vehicles.com/tesla/tesla-expands-model-y-robotaxi-fleet-in-texas-by-50-in-a-single-day/",
           "snapshotHash": "1d5a75789bc2865c16e957f85ceef68dbbf5bfc7b5bf488aa8c8cb0e12a246f9",
           "snapshotMembershipHash": "e1abf830973fb161e86cf0f0b5350e32d3cf4490548214098408d6248ba1e12d",
@@ -11466,7 +11491,7 @@
           "observedAt": "2026-08-28T16:36:49.827Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "615ed4236dba6128cbd0e8e0afd8acc06a6922e72b0778128e554d59e5cd1d73",
           "snapshotMembershipHash": "0f31bde5a82722962570d9b1f69c1d54ff9c4abf648c8c955fb11cb5c857eea2"
@@ -11481,7 +11506,7 @@
           "observedAt": "2026-08-31T18:44:27.825Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "79eaebce6c1f015e99fcc8774fc2a87b10fbd59be101926ca87893148d470e14",
           "snapshotMembershipHash": "5491cc7818a270db57b015deec9bf90d2ca382c9e3ad4b39cbb4ba2744e88e2e"
@@ -11496,7 +11521,7 @@
           "observedAt": "2026-09-02T22:01:48.901Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "60f208cab2797aab1fe008363cc5afe8f15226309d4fa8313c9af19799949431",
           "snapshotMembershipHash": "2b58ae85d4652cfeca053c892b3e8935decd187decdc139a4dbcbc5fc35e6554"
@@ -11511,7 +11536,7 @@
           "observedAt": "2026-09-03T14:34:48.987Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "7ac15cf859c7328ff7b42205bb48727053dcf8a418893233d5fa0d9b2bee1772",
           "snapshotMembershipHash": "2b58ae85d4652cfeca053c892b3e8935decd187decdc139a4dbcbc5fc35e6554"
@@ -11526,7 +11551,7 @@
           "observedAt": "2026-09-04T23:23:44.086Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "4c30f66627973fbd7890ae7cb48b9e0dcb4cb9276b4f341c4e8b37789a278b26",
           "snapshotMembershipHash": "7adb3983e43aee0ec803d7d59b602d1dd07245417546ce3314c4627e684975a7"
@@ -11541,7 +11566,7 @@
           "observedAt": "2026-09-09T03:37:34.543Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "f5247e82af6243e5bde7f45de4befdb4b2a73cc260dba0621aef4e16ba0338f2",
           "snapshotMembershipHash": "67f15b85dfd78a1322141266e331d4fb7a96d9d58898b0c54b762b5e57cf2f81"
@@ -11556,7 +11581,7 @@
           "observedAt": "2026-09-11T01:55:43.850Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "a7bdb667ea6ccd60a0b2c3b58bac6b94658b5c0aedae6d3c1600a85079da31cd",
           "snapshotMembershipHash": "88a616da2eb3cf9865460bb0c8b6c6b23252bd4a089030090fa68a78aa28b188"
@@ -11571,7 +11596,7 @@
           "observedAt": "2026-09-19T00:04:04.573Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "9c98562d9d977a3385ebc2c69b2b0d98672920008d72b411f5bc0b1fdd167780",
           "snapshotMembershipHash": "ce9728420442c57c8a5f36a3f0816b119b9e62580c8232ae364b94d8571548c6"
@@ -11586,7 +11611,7 @@
           "observedAt": "2026-09-22T20:48:59.829Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "7bff9616efdbaf825864db62a075cfdc2d45980afc33280afe03d4996c68d59b",
           "snapshotMembershipHash": "2a36323177841ae67bb49ca555d619af8bb454dfb3d9822b225ba64761180403"
@@ -11601,7 +11626,7 @@
           "observedAt": "2026-09-24T03:53:01.223Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "575bbf30c61247f01e3c7860d9d912f90912274ea98d1e3530378421eff52ff5",
           "snapshotMembershipHash": "042fb066385f7477212d7c498d7c5abecd946869bb5300861f6a87455179721b"
@@ -11616,7 +11641,7 @@
           "observedAt": "2026-09-25T20:46:55.959Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "36d8053ea87b0ea64d5aeea5a0a5b3c539fee1318d2ca761e929b56ad68f2d22",
           "snapshotMembershipHash": "cc342d4ffc2d3cdcd07d08fbd2c191fa4a5cfa9816ac1cad502afe82703c4f12"
@@ -11631,7 +11656,7 @@
           "observedAt": "2026-10-02T18:32:59.487Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "29880b9728ee8455c2badc11977204ea3c55257e9f033748135f6a8c062e4a84",
           "snapshotMembershipHash": "93064820a479d45780b2db6d4f2fc69c375592d635a43c81d0933f4aa0d0169f"
@@ -11646,7 +11671,7 @@
           "observedAt": "2026-10-09T00:41:39.396Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 출처 공백 후 최초 관측 150건: 실제 등록일 미상. 이 날짜는 차량 명부 스냅샷 관측일.",
           "snapshotHash": "e5139413acfe84a2dfd6d982479827173c99188f74ec7d5b045cae6029797a55",
           "snapshotMembershipHash": "3c2e18a148eb253a47e4c3fcc633d03ddf96719ce6df30805476e87cbf21c611"
@@ -11661,7 +11686,7 @@
           "observedAt": "2026-10-15T02:32:25.105Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "12ede0d4f10164afbc1b11b4b14facd44a072508915d6abeb81eec467974f6d8",
           "snapshotMembershipHash": "620380e6f4d30b456fb192217a2d564e288f6a591f05954dd4364d7484a38e82"
@@ -11676,7 +11701,7 @@
           "observedAt": "2026-10-17T03:39:42.743Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "d19fb007c6c93276f0b671fca4c89ce84bd2d3e73f1e6a9f56644b7a599eeccc",
           "snapshotMembershipHash": "4046ef1a10a2cdfc7a4c3996623174f684867d0efa50934e5b517434e1ad7c5d"
@@ -11691,7 +11716,7 @@
           "observedAt": "2026-10-22T03:53:40.017Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "089391c6014a87755b5c923148a32aa36b1acccf43a58788c2bcf9d1ada96de6",
           "snapshotMembershipHash": "918299127af436e3ff81a74981454848713453490252eda37b49a2b2b6c81c0c"
@@ -11706,7 +11731,7 @@
           "observedAt": "2026-10-23T20:47:52.990Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "b7307be504f986ee6884ee7fcbca484f9f7cb29edbe3188e8a890308d963497f",
           "snapshotMembershipHash": "59c39f3c8636d7e01546b802949ece00d51e88ae8d70b3b8aa77ad6ee0f3bdbf"
@@ -11721,7 +11746,7 @@
           "observedAt": "2026-10-25T04:51:53.032Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 출처 공백 후 최초 관측 32건: 실제 등록일 미상. 이 날짜는 차량 명부 스냅샷 관측일.",
           "snapshotHash": "243a87c1d40bb30c6b66bb7cc6fd33d4bd16a8743f97c72a4685e84dd6bfcd82",
           "snapshotMembershipHash": "d6cc2ef2661c44f7daafdfcaed3573ccff580dce062c46e892ee91e2ab1a389c"
@@ -11736,7 +11761,7 @@
           "observedAt": "2026-10-28T02:30:22.319Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-29T04:15:32.378Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 출처 공백 후 최초 관측 98건: 실제 등록일 미상. 이 날짜는 차량 명부 스냅샷 관측일.",
           "snapshotHash": "10c3165fd9dc81545c0f6e7edbd4f221be7d665343401e55e424e6aa5f4bc125",
           "snapshotMembershipHash": "58dbf623409134e9a8ae7726c4113c1d7abf7e54cd56b22489c18775f400890d"
@@ -11751,7 +11776,7 @@
           "observedAt": "2026-10-31T03:13:42.985Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-10-31T08:31:56.096Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "5f6f507935b964d2a771891e5d57f8219add4cbf06b92096d7b7a6a5bedb672c",
           "snapshotMembershipHash": "e736cbd9394d1dcbadc6a588591c0dd0328af1ce69f4d8cb2263accaab357194"
@@ -11766,7 +11791,7 @@
           "observedAt": "2026-11-01T21:34:42.818Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-11-01T22:54:31.982Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료. 출처 공백 후 최초 관측 40건: 실제 등록일 미상. 이 날짜는 차량 명부 스냅샷 관측일.",
           "snapshotHash": "b6ff5047cee3206aec7f5c316d1a49042b582b1372af73658d13e622b6ccbcfe",
           "snapshotMembershipHash": "e90d1102d20ffafdb2ecc75025d3b2c2ceb0abf41dd52830c89cd5af81d219be"
@@ -11781,7 +11806,7 @@
           "observedAt": "2026-11-09T01:18:42.631Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-11-09T06:50:25.343Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "9bebc145e63e67dd57863231eeb480599afaa666c33a934f3d0fb070501d36fa",
           "snapshotMembershipHash": "e210461df93fb21cc0cbc9177be44adad78d41a5da36308872010b81bec22f78"
@@ -11796,7 +11821,7 @@
           "observedAt": "2026-11-10T23:15:42.403Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-11-10T23:30:34.500Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "8159c38ccca92373ccd421728d2b41cbe714c7b8d18dadafe749a31f50a70a30",
           "snapshotMembershipHash": "e63ab7553f3db3e284051ca6e997a1010e70e6739a33174686a498d2b4f85402"
@@ -11811,7 +11836,7 @@
           "observedAt": "2026-11-12T00:15:42.632Z",
           "publishedAt": null,
           "firstCollectedAt": "2026-11-12T01:12:48.574Z",
-          "lastCheckedAt": "2026-11-13T17:51:32.602Z",
+          "lastCheckedAt": "2026-11-13T23:40:49.951Z",
           "note": "비공식 과거 등록 스냅샷의 파생 차종 집계. 당시 명부와 현재 명시적 모델명을 대조; 실제 영업 대수·등록 발생일 아님. 스냅샷 전체 모델 대조 완료.",
           "snapshotHash": "424cfd1975149742e5ec92dd811deec91ceb1453ce5df01a889effd7bb2b767e",
           "snapshotMembershipHash": "b4b300efa1450d0cda5d007cc6ce2e4a56248607dbd49d017329888ec19b5f9e"
@@ -12019,8 +12044,8 @@
           }
         }
       ],
-      "lastAttemptAt": "2026-11-13T17:51:32.602Z",
-      "lastSuccessAt": "2026-11-13T17:51:32.602Z",
+      "lastAttemptAt": "2026-11-13T23:40:49.951Z",
+      "lastSuccessAt": "2026-11-13T23:40:49.951Z",
       "checkState": "ok",
       "error": null,
       "modelEvidenceState": "available"
