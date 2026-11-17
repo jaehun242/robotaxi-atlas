@@ -176,7 +176,10 @@
       "day": "2026-11-17",
       "startedAt": "2026-11-17T01:15:51.048Z",
       "kind": "hourly_daily_recovery",
-      "state": "started"
+      "state": "collected",
+      "completedAt": "2026-11-17T01:16:05.505Z",
+      "collectionState": "partial",
+      "dataLastAttemptAt": "2026-11-17T01:15:52.660Z"
     }
   ]
 }
