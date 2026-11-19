@@ -190,6 +190,13 @@
       "completedAt": "2026-11-18T01:13:02.162Z",
       "collectionState": "partial",
       "dataLastAttemptAt": "2026-11-18T01:12:51.450Z"
+    },
+    {
+      "id": "44434902479:1",
+      "day": "2026-11-19",
+      "startedAt": "2026-11-19T01:11:02.536Z",
+      "kind": "hourly_daily_recovery",
+      "state": "started"
     }
   ]
 }
