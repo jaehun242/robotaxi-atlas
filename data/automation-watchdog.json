@@ -216,7 +216,10 @@
       "day": "2026-11-21",
       "startedAt": "2026-11-21T02:28:45.056Z",
       "kind": "hourly_daily_recovery",
-      "state": "started"
+      "state": "collected",
+      "completedAt": "2026-11-21T02:29:28.570Z",
+      "collectionState": "partial",
+      "dataLastAttemptAt": "2026-11-21T02:28:47.377Z"
     }
   ]
 }
